@@ -1,0 +1,24 @@
+// Navigation main
+// -----------------------------------------------------------------------------
+
+.nav-main {
+  @include list-inline($sp-xsmall, $sp-xsmall);
+  @include text;
+
+  &__link {
+    @include link(white, $nav-main-c-hover);
+
+    @media ($medium-up) {
+      @include link($nav-main-c, $nav-main-c-hover);
+    }
+
+    // &.is-active,
+    // &:active {
+    //   //
+    // }
+
+    .is-transparent & {
+      @include link($nav-main-c-transparent, $nav-main-c-transparent-hover);
+    }
+  }
+}

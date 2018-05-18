@@ -1,0 +1,155 @@
+// Variables
+// -----------------------------------------------------------------------------
+// Naming conventions used for variables inspired by [ZenCSSProperties]
+//
+// Some of the prefixes used:
+// * b = border
+// * bg = background;
+// * c = color
+// * ff = font-family
+// * fz = font-size
+
+// Base
+// -----------------------------------------------------------------------------
+
+// Colors
+$c-dark:                 #000 !default;
+$c-dark-soft:            #333 !default;
+$c-neutral:              #666 !default;
+$c-light-soft:           #999 !default;
+$c-light:                #fff !default;
+
+$c-brand-primary:        #ff4e18 !default;
+$c-brand-secondary:      #ffb500 !default;
+
+// Scaffolding
+$assets-path:            "/assets" !default;
+
+$body-bg-c:              $c-light !default;
+
+$text-c:                 $c-dark !default;
+
+$link-c:                 $c-brand-primary !default;
+$link-c-hover:           lighten($link-c, 15%) !default;
+
+// Spacing units
+$sp-base:                5px !default;
+
+$sp-xxsmall:             floor($sp-base * 2) !default;  // 10px
+$sp-xsmall:              floor($sp-base * 3) !default;  // 15px
+$sp-small:               floor($sp-base * 4) !default;  // 20px
+$sp-medium:              floor($sp-base * 5) !default;  // 25px
+$sp-large:               floor($sp-base * 6) !default;  // 30px
+$sp-xlarge:              floor($sp-base * 7) !default;  // 35px
+$sp-xxlarge:             floor($sp-base * 8) !default;  // 40px
+$sp-xxxlarge:            floor($sp-base * 9) !default;  // 45px
+$sp-huge:                floor($sp-base * 12) !default; // 60px
+
+// Fonts
+$ff-sans-serif:          'Barlow Semi Condensed', sans-serif !default;
+$ff-base:                $ff-sans-serif !default;
+
+$fz-base:                20px !default;
+$fz-xxsmall:             14px !default;
+$fz-xsmall:              16px !default;
+$fz-small:               18px !default;
+$fz-medium:              24px !default;
+$fz-large:               28px !default;
+$fz-xlarge:              36px !default;
+$fz-xxlarge:             48px !default;
+$fz-xxxlarge:            100px !default;
+
+// TODO : remove none used font weights (to improve performace)
+$fw-base:                400 !default;
+$fw-thin:                100 !default;
+$fw-extra-light:         200 !default;
+$fw-light:               300 !default;
+$fw-bold:                700 !default;
+$fw-black:               900 !default;
+
+$lh-base:                1.5 !default;
+$lh-xsmall:              1 !default;
+$lh-small:               1.25 !default;
+$lh-medium:              1.75 !default;
+$lh-large:               2 !default;
+
+// Media queries
+$screen-sm-min:          480px !default;
+$screen-md-min:          768px !default;
+$screen-lg-min:          992px !default;
+$screen-xl-min:          1200px !default;
+$screen-xxl-min:         1440px !default;
+
+$small-up:               "min-width:#{$screen-sm-min}" !default;
+$medium-up:              "min-width:#{$screen-md-min}" !default;
+$large-up:               "min-width:#{$screen-lg-min}" !default;
+$xlarge-up:              "min-width:#{$screen-xl-min}" !default;
+$xxlarge-up:             "min-width:#{$screen-xxl-min}" !default;
+
+// Transitions
+$transition-c:           color 250ms !default;
+$transition-bgc:         background-color 250ms !default;
+
+
+// Patterns
+// -----------------------------------------------------------------------------
+
+// Footer
+$footer-wd:                       100% !default;
+$footer-ht:                       auto !default;
+$footer-pd:                       $sp-small !default;
+$footer-c:                        $c-light !default;
+$footer-bg:                       $c-dark !default;
+$footer-pd-medium-up:             $sp-xxxlarge !default;
+
+// Footer legal
+$footer-legal-wd:                 100% !default;
+$footer-legal-ht:                 auto !default;
+$footer-legal-pd:                 $sp-small !default;
+$footer-legal-pd-medium-up:       $sp-xxlarge !default;
+$footer-legal-bg:                 $c-light !default;
+
+// Header
+$header-brand-wd:                 150px !default;
+$header-brand-ht:                 18px !default;
+$header-brand-wd-medium-up:       floor($header-brand-wd * 2) !default;
+$header-brand-ht-medium-up:       floor($header-brand-ht * 2) !default;
+
+$header-nav-po:                   absolute !default;
+$header-nav-wd:                   100% !default;
+$header-nav-ht:                   auto !default;
+$header-nav-bg:                   $c-dark !default;
+$header-nav-po-medium-up:         static !default;
+$header-nav-wd-medium-up:         auto !default;
+$header-nav-ht-medium-up:         auto !default;
+$header-nav-bg-medium-up:         transparent !default;
+
+$header-hamburger-wd:             auto !default;
+$header-hamburger-ht:             auto !default;
+$header-hamburger-pd:             $sp-base $sp-xxsmall !default;
+$header-hamburger-c:              $c-dark !default;
+
+$header-wd:                       100% !default;
+$header-ht:                       $header-brand-ht !default;
+$header-wd-medium-up:             $header-wd !default;
+$header-ht-medium-up:             $header-brand-ht-medium-up !default;
+$header-bg:                       $c-light !default;
+$header-bg-medium-up:             $c-light !default;
+
+$header-bg-transparent:           transparent !default;
+$header-bg-transparent-medium-up: transparent !default;
+
+// Body offset (should go after Header)
+$body-offset-top:                 $header-ht !default;
+$body-offset-top-medium-up:       $header-ht-medium-up !default;
+
+// Navigation legal
+$nav-legal-c:                     $c-dark !default;
+$nav-legal-c-hover:               $c-brand-primary !default;
+
+// Navigation main
+$nav-main-c:                      $c-dark !default;
+$nav-main-c-hover:                $c-brand-primary !default;
+
+$nav-main-c-transparent:          $c-light !default;
+$nav-main-c-transparent-hover:    $c-brand-primary !default;

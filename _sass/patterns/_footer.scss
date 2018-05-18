@@ -1,0 +1,42 @@
+// Footer
+// -----------------------------------------------------------------------------
+
+.footer {
+  @include size($footer-wd, $footer-ht);
+  padding: $footer-pd;
+  color: $footer-c;
+  background-color: $footer-bg;
+
+  @media ($medium-up) {
+    padding: $footer-pd-medium-up;
+  }
+
+  a {
+    @include link($c-light, $c-light-soft);
+    font-weight: $fw-bold;
+    text-decoration: none;
+  }
+
+  > .wrapper {
+    @media ($medium-up) {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__col-l {
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(50%, left);
+    }
+  }
+
+  &__col-r {
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(50%, right);
+    }
+  }
+}

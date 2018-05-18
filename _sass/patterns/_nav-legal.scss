@@ -1,0 +1,20 @@
+// Navigation legal
+// -----------------------------------------------------------------------------
+
+.nav-legal {
+  @include list-inline-dashed($sp-xxsmall, $sp-xxsmall);
+  font-size: $fz-xxsmall;
+
+  @media ($medium-up) {
+    font-size: $fz-xsmall;
+  }
+
+  &__link {
+    @include link($nav-legal-c, $nav-legal-c-hover);
+
+    // &.is-active,
+    // &:active {
+    //   //
+    // }
+  }
+}

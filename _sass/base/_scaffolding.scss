@@ -1,0 +1,100 @@
+// Scaffolding
+// -----------------------------------------------------------------------------
+
+// Reset box-sizing
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Basic styling
+body {
+  margin-top: $body-offset-top;
+  font-family: $ff-base;
+  font-size: $fz-base;
+  font-weight: $fw-base;
+  line-height: $lh-base;
+  color: $text-c;
+  background-color: $body-bg-c;
+
+  @media ($medium-up) {
+    margin-top: $body-offset-top-medium-up;
+  }
+}
+
+// Headings
+h1, .h1 {
+  @include heading($fz-xxxlarge, $fw-extra-light, $c-dark);
+}
+
+h2, .h2 {
+  @include heading($fz-xxlarge, $fw-black, $c-dark);
+}
+
+h3, .h3 {
+  @include heading($fz-xlarge, $fw-thin, $c-dark);
+}
+
+h4, .h4 {
+  @include heading($fz-large, $fw-bold, $c-dark);
+}
+
+h5, .h5 {
+  @include heading($fz-medium, $fw-base, $c-dark);
+}
+
+h6, .h6 {
+  @include heading($fz-small, $fw-base, $c-dark);
+  text-transform: uppercase;
+}
+
+// Images
+img {
+  vertical-align: middle;
+}
+
+// Links
+a {
+  @include link($link-c, $link-c-hover);
+  text-decoration: none;
+
+  &:focus {
+    @include tab-focus;
+  }
+}
+
+// Lists
+ul, ol {
+  margin-left: 0;
+  padding-left: $sp-small;
+}
+
+// Main
+// Default value of `display` of `main` element is 'inline' in IE 11
+main {
+  display: block;
+}
+
+// Vertical rhythm
+// Set `margin-bottom` to maintain vertical rhythm
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  @include vertical-rhythm;
+}
+
+// Wrapper
+.wrapper {
+  @include center-block;
+  position: relative;
+  width: 100%;
+
+  @media ($xlarge-up) {
+    width: floor($screen-xl-min - ($footer-pd-medium-up * 2));
+  }
+
+  @media ($xxlarge-up) {
+    width: floor($screen-xxl-min - ($footer-pd-medium-up * 2));
+  }
+}

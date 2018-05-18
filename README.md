@@ -6,7 +6,7 @@
 
 ## Introduction
 
-In **The Mount Data** we believe in data, technology and analitics for marketing and sales.
+At **The Mount Data** we believe in data, technology and analitics for marketing and sales.
 
 The site has been created using [Jekyll](https://jekyllrb.com/) and [GitHub](https://github.com/).
 

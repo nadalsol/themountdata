@@ -12,7 +12,7 @@
   }
 
   a {
-    @include link(#282B33, $c-brand-primary); // TODO : move to color var
+    @include link($c-dark, red); // TODO: replace hover color
     font-weight: $fw-bold;
     text-decoration: none;
   }
@@ -20,7 +20,6 @@
   > .wrapper {
     @media ($medium-up) {
       display: flex;
-      align-items: flex-end;
     }
   }
 

@@ -25,28 +25,28 @@ body {
 
 // Headings
 h1, .h1 {
-  @include heading($fz-xxxlarge, $fw-extra-light, $c-dark);
+  @include heading($fz-xxlarge, $fw-extra-bold, $c-dark);
 }
 
 h2, .h2 {
-  @include heading($fz-xxlarge, $fw-black, $c-dark);
+  @include heading($fz-xlarge, $fw-light, $c-dark);
 }
 
 h3, .h3 {
-  @include heading($fz-xlarge, $fw-thin, $c-dark);
+  @include heading($fz-medium, $fw-light, $c-dark);
 }
 
 h4, .h4 {
-  @include heading($fz-large, $fw-bold, $c-dark);
+  @include heading($fz-base, $fw-bold, $c-dark);
 }
 
 h5, .h5 {
-  @include heading($fz-medium, $fw-base, $c-dark);
+  @include heading($fz-small, $fw-bold, $c-dark);
+  text-transform: uppercase;
 }
 
 h6, .h6 {
-  @include heading($fz-small, $fw-base, $c-dark);
-  text-transform: uppercase;
+  @include heading($fz-xsmall, $fw-semi-bold, $c-dark);
 }
 
 // Images
@@ -87,7 +87,6 @@ ul, ol, dl, figure {
 // Wrapper
 .wrapper {
   @include center-block;
-  position: relative;
   width: 100%;
 
   @media ($xlarge-up) {

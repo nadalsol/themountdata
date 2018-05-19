@@ -46,6 +46,7 @@
     @media ($medium-up) {
       @include positioner($header-nav-po-medium-up, $header-nav-wd-medium-up, $header-nav-ht-medium-up, top, auto, left, auto, auto);
       background-color: $header-nav-bg-medium-up;
+      line-height: $header-nav-lh-medium-up;
       float: right;
       text-align: right;
     }

@@ -97,17 +97,22 @@ $transition-bgc:         background-color 250ms !default;
 // Footer
 $footer-wd:                       100% !default;
 $footer-ht:                       auto !default;
-$footer-pd:                       $sp-small !default;
-$footer-c:                        $c-light !default;
-$footer-bg:                       $c-dark !default;
-$footer-pd-medium-up:             $sp-xxxlarge !default;
+$footer-c:                        #282B33 !default; // TODO : move to color var
+$footer-bg:                       $c-light !default;
+$footer-pdv:                      $sp-small !default;
+$footer-pdh:                      $sp-xsmall !default;
+$footer-pdt-medium-up:            150px !default;
+$footer-pdb-medium-up:            $sp-xxlarge !default;
+$footer-pdh-medium-up:            $sp-huge !default;
 
 // Footer legal
 $footer-legal-wd:                 100% !default;
 $footer-legal-ht:                 auto !default;
-$footer-legal-pd:                 $sp-small !default;
-$footer-legal-pd-medium-up:       $sp-xxlarge !default;
-$footer-legal-bg:                 $c-light !default;
+$footer-legal-bg:                 #eef0f8 !default; // TODO : move to color var
+$footer-legal-pdv:                $sp-small !default;
+$footer-legal-pdh:                $sp-xsmall !default;
+$footer-legal-pdv-medium-up:      $sp-xxlarge !default;
+$footer-legal-pdh-medium-up:      $sp-huge !default;
 
 // Header
 $header-brand-wd:                 150px !default;
@@ -118,7 +123,7 @@ $header-brand-ht-medium-up:       floor($header-brand-ht * 2) !default;
 $header-nav-po:                   absolute !default;
 $header-nav-wd:                   100% !default;
 $header-nav-ht:                   auto !default;
-$header-nav-bg:                   $c-dark !default;
+$header-nav-bg:                   #455378 !default; // TODO : move to color var
 $header-nav-po-medium-up:         static !default;
 $header-nav-wd-medium-up:         auto !default;
 $header-nav-ht-medium-up:         auto !default;
@@ -127,7 +132,8 @@ $header-nav-bg-medium-up:         transparent !default;
 $header-hamburger-wd:             auto !default;
 $header-hamburger-ht:             auto !default;
 $header-hamburger-pd:             $sp-xsmall $sp-small !default;
-$header-hamburger-c:              $c-dark !default;
+$header-hamburger-c:              #21B7CA !default; // TODO : move to color var
+$header-hamburger-bg:             #455378 !default; // TODO : move to color var
 
 $header-pdv:                      $sp-small !default;
 $header-pdh:                      $sp-xsmall !default;
@@ -148,11 +154,11 @@ $body-offset-top:                 $header-ht !default;
 $body-offset-top-medium-up:       $header-ht-medium-up !default;
 
 // Navigation legal
-$nav-legal-c:                     $c-dark !default;
+$nav-legal-c:                     #282B33 !default; // TODO : move to color var
 $nav-legal-c-hover:               $c-brand-primary !default;
 
 // Navigation main
-$nav-main-c:                      $c-dark !default;
+$nav-main-c:                      #606C8C !default; // TODO : move to color var
 $nav-main-c-hover:                $c-brand-primary !default;
 
 $nav-main-c-transparent:          $c-light !default;

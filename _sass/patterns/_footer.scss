@@ -3,16 +3,16 @@
 
 .footer {
   @include size($footer-wd, $footer-ht);
-  padding: $footer-pd;
+  padding: $footer-pdv $footer-pdh;
   color: $footer-c;
   background-color: $footer-bg;
 
   @media ($medium-up) {
-    padding: $footer-pd-medium-up;
+    padding: $footer-pdt-medium-up $footer-pdh-medium-up $footer-pdb-medium-up;
   }
 
   a {
-    @include link($c-light, $c-light-soft);
+    @include link(#282B33, $c-brand-primary); // TODO : move to color var
     font-weight: $fw-bold;
     text-decoration: none;
   }
@@ -28,7 +28,7 @@
     text-align: center;
 
     @media ($medium-up) {
-      @include col(50%, left);
+      @include col(25%, left);
     }
   }
 

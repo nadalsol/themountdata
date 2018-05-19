@@ -3,11 +3,11 @@
 
 .footer-legal {
   @include size($footer-legal-wd, $footer-legal-ht);
-  padding: $footer-legal-pd;
+  padding: $footer-legal-pdv $footer-legal-pdh;
   background-color: $footer-legal-bg;
   text-align: center;
 
   @media ($medium-up) {
-    padding: $footer-legal-pd-medium-up;
+    padding: $footer-legal-pdv-medium-up $footer-legal-pdh-medium-up;
   }
 }

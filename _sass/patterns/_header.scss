@@ -23,13 +23,10 @@
 
   &__brand {
     @include size($header-brand-wd, $header-brand-ht);
-    @include center-block;
 
     @media ($medium-up) {
       @include size($header-brand-wd-medium-up, $header-brand-ht-medium-up);
       float: left;
-      margin-left: 0;
-      margin-right: 0;
     }
 
     > a {
@@ -55,7 +52,7 @@
   }
 
   &__hamburger {
-    @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, 0, left, 0, 11);
+    @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, 0, right, 0, 11);
     @include button-reset;
     padding: $header-hamburger-pd;
     font-size: $fz-large;

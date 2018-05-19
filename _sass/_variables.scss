@@ -126,13 +126,17 @@ $header-nav-bg-medium-up:         transparent !default;
 
 $header-hamburger-wd:             auto !default;
 $header-hamburger-ht:             auto !default;
-$header-hamburger-pd:             $sp-base $sp-xxsmall !default;
+$header-hamburger-pd:             $sp-xsmall $sp-small !default;
 $header-hamburger-c:              $c-dark !default;
 
+$header-pdv:                      $sp-small !default;
+$header-pdh:                      $sp-xsmall !default;
+$header-pdv-medium-up:            $sp-xxlarge !default;
+$header-pdh-medium-up:            $sp-huge !default;
 $header-wd:                       100% !default;
-$header-ht:                       $header-brand-ht !default;
+$header-ht:                       floor($header-brand-ht + ($header-pdv * 2)) !default;
 $header-wd-medium-up:             $header-wd !default;
-$header-ht-medium-up:             $header-brand-ht-medium-up !default;
+$header-ht-medium-up:             floor($header-brand-ht-medium-up + ($header-pdv-medium-up * 2)) !default;
 $header-bg:                       $c-light !default;
 $header-bg-medium-up:             $c-light !default;
 

@@ -4,10 +4,12 @@
 .header {
   @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, 10);
   @include clearfix;
+  padding: $header-pdv $header-pdh;
   background-color: $header-bg;
 
   @media ($medium-up) {
     @include size($header-wd-medium-up, $header-ht-medium-up);
+    padding: $header-pdv-medium-up $header-pdh-medium-up;
     background-color: $header-bg-medium-up;
   }
 
@@ -21,10 +23,13 @@
 
   &__brand {
     @include size($header-brand-wd, $header-brand-ht);
-    float: left;
+    @include center-block;
 
     @media ($medium-up) {
       @include size($header-brand-wd-medium-up, $header-brand-ht-medium-up);
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     > a {
@@ -32,17 +37,17 @@
     }
   }
 
+  .icon--brand {
+    vertical-align: top;
+  }
+
   &__nav {
     @include positioner($header-nav-po, $header-nav-wd, $header-nav-ht, top, $header-ht, left, 0, 11);
-    padding-top: $sp-xxsmall;
-    padding-bottom: $sp-xxsmall;
     background-color: $header-nav-bg;
     text-align: center;
 
     @media ($medium-up) {
       @include positioner($header-nav-po-medium-up, $header-nav-wd-medium-up, $header-nav-ht-medium-up, top, auto, left, auto, auto);
-      padding-top: $sp-medium;
-      padding-bottom: $sp-medium;
       background-color: $header-nav-bg-medium-up;
       float: right;
       text-align: right;
@@ -50,11 +55,12 @@
   }
 
   &__hamburger {
-    @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, $sp-small, right, $sp-xsmall, 11);
+    @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, 0, left, 0, 11);
     @include button-reset;
     padding: $header-hamburger-pd;
     font-size: $fz-large;
     line-height: $lh-xsmall;
     color: $header-hamburger-c;
+    background-color: pink; // TODO : replace bg-color
   }
 }

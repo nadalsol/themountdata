@@ -3,18 +3,13 @@
 
 .footer-legal {
   @include size($footer-legal-wd, $footer-legal-ht);
-  padding: $footer-legal-pdv $footer-legal-pdh;
   font-family: $ff-sans-serif-m;
   font-size: $fz-xsmall;
   font-weight: $fw-bold;
   color: $footer-legal-c;
   background-color: $footer-legal-bg;
 
-  @media ($medium-up) {
-    padding: $footer-legal-pdv-medium-up $footer-legal-pdh-medium-up;
-  }
-
-  > .wrapper {
+  .u-inner-small {
     @media ($medium-up) {
       display: flex;
       align-items: flex-end;

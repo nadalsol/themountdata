@@ -3,21 +3,15 @@
 
 .footer {
   @include size($footer-wd, $footer-ht);
-  padding: $footer-pdv $footer-pdh;
   color: $footer-c;
   background-color: $footer-bg;
 
-  @media ($medium-up) {
-    padding: $footer-pdt-medium-up $footer-pdh-medium-up $footer-pdb-medium-up;
-  }
-
   a {
     @include link($c-dark, red); // TODO: replace hover color
-    font-weight: $fw-bold;
     text-decoration: none;
   }
 
-  > .wrapper {
+  .u-inner-large {
     @media ($medium-up) {
       display: flex;
     }
@@ -36,6 +30,22 @@
 
     @media ($medium-up) {
       @include col(50%, right);
+    }
+  }
+
+  h5 {
+    margin-bottom: $sp-xxsmall;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-small;
+    }
+  }
+
+  .text {
+    margin-bottom: $sp-large;
+
+    @media ($medium-up) {
+      margin-bottom: 0;
     }
   }
 }

@@ -26,7 +26,7 @@ $c-lilac:                #eef0f8 !default;
 // Scaffolding
 $assets-path:            "/assets" !default;
 
-$body-bg-c:              $c-light !default;
+$body-bgc:               $c-light !default;
 
 $text-c:                 $c-dark !default;
 
@@ -45,6 +45,7 @@ $sp-xlarge:              floor($sp-base * 7) !default;  // 35px
 $sp-xxlarge:             floor($sp-base * 8) !default;  // 40px
 $sp-xxxlarge:            floor($sp-base * 9) !default;  // 45px
 $sp-huge:                floor($sp-base * 12) !default; // 60px
+$sp-giant:               floor($sp-base * 30) !default; // 150px
 
 // Fonts
 $ff-sans-serif-b:        'Barlow', sans-serif !default;
@@ -59,17 +60,18 @@ $fz-large:               28px !default;
 $fz-xlarge:              40px !default;
 $fz-xxlarge:             70px !default;
 
-$fw-base:                400 !default;
-$fw-light:               300 !default;
-$fw-semi-bold:           600 !default;
-$fw-bold:                700 !default;
-$fw-extra-bold:          800 !default;
+$fw-base:                400 !default; // Barlow
+$fw-light:               300 !default; // Barlow, Montserrat
+$fw-semi-bold:           600 !default; // Barlow
+$fw-bold:                700 !default; // Montserrat
+$fw-extra-bold:          800 !default; // Montserrat
 
 $lh-base:                1.5 !default;
 $lh-xsmall:              1 !default;
 $lh-small:               1.25 !default;
 // $lh-medium:              1.75 !default;
 $lh-large:               2 !default;
+$lh-xlarge:              2.5 !default;
 
 // Media queries
 $screen-sm-min:          480px !default;
@@ -97,24 +99,31 @@ $footer-wd:                       100% !default;
 $footer-ht:                       auto !default;
 $footer-c:                        $c-dark !default;
 $footer-bg:                       $c-light !default;
-$footer-pdv:                      $sp-small !default;
-$footer-pdh:                      $sp-xsmall !default;
-$footer-pdt-medium-up:            150px !default;
-$footer-pdb-medium-up:            $sp-xxlarge !default;
-$footer-pdh-medium-up:            $sp-huge !default;
 
 // Footer legal
 $footer-legal-wd:                 100% !default;
 $footer-legal-ht:                 auto !default;
 $footer-legal-c:                  $c-dark !default;
 $footer-legal-bg:                 $c-lilac !default;
-$footer-legal-pdv:                $sp-small !default;
-$footer-legal-pdh:                $sp-xsmall !default;
-$footer-legal-pdv-medium-up:      $sp-small !default;
-$footer-legal-pdh-medium-up:      $sp-huge !default;
 
-// Header
-$header-brand-wd:                 150px !default;
+// Helpers
+$u-inner-pdv:                     $sp-small !default;
+$u-inner-pdh:                     $sp-small !default;
+$u-inner-pdv-medium-up:           $sp-xxlarge !default;
+$u-inner-pdh-medium-up:           $sp-huge !default;
+
+$u-inner-small-pd:                $sp-small !default;
+$u-inner-small-pd-medium-up:      $sp-small $sp-huge !default;
+
+$u-inner-large-pd:                $sp-small !default;
+$u-inner-large-pd-medium-up:      $sp-giant $sp-huge $sp-xxlarge !default;
+
+$u-inner-xlarge-pd:               $sp-giant $sp-small $sp-huge $sp-small !default;
+$u-inner-xlarge-pd-medium-up:     360px $sp-huge 0 $sp-huge !default;
+$u-inner-xlarge-pd-large-up:      460px $sp-huge 0 $sp-huge !default;
+
+// Header (should go after Helpers)
+$header-brand-wd:                 $sp-giant !default;
 $header-brand-ht:                 18px !default;
 $header-brand-wd-medium-up:       floor($header-brand-wd * 2) !default;
 $header-brand-ht-medium-up:       floor($header-brand-ht * 2) !default;
@@ -127,7 +136,7 @@ $header-nav-po-medium-up:         static !default;
 $header-nav-wd-medium-up:         auto !default;
 $header-nav-ht-medium-up:         auto !default;
 $header-nav-bg-medium-up:         transparent !default;
-$header-nav-lh-medium-up:         $lh-large !default;
+$header-nav-lh-medium-up:         $lh-xlarge !default;
 
 $header-hamburger-wd:             auto !default;
 $header-hamburger-ht:             auto !default;
@@ -135,23 +144,22 @@ $header-hamburger-pd:             $sp-xsmall $sp-small !default;
 $header-hamburger-c:              $c-java !default;
 $header-hamburger-bg:             $c-eastbay !default;
 
-$header-pdv:                      $sp-small !default;
-$header-pdh:                      $sp-xsmall !default;
-$header-pdv-medium-up:            $sp-xxlarge !default;
-$header-pdh-medium-up:            $sp-huge !default;
 $header-wd:                       100% !default;
-$header-ht:                       floor($header-brand-ht + ($header-pdv * 2)) !default;
+$header-ht:                       floor($header-brand-ht + ($u-inner-pdv * 2)) !default;
 $header-wd-medium-up:             $header-wd !default;
-$header-ht-medium-up:             floor($header-brand-ht-medium-up + ($header-pdv-medium-up * 2)) !default;
+$header-ht-medium-up:             floor($header-brand-ht-medium-up + ($u-inner-pdv-medium-up * 2)) !default;
 $header-bg:                       $c-light !default;
 $header-bg-medium-up:             $c-light !default;
 
-$header-bg-transparent:           transparent !default;
+$header-bg-transparent:           $header-bg !default;
 $header-bg-transparent-medium-up: transparent !default;
 
-// Body offset (should go after Header)
-$body-offset-top:                 $header-ht !default;
-$body-offset-top-medium-up:       $header-ht-medium-up !default;
+// Hero video
+$hero-video-wd:                   100% !default;
+$hero-video-ht:                   auto !default;
+$hero-video-wd-medium-up:         100% !default;
+$hero-video-ht-medium-up:         780px !default;
+$hero-video-bgc:                  $c-eastbay !default;
 
 // Navigation legal
 $nav-legal-c:                     $c-dark !default;

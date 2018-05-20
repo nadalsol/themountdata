@@ -118,9 +118,9 @@ $u-inner-small-pd-medium-up:      $sp-small $sp-huge !default;
 $u-inner-large-pd:                $sp-small !default;
 $u-inner-large-pd-medium-up:      $sp-giant $sp-huge $sp-xxlarge !default;
 
-$u-inner-xlarge-pd:               $sp-giant $sp-small $sp-huge $sp-small !default;
-$u-inner-xlarge-pd-medium-up:     360px $sp-huge 0 $sp-huge !default;
-$u-inner-xlarge-pd-large-up:      460px $sp-huge 0 $sp-huge !default;
+$u-inner-xlarge-pd:               $sp-giant $sp-small $sp-huge !default;
+$u-inner-xlarge-pd-medium-up:     360px $sp-huge 0 !default;
+$u-inner-xlarge-pd-large-up:      460px $sp-huge 0 !default;
 
 // Header (should go after Helpers)
 $header-brand-wd:                 $sp-giant !default;

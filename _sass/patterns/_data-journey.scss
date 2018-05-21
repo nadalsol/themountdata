@@ -10,13 +10,13 @@
     }
   }
 
-  &__items {
+  &__content {
     @media ($medium-up) {
       display: flex;
     }
   }
 
-  &__items__col {
+  &__col {
     @media ($medium-up) {
       @include col(25%, left);
       margin-left: $sp-xxsmall;
@@ -24,7 +24,7 @@
     }
   }
 
-  &__items__img {
+  &__img {
     margin-bottom: $sp-small;
 
     @media ($medium-up) {
@@ -32,7 +32,7 @@
     }
   }
 
-  &__items__heading {
+  &__subheading {
     margin-bottom: $sp-xxsmall;
 
     @media ($medium-up) {

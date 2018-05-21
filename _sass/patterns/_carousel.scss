@@ -1,0 +1,37 @@
+// Carousel
+// -----------------------------------------------------------------------------
+
+.carousel {
+  background-color: $c-eastbay;
+
+  .u-inner-medium {
+    @media ($medium-up) {
+      display: flex;
+    }
+  }
+
+  &__col-l {
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(50%, left);
+    }
+  }
+
+  &__col-r {
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(50%, center);
+    }
+  }
+
+  &__heading,
+  .text {
+    color: $c-light;
+  }
+
+  .icon {
+    @include img-responsive(inline-block);
+  }
+}

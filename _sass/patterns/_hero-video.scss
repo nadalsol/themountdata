@@ -11,13 +11,11 @@
   }
 
   &__heading {
+    margin-bottom: 0;
+    color: $c-light;
+
     @media ($xlarge-up) {
       width: 80%;
     }
-  }
-
-  h1 {
-    margin-bottom: 0;
-    color: $c-light;
   }
 }

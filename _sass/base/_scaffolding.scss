@@ -18,38 +18,6 @@ body {
   background-color: $body-bgc;
 }
 
-// Headings
-h1, .h1 {
-  @include heading($fz-xlarge, $fw-extra-bold, $c-dark);
-
-  @media ($medium-up) {
-    font-size: $fz-xxlarge;
-  }
-}
-
-h2, .h2 {
-  @include heading($fz-xlarge, $fw-extra-light, $c-java);
-  text-transform: uppercase;
-}
-
-h3, .h3 {
-  @include heading($fz-medium, $fw-extra-light, $c-chetwode);
-  text-transform: uppercase;
-}
-
-h4, .h4 {
-  @include heading($fz-base, $fw-bold, $c-dark);
-}
-
-h5, .h5 {
-  @include heading($fz-xsmall, $fw-bold, $c-dark);
-  text-transform: uppercase;
-}
-
-h6, .h6 {
-  @include heading($fz-xxsmall, $fw-bold, $c-dark);
-}
-
 // Images
 img {
   vertical-align: middle;

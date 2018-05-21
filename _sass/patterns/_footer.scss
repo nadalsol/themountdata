@@ -8,7 +8,6 @@
 
   a {
     @include link($c-dark, red); // TODO: replace hover color
-    text-decoration: none;
   }
 
   .u-inner-large {

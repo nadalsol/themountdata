@@ -95,15 +95,6 @@
   outline-offset: -2px; // 2
 }
 
-// Regular text paragraphs
-@mixin text() {
-  font-size: $fz-xsmall;
-
-  @media ($medium-up) {
-    font-size: $fz-base;
-  }
-}
-
 // Reset default list styles
 @mixin list-reset() {
   margin: 0;

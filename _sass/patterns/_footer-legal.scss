@@ -4,12 +4,12 @@
 .footer-legal {
   @include size($footer-legal-wd, $footer-legal-ht);
   font-family: $ff-sans-serif-m;
-  font-size: $fz-xsmall;
+  font-size: $fz-xxsmall;
   font-weight: $fw-bold;
   color: $footer-legal-c;
   background-color: $footer-legal-bg;
 
-  .u-inner-small {
+  .u-inner-xsmall {
     @media ($medium-up) {
       display: flex;
       align-items: flex-end;

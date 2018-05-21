@@ -1,0 +1,42 @@
+// Data journey
+// -----------------------------------------------------------------------------
+
+.data-journey {
+  &__heading {
+    margin-bottom: $sp-large;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-huge;
+    }
+  }
+
+  &__items {
+    @media ($medium-up) {
+      display: flex;
+    }
+  }
+
+  &__items__col {
+    @media ($medium-up) {
+      @include col(25%, left);
+      margin-left: $sp-xxsmall;
+      margin-right: $sp-xxsmall;
+    }
+  }
+
+  &__items__img {
+    margin-bottom: $sp-small;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-xxlarge;
+    }
+  }
+
+  &__items__heading {
+    margin-bottom: $sp-xxsmall;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-small;
+    }
+  }
+}

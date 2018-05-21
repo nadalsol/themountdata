@@ -5,11 +5,24 @@
 //
 
 .text {
-  @include text;
+  font-family: $ff-sans-serif-b;
+  font-size: $fz-base;
 
   &:only-of-type,
   &:only-child,
   &:last-child {
     margin-bottom: 0;
+  }
+
+  > a {
+    font-weight: $fw-semi-bold;
+  }
+
+  &--small {
+    font-size: $fz-small;
+  }
+
+  &--fiord {
+    color: $c-fiord;
   }
 }

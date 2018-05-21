@@ -35,11 +35,11 @@
 }
 
 // Headings
-@mixin heading($fz, $fw, $c) {
+@mixin heading($fz, $fw, $lh, $c) {
   font-family: $ff-sans-serif-m;
-  line-height: $lh-small;
   font-size: $fz;
   font-weight: $fw;
+  line-height: $lh;
   color: $c;
 }
 

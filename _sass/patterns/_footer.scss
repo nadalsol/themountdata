@@ -10,7 +10,7 @@
     @include link($c-dark, red); // TODO: replace hover color
   }
 
-  .u-inner-large {
+  .u-inner-xlarge {
     @media ($medium-up) {
       display: flex;
     }

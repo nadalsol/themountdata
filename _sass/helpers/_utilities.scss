@@ -42,6 +42,10 @@
   @media ($medium-up) {
     padding: $u-inner-large-pd-medium-up;
   }
+
+  @media ($large-up) {
+    padding: $u-inner-large-pd-large-up;
+  }
 }
 
 .u-inner-xlarge {
@@ -50,9 +54,17 @@
   @media ($medium-up) {
     padding: $u-inner-xlarge-pd-medium-up;
   }
+}
+
+.u-inner-xxlarge {
+  padding: $u-inner-xxlarge-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-xxlarge-pd-medium-up;
+  }
 
   @media ($large-up) {
-    padding: $u-inner-xlarge-pd-large-up;
+    padding: $u-inner-xxlarge-pd-large-up;
   }
 }
 

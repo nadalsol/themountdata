@@ -120,12 +120,16 @@ $u-inner-small-pdh-medium-up:     $sp-huge !default;
 $u-inner-medium-pd:               $sp-xxlarge $sp-small !default;
 $u-inner-medium-pd-medium-up:     80px $sp-huge !default;
 
-$u-inner-large-pd:                $sp-small !default;
-$u-inner-large-pd-medium-up:      $sp-giant $sp-huge $sp-xxlarge !default;
+$u-inner-large-pd:                $sp-xxlarge $sp-small !default;
+$u-inner-large-pd-medium-up:      80px $sp-giant !default;
+$u-inner-large-pd-large-up:       80px 250px !default;
 
-$u-inner-xlarge-pd:               $sp-giant $sp-small $sp-huge !default;
-$u-inner-xlarge-pd-medium-up:     360px $sp-huge 0 !default;
-$u-inner-xlarge-pd-large-up:      460px $sp-huge 0 !default;
+$u-inner-xlarge-pd:               $sp-small !default;
+$u-inner-xlarge-pd-medium-up:     $sp-giant $sp-huge $sp-xxlarge !default;
+
+$u-inner-xxlarge-pd:              sp-giant $sp-small $sp-huge !default;
+$u-inner-xxlarge-pd-medium-up:    360px $sp-huge 0 !default;
+$u-inner-xxlarge-pd-large-up:     460px $sp-huge 0 !default;
 
 // Header (should go after Helpers)
 $header-brand-wd:                 $sp-giant !default;

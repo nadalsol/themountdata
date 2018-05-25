@@ -99,9 +99,10 @@ $xlarge-up:              "min-width:#{$screen-xl-min}" !default;
 $xxlarge-up:             "min-width:#{$screen-xxl-min}" !default;
 
 // Transitions
-$transition-c:           color 250ms !default;
-$transition-bg:          background-color 250ms !default;
 $transition-all:         all 250ms !default;
+$transition-bg:          background-color 250ms !default;
+$transition-bc:          border-color 250ms !default;
+$transition-c:           color 250ms !default;
 
 
 // Helpers
@@ -241,21 +242,22 @@ $button-small-fz:                 $fz-small !default;
 $button-disabled-o:               .5 !default;
 
 // Forms
-$form-label-mb:                   $sp-xxsmall !default;
+$form-label-mb:                   $sp-base !default;
 $form-label-ff:                   $ff-sans-serif-b !default;
 $form-label-fz:                   $fz-xxsmall !default;
 $form-label-fw:                   $fw-semi-bold !default;
 $form-label-c:                    $text-c !default;
 
-$form-field-ht:                   $sp-large !default;
+$form-field-ht:                   $sp-xlarge !default;
 $form-field-mb:                   $sp-big !default;
 $form-field-pd:                   $sp-base $sp-xxsmall !default;
 $form-field-ff:                   $ff-sans-serif-b !default;
 $form-field-fz:                   $fz-base !default;
 $form-field-fw:                   $fw-light !default;
 $form-field-c:                    $c-light !default;
+$form-field-trn:                  $transition-bc;
 
-$form-textarea-ht:                148px !default;
+$form-textarea-ht:                153px !default;
 
 // Hero video
 $hero-video-wd:                   100% !default;

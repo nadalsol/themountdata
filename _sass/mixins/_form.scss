@@ -10,6 +10,7 @@
   font-size: $form-field-fz;
   font-weight: $form-field-fw;
   color: $form-field-c;
+  transition: $form-field-trn;
   background-color: transparent;
 
   &:focus {

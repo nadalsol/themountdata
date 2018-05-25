@@ -2,20 +2,16 @@
 // -----------------------------------------------------------------------------
 
 .contact {
-  background-color: $c-eastbay;
+  background-color: $c-dark;
 
-  &__heading {
-    color: $c-light;
+  &__header {
+    margin-bottom: $sp-huge;
   }
 
-  // &__subheading {
-  //   font-family: $ff-base;
-  //   // font-size: $fz-medium;
-  //   font-weight: $fw-light;
-  //   font-style: italic;
-  //   text-transform: lowercase;
-  //   color: $c-java;
-  // }
+  &__heading {
+    margin-bottom: $sp-base;
+    color: $c-light;
+  }
 
   &__content {
     @media ($medium-up) {
@@ -23,19 +19,23 @@
     }
   }
 
-  &__col-l {
-    text-align: center;
-
+  &__col25 {
     @media ($medium-up) {
-      @include col(50%, left);
+      @include col(25%, left);
+      margin-left: $sp-medium;
+      margin-right: $sp-medium;
     }
   }
 
-  &__col-r {
-    text-align: center;
-
+  &__col50 {
     @media ($medium-up) {
-      @include col(50%, center);
+      @include col(50%, left);
+      margin-left: $sp-medium;
+      margin-right: $sp-medium;
     }
+  }
+
+  .form__label {
+    color: $c-light;
   }
 }

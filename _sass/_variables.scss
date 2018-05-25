@@ -13,12 +13,11 @@
 // -----------------------------------------------------------------------------
 
 // Borders
-// $br-xsmall:              1px !default;
-$br-small:               2px !default;
-// $br-base:                   4px !default;
-// $br-medium:                 8px !default;
+$br-small:               1px !default;
+$br-base:                2px !default;
 
 // Border radius
+$brr-small:              2px !default;
 $brr-base:               3px !default;
 
 // Colors
@@ -54,7 +53,8 @@ $sp-large:               floor($sp-base * 6) !default;  // 30px
 $sp-xlarge:              floor($sp-base * 7) !default;  // 35px
 $sp-xxlarge:             floor($sp-base * 8) !default;  // 40px
 $sp-xxxlarge:            floor($sp-base * 9) !default;  // 45px
-$sp-huge:                floor($sp-base * 12) !default; // 60px
+$sp-big:                 floor($sp-base * 12) !default; // 60px
+$sp-huge:                floor($sp-base * 18) !default; // 90px
 $sp-giant:               floor($sp-base * 30) !default; // 150px
 
 // Fonts
@@ -107,26 +107,26 @@ $transition-all:         all 250ms !default;
 // Helpers
 // -----------------------------------------------------------------------------
 $u-inner-xsmall-pd:               $sp-small !default;
-$u-inner-xsmall-pd-medium-up:     $sp-small $sp-huge !default;
+$u-inner-xsmall-pd-medium-up:     $sp-small $sp-big !default;
 
 $u-inner-small-pdv:               $sp-small !default;
 $u-inner-small-pdh:               $sp-small !default;
 $u-inner-small-pdv-medium-up:     $sp-xxlarge !default;
-$u-inner-small-pdh-medium-up:     $sp-huge !default;
+$u-inner-small-pdh-medium-up:     $sp-big !default;
 
 $u-inner-medium-pd:               $sp-xxlarge $sp-small !default;
-$u-inner-medium-pd-medium-up:     80px $sp-huge !default;
+$u-inner-medium-pd-medium-up:     80px $sp-big !default;
 
 $u-inner-large-pd:                $sp-xxlarge $sp-small !default;
 $u-inner-large-pd-medium-up:      80px $sp-giant !default;
 $u-inner-large-pd-large-up:       80px 250px !default;
 
 $u-inner-xlarge-pd:               $sp-small !default;
-$u-inner-xlarge-pd-medium-up:     $sp-giant $sp-huge $sp-xxlarge !default;
+$u-inner-xlarge-pd-medium-up:     $sp-giant $sp-big $sp-xxlarge !default;
 
-$u-inner-xxlarge-pd:              sp-giant $sp-small $sp-huge !default;
-$u-inner-xxlarge-pd-medium-up:    360px $sp-huge 0 !default;
-$u-inner-xxlarge-pd-large-up:     460px $sp-huge 0 !default;
+$u-inner-xxlarge-pd:              sp-giant $sp-small $sp-big !default;
+$u-inner-xxlarge-pd-medium-up:    360px $sp-big 0 !default;
+$u-inner-xxlarge-pd-large-up:     460px $sp-big 0 !default;
 
 
 // Common
@@ -190,7 +190,7 @@ $button-trn:                      $transition-all !default;
 
 // Button type: primary
 $button-primary-bg:               transparent !default;
-$button-primary-br:               $br-small solid $c-java !default;
+$button-primary-br:               $br-base solid $c-java !default;
 $button-primary-c:                $c-java !default;
 $button-primary-td:               none !default;
 
@@ -200,18 +200,18 @@ $button-primary-visited-c:        $button-primary-c !default;
 $button-primary-visited-td:       $button-primary-td !default;
 
 $button-primary-hover-bg:         transparent !default;
-$button-primary-hover-br:         $br-small solid $c-light !default;
+$button-primary-hover-br:         $br-base solid $c-light !default;
 $button-primary-hover-c:          $c-light;
 $button-primary-hover-td:         none !default;
 
 $button-primary-active-bg:        transparent !default;
-$button-primary-active-br:        $br-small solid $c-surfie !default;
+$button-primary-active-br:        $br-base solid $c-surfie !default;
 $button-primary-active-c:         $c-surfie;
 $button-primary-active-td:        none !default;
 
 // Button type: secondary
 $button-secondary-bg:             transparent !default;
-$button-secondary-br:             $br-small solid $c-light !default;
+$button-secondary-br:             $br-base solid $c-light !default;
 $button-secondary-c:              $c-light !default;
 $button-secondary-td:             none !default;
 
@@ -221,12 +221,12 @@ $button-secondary-visited-c:      $button-secondary-c !default;
 $button-secondary-visited-td:     $button-secondary-td !default;
 
 $button-secondary-hover-bg:       $c-chetwode !default;
-$button-secondary-hover-br:       $br-small solid $c-light !default;
+$button-secondary-hover-br:       $br-base solid $c-light !default;
 $button-secondary-hover-c:        $c-light !default;
 $button-secondary-hover-td:       none !default;
 
 $button-secondary-active-bg:      $c-light !default;
-$button-secondary-active-br:      $br-small solid $c-light !default;
+$button-secondary-active-br:      $br-base solid $c-light !default;
 $button-secondary-active-c:       $c-java !default;
 $button-secondary-active-td:      none !default;
 
@@ -238,7 +238,24 @@ $button-small-pd:                 $sp-small 100px !default;
 $button-small-fz:                 $fz-small !default;
 
 // Button state
-$button-disabled-o:               .6 !default;
+$button-disabled-o:               .5 !default;
+
+// Forms
+$form-label-mb:                   $sp-xxsmall !default;
+$form-label-ff:                   $ff-sans-serif-b !default;
+$form-label-fz:                   $fz-xxsmall !default;
+$form-label-fw:                   $fw-semi-bold !default;
+$form-label-c:                    $text-c !default;
+
+$form-field-ht:                   $sp-large !default;
+$form-field-mb:                   $sp-big !default;
+$form-field-pd:                   $sp-base $sp-xxsmall !default;
+$form-field-ff:                   $ff-sans-serif-b !default;
+$form-field-fz:                   $fz-base !default;
+$form-field-fw:                   $fw-light !default;
+$form-field-c:                    $c-light !default;
+
+$form-textarea-ht:                148px !default;
 
 // Hero video
 $hero-video-wd:                   100% !default;

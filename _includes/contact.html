@@ -2,20 +2,39 @@
   <div class="wrapper">
     <div class="u-inner-medium">
 
-      <h2 class="heading2 contact__heading u-text-center">Request a free consultation</h2>
-      <h3 class="heading4 u-text-center">Tell us about your business problem and we help you define it further.</h3>
-
-      <div class="contact__content">
-
-        <div class="contact__col-l">
-          nombre
-        </div>
-
-        <div class="contact__col-r">
-          <a class="button button--primary button--small" href="#">Enviar</a>
-        </div>
-
+      <div class="contact__header">
+        <h2 class="heading2 contact__heading u-text-center">Request a free consultation</h2>
+        <h3 class="heading4 u-text-center">Tell us about your business problem and we help you define it further.</h3>
       </div>
+
+      <form class="contact__content form" action="mailto:dummy@gmail.com?subject=subject&message=message" method="post">
+
+        <fieldset class="form__fieldset contact__col25">
+          <label class="form__label is-required" for="name">Nombre</label>
+          <input class="form__field" type="text" id="name" name="name" tabindex="1" required>
+          <label class="form__label is-required" for="email">E-mail</label>
+          <input class="form__field" type="email" id="email" name="email" tabindex="3" required>
+          <label class="form__label" for="company">Empresa</label>
+          <input class="form__field" type="text" id="company" name="company" tabindex="5">
+        </fieldset>
+
+        <fieldset class="form__fieldset contact__col25">
+          <label class="form__label is-required" for="surname">Apellidos</label>
+          <input class="form__field" type="text" id="surname" name="surname" tabindex="2" required>
+          <label class="form__label is-required" for="phone">Teléfono</label>
+          <input class="form__field" type="tel" id="phone" name="phone" tabindex="4" required>
+          <label class="form__label" for="position">Cargo</label>
+          <input class="form__field" type="text" id="position" name="position" tabindex="6">
+        </fieldset>
+
+        <fieldset class="form__fieldset contact__col50">
+          <label class="form__label" for="message">Consulta</label>
+          <textarea class="form__textarea" id="message" name="message" rows="8" cols="80" tabindex="7"></textarea>
+          <input type="hidden" id="subject" name="subject" value="Consulta desde themountdata.com">
+          <button type="submit" class="button button--primary button--small">Enviar</button>
+        </fieldset>
+
+      </form>
 
     </div>
   </div>

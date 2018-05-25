@@ -7,10 +7,10 @@
 // 1. for input
 // 2. for button
 //
-input[type='submit'],
-input[type='reset'],
-input[type='button'],
-button {
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   background: none;
   border: 0;
   color: inherit;
@@ -22,13 +22,13 @@ button {
   user-select: none; // 2
 }
 
-input::-moz-focus-inner,
-button::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-[role='button'] {
+[role="button"] {
   color: inherit;
   cursor: pointer;
   display: inline-block;
@@ -38,11 +38,11 @@ button::-moz-focus-inner {
   user-select: none;
 }
 
-input[type='submit'],
-input[type='reset'],
-input[type='button'],
 button,
-[role='button'] {
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+[role="button"] {
   line-height: $lh-base;
 }
 

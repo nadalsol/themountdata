@@ -8,7 +8,7 @@
     margin-bottom: $sp-large;
 
     @media ($medium-up) {
-      margin-bottom: $sp-huge;
+      margin-bottom: $sp-big;
     }
   }
 
@@ -18,7 +18,7 @@
     }
   }
 
-  &__col {
+  &__col25 {
     @media ($medium-up) {
       @include col(25%, left);
       margin-left: $sp-xxsmall;

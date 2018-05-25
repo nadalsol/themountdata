@@ -12,11 +12,21 @@
 // Base
 // -----------------------------------------------------------------------------
 
+// Borders
+// $br-xsmall:              1px !default;
+$br-small:               2px !default;
+// $br-base:                   4px !default;
+// $br-medium:                 8px !default;
+
+// Border radius
+$brr-base:               3px !default;
+
 // Colors
 $c-dark:                 #282b33 !default;
 $c-light:                #fff !default;
 
 $c-java:                 #21b7ca !default;
+$c-surfie:               #0c7987 !default;
 $c-lynch:                #606c8c !default;
 $c-chetwode:             #869fe1 !default;
 $c-fiord:                #434f70 !default;
@@ -26,7 +36,7 @@ $c-lilac:                #eef0f8 !default;
 // Scaffolding
 $assets-path:            "/assets" !default;
 
-$body-bgc:               $c-light !default;
+$body-bg:                $c-light !default;
 
 $text-c:                 $c-dark !default;
 
@@ -90,25 +100,12 @@ $xxlarge-up:             "min-width:#{$screen-xxl-min}" !default;
 
 // Transitions
 $transition-c:           color 250ms !default;
-$transition-bgc:         background-color 250ms !default;
+$transition-bg:          background-color 250ms !default;
+$transition-all:         all 250ms !default;
 
-
-// Patterns
-// -----------------------------------------------------------------------------
-
-// Footer
-$footer-wd:                       100% !default;
-$footer-ht:                       auto !default;
-$footer-c:                        $c-dark !default;
-$footer-bg:                       $c-light !default;
-
-// Footer legal
-$footer-legal-wd:                 100% !default;
-$footer-legal-ht:                 auto !default;
-$footer-legal-c:                  $c-dark !default;
-$footer-legal-bg:                 $c-lilac !default;
 
 // Helpers
+// -----------------------------------------------------------------------------
 $u-inner-xsmall-pd:               $sp-small !default;
 $u-inner-xsmall-pd-medium-up:     $sp-small $sp-huge !default;
 
@@ -131,6 +128,22 @@ $u-inner-xxlarge-pd:              sp-giant $sp-small $sp-huge !default;
 $u-inner-xxlarge-pd-medium-up:    360px $sp-huge 0 !default;
 $u-inner-xxlarge-pd-large-up:     460px $sp-huge 0 !default;
 
+
+// Common
+// -----------------------------------------------------------------------------
+
+// Footer
+$footer-wd:                       100% !default;
+$footer-ht:                       auto !default;
+$footer-c:                        $c-dark !default;
+$footer-bg:                       $c-light !default;
+
+// Footer legal
+$footer-legal-wd:                 100% !default;
+$footer-legal-ht:                 auto !default;
+$footer-legal-c:                  $c-dark !default;
+$footer-legal-bg:                 $c-lilac !default;
+
 // Header (should go after Helpers)
 $header-brand-wd:                 $sp-giant !default;
 $header-brand-ht:                 18px !default;
@@ -147,12 +160,6 @@ $header-nav-ht-medium-up:         auto !default;
 $header-nav-bg-medium-up:         transparent !default;
 $header-nav-lh-medium-up:         $lh-xlarge !default;
 
-$header-hamburger-wd:             auto !default;
-$header-hamburger-ht:             auto !default;
-$header-hamburger-pd:             $sp-xsmall $sp-small !default;
-$header-hamburger-c:              $c-java !default;
-$header-hamburger-bg:             $c-eastbay !default;
-
 $header-wd:                       100% !default;
 $header-ht:                       floor($header-brand-ht + ($u-inner-small-pdv * 2)) !default;
 $header-wd-medium-up:             $header-wd !default;
@@ -163,20 +170,90 @@ $header-bg-medium-up:             $c-light !default;
 $header-bg-transparent:           $header-bg !default;
 $header-bg-transparent-medium-up: transparent !default;
 
+$header-hamburger-wd:             $header-ht !default;
+$header-hamburger-ht:             $header-ht !default;
+$header-hamburger-c:              $c-java !default;
+$header-hamburger-bg:             $c-eastbay !default;
+
+
+// Patterns
+// -----------------------------------------------------------------------------
+
+// Button base
+$button-pd:                       $sp-medium 120px !default;
+$button-ff:                       $ff-sans-serif-m !default;
+$button-fz:                       $fz-base !default;
+$button-fw:                       $fw-bold !default;
+$button-lh:                       $lh-base !default;
+$button-brr:                      $brr-base !default;
+$button-trn:                      $transition-all !default;
+
+// Button type: primary
+$button-primary-bg:               transparent !default;
+$button-primary-br:               $br-small solid $c-java !default;
+$button-primary-c:                $c-java !default;
+$button-primary-td:               none !default;
+
+$button-primary-visited-bg:       $button-primary-bg !default;
+$button-primary-visited-br:       $button-primary-br !default;
+$button-primary-visited-c:        $button-primary-c !default;
+$button-primary-visited-td:       $button-primary-td !default;
+
+$button-primary-hover-bg:         transparent !default;
+$button-primary-hover-br:         $br-small solid $c-light !default;
+$button-primary-hover-c:          $c-light;
+$button-primary-hover-td:         none !default;
+
+$button-primary-active-bg:        transparent !default;
+$button-primary-active-br:        $br-small solid $c-surfie !default;
+$button-primary-active-c:         $c-surfie;
+$button-primary-active-td:        none !default;
+
+// Button type: secondary
+$button-secondary-bg:             transparent !default;
+$button-secondary-br:             $br-small solid $c-light !default;
+$button-secondary-c:              $c-light !default;
+$button-secondary-td:             none !default;
+
+$button-secondary-visited-bg:     $button-secondary-c !default;
+$button-secondary-visited-br:     $button-secondary-br !default;
+$button-secondary-visited-c:      $button-secondary-c !default;
+$button-secondary-visited-td:     $button-secondary-td !default;
+
+$button-secondary-hover-bg:       $c-chetwode !default;
+$button-secondary-hover-br:       $br-small solid $c-light !default;
+$button-secondary-hover-c:        $c-light !default;
+$button-secondary-hover-td:       none !default;
+
+$button-secondary-active-bg:      $c-light !default;
+$button-secondary-active-br:      $br-small solid $c-light !default;
+$button-secondary-active-c:       $c-java !default;
+$button-secondary-active-td:      none !default;
+
+// Button size
+$button-xxsmall-pd:               $sp-xsmall $sp-xxlarge !default;
+$button-xxsmall-fz:               $fz-xxsmall !default;
+
+$button-small-pd:                 $sp-small 100px !default;
+$button-small-fz:                 $fz-small !default;
+
+// Button state
+$button-disabled-o:               .6 !default;
+
 // Hero video
 $hero-video-wd:                   100% !default;
 $hero-video-ht:                   auto !default;
 $hero-video-wd-medium-up:         100% !default;
 $hero-video-ht-medium-up:         780px !default;
-$hero-video-bgc:                  $c-eastbay !default;
+$hero-video-bg:                   $c-eastbay !default;
 
 // Navigation legal
 $nav-legal-c:                     $c-dark !default;
-$nav-legal-c-hover:               red !default; // TODO: replace hover color
+$nav-legal-c-hover:               red !default; // TODO : replace hover color
 
 // Navigation main
 $nav-main-c:                      $c-lynch !default;
-$nav-main-c-hover:                red !default; // TODO: replace hover color
+$nav-main-c-hover:                red !default; // TODO : replace hover color
 
 $nav-main-c-transparent:          $c-light !default;
-$nav-main-c-transparent-hover:    red !default; // TODO: replace hover color
+$nav-main-c-transparent-hover:    red !default; // TODO : replace hover color

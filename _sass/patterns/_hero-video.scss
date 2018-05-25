@@ -3,7 +3,7 @@
 
 .hero-video {
   @include size($hero-video-wd, $hero-video-ht);
-  background: $hero-video-bgc url("#{$assets-path}/bg-hero-video.png") no-repeat center top;
+  background: $hero-video-bg url("#{$assets-path}/bg-hero-video.png") no-repeat center top;
   background-size: cover;
 
   @media ($medium-up) {

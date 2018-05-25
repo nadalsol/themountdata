@@ -1,0 +1,79 @@
+// Button
+// -----------------------------------------------------------------------------
+
+//
+// Reset `button` and button-style `input` default styles
+//
+// 1. for input
+// 2. for button
+//
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  appearance: button; // 1
+  user-select: none; // 2
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+[role='button'] {
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre;
+  user-select: none;
+}
+
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button,
+[role='button'] {
+  line-height: $lh-base;
+}
+
+
+//
+// Button base
+//
+.button {
+  @include button-base;
+}
+
+
+//
+// Button type
+//
+.button--primary {
+  @include button-primary;
+}
+
+.button--secondary {
+  @include button-secondary;
+}
+
+
+//
+// Button size
+//
+.button--xxsmall {
+  @include button-xxsmall;
+}
+
+.button--small {
+  @include button-small;
+}

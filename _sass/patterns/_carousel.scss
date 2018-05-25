@@ -26,8 +26,12 @@
     }
   }
 
-  &__heading,
+  &__heading {
+    color: $c-light;
+  }
+
   .text {
+    margin-bottom: $sp-xxlarge;
     color: $c-light;
   }
 

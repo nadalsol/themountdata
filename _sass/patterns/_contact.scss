@@ -7,4 +7,35 @@
   &__heading {
     color: $c-light;
   }
+
+  // &__subheading {
+  //   font-family: $ff-base;
+  //   // font-size: $fz-medium;
+  //   font-weight: $fw-light;
+  //   font-style: italic;
+  //   text-transform: lowercase;
+  //   color: $c-java;
+  // }
+
+  &__content {
+    @media ($medium-up) {
+      display: flex;
+    }
+  }
+
+  &__col-l {
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(50%, left);
+    }
+  }
+
+  &__col-r {
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(50%, center);
+    }
+  }
 }

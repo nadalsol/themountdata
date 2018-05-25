@@ -1,0 +1,21 @@
+// Positioning mixins
+// -----------------------------------------------------------------------------
+
+// Positioner
+@mixin positioner($po, $po-wd, $po-ht, $po-v-property, $po-v-value, $po-h-property, $po-h-value, $po-zi: auto) {
+  position: $po;
+  width: $po-wd;
+  height: $po-ht;
+  #{$po-v-property}: $po-v-value;
+  #{$po-h-property}: $po-h-value;
+  z-index: $po-zi;
+}
+
+// Positioner for horizontal centering
+// @mixin positioner-center-h($wd, $ht) {
+//   position: absolute;
+//   width: $wd;
+//   height: $ht;
+//   left: 50%;
+//   margin-left: -($wd / 2);
+// }

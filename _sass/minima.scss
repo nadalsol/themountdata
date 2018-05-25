@@ -13,7 +13,16 @@
 
 // Variables and mixins
 @import "variables";
-@import "mixins";
+@import "mixins/button";
+@import "mixins/column";
+@import "mixins/focus";
+@import "mixins/heading";
+@import "mixins/link";
+@import "mixins/list";
+@import "mixins/positioning";
+@import "mixins/rhythm";
+@import "mixins/sizing";
+@import "mixins/utilities";
 
 // Reset
 @import "reset/normalize";
@@ -24,18 +33,21 @@
 @import "base/scaffolding";
 @import "base/text";
 
+// Common
+@import "common/footer-legal";
+@import "common/footer";
+@import "common/header";
+
 // Helpers
 @import "helpers/utilities";
 
 // Patterns
 @import "patterns/business";
+@import "patterns/button";
 @import "patterns/carousel";
 @import "patterns/contact";
 @import "patterns/copyright-legal";
 @import "patterns/data-journey";
-@import "patterns/footer-legal";
-@import "patterns/footer";
-@import "patterns/header";
 @import "patterns/hero-video";
 @import "patterns/icon";
 @import "patterns/nav-legal";

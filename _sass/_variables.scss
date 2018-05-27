@@ -31,9 +31,12 @@ $c-chetwode:             #869fe1 !default;
 $c-fiord:                #434f70 !default;
 $c-eastbay:              #455378 !default;
 $c-lilac:                #eef0f8 !default;
+$c-watercourse:          #047154 !default;
+$c-cosmic:               #683361 !default;
 
 // Scaffolding
 $assets-path:            "/assets" !default;
+$assets-img-path:        $assets-path + "/img" !default;
 
 $body-bg:                $c-light !default;
 
@@ -107,16 +110,19 @@ $transition-c:           color 250ms !default;
 
 // Helpers
 // -----------------------------------------------------------------------------
-$u-inner-xsmall-pd:               $sp-small !default;
-$u-inner-xsmall-pd-medium-up:     $sp-small $sp-big !default;
+$u-inner-xxsmall-pd:              $sp-small !default;
+$u-inner-xxsmall-pd-medium-up:    $sp-small $sp-big !default;
 
-$u-inner-small-pdv:               $sp-small !default;
-$u-inner-small-pdh:               $sp-small !default;
-$u-inner-small-pdv-medium-up:     $sp-xxlarge !default;
-$u-inner-small-pdh-medium-up:     $sp-big !default;
+$u-inner-xsmall-pdv:              $sp-small !default;
+$u-inner-xsmall-pdh:              $sp-small !default;
+$u-inner-xsmall-pdv-medium-up:    $sp-xxlarge !default;
+$u-inner-xsmall-pdh-medium-up:    $sp-big !default;
+
+$u-inner-small-pd:                $sp-xxlarge $sp-small !default;
+$u-inner-small-pd-medium-up:      80px $sp-big !default;
 
 $u-inner-medium-pd:               $sp-xxlarge $sp-small !default;
-$u-inner-medium-pd-medium-up:     80px $sp-big !default;
+$u-inner-medium-pd-medium-up:     80px $sp-giant !default;
 
 $u-inner-large-pd:                $sp-xxlarge $sp-small !default;
 $u-inner-large-pd-medium-up:      80px $sp-giant !default;
@@ -162,9 +168,9 @@ $header-nav-bg-medium-up:         transparent !default;
 $header-nav-lh-medium-up:         $lh-xlarge !default;
 
 $header-wd:                       100% !default;
-$header-ht:                       floor($header-brand-ht + ($u-inner-small-pdv * 2)) !default;
+$header-ht:                       floor($header-brand-ht + ($u-inner-xsmall-pdv * 2)) !default;
 $header-wd-medium-up:             $header-wd !default;
-$header-ht-medium-up:             floor($header-brand-ht-medium-up + ($u-inner-small-pdv-medium-up * 2)) !default;
+$header-ht-medium-up:             floor($header-brand-ht-medium-up + ($u-inner-xsmall-pdv-medium-up * 2)) !default;
 $header-bg:                       $c-light !default;
 $header-bg-medium-up:             $c-light !default;
 
@@ -240,6 +246,12 @@ $button-small-fz:                 $fz-small !default;
 
 // Button state
 $button-disabled-o:               .5 !default;
+
+// Carousel
+$carousel-item-ht-medium-up:      585px !default;
+$carousel-item-display-duration:  5 !default; // seconds
+$carousel-transition-duration:    2 !default; // seconds
+$carousel-display-duration:       $carousel-transition-duration + $carousel-item-display-duration !default;
 
 // Forms
 $form-label-mb:                   $sp-base !default;

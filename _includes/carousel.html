@@ -1,59 +1,78 @@
-<div class="">
-  <div class="wrapper">
-    <div class="u-inner-medium">
+<div class="carousel carousel--items-3">
 
-      <div class="gallery items-3">
+  <div id="carousel-item-1" class="carousel__control-operator"></div>
+  <div id="carousel-item-2" class="carousel__control-operator"></div>
+  <div id="carousel-item-3" class="carousel__control-operator"></div>
 
-        <div id="item-1" class="control-operator"></div>
-        <div id="item-2" class="control-operator"></div>
-        <div id="item-3" class="control-operator"></div>
-
-        <figure class="item">
-          <h1>1</h1>
-          <a href="#item-2" class="control-arrow-r">›</a>
-        </figure>
-
-        <figure class="item">
-          <h1>2</h1>
-          <a href="#item-1" class="control-arrow-l">‹</a>
-          <a href="#item-3" class="control-arrow-r">›</a>
-        </figure>
-
-        <figure class="item">
-          <h1>3</h1>
-          <a href="#item-2" class="control-arrow-l">‹</a>
-        </figure>
-
-        <div class="controls">
-          <a href="#item-1" class="control-button">•</a>
-          <a href="#item-2" class="control-button">•</a>
-          <a href="#item-3" class="control-button">•</a>
+  <figure class="carousel__item">
+    <div class="wrapper">
+      <div class="u-inner-medium">
+        <div class="carousel__item__col-l">
+          <h2 class="heading2">
+            Desde la estrategia<br>
+            a la ejecución
+          </h2>
+          <p class="text">Nuestra actividad se centra en las Tecnologías centradas en gestión  y análisis de la información que ayudan a mejorar la toma de decisiones  y procesos de las distintas áreas de Negocio.  Acompañamos a nuestros Clientes desde las fases iniciales del diseño de la Estrategia hasta  la Puesta en marcha del proyecto (envío de las comunicaciones o implementación de modelos…).</p>
+          <a class="button button--secondary button--xxsmall" href="#">› Nosotros</a>
         </div>
-
+        <div class="carousel__item__col-r">
+          {% include svg/carousel/us.svg css-class="icon icon--carousel" %}
+        </div>
       </div>
-
     </div>
-  </div>
-</div>
+    <a href="#carousel-item-2" class="carousel__control-secondary-r">
+      {% include svg/arrow-r.svg css-class="icon icon--arrow" %}
+    </a>
+  </figure>
 
-
-<div class="carousel">
-  <div class="wrapper">
-    <div class="u-inner-medium">
-
-      <div class="carousel__col-l">
-        <h2 class="heading2 carousel__heading">
-          Desde la estrategia<br>
-          a la ejecución
-        </h2>
-        <p class="text">Qui in id aliqua occaecat reprehenderit laborum magna proident esse labore mollit sunt amet dolor in. Laboris aute et fugiat voluptate excepteur amet ipsum dolore do mollit laborum dolore dolor minim fugiat ad. Incididunt irure excepteur proident anim id adipisicing exercitation anim ea officia ad cillum.</p>
-        <a class="button button--secondary button--xxsmall" href="#">› Nosotros</a>
+  <figure class="carousel__item">
+    <div class="wrapper">
+      <div class="u-inner-medium">
+        <div class="carousel__item__col-l">
+          <h2 class="heading2">
+            Equipo, timing<br>
+            y entregables
+          </h2>
+          <p class="text">Nos gustan los retos y los objetivos realizados. Nos comprometemos en buscar soluciones para entregar los proyectos a tiempo y en las condiciones acordadas. Por eso, trabajamos con una orientación “agile” donde las personas están por encima de los procesos y estamos abiertos a los cambios y a la colaboración con los clientes y sus partners…</p>
+          <a class="button button--secondary button--xxsmall" href="#">› Equipo</a>
+        </div>
+        <div class="carousel__item__col-r">
+          {% include svg/carousel/team.svg css-class="icon icon--carousel" %}
+        </div>
       </div>
-
-      <div class="carousel__col-r">
-        {% include svg/carousel.svg css-class="icon" %}
-      </div>
-
     </div>
+    <a href="#carousel-item-1" class="carousel__control-secondary-l">
+      {% include svg/arrow-l.svg css-class="icon icon--arrow" %}
+    </a>
+    <a href="#carousel-item-3" class="carousel__control-secondary-r">
+      {% include svg/arrow-r.svg css-class="icon icon--arrow" %}
+    </a>
+  </figure>
+
+  <figure class="carousel__item">
+    <div class="wrapper">
+      <div class="u-inner-medium">
+        <div class="carousel__item__col-l">
+          <h2 class="heading2">
+            Martech TMD
+          </h2>
+          <p class="text">Lo importante no es la herramienta sino lo que consigues con ella. Sabemos qué tecnologías de marketing/ventas necesitan la mayoría  de los clientes y tenemos experiencia con algunas herramientas con las que nos sentimos a gusto. Estamos abiertos a integrar  otras herramientas para que funcionen como una gran orquesta.</p>
+          <a class="button button--secondary button--xxsmall" href="#">› Soluciones</a>
+        </div>
+        <div class="carousel__item__col-r">
+          {% include svg/carousel/solutions.svg css-class="icon icon--carousel" %}
+        </div>
+      </div>
+    </div>
+    <a href="#carousel-item-2" class="carousel__control-secondary-l">
+      {% include svg/arrow-l.svg css-class="icon icon--arrow" %}
+    </a>
+  </figure>
+
+  <div class="carousel__controls">
+    <a href="#carousel-item-1" class="carousel__controls__control-button">•</a>
+    <a href="#carousel-item-2" class="carousel__controls__control-button">•</a>
+    <a href="#carousel-item-3" class="carousel__controls__control-button">•</a>
   </div>
+
 </div>

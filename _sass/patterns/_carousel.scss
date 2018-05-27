@@ -242,14 +242,23 @@
 
   .carousel__control-secondary-l {
     left: 0;
+
+    &:hover > .icon--arrow {
+      margin-right: $sp-xxsmall;
+    }
   }
 
   .carousel__control-secondary-r {
     right: 0;
+
+    &:hover > .icon--arrow {
+      margin-left: $sp-xxsmall;
+    }
   }
 
   .icon--arrow {
     vertical-align: middle;
+    transition: $transition-m;
   }
 }
 

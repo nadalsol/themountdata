@@ -11,11 +11,13 @@
 //
 
 @mixin carousel-inactive-button {
-  color: rgba(255, 255, 255, .4);
+  border: $br-base solid $c-light;
+  background-color: transparent;
 }
 
 @mixin carousel-active-button {
-  color: rgba(255, 255, 255, .8);
+  border: $br-base solid $c-light;
+  background-color: $c-light;
 }
 
 %carousel-inactive-button {
@@ -58,12 +60,12 @@
     }
   }
 
-  .carousel--items-#{$carousel-item-count} {
-    &.autoplay .carousel__controls__control-button {
+  .is-items-#{$carousel-item-count} {
+    &.is-autoplay .carousel__controls__control-button {
       animation: controlAnimation-#{$carousel-item-count} #{$carousel-total-duration}s infinite;
     }
 
-    &.autoplay .carousel__item {
+    &.is-autoplay .carousel__item {
       animation: carouselAnimation-#{$carousel-item-count} #{$carousel-total-duration}s infinite;
     }
 
@@ -200,22 +202,22 @@
 
   // Controls (bullets)
   .carousel__controls {
+    @include size($carousel-controls-wd, $carousel-controls-ht);
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: $carousel-controls-bot;
     text-align: center;
   }
 
   .carousel__controls__control-button {
+    @include size($carousel-control-button-wd, $carousel-control-button-ht);
     display: inline-block;
-    margin: 0 .02em;
-    font-size: 3em;
-
-    @extend %carousel-inactive-button;
-
+    margin: $carousel-control-button-m;
+    border-radius: $brr-circle;
     text-align: center;
     text-decoration: none;
-    transition: color .1s;
+    transition: $transition-bg;
+
+    @extend %carousel-inactive-button;
 
     &:hover {
       @extend %carousel-active-button;

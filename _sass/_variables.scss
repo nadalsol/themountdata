@@ -19,6 +19,7 @@ $br-base:                2px !default;
 // Border radius
 $brr-small:              2px !default;
 $brr-base:               3px !default;
+$brr-circle:             50% !default;
 
 // Colors
 $c-dark:                 #282b33 !default;
@@ -253,6 +254,14 @@ $carousel-item-ht-medium-up:      585px !default;
 $carousel-item-display-duration:  5 !default; // seconds
 $carousel-transition-duration:    2 !default; // seconds
 $carousel-display-duration:       $carousel-transition-duration + $carousel-item-display-duration !default;
+
+$carousel-control-button-wd:      6px !default;
+$carousel-control-button-ht:      $carousel-control-button-wd !default;
+$carousel-control-button-m:       $sp-xsmall !default;
+
+$carousel-controls-bot:           $sp-medium !default;
+$carousel-controls-wd:            100% !default;
+$carousel-controls-ht:            floor($carousel-control-button-wd + ($carousel-control-button-m * 2)) !default;
 
 // Forms
 $form-label-mb:                   $sp-base !default;

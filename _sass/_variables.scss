@@ -252,6 +252,19 @@ $button-disabled-o:               .5 !default;
 // Carousel
 $carousel-item-ht-medium-up:      585px !default;
 $carousel-item-display-duration:  5 !default; // seconds
+
+$carousel-item-bgc-1:             $c-lynch !default;
+$carousel-item-bgi-1:             $assets-img-path + "/carousel/bg-us.jpg" !default;
+$carousel-item-bgi-1-medium-up:   $assets-img-path + "/carousel/medium-up/bg-us.jpg" !default;
+
+$carousel-item-bgc-2:             $c-watercourse !default;
+$carousel-item-bgi-2:             $assets-img-path + "/carousel/bg-team.jpg" !default;
+$carousel-item-bgi-2-medium-up:   $assets-img-path + "/carousel/medium-up/bg-team.jpg" !default;
+
+$carousel-item-bgc-3:             $c-cosmic !default;
+$carousel-item-bgi-3:             $assets-img-path + "/carousel/bg-solutions.jpg" !default;
+$carousel-item-bgi-3-medium-up:   $assets-img-path + "/carousel/medium-up/bg-solutions.jpg" !default;
+
 $carousel-transition-duration:    2 !default; // seconds
 $carousel-display-duration:       $carousel-transition-duration + $carousel-item-display-duration !default;
 

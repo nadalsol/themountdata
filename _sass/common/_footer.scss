@@ -38,6 +38,14 @@
     @media ($medium-up) {
       margin-bottom: $sp-small;
     }
+
+    &__address {
+      margin-left: $sp-base;
+    }
+
+    &__contact {
+      margin-left: $sp-xsmall;
+    }
   }
 
   .text {

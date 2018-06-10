@@ -21,12 +21,13 @@
 //
 // Purpose: Size class, to specify different icon sizes.
 //
-// Possible values: `Icon--small`, `Icon--medium`...
+// Possible values: `icon--small`, `icon--medium`...
 //
 
-// address
+// footer
 .icon--small {
-  @include size(14px, 18px);
+  @include size(30px, 30px);
+  vertical-align: middle;
 }
 
 // arrow
@@ -41,11 +42,6 @@
   @media ($medium-up) {
     @include size($header-brand-wd-medium-up, $header-brand-ht-medium-up);
   }
-}
-
-// social
-.icon--medium {
-  @include size(32px, 32px);
 }
 
 // // services

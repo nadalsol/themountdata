@@ -14,7 +14,7 @@
 // Variables and mixins
 @import "variables";
 @import "mixins/button";
-@import "mixins/carousel";
+@import "mixins/item-background";
 @import "mixins/column";
 @import "mixins/focus";
 @import "mixins/form";
@@ -56,4 +56,5 @@
 @import "patterns/legal";
 @import "patterns/nav-legal";
 @import "patterns/nav-main";
+@import "patterns/nav-services";
 @import "patterns/nav-social";

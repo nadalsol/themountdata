@@ -139,15 +139,15 @@
   }
 
   .carousel__item:nth-of-type(1) {
-    @include carousel-item-bg($carousel-item-bgc-1, $carousel-item-bgi-1, $carousel-item-bgi-1-medium-up);
+    @include item-background($carousel-item-bgc-1, $carousel-item-bgi-1, $carousel-item-bgi-1-medium-up);
   }
 
   .carousel__item:nth-of-type(2) {
-    @include carousel-item-bg($carousel-item-bgc-2, $carousel-item-bgi-2, $carousel-item-bgi-2-medium-up);
+    @include item-background($carousel-item-bgc-2, $carousel-item-bgi-2, $carousel-item-bgi-2-medium-up);
   }
 
   .carousel__item:nth-of-type(3) {
-    @include carousel-item-bg($carousel-item-bgc-3, $carousel-item-bgi-3, $carousel-item-bgi-3-medium-up);
+    @include item-background($carousel-item-bgc-3, $carousel-item-bgi-3, $carousel-item-bgi-3-medium-up);
   }
 
   .u-inner-medium {

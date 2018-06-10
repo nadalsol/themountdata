@@ -8,6 +8,40 @@
   list-style: none;
 }
 
+// Turns list items into flex elements
+@mixin list-flex() {
+  @include list-reset;
+  display: flex;
+
+  > li {
+    flex-grow: 1;
+  }
+}
+
+// Turns list items into flex elements
+// Also removes borders from last item
+@mixin list-flex-last($br: $br-small solid $c-light) {
+  @include list-reset;
+
+  @media ($medium-up) {
+    display: flex;
+  }
+
+  > li {
+    flex-grow: 1;
+
+    @media ($medium-up) {
+      border-right: $br;
+    }
+
+    &:last-child {
+      @media ($medium-up) {
+        border-right: 0;
+      }
+    }
+  }
+}
+
 // Turns list items into inline-block
 @mixin list-inline($pdl: $sp-base, $pdr: $sp-base) {
   @include list-reset;

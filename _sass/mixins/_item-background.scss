@@ -1,8 +1,8 @@
-// Carousel mixins
+// Item background mixins
 // -----------------------------------------------------------------------------
 
 // Item background color and images
-@mixin carousel-item-bg($bgc, $bgi, $bgi-mu) {
+@mixin item-background($bgc, $bgi, $bgi-mu) {
   background-color: $bgc;
   background-image: url($bgi);
 

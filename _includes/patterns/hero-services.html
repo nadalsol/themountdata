@@ -1,0 +1,28 @@
+{% assign hero-item = include.hero-item %}
+
+{% case hero-item %}
+  {% when 'data' %}
+    <div class="hero-services hero-services--data">
+      {% include patterns/nav-services.html nav-item='data' %}
+    </div>
+  {% when 'analysis' %}
+    <div class="hero-services hero-services--analysis">
+      {% include patterns/nav-services.html nav-item='analysis' %}
+    </div>
+  {% when 'visualization' %}
+    <div class="hero-services hero-services--visualization">
+      {% include patterns/nav-services.html nav-item='visualization' %}
+    </div>
+  {% when 'action' %}
+    <div class="hero-services hero-services--action">
+      {% include patterns/nav-services.html nav-item='action' %}
+    </div>
+  {% when 'default' %}
+    <div class="hero-services hero-services--default">
+      {% include patterns/nav-services.html nav-item='default' %}
+    </div>
+  {% else %}
+    <div class="hero-services">
+      {% include patterns/nav-services.html %}
+    </div>
+{% endcase %}

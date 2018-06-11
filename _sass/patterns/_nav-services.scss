@@ -2,39 +2,7 @@
 // -----------------------------------------------------------------------------
 
 .nav-services {
-  @include size($nav-services-wd, $nav-services-ht);
-  font-family: $ff-sans-serif-m;
-  font-size: $fz-medium;
-  line-height: $lh-small;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-
-  @media ($medium-up) {
-    @include size($nav-services-wd-medium-up, $nav-services-ht-medium-up);
-  }
-
-  &--data {
-    @include item-background($nav-services-item-bgc-1, $nav-services-item-bgi-1, $nav-services-item-bgi-1-medium-up);
-  }
-
-  &--analysis {
-    @include item-background($nav-services-item-bgc-2, $nav-services-item-bgi-2, $nav-services-item-bgi-2-medium-up);
-  }
-
-  &--visualization {
-    @include item-background($nav-services-item-bgc-3, $nav-services-item-bgi-3, $nav-services-item-bgi-3-medium-up);
-  }
-
-  &--action {
-    @include item-background($nav-services-item-bgc-4, $nav-services-item-bgi-4, $nav-services-item-bgi-4-medium-up);
-  }
-
-  &--default {
-    @include item-background($nav-services-item-bgc-default, $nav-services-item-bgi-default, $nav-services-item-bgi-default-medium-up);
-  }
-
-  ul {
+  &__content {
     @include list-flex-last;
   }
 

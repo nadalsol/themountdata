@@ -294,6 +294,32 @@ $form-field-trn:                  $transition-bc;
 
 $form-textarea-ht:                153px !default;
 
+// Hero services
+$hero-services-wd:                          100% !default;
+$hero-services-ht:                          auto !default;
+$hero-services-wd-medium-up:                100% !default;
+$hero-services-ht-medium-up:                300px !default;
+
+$hero-services-bgc-data:                    $c-dark !default;
+$hero-services-bgi-data:                    $assets-img-path + "/bg-services-data.jpg" !default;
+$hero-services-bgi-data-medium-up:          $assets-img-path + "/medium-up/bg-services-data.jpg" !default;
+
+$hero-services-bgc-analysis:                $c-dark !default;
+$hero-services-bgi-analysis:                $assets-img-path + "/bg-services-analysis.jpg" !default;
+$hero-services-bgi-analysis-medium-up:      $assets-img-path + "/medium-up/bg-services-analysis.jpg" !default;
+
+$hero-services-bgc-visualization:           $c-dark !default;
+$hero-services-bgi-visualization:           $assets-img-path + "/bg-services-visualization.jpg" !default;
+$hero-services-bgi-visualization-medium-up: $assets-img-path + "/medium-up/bg-services-visualization.jpg" !default;
+
+$hero-services-bgc-action:                  $c-dark !default;
+$hero-services-bgi-action:                  $assets-img-path + "/bg-services-action.jpg" !default;
+$hero-services-bgi-action-medium-up:        $assets-img-path + "/medium-up/bg-services-action.jpg" !default;
+
+$hero-services-bgc-default:                 $c-dark !default;
+$hero-services-bgi-default:                 $assets-img-path + "/bg-services.jpg" !default;
+$hero-services-bgi-default-medium-up:       $assets-img-path + "/medium-up/bg-services.jpg" !default;
+
 // Hero video
 $hero-video-wd:                   100% !default;
 $hero-video-ht:                   auto !default;
@@ -313,39 +339,14 @@ $nav-main-c-transparent:          $c-light !default;
 $nav-main-c-transparent-hover:    red !default; // TODO : replace hover color
 
 // Navigation services
-$nav-services-wd:                         100% !default;
-$nav-services-ht:                         auto !default;
-$nav-services-wd-medium-up:               100% !default;
-$nav-services-ht-medium-up:               300px !default;
+$nav-services-c:                    $c-light !default;
+$nav-services-c-hover:              red !default; // TODO : replace hover color
+$nav-services-bgc:                  $c-eastbay !default;
+$nav-services-c-active:             $c-light !default;
+$nav-services-bgc-active:           $c-lynch !default;
 
-$nav-services-c:                          $c-light !default;
-$nav-services-c-hover:                    red !default; // TODO : replace hover color
-$nav-services-bgc:                        $c-eastbay !default;
-$nav-services-c-active:                   $c-light !default;
-$nav-services-bgc-active:                 $c-lynch !default;
-
-$nav-services-c-medium-up:                $c-light !default;
-$nav-services-c-hover-medium-up:          red !default; // TODO : replace hover color
-$nav-services-bgc-medium-up:              $c-lynch !default;
-$nav-services-c-active-medium-up:         $c-eastbay !default;
-$nav-services-bgc-active-medium-up:       $c-lilac !default;
-
-$nav-services-item-bgc-1:                 $c-dark !default;
-$nav-services-item-bgi-1:                 $assets-img-path + "/bg-services-data.jpg" !default;
-$nav-services-item-bgi-1-medium-up:       $assets-img-path + "/medium-up/bg-services-data.jpg" !default;
-
-$nav-services-item-bgc-2:                 $c-dark !default;
-$nav-services-item-bgi-2:                 $assets-img-path + "/bg-services-analysis.jpg" !default;
-$nav-services-item-bgi-2-medium-up:       $assets-img-path + "/medium-up/bg-services-analysis.jpg" !default;
-
-$nav-services-item-bgc-3:                 $c-dark !default;
-$nav-services-item-bgi-3:                 $assets-img-path + "/bg-services-visualization.jpg" !default;
-$nav-services-item-bgi-3-medium-up:       $assets-img-path + "/medium-up/bg-services-visualization.jpg" !default;
-
-$nav-services-item-bgc-4:                 $c-dark !default;
-$nav-services-item-bgi-4:                 $assets-img-path + "/bg-services-action.jpg" !default;
-$nav-services-item-bgi-4-medium-up:       $assets-img-path + "/medium-up/bg-services-action.jpg" !default;
-
-$nav-services-item-bgc-default:           $c-dark !default;
-$nav-services-item-bgi-default:           $assets-img-path + "/bg-services-default.jpg" !default;
-$nav-services-item-bgi-default-medium-up: $assets-img-path + "/medium-up/bg-services-default.jpg" !default;
+$nav-services-c-medium-up:          $c-light !default;
+$nav-services-c-hover-medium-up:    red !default; // TODO : replace hover color
+$nav-services-bgc-medium-up:        $c-lynch !default;
+$nav-services-c-active-medium-up:   $c-eastbay !default;
+$nav-services-bgc-active-medium-up: $c-lilac !default;

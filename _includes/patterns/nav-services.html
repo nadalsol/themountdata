@@ -1,32 +1,18 @@
-{% assign nav-item = include.nav-item %}
-{% case nav-item %}
-  {% when 1 %}
-    {% assign css-class = 'nav-services--data' %}
-  {% when 2 %}
-    {% assign css-class = 'nav-services--analysis' %}
-  {% when 3 %}
-    {% assign css-class = 'nav-services--visualization' %}
-  {% when 4 %}
-    {% assign css-class = 'nav-services--action' %}
-  {% else %}
-    {% assign css-class = 'nav-services--default' %}
-{% endcase %}
-
-<nav class="nav-services {{ css-class }}">
+<nav class="nav-services">
   <div class="wrapper">
 
-    <ul class="u-text-uppercase">
+    <ul class="nav-services__content u-text-uppercase">
       <li>
-        <a class="nav-services__link {% if include.nav-item == 1 %}is-active{% endif %}" href="{{ "/servicios/data" | relative_url }}">Data</a>
+        <a class="nav-services__link {% if include.nav-item == 'data' %}is-active{% endif %}" href="{{ "/servicios/data" | relative_url }}">Data</a>
       </li>
       <li>
-        <a class="nav-services__link {% if include.nav-item == 2 %}is-active{% endif %}" href="{{ "/servicios/analisis" | relative_url }}">Análisis</a>
+        <a class="nav-services__link {% if include.nav-item == 'analysis' %}is-active{% endif %}" href="{{ "/servicios/analisis" | relative_url }}">Análisis</a>
       </li>
       <li>
-        <a class="nav-services__link {% if include.nav-item == 3 %}is-active{% endif %}" href="{{ "/servicios/visualizacion" | relative_url }}">Visualización</a>
+        <a class="nav-services__link {% if include.nav-item == 'visualization' %}is-active{% endif %}" href="{{ "/servicios/visualizacion" | relative_url }}">Visualización</a>
       </li>
       <li>
-        <a class="nav-services__link {% if include.nav-item == 4 %}is-active{% endif %}" href="{{ "/servicios/accion" | relative_url }}">Acción</a>
+        <a class="nav-services__link {% if include.nav-item == 'action' %}is-active{% endif %}" href="{{ "/servicios/accion" | relative_url }}">Acción</a>
       </li>
     </ul>
 

@@ -11,19 +11,19 @@
   }
 
   &__link {
-    @include link($c-light, $nav-main-c-hover);
-
-    @media ($medium-up) {
-      @include link($nav-main-c, $nav-main-c-hover);
-    }
+    @include link($nav-main-c, $nav-main-c-hover);
 
     // &.is-active,
     // &:active {
     //   //
     // }
 
-    .is-transparent & {
-      @include link($nav-main-c-transparent, $nav-main-c-transparent-hover);
+    .header.is-sticky & {
+      @include link($nav-main-c-sticky, $nav-main-c-sticky-hover);
+
+      @media ($medium-up) {
+        @include link($nav-main-c-sticky-medium-up, $nav-main-c-sticky-hover-medium-up);
+      }
     }
   }
 }

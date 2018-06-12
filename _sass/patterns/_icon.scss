@@ -21,7 +21,7 @@
 //
 // Purpose: Size class, to specify different icon sizes.
 //
-// Possible values: `icon--small`, `icon--medium`...
+// Possible values: `icon--small`, `icon--responsive`...
 //
 
 .icon--small {
@@ -43,4 +43,38 @@
 
 .icon--responsive {
   @include size(100%, auto);
+}
+
+
+// Icon colors
+// -----------------------------------------------------------------------------
+// Use: Optional (only if you expect color changes on your <svg> files).
+//
+// Purpose: Fill/Stroke classes, to specify <svg> shape colors.
+//
+// Possible values: `fill-light`, `stroke-light`...
+//
+
+.fill-citron {
+  fill: $c-citron;
+}
+
+.fill-java {
+  fill: $c-java;
+}
+
+.fill-light {
+  fill: $c-light;
+
+  .header.is-sticky & {
+    fill: $c-balticsea;
+  }
+}
+
+.stroke-light {
+  stroke: $c-light;
+
+  .header.is-sticky & {
+    stroke: $c-balticsea;
+  }
 }

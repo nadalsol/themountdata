@@ -25,6 +25,7 @@ $brr-circle:             50% !default;
 $c-dark:                 #282b33 !default;
 $c-light:                #fff !default;
 
+$c-balticsea:            #342d38 !default;
 $c-java:                 #21b7ca !default;
 $c-surfie:               #0c7987 !default;
 $c-lynch:                #606c8c !default;
@@ -33,6 +34,7 @@ $c-fiord:                #434f70 !default;
 $c-eastbay:              #455378 !default;
 $c-mischka:              #d5d8e2 !default;
 $c-lilac:                #eef0f8 !default;
+$c-citron:               #95c11f !default;
 $c-watercourse:          #047154 !default;
 $c-cosmic:               #683361 !default;
 
@@ -134,7 +136,7 @@ $u-inner-large-pd-large-up:       80px 250px !default;
 $u-inner-xlarge-pd:               $sp-small !default;
 $u-inner-xlarge-pd-medium-up:     $sp-giant $sp-big $sp-xxlarge !default;
 
-$u-inner-xxlarge-pd:              sp-giant $sp-small $sp-big !default;
+$u-inner-xxlarge-pd:              $sp-giant $sp-small $sp-big !default;
 $u-inner-xxlarge-pd-medium-up:    360px $sp-big 0 !default;
 $u-inner-xxlarge-pd-large-up:     460px $sp-big 0 !default;
 
@@ -174,15 +176,12 @@ $header-wd:                       100% !default;
 $header-ht:                       floor($header-brand-ht + ($u-inner-xsmall-pdv * 2)) !default;
 $header-wd-medium-up:             $header-wd !default;
 $header-ht-medium-up:             floor($header-brand-ht-medium-up + ($u-inner-xsmall-pdv-medium-up * 2)) !default;
-$header-bg:                       $c-light !default;
-$header-bg-medium-up:             $c-light !default;
-
-$header-bg-transparent:           $header-bg !default;
-$header-bg-transparent-medium-up: transparent !default;
+$header-bg:                       transparent !default;
+$header-bg-sticky:                $c-light !default;
 
 $header-hamburger-wd:             $header-ht !default;
 $header-hamburger-ht:             $header-ht !default;
-$header-hamburger-c:              $c-java !default;
+$header-hamburger-c:              $c-light !default;
 $header-hamburger-bg:             $c-eastbay !default;
 
 
@@ -343,22 +342,25 @@ $hero-services-bgi-default:                 $assets-img-path + "/bg-services.jpg
 $hero-services-bgi-default-medium-up:       $assets-img-path + "/medium-up/bg-services.jpg" !default;
 
 // Hero video
-$hero-video-wd:                   100% !default;
-$hero-video-ht:                   auto !default;
-$hero-video-wd-medium-up:         100% !default;
-$hero-video-ht-medium-up:         780px !default;
-$hero-video-bg:                   $c-eastbay !default;
+$hero-video-wd:                     100% !default;
+$hero-video-ht:                     auto !default;
+$hero-video-wd-medium-up:           100% !default;
+$hero-video-ht-medium-up:           780px !default;
+$hero-video-bg:                     $c-eastbay !default;
 
 // Navigation legal
-$nav-legal-c:                     $c-dark !default;
-$nav-legal-c-hover:               red !default; // TODO : replace hover color
+$nav-legal-c:                       $c-dark !default;
+$nav-legal-c-hover:                 red !default; // TODO : replace hover color
 
 // Navigation main
-$nav-main-c:                      $c-lynch !default;
-$nav-main-c-hover:                red !default; // TODO : replace hover color
+$nav-main-c:                        $c-light !default;
+$nav-main-c-hover:                  red !default; // TODO : replace hover color
 
-$nav-main-c-transparent:          $c-light !default;
-$nav-main-c-transparent-hover:    red !default; // TODO : replace hover color
+$nav-main-c-sticky:                 $c-light !default;
+$nav-main-c-sticky-hover:           red !default; // TODO : replace hover color
+
+$nav-main-c-sticky-medium-up:       $c-lynch !default;
+$nav-main-c-sticky-hover-medium-up: red !default; // TODO : replace hover color
 
 // Navigation services
 $nav-services-c:                    $c-light !default;

@@ -4,18 +4,14 @@
 .header {
   @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, 10);
   background-color: $header-bg;
+  transition: $transition-bg;
 
   @media ($medium-up) {
     @include size($header-wd-medium-up, $header-ht-medium-up);
-    background-color: $header-bg-medium-up;
   }
 
-  &.is-transparent {
-    background-color: $header-bg-transparent;
-
-    @media ($medium-up) {
-      background-color: $header-bg-transparent-medium-up;
-    }
+  &.is-sticky {
+    background-color: $header-bg-sticky;
   }
 
   .u-inner-xsmall {

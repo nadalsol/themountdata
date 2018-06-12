@@ -5,7 +5,13 @@
   background-color: $c-light;
 
   &__heading {
-    margin-bottom: $sp-large;
+    @media ($medium-up) {
+      margin-bottom: $sp-xxlarge;
+    }
+  }
+
+  &__cta {
+    margin-bottom: $sp-xxlarge;
 
     @media ($medium-up) {
       margin-bottom: $sp-big;

@@ -66,6 +66,10 @@ input[type="submit"],
   @include button-secondary;
 }
 
+.button--tertiary {
+  @include button-tertiary;
+}
+
 
 //
 // Button size

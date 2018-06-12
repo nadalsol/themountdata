@@ -31,6 +31,7 @@ $c-lynch:                #606c8c !default;
 $c-chetwode:             #869fe1 !default;
 $c-fiord:                #434f70 !default;
 $c-eastbay:              #455378 !default;
+$c-mischka:              #d5d8e2 !default;
 $c-lilac:                #eef0f8 !default;
 $c-watercourse:          #047154 !default;
 $c-cosmic:               #683361 !default;
@@ -238,6 +239,27 @@ $button-secondary-active-bg:      $c-light !default;
 $button-secondary-active-br:      $br-base solid $c-light !default;
 $button-secondary-active-c:       $c-java !default;
 $button-secondary-active-td:      none !default;
+
+// Button type: tertiary
+$button-tertiary-bg:              transparent !default;
+$button-tertiary-br:              $br-base solid $c-mischka !default;
+$button-tertiary-c:               $c-lynch !default;
+$button-tertiary-td:              none !default;
+
+$button-tertiary-visited-bg:      $button-tertiary-c !default;
+$button-tertiary-visited-br:      $button-tertiary-br !default;
+$button-tertiary-visited-c:       $button-tertiary-c !default;
+$button-tertiary-visited-td:      $button-tertiary-td !default;
+
+$button-tertiary-hover-bg:        $c-mischka !default;
+$button-tertiary-hover-br:        $br-base solid $c-mischka !default;
+$button-tertiary-hover-c:         $c-lynch !default;
+$button-tertiary-hover-td:        none !default;
+
+$button-tertiary-active-bg:       $c-mischka !default;
+$button-tertiary-active-br:       $br-base solid $c-mischka !default;
+$button-tertiary-active-c:        $c-java !default;
+$button-tertiary-active-td:       none !default;
 
 // Button size
 $button-xxsmall-pd:               $sp-xsmall $sp-xxlarge !default;

@@ -27,19 +27,6 @@ h2, .heading2 {
     uppercase,
     normal
   );
-
-  > a {
-    @include link($c-lynch, red); // TODO: replace hover color
-    display: block;
-    margin-top: $sp-xsmall;
-    font-size: $fz-xxsmall;
-    font-weight: $fw-bold;
-    letter-spacing: 2px;
-
-    &:before {
-      content: '› ';
-    }
-  }
 }
 
 h3, .heading3 {

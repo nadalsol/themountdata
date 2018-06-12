@@ -137,6 +137,31 @@
   );
 }
 
+// Button type: tertiary
+@mixin button-tertiary {
+  @include button-type(
+    $button-tertiary-bg,
+    $button-tertiary-br,
+    $button-tertiary-c,
+    $button-tertiary-td,
+
+    $button-tertiary-visited-bg,
+    $button-tertiary-visited-br,
+    $button-tertiary-visited-c,
+    $button-tertiary-visited-td,
+
+    $button-tertiary-hover-bg,
+    $button-tertiary-hover-br,
+    $button-tertiary-hover-c,
+    $button-tertiary-hover-td,
+
+    $button-tertiary-active-bg,
+    $button-tertiary-active-br,
+    $button-tertiary-active-c,
+    $button-tertiary-active-td
+  );
+}
+
 
 //
 // Button size

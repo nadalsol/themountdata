@@ -24,18 +24,15 @@
 // Possible values: `icon--small`, `icon--medium`...
 //
 
-// footer
 .icon--small {
   @include size(30px, 30px);
   vertical-align: middle;
 }
 
-// arrow
 .icon--arrow {
   @include size(19px, 60px);
 }
 
-// brand
 .icon--brand {
   @include size($header-brand-wd, $header-brand-ht);
 
@@ -44,12 +41,6 @@
   }
 }
 
-// // services
-// .icon--large {
-//   @include size(75px, 75px);
-// }
-//
-// // clients
-// .icon--xlarge {
-//   @include size(130px, 82px);
-// }
+.icon--responsive {
+  @include size(100%, auto);
+}

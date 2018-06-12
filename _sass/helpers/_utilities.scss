@@ -11,6 +11,15 @@
   @include clearfix;
 }
 
+// Floats
+.u-float-l {
+  float: left;
+}
+
+.u-float-r {
+  float: right;
+}
+
 // Inners
 .u-inner-xxsmall {
   padding: $u-inner-xxsmall-pd;

@@ -1,10 +1,7 @@
-// Text
+// List
 // -----------------------------------------------------------------------------
-//
-// Regular text paragraphs
-//
 
-.text {
+.list {
   font-family: $ff-sans-serif-b;
   font-size: $fz-base;
 
@@ -14,19 +11,17 @@
     margin-bottom: 0;
   }
 
-  > a {
-    font-weight: $fw-semi-bold;
-  }
-
-  &--small {
-    font-size: $fz-small;
-  }
-
-  &--fiord {
-    color: $c-fiord;
-  }
-
   &--light {
     color: $c-light;
+  }
+
+  &--unstyled {
+    padding-left: 0;
+    font-style: italic;
+    list-style-type: none;
+
+    > li + li {
+      margin-top: $sp-small;
+    }
   }
 }

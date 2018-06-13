@@ -24,11 +24,6 @@
 // Possible values: `icon--small`, `icon--responsive`...
 //
 
-.icon--small {
-  @include size(30px, 30px);
-  vertical-align: middle;
-}
-
 .icon--arrow {
   @include size(19px, 60px);
 }
@@ -41,8 +36,17 @@
   }
 }
 
+.icon--carousel {
+  @include img-responsive(inline-block);
+}
+
 .icon--responsive {
   @include size(100%, auto);
+}
+
+.icon--small {
+  @include size(30px, 30px);
+  vertical-align: middle;
 }
 
 

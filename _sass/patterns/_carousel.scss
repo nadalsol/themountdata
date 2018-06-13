@@ -172,17 +172,8 @@
     }
   }
 
-  .heading2 {
-    color: $c-light;
-  }
-
   .text {
     margin-bottom: $sp-xxlarge;
-    color: $c-light;
-  }
-
-  .icon--carousel {
-    @include img-responsive(inline-block);
   }
 
   // Controls (bullets)

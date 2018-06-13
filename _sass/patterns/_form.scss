@@ -37,11 +37,4 @@
     border-radius: $brr-small;
     resize: none;
   }
-
-  &__buttonset {
-    @media ($medium-up) {
-      display: flex;
-      justify-content: flex-end;
-    }
-  }
 }

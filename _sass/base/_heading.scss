@@ -1,7 +1,9 @@
 // Heading
 // -----------------------------------------------------------------------------
 
-h1, .heading1 {
+// h1
+h1,
+.heading1 {
   @include heading(
     $ff-sans-serif-m,
     $fz-xlarge,
@@ -17,7 +19,9 @@ h1, .heading1 {
   }
 }
 
-h2, .heading2 {
+// h2
+h2,
+.heading2 {
   @include heading(
     $ff-sans-serif-m,
     $fz-xlarge,
@@ -29,7 +33,13 @@ h2, .heading2 {
   );
 }
 
-h3, .heading3 {
+.heading2--light {
+  color: $c-light;
+}
+
+// h3
+h3,
+.heading3 {
   @include heading(
     $ff-sans-serif-m,
     $fz-medium,
@@ -41,7 +51,19 @@ h3, .heading3 {
   );
 }
 
-h4, .heading4 {
+.heading3--light {
+  color: $c-light;
+}
+
+.heading3--hr {
+  padding-bottom: $sp-medium;
+  border-bottom: $br-small solid $c-jaggedice;
+  margin-bottom: $sp-xxlarge;
+}
+
+// h4
+h4,
+.heading4 {
   @include heading(
     $ff-sans-serif-b,
     $fz-medium,
@@ -53,7 +75,9 @@ h4, .heading4 {
   );
 }
 
-h5, .heading5 {
+// h5
+h5,
+.heading5 {
   @include heading(
     $ff-sans-serif-m,
     $fz-xsmall,
@@ -65,7 +89,9 @@ h5, .heading5 {
   );
 }
 
-h6, .heading6 {
+// h6
+h6,
+.heading6 {
   @include heading(
     $ff-sans-serif-m,
     $fz-xsmall,

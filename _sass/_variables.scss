@@ -26,12 +26,14 @@ $c-dark:                 #282b33 !default;
 $c-light:                #fff !default;
 
 $c-balticsea:            #342d38 !default;
+$c-pelorous:             #33a5b4 !default;
 $c-java:                 #21b7ca !default;
 $c-surfie:               #0c7987 !default;
 $c-lynch:                #606c8c !default;
 $c-chetwode:             #869fe1 !default;
 $c-fiord:                #434f70 !default;
 $c-eastbay:              #455378 !default;
+$c-jaggedice:            #c6e7eb !default;
 $c-mischka:              #d5d8e2 !default;
 $c-lilac:                #eef0f8 !default;
 $c-citron:               #95c11f !default;
@@ -374,3 +376,7 @@ $nav-services-c-hover-medium-up:    red !default; // TODO : replace hover color
 $nav-services-bgc-medium-up:        $c-lynch !default;
 $nav-services-c-active-medium-up:   $c-eastbay !default;
 $nav-services-bgc-active-medium-up: $c-lilac !default;
+
+// Service
+$service-bg-l:                      $c-light !default;
+$service-bg-r:                      $c-pelorous !default;

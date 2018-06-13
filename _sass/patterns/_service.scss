@@ -1,0 +1,36 @@
+// Service
+// -----------------------------------------------------------------------------
+
+.service {
+  .wrapper {
+    @media ($medium-up) {
+      display: flex;
+    }
+  }
+
+  &__col-l {
+    background-color: $service-bg-l;
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(62%, left);
+    }
+  }
+
+  &__col-r {
+    background-color: $service-bg-r;
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(38%, left);
+    }
+  }
+
+  &__heading {
+    margin-bottom: $sp-xxlarge;
+  }
+
+  &__content {
+    margin-bottom: $sp-big;
+  }
+}

@@ -1,0 +1,23 @@
+// Button set
+// -----------------------------------------------------------------------------
+
+.button-set {
+  @media ($medium-up) {
+    display: flex;
+  }
+
+  .button + .button {
+    margin-top: $sp-small;
+
+    @media ($medium-up) {
+      margin-top: 0;
+      margin-left: $sp-xxlarge;
+    }
+  }
+
+  &--r {
+    @media ($medium-up) {
+      justify-content: flex-end;
+    }
+  }
+}

@@ -2,6 +2,12 @@
 // -----------------------------------------------------------------------------
 
 .nav-services {
+  @include positioner(fixed, $nav-services-wd, $nav-services-ht, top, $nav-services-top, left, 0, 10);
+
+  @media ($medium-up) {
+    top: $nav-services-top-medium-up;
+  }
+
   &__content {
     @include list-flex-last;
   }

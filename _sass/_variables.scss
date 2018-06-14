@@ -366,6 +366,11 @@ $nav-main-c-sticky-medium-up:       $c-lynch !default;
 $nav-main-c-sticky-hover-medium-up: red !default; // TODO : replace hover color
 
 // Navigation services
+$nav-services-wd:                   100% !default;
+$nav-services-ht:                   auto !default;
+$nav-services-top:                  $header-ht !default;
+$nav-services-top-medium-up:        $header-ht-medium-up !default;
+
 $nav-services-c:                    $c-light !default;
 $nav-services-c-hover:              red !default; // TODO : replace hover color
 $nav-services-bgc:                  $c-eastbay !default;

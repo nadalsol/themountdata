@@ -12,18 +12,30 @@
 
   &__link {
     @include link($nav-main-c, $nav-main-c-hover);
+    position: relative;
 
-    // &.is-active,
-    // &:active {
-    //   //
-    // }
-
-    .header.is-sticky & {
-      @include link($nav-main-c-sticky, $nav-main-c-sticky-hover);
-
+    &.is-active:after {
       @media ($medium-up) {
-        @include link($nav-main-c-sticky-medium-up, $nav-main-c-sticky-hover-medium-up);
+        @include positioner-center-h(15px, 2px);
+        content: '';
+        bottom: -$sp-xxsmall;
+        background-color: $c-light;
+        transition: $transition-bg;
       }
+    }
+  }
+}
+
+.header.is-sticky .nav-main__link {
+  @include link($nav-main-c-sticky, $nav-main-c-sticky-hover);
+
+  @media ($medium-up) {
+    @include link($nav-main-c-sticky-medium-up, $nav-main-c-sticky-hover-medium-up);
+  }
+
+  &.is-active:after {
+    @media ($medium-up) {
+      background-color: $c-dark;
     }
   }
 }

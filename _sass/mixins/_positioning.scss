@@ -12,10 +12,10 @@
 }
 
 // Positioner for horizontal centering
-// @mixin positioner-center-h($wd, $ht) {
-//   position: absolute;
-//   width: $wd;
-//   height: $ht;
-//   left: 50%;
-//   margin-left: -($wd / 2);
-// }
+@mixin positioner-center-h($wd, $ht) {
+  position: absolute;
+  width: $wd;
+  height: $ht;
+  left: 50%;
+  margin-left: -($wd / 2);
+}

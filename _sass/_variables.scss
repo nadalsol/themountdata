@@ -350,7 +350,9 @@ $hero-video-wd:                     100% !default;
 $hero-video-ht:                     auto !default;
 $hero-video-wd-medium-up:           100% !default;
 $hero-video-ht-medium-up:           780px !default;
-$hero-video-bg:                     $c-eastbay !default;
+$hero-video-bgc:                    $c-eastbay !default;
+$hero-video-bgi:                    $assets-img-path + "/bg-hero-video.jpg" !default;
+$hero-video-bgi-medium-up:          $assets-img-path + "/medium-up/bg-hero-video.jpg" !default;
 
 // Navigation legal
 $nav-legal-c:                       $c-dark !default;

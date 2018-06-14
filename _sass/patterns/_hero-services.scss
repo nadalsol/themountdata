@@ -33,5 +33,9 @@
 
   &--default {
     @include item-background($hero-services-bgc-default, $hero-services-bgi-default, $hero-services-bgi-default-medium-up);
+
+    @media ($medium-up) {
+      height: $hero-services-ht-default-medium-up;
+    }
   }
 }

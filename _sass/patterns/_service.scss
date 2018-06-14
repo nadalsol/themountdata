@@ -9,7 +9,6 @@
   }
 
   &__col-l {
-    background-color: $service-bg-l;
     text-align: center;
 
     @media ($medium-up) {
@@ -18,7 +17,6 @@
   }
 
   &__col-r {
-    background-color: $service-bg-r;
     text-align: center;
 
     @media ($medium-up) {

@@ -51,14 +51,18 @@ h3,
   );
 }
 
-.heading3--light {
-  color: $c-light;
-}
-
 .heading3--hr {
   padding-bottom: $sp-medium;
-  border-bottom: $br-small solid $c-jaggedice;
+  border-bottom: $br-small solid $c-lynch;
   margin-bottom: $sp-xxlarge;
+}
+
+.heading3--light {
+  color: $c-light;
+
+  &.heading3--hr {
+    border-bottom-color: $c-jaggedice;
+  }
 }
 
 // h4

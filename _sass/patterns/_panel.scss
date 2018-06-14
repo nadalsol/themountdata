@@ -1,0 +1,18 @@
+// Panel
+// -----------------------------------------------------------------------------
+
+.panel {
+  background-color: $panel-bgc-default;
+
+  &--light {
+    background-color: $panel-bgc-light;
+  }
+
+  &--athens {
+    background-color: $panel-bgc-athens;
+  }
+
+  &--pelorous {
+    background-color: $panel-bgc-pelorous;
+  }
+}

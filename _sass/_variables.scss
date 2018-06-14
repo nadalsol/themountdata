@@ -35,6 +35,7 @@ $c-fiord:                #434f70 !default;
 $c-eastbay:              #455378 !default;
 $c-jaggedice:            #c6e7eb !default;
 $c-mischka:              #d5d8e2 !default;
+$c-athens:               #edeff4 !default;
 $c-lilac:                #eef0f8 !default;
 $c-citron:               #95c11f !default;
 $c-watercourse:          #047154 !default;
@@ -377,6 +378,8 @@ $nav-services-bgc-medium-up:        $c-lynch !default;
 $nav-services-c-active-medium-up:   $c-eastbay !default;
 $nav-services-bgc-active-medium-up: $c-lilac !default;
 
-// Service
-$service-bg-l:                      $c-light !default;
-$service-bg-r:                      $c-pelorous !default;
+// Panel
+$panel-bgc-default:                 transparent !default;
+$panel-bgc-light:                   $c-light !default;
+$panel-bgc-athens:                  $c-athens !default;
+$panel-bgc-pelorous:                $c-pelorous !default;

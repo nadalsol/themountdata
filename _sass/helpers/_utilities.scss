@@ -43,6 +43,12 @@
   @media ($medium-up) {
     padding: $u-inner-small-pd-medium-up;
   }
+
+  & + & {
+    @media ($medium-up) {
+      padding-top: 0;
+    }
+  }
 }
 
 .u-inner-medium {

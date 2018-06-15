@@ -5,15 +5,7 @@
   background-color: $c-light;
   text-align: center;
 
-  &__content {
-    margin-bottom: $sp-large;
-
-    @media ($medium-up) {
-      margin-bottom: $sp-big;
-    }
-  }
-
-  &__img {
-    @include img-responsive(inline-block);
+  &__heading {
+    margin-bottom: 0;
   }
 }

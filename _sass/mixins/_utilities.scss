@@ -38,8 +38,8 @@
 // 1. Same width relative to the parent
 // 2. Scale the height according to the width, otherwise you get stretching
 //
-@mixin img-responsive-full() {
-  display: block;
+@mixin img-responsive-full($dp: block) {
+  display: $dp;
   width: 100%; // 1
   height: auto; // 2
 }

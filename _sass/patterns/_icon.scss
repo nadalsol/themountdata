@@ -36,12 +36,20 @@
   }
 }
 
-.icon--hero-about-values {
-  @include size(286px, 311px);
+.icon--business {
+  @include size(264px, 194px);
+}
 
-  @media ($medium-up) {
-    @include size(444px, 416px);
-  }
+.icon--business-medium-up {
+  @include size(100%, auto);
+}
+
+.icon--values {
+  @include size(286px, 311px);
+}
+
+.icon--values-medium-up {
+  @include size(444px, 416px);
 }
 
 .icon--small {

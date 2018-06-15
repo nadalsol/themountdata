@@ -1,0 +1,26 @@
+// About values
+// -----------------------------------------------------------------------------
+
+.about-values {
+  background-color: $c-light;
+
+  &__content {
+    @media ($medium-up) {
+      display: flex;
+    }
+  }
+
+  &__col-l {
+    @media ($medium-up) {
+      @include col(50%, left);
+      margin-right: $sp-xxlarge;
+    }
+  }
+
+  &__col-r {
+    @media ($medium-up) {
+      @include col(50%, left);
+      margin-left: $sp-xxlarge;
+    }
+  }
+}

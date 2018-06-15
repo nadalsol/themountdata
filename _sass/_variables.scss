@@ -65,8 +65,9 @@ $sp-xlarge:              floor($sp-base * 7) !default;  // 35px
 $sp-xxlarge:             floor($sp-base * 8) !default;  // 40px
 $sp-xxxlarge:            floor($sp-base * 9) !default;  // 45px
 $sp-big:                 floor($sp-base * 12) !default; // 60px
-$sp-huge:                floor($sp-base * 18) !default; // 90px
-$sp-giant:               floor($sp-base * 30) !default; // 150px
+$sp-huge:                floor($sp-base * 15) !default; // 75px
+$sp-giant:               floor($sp-base * 18) !default; // 90px
+$sp-colossal:            floor($sp-base * 30) !default; // 150px
 
 // Fonts
 $ff-sans-serif-b:        'Barlow', sans-serif !default;
@@ -131,16 +132,16 @@ $u-inner-small-pd:                $sp-xxlarge $sp-small !default;
 $u-inner-small-pd-medium-up:      80px $sp-big !default;
 
 $u-inner-medium-pd:               $sp-xxlarge $sp-small !default;
-$u-inner-medium-pd-medium-up:     80px $sp-giant !default;
+$u-inner-medium-pd-medium-up:     80px $sp-colossal !default;
 
 $u-inner-large-pd:                $sp-xxlarge $sp-small !default;
-$u-inner-large-pd-medium-up:      80px $sp-giant !default;
+$u-inner-large-pd-medium-up:      80px $sp-colossal !default;
 $u-inner-large-pd-large-up:       80px 250px !default;
 
 $u-inner-xlarge-pd:               $sp-small !default;
-$u-inner-xlarge-pd-medium-up:     $sp-giant $sp-big $sp-xxlarge !default;
+$u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
 
-$u-inner-xxlarge-pd:              $sp-giant $sp-small $sp-big !default;
+$u-inner-xxlarge-pd:              $sp-colossal $sp-small $sp-big !default;
 $u-inner-xxlarge-pd-medium-up:    360px $sp-big 0 !default;
 $u-inner-xxlarge-pd-large-up:     460px $sp-big 0 !default;
 
@@ -161,7 +162,7 @@ $footer-legal-c:                  $c-dark !default;
 $footer-legal-bg:                 $c-lilac !default;
 
 // Header (should go after Helpers)
-$header-brand-wd:                 $sp-giant !default;
+$header-brand-wd:                 $sp-colossal !default;
 $header-brand-ht:                 18px !default;
 $header-brand-wd-medium-up:       floor($header-brand-wd * 2) !default;
 $header-brand-ht-medium-up:       floor($header-brand-ht * 2) !default;

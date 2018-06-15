@@ -1,0 +1,35 @@
+// About team
+// -----------------------------------------------------------------------------
+
+.about-team {
+  background-color: $c-light;
+  text-align: center;
+
+  .u-inner-small {
+    @media ($medium-up) {
+      display: flex;
+    }
+  }
+
+  &__col-l {
+    @media ($medium-up) {
+      @include col(50%, left);
+      margin-right: $sp-xxlarge;
+    }
+
+    @media ($large-up) {
+      margin-right: $sp-huge;
+    }
+  }
+
+  &__col-r {
+    @media ($medium-up) {
+      @include col(50%, center);
+      margin-left: $sp-xxlarge;
+    }
+
+    @media ($large-up) {
+      margin-left: $sp-huge;
+    }
+  }
+}

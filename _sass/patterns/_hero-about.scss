@@ -1,0 +1,46 @@
+// Hero about
+// -----------------------------------------------------------------------------
+
+.hero-about {
+  @include size($hero-about-wd, $hero-about-ht);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+
+  @media ($medium-up) {
+    @include size($hero-about-wd-medium-up, $hero-about-ht-medium-up);
+  }
+
+  &--team {
+    @include item-background($hero-about-bgc-team, $hero-about-bgi-team, $hero-about-bgi-team-medium-up);
+  }
+
+  &--values {
+    @include item-background($hero-about-bgc-values, $hero-about-bgi-values, $hero-about-bgi-values-medium-up);
+  }
+
+  &--clients {
+    @include item-background($hero-about-bgc-clients, $hero-about-bgi-clients, $hero-about-bgi-clients-medium-up);
+  }
+
+  &__heading {
+    @include positioner-center-all;
+    @include heading(
+      $ff-sans-serif-m,
+      $fz-xsmall,
+      $fw-bold,
+      $lh-large,
+      $c-light,
+      uppercase,
+      normal
+    );
+    margin-bottom: 0;
+    letter-spacing: 1px;
+  }
+
+  &__img {
+    @include positioner-center-all;
+  }
+}

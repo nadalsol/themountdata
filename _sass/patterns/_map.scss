@@ -1,0 +1,13 @@
+// Map
+// -----------------------------------------------------------------------------
+
+.map {
+  @include size($map-wd, $map-ht);
+  position: relative;
+  background-color: $map-bgc;
+
+  > iframe {
+    border: 0;
+    opacity: .5;
+  }
+}

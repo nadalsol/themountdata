@@ -19,3 +19,11 @@
   left: 50%;
   margin-left: -($wd / 2);
 }
+
+// Positioner for horizontal and vertical centering
+@mixin positioner-center-all() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

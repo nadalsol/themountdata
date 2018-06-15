@@ -32,6 +32,18 @@
   height: auto; // 2
 }
 
+// Responsive image, full width
+// Force images to scale the same width of their parents
+//
+// 1. Same width relative to the parent
+// 2. Scale the height according to the width, otherwise you get stretching
+//
+@mixin img-responsive-full() {
+  display: block;
+  width: 100%; // 1
+  height: auto; // 2
+}
+
 // Margins
 // @mixin margin($mr-property, $mr-value) {
 //   margin-#{$mr-property}: $mr-value;

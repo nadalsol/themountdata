@@ -1,0 +1,11 @@
+// About clients
+// -----------------------------------------------------------------------------
+
+.about-clients {
+  background-color: $c-light;
+  text-align: center;
+
+  &__content {
+    margin-bottom: $sp-xxlarge;
+  }
+}

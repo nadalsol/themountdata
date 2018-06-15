@@ -1,0 +1,54 @@
+<svg class="{{ include.css-class }}" width="286" height="311" viewBox="0 0 286 311" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Infografía</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-0.927643785%" y1="49.9939703%" x2="100.886735%" y2="49.9939703%" id="linearGradient-1">
+            <stop stop-color="#19B5DB" offset="0%"></stop>
+            <stop stop-color="#ACDBE1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.946011132%" y1="49.9793135%" x2="100.868367%" y2="49.9793135%" id="linearGradient-2">
+            <stop stop-color="#75BD7B" offset="0%"></stop>
+            <stop stop-color="#D0DF91" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="86.0005566%" y1="85.9592764%" x2="14.0402597%" y2="13.9989796%" id="linearGradient-3">
+            <stop stop-color="#A8BE17" offset="0%"></stop>
+            <stop stop-color="#B6CE61" offset="72.93%"></stop>
+            <stop stop-color="#BAD47A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="MOB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MOB---NOSOTROS" transform="translate(-17.000000, -1311.000000)">
+            <g id="Infografía" transform="translate(17.500000, 1307.000000)">
+                <path d="M0.878621818,130.684931 C0.878621818,85.0923859 37.9604644,48 83.5592467,48 C129.149417,48 166.248483,85.0923859 166.248483,130.684931 C166.248483,176.277476 129.149417,213.369861 83.5592467,213.369861 C37.9604644,213.369861 0.878621818,176.277476 0.878621818,130.684931 Z" id="Path" stroke="url(#linearGradient-1)" stroke-width="2"></path>
+                <path d="M118.816818,130.684931 C118.816818,85.0923859 155.89866,48 201.497443,48 C247.087613,48 284.186679,85.0923859 284.186679,130.684931 C284.186679,176.277476 247.087613,213.369861 201.497443,213.369861 C155.89866,213.369861 118.816818,176.277476 118.816818,130.684931 Z" id="Path-Copy" stroke="url(#linearGradient-2)" stroke-width="2"></path>
+                <path d="M84.6463222,171.683664 C99.5702064,157.036309 120.010819,147.991079 142.528345,147.991079 C165.126006,147.991079 185.637502,157.104246 200.578948,171.848612 M219.679771,200.918501 C223.255676,210.15635 225.217581,220.191423 225.217581,230.67601 C225.217581,276.268555 188.118515,313.360941 142.528345,313.360941 C96.9295623,313.360941 59.8477197,276.268555 59.8477197,230.67601 C59.8477197,220.572805 61.6686442,210.887005 64.9996591,201.929742" id="Path-Copy-2" stroke="url(#linearGradient-3)" stroke-width="2"></path>
+                <text id="customer-analytics" font-family="Montserrat-Regular, Montserrat" font-size="14" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="10.8289233" y="130">CUSTOMER </tspan>
+                    <tspan x="10.8289233" y="146">ANALYTICS</tspan>
+                </text>
+                <text id="customer-experiences" font-family="Montserrat-Regular, Montserrat" font-size="14" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="190.23711" y="129.636835">CUSTOMER </tspan>
+                    <tspan x="172.42911" y="145.636835">EXPERIENCES</tspan>
+                </text>
+                <text id="customer-communicati" font-family="Montserrat-Regular, Montserrat" font-size="14" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="99.3916505" y="246.830526">CUSTOMER </tspan>
+                    <tspan x="69.8866505" y="262.830526">COMMUNICATIONS</tspan>
+                </text>
+                <text id="Targeting" font-family="Barlow-Italic, Barlow" font-size="14" font-style="italic" font-weight="normal" line-spacing="14" fill="#FFFFFF">
+                    <tspan x="52.338947" y="186.438835">Targeting</tspan>
+                </text>
+                <text id="Testing-and-personal" font-family="Barlow-Italic, Barlow" font-size="14" font-style="italic" font-weight="normal" line-spacing="14" fill="#FFFFFF">
+                    <tspan x="104.847541" y="14.0978861">Testing and </tspan>
+                    <tspan x="93.8295411" y="28.0978861">personalization</tspan>
+                </text>
+                <path d="M142.120885,124.5 L142.120885,41.8924943" id="Line-7" stroke="#A7B1B3" stroke-width="2" stroke-linecap="square"></path>
+                <ellipse id="Oval-Copy" fill="#A7B1B3" transform="translate(142.173619, 125.770697) scale(-1, -1) translate(-142.173619, -125.770697) " cx="142.173619" cy="125.770697" rx="2.18519782" ry="2.15535955"></ellipse>
+                <text id="Customer-communities" font-family="Barlow-Italic, Barlow" font-size="14" font-style="italic" font-weight="normal" line-spacing="12" fill="#FFFFFF">
+                    <tspan x="164.681641" y="184.932213">Customer </tspan>
+                    <tspan x="164.681641" y="196.932213">communities</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

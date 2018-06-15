@@ -25,6 +25,7 @@ $brr-circle:             50% !default;
 $c-dark:                 #282b33 !default;
 $c-light:                #fff !default;
 
+$c-downriver:            #0f1d5e !default;
 $c-balticsea:            #342d38 !default;
 $c-pelorous:             #33a5b4 !default;
 $c-java:                 #21b7ca !default;
@@ -318,6 +319,24 @@ $form-field-trn:                  $transition-bc;
 
 $form-textarea-ht:                153px !default;
 
+// Hero about
+$hero-about-wd:                             100% !default;
+$hero-about-ht:                             480px !default;
+$hero-about-wd-medium-up:                   100% !default;
+$hero-about-ht-medium-up:                   585px !default;
+
+$hero-about-bgc-team:                       $c-dark !default;
+$hero-about-bgi-team:                       $assets-img-path + "/bg-hero-about-team.jpg" !default;
+$hero-about-bgi-team-medium-up:             $assets-img-path + "/medium-up/bg-hero-about-team.jpg" !default;
+
+$hero-about-bgc-values:                     $c-dark !default;
+$hero-about-bgi-values:                     $assets-img-path + "/bg-hero-about-values.jpg" !default;
+$hero-about-bgi-values-medium-up:           $assets-img-path + "/medium-up/bg-hero-about-values.jpg" !default;
+
+$hero-about-bgc-clients:                    $c-dark !default;
+$hero-about-bgi-clients:                    $assets-img-path + "/bg-hero-about-clients.jpg" !default;
+$hero-about-bgi-clients-medium-up:          $assets-img-path + "/medium-up/bg-hero-about-clients.jpg" !default;
+
 // Hero services
 $hero-services-wd:                          100% !default;
 $hero-services-ht:                          auto !default;
@@ -353,6 +372,11 @@ $hero-video-ht-medium-up:           780px !default;
 $hero-video-bgc:                    $c-eastbay !default;
 $hero-video-bgi:                    $assets-img-path + "/bg-hero-video.jpg" !default;
 $hero-video-bgi-medium-up:          $assets-img-path + "/medium-up/bg-hero-video.jpg" !default;
+
+// Map
+$map-wd:                            100% !default;
+$map-ht:                            530px !default;
+$map-bgc:                           $c-downriver !default;
 
 // Navigation legal
 $nav-legal-c:                       $c-dark !default;

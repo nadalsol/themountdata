@@ -1,0 +1,31 @@
+<svg class="{{ include.css-class }}" width="444" height="416" viewBox="0 0 444 416" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-0.927643785%" y1="49.9939703%" x2="100.886735%" y2="49.9939703%" id="linearGradient-1">
+            <stop stop-color="#19B5DB" offset="0%"></stop>
+            <stop stop-color="#ACDBE1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.946011132%" y1="49.9793135%" x2="100.868367%" y2="49.9793135%" id="linearGradient-2">
+            <stop stop-color="#75BD7B" offset="0%"></stop>
+            <stop stop-color="#D0DF91" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="86.0005566%" y1="85.9592764%" x2="14.0402597%" y2="13.9989796%" id="linearGradient-3">
+            <stop stop-color="#A8BE17" offset="0%"></stop>
+            <stop stop-color="#B6CE61" offset="72.93%"></stop>
+            <stop stop-color="#BAD47A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="NOSOTROS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10_NOSOTROS" transform="translate(-498.000000, -1354.000000)" stroke-width="2">
+            <g id="Infografía" transform="translate(170.000000, 1355.000000)">
+                <g id="Group-2" transform="translate(329.000000, 0.000000)">
+                    <path d="M257.707417,137.735434 C253.200248,204.808491 197.185005,258 128.993282,258 C57.8528355,258 0,200.130716 0,129 C0,57.8692844 57.8528355,0 128.993282,0 C185.088081,0 232.943328,35.9935086 250.665565,86.0991094" id="Path" stroke="url(#linearGradient-1)"></path>
+                    <path d="M191.325042,86.1172895 C209.035543,36.0022153 256.881102,0 312.993282,0 C384.120294,0 442,57.8692844 442,129 C442,200.130716 384.120294,258 312.993282,258 C244.816332,258 188.843008,204.851615 184.297955,137.817011" id="Path-Copy" stroke="url(#linearGradient-2)"></path>
+                    <path d="M92,285 C92,213.869284 149.852835,156 220.993282,156 C292.120294,156 350,213.869284 350,285 C350,356.130716 292.120294,414 220.993282,414 C149.852835,414 92,356.130716 92,285 Z" id="Path-Copy-2" stroke="url(#linearGradient-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

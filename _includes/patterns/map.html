@@ -1,0 +1,27 @@
+<div class="map">
+  <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.928280099711!2d2.1580767154261142!3d41.39736387926329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a29422621f9b%3A0x28a7e4757dc08aad!2sCarrer+de+C%C3%B2rsega%2C+329%2C+08037+Barcelona!5e0!3m2!1sca!2ses!4v1529056730178" width="100%" height="530" frameborder="0" allowfullscreen></iframe>
+</div>
+
+{% comment %}
+<!-- API key must be activated in order to use the Google Maps API -->
+<!-- https://cloud.google.com/maps-platform/user-guide/account-changes/#no-plan -->
+
+<div class="map" id="map"></div>
+
+<script type="text/javascript">
+  // Add Google Maps to "About" page
+  function initMap() {
+    var mapDiv = document.getElementById('map'),
+        spotInit = {lat: 41.3973639, lng: 2.1580767};
+
+    var map = new google.maps.Map(mapDiv, {
+      center: spotInit,
+      zoom: 3,
+      mapTypeControl: false,
+      streetViewControl: false,
+      scrollwheel: false
+    });
+  }
+</script>
+<script src="//maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+{% endcomment %}

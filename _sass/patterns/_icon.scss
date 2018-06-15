@@ -21,7 +21,7 @@
 //
 // Purpose: Size class, to specify different icon sizes.
 //
-// Possible values: `icon--small`, `icon--responsive`...
+// Possible values: `icon--small`, `icon--medium`...
 //
 
 .icon--arrow {
@@ -36,12 +36,12 @@
   }
 }
 
-.icon--carousel {
-  @include img-responsive(inline-block);
-}
+.icon--hero-about-values {
+  @include size(286px, 311px);
 
-.icon--responsive {
-  @include size(100%, auto);
+  @media ($medium-up) {
+    @include size(444px, 416px);
+  }
 }
 
 .icon--small {

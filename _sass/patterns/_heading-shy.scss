@@ -1,0 +1,39 @@
+// Heading shy
+// -----------------------------------------------------------------------------
+//
+// Shows a background image, hiding the text:
+// https://stackoverflow.com/questions/471510/hide-text-using-css
+//
+// 1. Hide the text
+//
+
+.heading-shy {
+  @include size($heading-shy-wd, $heading-shy-ht);
+  margin-bottom: 0;
+  text-indent: 100%; // 1
+  white-space: nowrap; // 1
+  overflow: hidden; // 1
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media ($medium-up) {
+    @include size($heading-shy-wd-medium-up, $heading-shy-ht-medium-up);
+  }
+
+  &--data {
+    @include item-background($heading-shy-bgc-data, $heading-shy-bgi-data, $heading-shy-bgi-data-medium-up);
+  }
+
+  &--analysis {
+    @include item-background($heading-shy-bgc-analysis, $heading-shy-bgi-analysis, $heading-shy-bgi-analysis-medium-up);
+  }
+
+  &--visualization {
+    @include item-background($heading-shy-bgc-visualization, $heading-shy-bgi-visualization, $heading-shy-bgi-visualization-medium-up);
+  }
+
+  &--action {
+    @include item-background($heading-shy-bgc-action, $heading-shy-bgi-action, $heading-shy-bgi-action-medium-up);
+  }
+}

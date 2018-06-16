@@ -1,0 +1,27 @@
+// Solution default
+// -----------------------------------------------------------------------------
+
+.solution-default {
+  @include item-background($solution-default-bgc, $solution-default-bgi, $solution-default-bgi-medium-up);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+
+  &__heading {
+    margin-bottom: $sp-xxlarge;
+    color: $c-light;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-big;
+    }
+  }
+
+  &__img {
+    margin-bottom: $sp-small;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-xxlarge;
+    }
+  }
+}

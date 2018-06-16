@@ -2,7 +2,10 @@
 // -----------------------------------------------------------------------------
 
 .service-default {
-  padding-top: $sp-giant;
+  @include item-background($service-default-bgc, $service-default-bgi, $service-default-bgi-medium-up);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 
   &__heading {
     margin-bottom: $sp-xxlarge;

@@ -1,0 +1,22 @@
+{% assign hero-item = include.hero-item %}
+
+{% case hero-item %}
+  {% when 'sherpa-campaign' %}
+    <div class="hero-solutions">
+      {% include patterns/nav-secondary-solutions.html nav-item='sherpa-campaign' %}
+    </div>
+  {% when 'sherpa-dashboard' %}
+    <div class="hero-solutions">
+      {% include patterns/nav-secondary-solutions.html nav-item='sherpa-dashboard' %}
+    </div>
+  {% when 'default' %}
+    <div class="hero-solutions">
+      {% include patterns/nav-secondary-solutions.html nav-item='default' %}
+      {% include patterns/solution-default.html %}
+    </div>
+  {% else %}
+    <div class="hero-solutions">
+      {% include patterns/nav-secondary-solutions.html nav-item='default' %}
+      {% include patterns/solution-default.html %}
+    </div>
+{% endcase %}

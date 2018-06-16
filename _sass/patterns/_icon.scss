@@ -62,6 +62,10 @@
   vertical-align: middle;
 }
 
+.icon--solutions {
+  @include size(347px, 324px);
+}
+
 
 // Icon colors
 // -----------------------------------------------------------------------------

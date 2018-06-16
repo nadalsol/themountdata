@@ -1,0 +1,41 @@
+// Navigation secondary
+// -----------------------------------------------------------------------------
+
+.nav-secondary {
+  @include positioner(fixed, $nav-secondary-wd, $nav-secondary-ht, top, $nav-secondary-top, left, 0, 10);
+  font-family: $ff-sans-serif-m;
+  font-size: $fz-medium;
+  line-height: $lh-small;
+  background-color: $nav-secondary-bgc;
+
+  @media ($medium-up) {
+    top: $nav-secondary-top-medium-up;
+  }
+
+  &__content {
+    @include list-flex-last;
+  }
+
+  &__link {
+    @include link($nav-secondary-link-c, $nav-secondary-link-c-hover);
+    display: block;
+    padding: $sp-small $sp-xxxlarge;
+    background-color: $nav-secondary-link-bgc;
+
+    @media ($medium-up) {
+      @include link($nav-secondary-link-c-medium-up, $nav-secondary-link-c-hover-medium-up);
+      background-color: $nav-secondary-link-bgc-medium-up;
+    }
+
+    &.is-active,
+    &:active {
+      color: $nav-secondary-link-c-active;
+      background-color: $nav-secondary-link-bgc-active;
+
+      @media ($medium-up) {
+        color: $nav-secondary-link-c-active-medium-up;
+        background-color: $nav-secondary-link-bgc-active-medium-up;
+      }
+    }
+  }
+}

@@ -319,6 +319,33 @@ $form-field-trn:                  $transition-bc;
 
 $form-textarea-ht:                153px !default;
 
+// Heading shy
+$heading-shy-wd:                            100% !default;
+$heading-shy-ht:                            auto !default;
+$heading-shy-wd-medium-up:                  100% !default;
+$heading-shy-ht-medium-up:                  300px !default;
+
+$heading-shy-bgc-data:                      $c-dark !default;
+$heading-shy-bgi-data:                      $assets-img-path + "/bg-services-data.jpg" !default;
+$heading-shy-bgi-data-medium-up:            $assets-img-path + "/medium-up/bg-services-data.jpg" !default;
+
+$heading-shy-bgc-analysis:                  $c-dark !default;
+$heading-shy-bgi-analysis:                  $assets-img-path + "/bg-services-analysis.jpg" !default;
+$heading-shy-bgi-analysis-medium-up:        $assets-img-path + "/medium-up/bg-services-analysis.jpg" !default;
+
+$heading-shy-bgc-visualization:             $c-dark !default;
+$heading-shy-bgi-visualization:             $assets-img-path + "/bg-services-visualization.jpg" !default;
+$heading-shy-bgi-visualization-medium-up:   $assets-img-path + "/medium-up/bg-services-visualization.jpg" !default;
+
+$heading-shy-bgc-action:                    $c-dark !default;
+$heading-shy-bgi-action:                    $assets-img-path + "/bg-services-action.jpg" !default;
+$heading-shy-bgi-action-medium-up:          $assets-img-path + "/medium-up/bg-services-action.jpg" !default;
+
+$heading-shy-bgc-default:                   $c-dark !default;
+$heading-shy-bgi-default:                   $assets-img-path + "/bg-services.jpg" !default;
+$heading-shy-bgi-default-medium-up:         $assets-img-path + "/medium-up/bg-services.jpg" !default;
+$heading-shy-ht-default-medium-up:          730px !default;
+
 // Hero about
 $hero-about-wd:                             100% !default;
 $hero-about-ht:                             480px !default;
@@ -336,33 +363,6 @@ $hero-about-bgi-values-medium-up:           $assets-img-path + "/medium-up/bg-he
 $hero-about-bgc-clients:                    $c-dark !default;
 $hero-about-bgi-clients:                    $assets-img-path + "/bg-hero-about-clients.jpg" !default;
 $hero-about-bgi-clients-medium-up:          $assets-img-path + "/medium-up/bg-hero-about-clients.jpg" !default;
-
-// Hero services
-$hero-services-wd:                          100% !default;
-$hero-services-ht:                          auto !default;
-$hero-services-wd-medium-up:                100% !default;
-$hero-services-ht-medium-up:                300px !default;
-
-$hero-services-bgc-data:                    $c-dark !default;
-$hero-services-bgi-data:                    $assets-img-path + "/bg-services-data.jpg" !default;
-$hero-services-bgi-data-medium-up:          $assets-img-path + "/medium-up/bg-services-data.jpg" !default;
-
-$hero-services-bgc-analysis:                $c-dark !default;
-$hero-services-bgi-analysis:                $assets-img-path + "/bg-services-analysis.jpg" !default;
-$hero-services-bgi-analysis-medium-up:      $assets-img-path + "/medium-up/bg-services-analysis.jpg" !default;
-
-$hero-services-bgc-visualization:           $c-dark !default;
-$hero-services-bgi-visualization:           $assets-img-path + "/bg-services-visualization.jpg" !default;
-$hero-services-bgi-visualization-medium-up: $assets-img-path + "/medium-up/bg-services-visualization.jpg" !default;
-
-$hero-services-bgc-action:                  $c-dark !default;
-$hero-services-bgi-action:                  $assets-img-path + "/bg-services-action.jpg" !default;
-$hero-services-bgi-action-medium-up:        $assets-img-path + "/medium-up/bg-services-action.jpg" !default;
-
-$hero-services-bgc-default:                 $c-dark !default;
-$hero-services-bgi-default:                 $assets-img-path + "/bg-services.jpg" !default;
-$hero-services-bgi-default-medium-up:       $assets-img-path + "/medium-up/bg-services.jpg" !default;
-$hero-services-ht-default-medium-up:        730px !default;
 
 // Hero video
 $hero-video-wd:                     100% !default;
@@ -392,27 +392,37 @@ $nav-main-c-sticky-hover:           red !default; // TODO : replace hover color
 $nav-main-c-sticky-medium-up:       $c-lynch !default;
 $nav-main-c-sticky-hover-medium-up: red !default; // TODO : replace hover color
 
-// Navigation services
-$nav-services-wd:                        100% !default;
-$nav-services-ht:                        auto !default;
-$nav-services-top:                       $header-ht !default;
-$nav-services-top-medium-up:             $header-ht-medium-up !default;
-$nav-services-bgc:                       $c-mischka !default;
+// Navigation secondary
+$nav-secondary-wd:                        100% !default;
+$nav-secondary-ht:                        auto !default;
+$nav-secondary-top:                       $header-ht !default;
+$nav-secondary-top-medium-up:             $header-ht-medium-up !default;
+$nav-secondary-bgc:                       $c-mischka !default;
 
-$nav-services-link-c:                    $c-light !default;
-$nav-services-link-c-hover:              red !default; // TODO : replace hover color
-$nav-services-link-bgc:                  $c-eastbay !default;
-$nav-services-link-c-active:             $c-light !default;
-$nav-services-link-bgc-active:           $c-lynch !default;
+$nav-secondary-link-c:                    $c-light !default;
+$nav-secondary-link-c-hover:              red !default; // TODO : replace hover color
+$nav-secondary-link-bgc:                  $c-eastbay !default;
+$nav-secondary-link-c-active:             $c-light !default;
+$nav-secondary-link-bgc-active:           $c-lynch !default;
 
-$nav-services-link-c-medium-up:          $c-light !default;
-$nav-services-link-c-hover-medium-up:    red !default; // TODO : replace hover color
-$nav-services-link-bgc-medium-up:        $c-lynch !default;
-$nav-services-link-c-active-medium-up:   $c-eastbay !default;
-$nav-services-link-bgc-active-medium-up: $c-lilac !default;
+$nav-secondary-link-c-medium-up:          $c-light !default;
+$nav-secondary-link-c-hover-medium-up:    red !default; // TODO : replace hover color
+$nav-secondary-link-bgc-medium-up:        $c-lynch !default;
+$nav-secondary-link-c-active-medium-up:   $c-eastbay !default;
+$nav-secondary-link-bgc-active-medium-up: $c-lilac !default;
 
 // Panel
-$panel-bgc-default:                 transparent !default;
-$panel-bgc-light:                   $c-light !default;
-$panel-bgc-athens:                  $c-athens !default;
-$panel-bgc-pelorous:                $c-pelorous !default;
+$panel-bgc-default:                       transparent !default;
+$panel-bgc-light:                         $c-light !default;
+$panel-bgc-athens:                        $c-athens !default;
+$panel-bgc-pelorous:                      $c-pelorous !default;
+
+// Service default
+$service-default-bgc:                     $c-dark !default;
+$service-default-bgi:                     $assets-img-path + "/bg-services.jpg" !default;
+$service-default-bgi-medium-up:           $assets-img-path + "/medium-up/bg-services.jpg" !default;
+
+// Solution default
+$solution-default-bgc:                    $c-dark !default;
+$solution-default-bgi:                    $assets-img-path + "/bg-solutions.jpg" !default;
+$solution-default-bgi-medium-up:          $assets-img-path + "/medium-up/bg-solutions.jpg" !default;

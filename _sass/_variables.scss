@@ -393,22 +393,23 @@ $nav-main-c-sticky-medium-up:       $c-lynch !default;
 $nav-main-c-sticky-hover-medium-up: red !default; // TODO : replace hover color
 
 // Navigation services
-$nav-services-wd:                   100% !default;
-$nav-services-ht:                   auto !default;
-$nav-services-top:                  $header-ht !default;
-$nav-services-top-medium-up:        $header-ht-medium-up !default;
+$nav-services-wd:                        100% !default;
+$nav-services-ht:                        auto !default;
+$nav-services-top:                       $header-ht !default;
+$nav-services-top-medium-up:             $header-ht-medium-up !default;
+$nav-services-bgc:                       $c-mischka !default;
 
-$nav-services-c:                    $c-light !default;
-$nav-services-c-hover:              red !default; // TODO : replace hover color
-$nav-services-bgc:                  $c-eastbay !default;
-$nav-services-c-active:             $c-light !default;
-$nav-services-bgc-active:           $c-lynch !default;
+$nav-services-link-c:                    $c-light !default;
+$nav-services-link-c-hover:              red !default; // TODO : replace hover color
+$nav-services-link-bgc:                  $c-eastbay !default;
+$nav-services-link-c-active:             $c-light !default;
+$nav-services-link-bgc-active:           $c-lynch !default;
 
-$nav-services-c-medium-up:          $c-light !default;
-$nav-services-c-hover-medium-up:    red !default; // TODO : replace hover color
-$nav-services-bgc-medium-up:        $c-lynch !default;
-$nav-services-c-active-medium-up:   $c-eastbay !default;
-$nav-services-bgc-active-medium-up: $c-lilac !default;
+$nav-services-link-c-medium-up:          $c-light !default;
+$nav-services-link-c-hover-medium-up:    red !default; // TODO : replace hover color
+$nav-services-link-bgc-medium-up:        $c-lynch !default;
+$nav-services-link-c-active-medium-up:   $c-eastbay !default;
+$nav-services-link-bgc-active-medium-up: $c-lilac !default;
 
 // Panel
 $panel-bgc-default:                 transparent !default;

@@ -3,6 +3,7 @@
 
 .nav-services {
   @include positioner(fixed, $nav-services-wd, $nav-services-ht, top, $nav-services-top, left, 0, 10);
+  background-color: $nav-services-bgc;
 
   @media ($medium-up) {
     top: $nav-services-top-medium-up;
@@ -13,24 +14,24 @@
   }
 
   &__link {
-    @include link($nav-services-c, $nav-services-c-hover);
+    @include link($nav-services-link-c, $nav-services-link-c-hover);
     display: block;
     padding: $sp-small $sp-xxxlarge;
-    background-color: $nav-services-bgc;
+    background-color: $nav-services-link-bgc;
 
     @media ($medium-up) {
-      @include link($nav-services-c-medium-up, $nav-services-c-hover-medium-up);
-      background-color: $nav-services-bgc-medium-up;
+      @include link($nav-services-link-c-medium-up, $nav-services-link-c-hover-medium-up);
+      background-color: $nav-services-link-bgc-medium-up;
     }
 
     &.is-active,
     &:active {
-      color: $nav-services-c-active;
-      background-color: $nav-services-bgc-active;
+      color: $nav-services-link-c-active;
+      background-color: $nav-services-link-bgc-active;
 
       @media ($medium-up) {
-        color: $nav-services-c-active-medium-up;
-        background-color: $nav-services-bgc-active-medium-up;
+        color: $nav-services-link-c-active-medium-up;
+        background-color: $nav-services-link-bgc-active-medium-up;
       }
     }
   }

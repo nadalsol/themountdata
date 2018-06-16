@@ -49,9 +49,7 @@
 
   &__hamburger {
     @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, 0, right, 0, 11);
-    font-size: $fz-large;
-    line-height: $lh-xsmall;
-    color: $header-hamburger-c;
+    line-height: $header-hamburger-ht;
     background-color: $header-hamburger-bg;
   }
 

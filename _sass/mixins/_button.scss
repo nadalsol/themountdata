@@ -20,7 +20,7 @@
   cursor: pointer;
 
   &:focus {
-    outline: 0;
+    @include tab-focus;
   }
 
   &[disabled],

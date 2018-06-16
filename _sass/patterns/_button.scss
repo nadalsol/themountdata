@@ -22,12 +22,6 @@ input[type="submit"] {
   user-select: none; // 2
 }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
 [role="button"] {
   color: inherit;
   cursor: pointer;

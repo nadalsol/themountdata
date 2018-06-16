@@ -44,6 +44,11 @@
   @include size(100%, auto);
 }
 
+.icon--hamburger {
+  @include size(20px, 16px);
+  vertical-align: middle;
+}
+
 .icon--values {
   @include size(286px, 311px);
 }

@@ -15,4 +15,40 @@
   &--pelorous {
     background-color: $panel-bgc-pelorous;
   }
+
+  &--cols {
+    @media ($medium-up) {
+      display: flex;
+    }
+  }
+
+  .u-inner-small + .u-inner-small {
+    @media ($medium-up) {
+      padding-top: 0;
+    }
+  }
+
+  &__col-l {
+    @media ($medium-up) {
+      @include col(50%, left);
+    }
+
+    > .u-inner-xsmall {
+      @media ($medium-up) {
+        padding-right: $sp-small;
+      }
+    }
+  }
+
+  &__col-r {
+    @media ($medium-up) {
+      @include col(50%, left);
+    }
+
+    > .u-inner-xsmall {
+      @media ($medium-up) {
+        padding-left: $sp-small;
+      }
+    }
+  }
 }

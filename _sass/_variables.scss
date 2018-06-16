@@ -426,3 +426,8 @@ $service-default-bgi-medium-up:           $assets-img-path + "/medium-up/bg-serv
 $solution-default-bgc:                    $c-dark !default;
 $solution-default-bgi:                    $assets-img-path + "/bg-solutions.jpg" !default;
 $solution-default-bgi-medium-up:          $assets-img-path + "/medium-up/bg-solutions.jpg" !default;
+
+// Solution
+$solution-bgc:                            $c-light !default;
+$solution-bgi:                            $assets-img-path + "/bg-solutions.jpg" !default;
+$solution-bgi-medium-up:                  $assets-img-path + "/medium-up/bg-solutions.jpg" !default;

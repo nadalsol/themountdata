@@ -1,0 +1,17 @@
+// Solution
+// -----------------------------------------------------------------------------
+
+.solution {
+  @include item-background($solution-bgc, $solution-bgi, $solution-bgi-medium-up);
+  background-repeat: no-repeat;
+  background-position: center 750px;
+  background-size: cover;
+
+  &__content {
+    margin-bottom: $sp-small;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-xxlarge;
+    }
+  }
+}

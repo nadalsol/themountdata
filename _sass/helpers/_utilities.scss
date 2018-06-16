@@ -91,15 +91,6 @@
   }
 }
 
-// Margins
-// .u-mb-xxl {
-//   @include margin(bottom, $sp-xxlarge);
-// }
-//
-// .u-mr-base {
-//   @include margin(right, $sp-base);
-// }
-
 // Responsive images
 .u-img-responsive {
   @include img-responsive;

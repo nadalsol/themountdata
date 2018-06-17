@@ -16,6 +16,9 @@
   }
 
   &--r {
+    display: flex;
+    justify-content: center;
+
     @media ($medium-up) {
       justify-content: flex-end;
     }

@@ -1,30 +1,49 @@
 // Navigation secondary
 // -----------------------------------------------------------------------------
+//
+// 1. Touch device friendly
+//
 
 .nav-secondary {
-  @include positioner(fixed, $nav-secondary-wd, $nav-secondary-ht, top, $nav-secondary-top, left, 0, 10);
+  @include list-reset;
+  width: $nav-secondary-wd;
   font-family: $ff-sans-serif-m;
-  font-size: $fz-medium;
+  font-size: $fz-base;
   line-height: $lh-small;
-  background-color: $nav-secondary-bgc;
+  border-bottom: $br-small solid $c-light;
 
   @media ($medium-up) {
-    top: $nav-secondary-top-medium-up;
-  }
+    @include positioner-center-h($nav-secondary-wd-medium-up, auto, $nav-secondary-top-medium-up, 10);
+    border-bottom: 0;
 
-  &__content {
-    @include list-flex-last;
+    &:before {
+      @include pseudo-arrow(36px, 10px, $nav-secondary-link-bgc);
+    }
   }
 
   &__link {
     @include link($nav-secondary-link-c, $nav-secondary-link-c-hover);
-    display: block;
-    padding: $sp-small $sp-xxxlarge;
+    position: relative;
+    display: block; // 1
+    padding: $sp-small $sp-small $sp-small $sp-xxlarge;
     background-color: $nav-secondary-link-bgc;
+    transition: $transition-bg;
 
     @media ($medium-up) {
-      @include link($nav-secondary-link-c-medium-up, $nav-secondary-link-c-hover-medium-up);
-      background-color: $nav-secondary-link-bgc-medium-up;
+      padding-left: $sp-small;
+    }
+
+    &:hover {
+      background-color: $nav-secondary-link-bgc-hover;
+    }
+
+    &.is-subitem:after {
+      position: absolute;
+      content: '\005E';
+      top: $sp-small;
+      right: $sp-small;
+      font-size: $fz-xsmall;
+      color: $c-java;
     }
 
     &.is-active,
@@ -32,9 +51,8 @@
       color: $nav-secondary-link-c-active;
       background-color: $nav-secondary-link-bgc-active;
 
-      @media ($medium-up) {
-        color: $nav-secondary-link-c-active-medium-up;
-        background-color: $nav-secondary-link-bgc-active-medium-up;
+      &.is-subitem:after {
+        transform: rotate(180deg);
       }
     }
   }

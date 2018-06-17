@@ -1,0 +1,37 @@
+// Navigation tertiary
+// -----------------------------------------------------------------------------
+//
+// 1. Touch device friendly
+//
+
+.nav-tertiary {
+  @include list-reset;
+  padding-top: $sp-small;
+  padding-bottom: $sp-small;
+  font-family: $ff-sans-serif-m;
+  font-size: $fz-base;
+  line-height: $lh-small;
+  background-color: $nav-tertiary-link-bgc;
+
+  &__link {
+    @include link($nav-tertiary-link-c, $nav-tertiary-link-c-hover);
+    display: block; // 1
+    padding: $sp-xxsmall $sp-small $sp-xxsmall $sp-big;
+    background-color: $nav-tertiary-link-bgc;
+    transition: $transition-bg;
+
+    @media ($medium-up) {
+      padding-left: $sp-xxlarge;
+    }
+
+    &:hover {
+      background-color: $nav-tertiary-link-bgc-hover;
+    }
+
+    &.is-active,
+    &:active {
+      color: $nav-tertiary-link-c-active;
+      background-color: $nav-tertiary-link-bgc-active;
+    }
+  }
+}

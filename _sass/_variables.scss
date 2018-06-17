@@ -34,6 +34,7 @@ $c-lynch:                #606c8c !default;
 $c-chetwode:             #869fe1 !default;
 $c-fiord:                #434f70 !default;
 $c-eastbay:              #455378 !default;
+$c-manatee:              #7481a3 !default;
 $c-jaggedice:            #c6e7eb !default;
 $c-mischka:              #d5d8e2 !default;
 $c-athens:               #edeff4 !default;
@@ -170,12 +171,9 @@ $header-brand-ht-medium-up:       floor($header-brand-ht * 2) !default;
 $header-nav-po:                   absolute !default;
 $header-nav-wd:                   100% !default;
 $header-nav-ht:                   auto !default;
-$header-nav-bg:                   $c-eastbay !default;
 $header-nav-po-medium-up:         static !default;
 $header-nav-wd-medium-up:         auto !default;
 $header-nav-ht-medium-up:         auto !default;
-$header-nav-bg-medium-up:         transparent !default;
-$header-nav-lh-medium-up:         $lh-xlarge !default;
 
 $header-wd:                       100% !default;
 $header-ht:                       floor($header-brand-ht + ($u-inner-xsmall-pdv * 2)) !default;
@@ -321,7 +319,7 @@ $form-textarea-ht:                153px !default;
 
 // Heading shy
 $heading-shy-wd:                            100% !default;
-$heading-shy-ht:                            auto !default;
+$heading-shy-ht:                            200px !default;
 $heading-shy-wd-medium-up:                  100% !default;
 $heading-shy-ht-medium-up:                  300px !default;
 
@@ -383,33 +381,40 @@ $nav-legal-c:                       $c-dark !default;
 $nav-legal-c-hover:                 red !default; // TODO : replace hover color
 
 // Navigation main
-$nav-main-c:                        $c-light !default;
-$nav-main-c-hover:                  red !default; // TODO : replace hover color
+$nav-main-link-c:                         $c-light !default;
+$nav-main-link-bgc:                       $c-eastbay !default;
+$nav-main-link-c-medium-up:               $c-lynch !default;
+$nav-main-link-bgc-medium-up:             transparent !default;
 
-$nav-main-c-sticky:                 $c-light !default;
-$nav-main-c-sticky-hover:           red !default; // TODO : replace hover color
+$nav-main-link-c-hover:                   red !default; // TODO : replace hover color
+$nav-main-link-bgc-hover:                 $c-manatee !default;
+$nav-main-link-c-hover-medium-up:         red !default; // TODO : replace hover color
+$nav-main-link-bgc-hover-medium-up:       transparent !default;
 
-$nav-main-c-sticky-medium-up:       $c-lynch !default;
-$nav-main-c-sticky-hover-medium-up: red !default; // TODO : replace hover color
+$nav-main-link-c-active:                  $c-light !default;
+$nav-main-link-bgc-active:                $c-lynch !default;
+$nav-main-link-c-active-medium-up:        $c-lynch !default;
+$nav-main-link-bgc-active-medium-up:      transparent !default;
 
 // Navigation secondary
 $nav-secondary-wd:                        100% !default;
-$nav-secondary-ht:                        auto !default;
-$nav-secondary-top:                       $header-ht !default;
-$nav-secondary-top-medium-up:             $header-ht-medium-up !default;
-$nav-secondary-bgc:                       $c-mischka !default;
+$nav-secondary-wd-medium-up:              300px !default;
+$nav-secondary-top-medium-up:             72px !default;
 
+$nav-secondary-link-bgc:                  $c-eastbay !default;
 $nav-secondary-link-c:                    $c-light !default;
 $nav-secondary-link-c-hover:              red !default; // TODO : replace hover color
-$nav-secondary-link-bgc:                  $c-eastbay !default;
+$nav-secondary-link-bgc-hover:            $c-manatee !default;
 $nav-secondary-link-c-active:             $c-light !default;
 $nav-secondary-link-bgc-active:           $c-lynch !default;
 
-$nav-secondary-link-c-medium-up:          $c-light !default;
-$nav-secondary-link-c-hover-medium-up:    red !default; // TODO : replace hover color
-$nav-secondary-link-bgc-medium-up:        $c-lynch !default;
-$nav-secondary-link-c-active-medium-up:   $c-eastbay !default;
-$nav-secondary-link-bgc-active-medium-up: $c-lilac !default;
+// Navigation tertiary
+$nav-tertiary-link-bgc:                   $c-lynch !default;
+$nav-tertiary-link-c:                     $c-light !default;
+$nav-tertiary-link-c-hover:               red !default; // TODO : replace hover color
+$nav-tertiary-link-bgc-hover:             $c-manatee !default;
+$nav-tertiary-link-c-active:              $c-light !default;
+$nav-tertiary-link-bgc-active:            $c-lynch !default;
 
 // Panel
 $panel-bgc-default:                       transparent !default;

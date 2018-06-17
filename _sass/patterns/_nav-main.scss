@@ -1,41 +1,60 @@
 // Navigation main
 // -----------------------------------------------------------------------------
+//
+// 1. Touch device friendly
+//
 
 .nav-main {
-  @include list-inline-first-last($sp-xsmall, $sp-xsmall);
+  @include list-reset;
   font-family: $ff-sans-serif-m;
-  font-size: $fz-xsmall;
+  font-size: $fz-base;
+  line-height: $lh-small;
 
   @media ($medium-up) {
-    font-weight: $fw-bold;
+    @include list-inline-last($sp-xsmall, $sp-xsmall);
+  }
+
+  > li {
+    position: relative;
   }
 
   &__link {
-    @include link($nav-main-c, $nav-main-c-hover);
+    @include link($nav-main-link-c, $nav-main-link-c-hover);
     position: relative;
+    display: block; // 1
+    padding: $sp-small;
+    background-color: $nav-main-link-bgc;
+    transition: $transition-bg;
 
-    &.is-active:after {
+    @media ($medium-up) {
+      @include link($nav-main-link-c-medium-up, $nav-main-link-c-hover-medium-up);
+      font-size: $fz-xsmall;
+      font-weight: $fw-bold;
+      padding: 0;
+      background-color: $nav-main-link-bgc-medium-up;
+    }
+
+    &:hover {
+      background-color: $nav-main-link-bgc-hover;
+
       @media ($medium-up) {
-        @include positioner-center-h(15px, 2px);
-        content: '';
-        bottom: -$sp-xxsmall;
-        background-color: $c-light;
-        transition: $transition-bg;
+        background-color: $nav-main-link-bgc-hover-medium-up;
+      }
+    }
+
+    &.is-active,
+    &:active {
+      color: $nav-main-link-c-active;
+      background-color: $nav-main-link-bgc-active;
+
+      @media ($medium-up) {
+        color: $nav-main-link-c-active-medium-up;
+        background-color: $nav-main-link-bgc-active-medium-up;
       }
     }
   }
 }
 
-.header.is-sticky .nav-main__link {
-  @include link($nav-main-c-sticky, $nav-main-c-sticky-hover);
-
-  @media ($medium-up) {
-    @include link($nav-main-c-sticky-medium-up, $nav-main-c-sticky-hover-medium-up);
-  }
-
-  &.is-active:after {
-    @media ($medium-up) {
-      background-color: $c-dark;
-    }
-  }
-}
+// .header.is-sticky .nav-main__link {
+//   //
+// }

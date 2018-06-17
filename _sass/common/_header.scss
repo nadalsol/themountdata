@@ -35,13 +35,9 @@
 
   &__nav {
     @include positioner($header-nav-po, $header-nav-wd, $header-nav-ht, top, $header-ht, left, 0, 11);
-    background-color: $header-nav-bg;
-    text-align: center;
 
     @media ($medium-up) {
       @include positioner($header-nav-po-medium-up, $header-nav-wd-medium-up, $header-nav-ht-medium-up, top, auto, left, auto, auto);
-      background-color: $header-nav-bg-medium-up;
-      line-height: $header-nav-lh-medium-up;
       float: right;
       text-align: right;
     }

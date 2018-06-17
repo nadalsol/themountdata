@@ -1,0 +1,15 @@
+// Pseudo arrow
+// -----------------------------------------------------------------------------
+
+@mixin pseudo-arrow($wd, $ht, $bgc) {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -$ht;
+  left: 50%;
+  margin-left: -($wd / 2);
+	border-left: ($wd / 2) solid transparent;
+	border-right: ($wd / 2) solid transparent;
+	border-bottom: $ht solid $bgc;
+}

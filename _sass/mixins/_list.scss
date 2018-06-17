@@ -55,17 +55,13 @@
 
 // Turns list items into inline-block
 // Also removes padding from first and last items
-@mixin list-inline-first-last($pdl: $sp-base, $pdr: $sp-base) {
+@mixin list-inline-last($pdl: $sp-base, $pdr: $sp-base) {
   @include list-reset;
 
   > li {
     display: inline-block;
     padding-left: $pdl;
     padding-right: $pdr;
-
-    &:first-child {
-      padding-left: 0;
-    }
 
     &:last-child {
       padding-right: 0;

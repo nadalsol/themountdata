@@ -37,13 +37,10 @@
       background-color: $nav-secondary-link-bgc-hover;
     }
 
-    &.is-subitem:after {
-      position: absolute;
-      content: '\005E';
-      top: $sp-small;
-      right: $sp-small;
-      font-size: $fz-xsmall;
-      color: $c-java;
+    &.is-subitem {
+      background-image: url($assets-img-path + "/icon-arrow-d.png");
+      background-repeat: no-repeat;
+      background-position: right $sp-medium;
     }
 
     &.is-active,
@@ -51,8 +48,8 @@
       color: $nav-secondary-link-c-active;
       background-color: $nav-secondary-link-bgc-active;
 
-      &.is-subitem:after {
-        transform: rotate(180deg);
+      &.is-subitem {
+        background-image: url($assets-img-path + "/icon-arrow-u.png");
       }
     }
   }

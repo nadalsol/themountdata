@@ -30,7 +30,7 @@
       @include link($nav-main-link-c-medium-up, $nav-main-link-c-hover-medium-up);
       font-size: $fz-xsmall;
       font-weight: $fw-bold;
-      padding: 0;
+      padding: $sp-xxsmall 0;
       background-color: $nav-main-link-bgc-medium-up;
     }
 

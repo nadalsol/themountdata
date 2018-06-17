@@ -36,4 +36,12 @@
   &--action {
     @include item-background($heading-shy-bgc-action, $heading-shy-bgi-action, $heading-shy-bgi-action-medium-up);
   }
+
+  &--sherpa-campaign {
+    @include item-background($heading-shy-bgc-sherpa-campaign, $heading-shy-bgi-sherpa-campaign, $heading-shy-bgi-sherpa-campaign-medium-up);
+  }
+
+  &--sherpa-dashboard {
+    @include item-background($heading-shy-bgc-sherpa-dashboard, $heading-shy-bgi-sherpa-dashboard, $heading-shy-bgi-sherpa-dashboard-medium-up);
+  }
 }

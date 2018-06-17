@@ -4,6 +4,7 @@
 // and the DOM is ready, even if all the graphics haven't loaded yet.         //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
+
 $(document).ready(function() {
 
   var header = $('#header'),
@@ -13,20 +14,20 @@ $(document).ready(function() {
   /**
    * Manage `is-sticky` state for `header`
    */
-  var toggleIsSticky = function() {
-    var scrollTop = $(window).scrollTop();
-    if (scrollTop > 0) {
-      header.addClass('is-sticky');
-    } else {
-      header.removeClass('is-sticky');
-    }
-  };
-
-  toggleIsSticky();
-
-  $(window).scroll(function() {
-    toggleIsSticky();
-  });
+  // var toggleIsSticky = function() {
+  //   var scrollTop = $(window).scrollTop();
+  //   if (scrollTop > 0) {
+  //     header.addClass('is-sticky');
+  //   } else {
+  //     header.removeClass('is-sticky');
+  //   }
+  // };
+  //
+  // toggleIsSticky();
+  //
+  // $(window).scroll(function() {
+  //   toggleIsSticky();
+  // });
 
   /**
    * Toggle `header-nav` visibility, via hamburger menu
@@ -45,6 +46,7 @@ $(document).ready(function() {
 // is fully loaded, including all frames, objects and images.                 //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
+
 // $(window).on('load', function() {
 //
 //   // your js code here...

@@ -3,11 +3,13 @@
     <div class="u-inner-medium">
 
       <div class="hero-about__img is-medium-hidden">
-        {% include icons/values.svg css-class="icon icon--values" %}
+        {% comment %}{% include icons/about-values.svg css-class="icon icon--values" %}{% endcomment %}
+        <img class="u-img-responsive" src="{{ "/assets/img/about-values.png" | relative_url }}" alt="Values">
       </div>
 
       <div class="hero-about__img is-small-hidden">
-        {% include icons/medium-up/values.svg css-class="icon icon--values-medium-up" %}
+        {% comment %}{% include icons/medium-up/about-values.svg css-class="icon icon--values-medium-up" %}{% endcomment %}
+        <img class="u-img-responsive" src="{{ "/assets/img/medium-up/about-values.png" | relative_url }}" alt="Values">
       </div>
 
     </div>

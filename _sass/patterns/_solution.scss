@@ -4,8 +4,12 @@
 .solution {
   @include item-background($solution-bgc, $solution-bgi, $solution-bgi-medium-up);
   background-repeat: no-repeat;
-  background-position: center 750px;
+  background-position: center 450px;
   background-size: cover;
+
+  @media ($medium-up) {
+    background-position: center 750px;
+  }
 
   &__content {
     margin-bottom: $sp-small;

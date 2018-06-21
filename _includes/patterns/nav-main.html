@@ -1,42 +1,11 @@
 <ul class="nav-main u-text-uppercase">
   <li>
     <a id="services" class="nav-main__link" href="{{ site.baseurl }}/servicios">Servicios</a>
-    <ul id="nav-secondary-services" class="nav-secondary u-text-left is-medium-hidden">
-      <li>
-        <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/servicios/data">Data</a>
-        <ul class="nav-tertiary">
-          <li>
-            <a class="nav-tertiary__link" href="#">Data sources</a>
-          </li>
-          <li>
-            <a class="nav-tertiary__link" href="#">Data stores</a>
-          </li>
-          <li>
-            <a class="nav-tertiary__link" href="#">Data governance</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/servicios/analisis">Análisis</a>
-      </li>
-      <li>
-        <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/servicios/visualizacion">Visualización</a>
-      </li>
-      <li>
-        <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/servicios/accion">Acción</a>
-      </li>
-    </ul>
+    {% include patterns/nav-secondary-services.html %}
   </li>
   <li>
     <a id="solutions" class="nav-main__link" href="{{ site.baseurl }}/soluciones">Soluciones</a>
-    <ul id="nav-secondary-solutions" class="nav-secondary u-text-left is-medium-hidden">
-      <li>
-        <a class="nav-secondary__link" href="{{ site.baseurl }}/soluciones/sherpa-campaign">Sherpa campaign</a>
-      </li>
-      <li>
-        <a class="nav-secondary__link" href="{{ site.baseurl }}/soluciones/sherpa-dashboard">Sherpa dashboard</a>
-      </li>
-    </ul>
+    {% include patterns/nav-secondary-solutions.html %}
   </li>
   <li>
     <a class="nav-main__link" href="{{ site.baseurl }}/nosotros">Nosotros</a>

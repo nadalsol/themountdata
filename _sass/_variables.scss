@@ -44,7 +44,8 @@ $c-watercourse:          #047154 !default;
 $c-cosmic:               #683361 !default;
 
 // Scaffolding
-$assets-path:            "/themountdata/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
+// $assets-path:            "/themountdata/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
+$assets-path:            "/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
 $assets-img-path:        $assets-path + "/img" !default;
 
 $body-bg:                $c-light !default;

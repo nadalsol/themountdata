@@ -10,9 +10,9 @@ $(document).ready(function() {
   var header = $('#header'),
       headerHamburger = $('#header-hamburger'),
       headerNav = $('#header-nav'),
-      services = $('#services'),
+      navMainServices = $('#nav-main-services'),
       navSecondaryServices = $('#nav-secondary-services'),
-      solutions = $('#solutions'),
+      navMainSolutions = $('#nav-main-solutions'),
       navSecondarySolutions = $('#nav-secondary-solutions');
 
   /**
@@ -36,26 +36,26 @@ $(document).ready(function() {
   /**
    * Toggle `nav-secondary-services` visibility, via nav-main menu
    */
-  services.click(function(event) {
+  navMainServices.click(function(event) {
     event.preventDefault();
 
-    services.addClass('is-active');
+    navMainServices.addClass('is-active');
     navSecondaryServices.removeClass('is-medium-hidden');
 
-    solutions.removeClass('is-active');
+    navMainSolutions.removeClass('is-active');
     navSecondarySolutions.addClass('is-medium-hidden');
   });
 
   /**
    * Toggle `nav-secondary-solutions` visibility, via nav-main menu
    */
-  solutions.click(function(event) {
+  navMainSolutions.click(function(event) {
     event.preventDefault();
 
-    solutions.addClass('is-active');
+    navMainSolutions.addClass('is-active');
     navSecondarySolutions.removeClass('is-medium-hidden');
 
-    services.removeClass('is-active');
+    navMainServices.removeClass('is-active');
     navSecondaryServices.addClass('is-medium-hidden');
   });
 

@@ -1,0 +1,31 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign text_1 = 'Pàgina no trobada :(' %}
+    {% assign text_2 = 'No hem trobat la pàgina sol.licitada.' %}
+  {% when 'en' %}
+    {% assign text_1 = 'Page not found :(' %}
+    {% assign text_2 = 'The requested page could not be found.' %}
+  {% else %}
+    {% assign text_1 = 'Página no encontrada :(' %}
+    {% assign text_2 = 'No hemos encontrado la página solicitada.' %}
+{% endcase %}
+
+<style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+  <p><strong>{{ text_1 }}</strong></p>
+  <p>{{ text_2 }}</p>
+</div>

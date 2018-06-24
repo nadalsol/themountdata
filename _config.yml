@@ -16,7 +16,7 @@
 title: The Mount Data
 email: info@themountdata.com
 description: >- # this means to ignore newlines until "baseurl:"
-  We believe in data, technology and analitics for marketing and sales.
+  Creemos en los datos, la tecnología y el análisis para marketing y ventas
 # baseurl: "/themountdata" # the subpath of your site, e.g. /blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://themountdata.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -45,4 +45,98 @@ sass:
 
 # Jekyll SEO Tags plugin
 # https://github.com/jekyll/jekyll-seo-tag
-lang: es # default lang (if not specified, default is `en_US`)
+# lang: es # default lang (if not specified, default is `en_US`)
+
+# Multilingual references
+# https://www.sylvaindurand.org/making-jekyll-multilingual/
+# Indicate, for each post and page, its language (lang) and an unique identifier
+# to link the different translations
+#
+# 404 (no encontrada)
+r_404:
+  es: 404.html
+  ca: ca/404.html
+  en: en/404.html
+# Home
+r_index:
+  es:
+  ca: ca/index.html
+  en: en/index.html
+# Legal
+r_aviso_legal:
+  es: aviso-legal.html
+  ca: ca/avis-legal.html
+  en: en/terms.html
+r_cookies:
+  es: cookies.html
+  ca: ca/cookies.html
+  en: en/cookies.html
+r_privacidad:
+  es: privacidad.html
+  ca: ca/privacitat.html
+  en: en/privacy.html
+# Nosotros
+r_nosotros:
+  es: nosotros.html
+  ca: ca/nosaltres.html
+  en: en/about.html
+# Servicios
+r_servicios:
+  es: servicios/index.html
+  ca: ca/serveis/index.html
+  en: en/services/index.html
+r_servicios_accion:
+  es: servicios/accion/index.html
+  ca: ca/serveis/accio/index.html
+  en: en/services/action/index.html
+r_servicios_analisis:
+  es: servicios/analisis/index.html
+  ca: ca/serveis/analisi/index.html
+  en: en/services/analysis/index.html
+r_servicios_datos:
+  es: servicios/datos/index.html
+  ca: ca/serveis/dades/index.html
+  en: en/services/data/index.html
+r_servicios_visualizacion:
+  es: servicios/visualizacion/index.html
+  ca: ca/serveis/visualitzacio/index.html
+  en: en/services/visualization/index.html
+# Soluciones
+r_soluciones:
+  es: soluciones/index.html
+  ca: ca/solucions/index.html
+  en: en/solutions/index.html
+r_soluciones_sherpa_campaign:
+  es: soluciones/sherpa-campaign/index.html
+  ca: ca/solucions/sherpa-campaign/index.html
+  en: en/solutions/sherpa-campaign/index.html
+r_soluciones_sherpa_dashboard:
+  es: soluciones/sherpa-dashboard/index.html
+  ca: ca/solucions/sherpa-dashboard/index.html
+  en: en/solutions/sherpa-dashboard/index.html
+
+# Translation
+# Common elements
+t_footer_legal:
+  es:
+    privacy: Privacidad
+    cookies: Cookies
+    terms: Aviso legal
+  ca:
+    privacy: Privacitat
+    cookies: Cookies
+    terms: Avís legal
+  en:
+    privacy: Privacy
+    cookies: Cookies
+    terms: Terms
+t_footer:
+  es:
+    location: Ubicación
+    contact: Contactar
+  ca:
+    location: Ubicació
+    contact: Contactar
+  en:
+    location: Location
+    contact: Contact

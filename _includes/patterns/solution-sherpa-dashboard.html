@@ -1,36 +1,90 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign heading = 'Sherpa dashboard' %}
+    {% assign text = '...' %}
+    {% assign img_alt = 'Sherpa dashboard' %}
+
+    {% assign heading_types = 'Tipus de dashboards' %}
+    {% assign text_types_1 = 'Marketing integral  (GA, Social, CRM, Emailing…)' %}
+    {% assign text_types_2 = 'Comptadors' %}
+    {% assign text_types_3 = 'Segmentació' %}
+    {% assign text_types_4 = 'Conversions…' %}
+
+    {% assign heading_integrations = 'Integracions' %}
+    {% assign text_integrations_1 = 'Qlik Marketplace' %}
+    {% assign text_integrations_2 = 'Domo' %}
+    {% assign text_integrations_3 = 'OpenStreetmaps' %}
+    {% assign text_integrations_4 = 'Sherpa Campaign' %}
+    {% assign text_integrations_5 = 'Sherpa Data' %}
+  {% when 'en' %}
+    {% assign heading = 'Sherpa dashboard' %}
+    {% assign text = '...' %}
+    {% assign img_alt = 'Sherpa dashboard' %}
+
+    {% assign heading_types = 'Dashboard types' %}
+    {% assign text_types_1 = '...' %}
+    {% assign text_types_2 = '...' %}
+    {% assign text_types_3 = '...' %}
+    {% assign text_types_4 = '...' %}
+
+    {% assign heading_integrations = 'Integrations' %}
+    {% assign text_integrations_1 = 'Qlik Marketplace' %}
+    {% assign text_integrations_2 = 'Domo' %}
+    {% assign text_integrations_3 = 'OpenStreetmaps' %}
+    {% assign text_integrations_4 = 'Sherpa Campaign' %}
+    {% assign text_integrations_5 = 'Sherpa Data' %}
+  {% else %}
+    {% assign heading = 'Sherpa dashboard' %}
+    {% assign text = 'Solución para la visualización de los principales KPIs de marketing, tales como envíos de emails, social media,  web y media bajo un mismo concepto de Campaña. Posibilidad de incorporar datos transaccionales o de cualquier otro ámbito. Desarrollados principalmente en QlikView y QlikSense.' %}
+    {% assign img_alt = 'Sherpa dashboard' %}
+
+    {% assign heading_types = 'Tipos de dashboards' %}
+    {% assign text_types_1 = 'Marketing integral  (GA, Social, CRM, Emailing…)' %}
+    {% assign text_types_2 = 'Contadores' %}
+    {% assign text_types_3 = 'Segmentación' %}
+    {% assign text_types_4 = 'Conversiones…' %}
+    
+    {% assign heading_integrations = 'Integraciones' %}
+    {% assign text_integrations_1 = 'Qlik Marketplace' %}
+    {% assign text_integrations_2 = 'Domo' %}
+    {% assign text_integrations_3 = 'OpenStreetmaps' %}
+    {% assign text_integrations_4 = 'Sherpa Campaign' %}
+    {% assign text_integrations_5 = 'Sherpa Data' %}
+{% endcase %}
+
 <div class="solution">
   <div class="wrapper">
     <div class="u-inner-large">
 
-      <h1 class="heading2">Sherpa dashboard</h1>
+      <h1 class="heading2">{{ heading }}</h1>
       <div class="solution__content">
-        <p class="text">Solución para la visualización de los principales KPIs de marketing, tales como envíos de emails, social media,  web y media bajo un mismo concepto de Campaña. Posibilidad de incorporar datos transaccionales o de cualquier otro ámbito. Desarrollados principalmente en QlikView y QlikSense.</p>
+        <p class="text">{{ text }}</p>
       </div>
-      <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/sherpa-dashboard.png" alt="Sherpa dashboard">
+      <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/sherpa-dashboard.png" alt="{{ img_alt }}">
 
       {% include patterns/sectors.html %}
 
       <div class="panel panel--pelorous panel--cols">
         <div class="panel__col-l">
           <div class="u-inner-xsmall">
-            <h2 class="heading3 heading3--light heading3--hr">Tipos de dashboards</h2>
+            <h2 class="heading3 heading3--light heading3--hr">{{ heading_types }}</h2>
             <ul class="list list--unstyled list--light">
-              <li>Marketing integral  (GA, Social, CRM, Emailing…)</li>
-              <li>Contadores</li>
-              <li>Segmentación</li>
-              <li>Conversiones…</li>
+              <li>{{ text_types_1 }}</li>
+              <li>{{ text_types_2 }}</li>
+              <li>{{ text_types_3 }}</li>
+              <li>{{ text_types_4 }}</li>
             </ul>
           </div>
         </div>
         <div class="panel__col-r">
           <div class="u-inner-xsmall">
-            <h2 class="heading3 heading3--light heading3--hr">Integraciones</h2>
+            <h2 class="heading3 heading3--light heading3--hr">{{ heading_integrations }}</h2>
             <ul class="list list--unstyled list--light">
-              <li>Qlik Marketplace</li>
-              <li>Domo</li>
-              <li>OpenStreetmaps</li>
-              <li>Sherpa Campaign</li>
-              <li>Sherpa Data</li>
+              <li>{{ text_integrations_1 }}</li>
+              <li>{{ text_integrations_2 }}</li>
+              <li>{{ text_integrations_3 }}</li>
+              <li>{{ text_integrations_4 }}</li>
+              <li>{{ text_integrations_5 }}</li>
             </ul>
           </div>
         </div>

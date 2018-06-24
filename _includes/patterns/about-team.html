@@ -1,21 +1,39 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign heading = 'Equip' %}
+    {% assign text_1 = '...' %}
+    {% assign text_2 = '...' %}
+    {% assign img_alt = 'Equip' %}
+  {% when 'en' %}
+    {% assign heading = 'Team' %}
+    {% assign text_1 = '...' %}
+    {% assign text_2 = '...' %}
+    {% assign img_alt = 'Team' %}
+  {% else %}
+    {% assign heading = 'Equipo' %}
+    {% assign text_1 = 'Nos organizamos en cuatro áreas que trabajan orientadas a resolver los problemas del Cliente: Consultoría, Tecnología, Análisis y Operaciones.' %}
+    {% assign text_2 = 'La confianza y una visión compartida con nuestros partners nos ayudan a dar servicio en  áreas complementarias a nuestra actividad y, por supuesto, nos hacen mejores.' %}
+    {% assign img_alt = 'Equipo' %}
+{% endcase %}
+
 <div class="about-team">
   <div class="wrapper">
     <div class="u-inner-small">
 
       <div class="about-team__col-l">
-        <h2 class="heading2">Equipo</h2>
-        <p class="text text--fiord">Nos organizamos en cuatro áreas que trabajan orientadas a resolver los problemas del Cliente: Consultoría, Tecnología, Análisis y Operaciones.</p>
-        <p class="text text--fiord">La confianza y una visión compartida con nuestros partners nos ayudan a dar servicio en  áreas complementarias a nuestra actividad y, por supuesto, nos hacen mejores.</p>
+        <h2 class="heading2">{{ heading }}</h2>
+        <p class="text text--fiord">{{ text_1 }}</p>
+        <p class="text text--fiord">{{ text_2 }}</p>
       </div>
 
       <div class="about-team__col-r">
         <div class="is-medium-hidden">
           {% comment %}{% include icons/about-team.svg css-class="icon u-img-responsive" %}{% endcomment %}
-          <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/about-team.png" alt="Team">
+          <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/about-team.png" alt="{{ img_alt }}">
         </div>
         <div class="is-small-hidden">
           {% comment %}{% include icons/medium-up/about-team.svg css-class="icon u-img-responsive" %}{% endcomment %}
-          <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/about-team.png" alt="Team">
+          <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/about-team.png" alt="{{ img_alt }}">
         </div>
       </div>
 

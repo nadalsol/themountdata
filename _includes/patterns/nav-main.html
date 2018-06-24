@@ -1,13 +1,46 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign nav_main_link_1 = 'ca/serveis' %}
+    {% assign nav_main_text_1 = 'Serveis' %}
+    {% assign nav_main_link_2 = 'ca/solucions' %}
+    {% assign nav_main_text_2 = 'Solucions' %}
+    {% assign nav_main_link_3 = 'ca/nosaltres' %}
+    {% assign nav_main_text_3 = 'Nosaltres' %}
+  {% when 'en' %}
+    {% assign nav_main_link_1 = 'en/services' %}
+    {% assign nav_main_text_1 = 'Services' %}
+    {% assign nav_main_link_2 = 'en/solutions' %}
+    {% assign nav_main_text_2 = 'Solutions' %}
+    {% assign nav_main_link_3 = 'en/about' %}
+    {% assign nav_main_text_3 = 'About' %}
+  {% else %}
+    {% assign nav_main_link_1 = 'servicios' %}
+    {% assign nav_main_text_1 = 'Servicios' %}
+    {% assign nav_main_link_2 = 'soluciones' %}
+    {% assign nav_main_text_2 = 'Soluciones' %}
+    {% assign nav_main_link_3 = 'nosotros' %}
+    {% assign nav_main_text_3 = 'Nosotros' %}
+{% endcase %}
+
+<ul style="list-style: none; margin: 0; padding: 0;">
+{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+{% for page in pages %}
+  <li style="display: inline-block; margin: 0; padding: 10px;">
+    <a href="{{ site.baseurl }}{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+  </li>
+{% endfor %}
+</ul>
+
 <ul class="nav-main u-text-uppercase">
   <li>
-    <a id="services" class="nav-main__link" href="{{ site.baseurl }}/servicios">Servicios</a>
+    <a id="nav-main-services" class="nav-main__link" href="{{ site.baseurl }}/{{ nav_main_link_1 }}">{{ nav_main_text_1 }}</a>
     {% include patterns/nav-secondary-services.html %}
   </li>
   <li>
-    <a id="solutions" class="nav-main__link" href="{{ site.baseurl }}/soluciones">Soluciones</a>
+    <a id="nav-main-solutions" class="nav-main__link" href="{{ site.baseurl }}/{{ nav_main_link_2 }}">{{ nav_main_text_2 }}</a>
     {% include patterns/nav-secondary-solutions.html %}
   </li>
   <li>
-    <a class="nav-main__link" href="{{ site.baseurl }}/nosotros">Nosotros</a>
+    <a class="nav-main__link" href="{{ site.baseurl }}/{{ nav_main_link_3 }}">{{ nav_main_text_3 }}</a>
   </li>
 </ul>

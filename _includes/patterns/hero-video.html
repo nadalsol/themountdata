@@ -1,8 +1,17 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign heading = '...' %}
+  {% when 'en' %}
+    {% assign heading = 'On-demand consulting plattform for companies' %}
+  {% else %}
+    {% assign heading = '...' %}
+{% endcase %}
+
 <div class="hero-video">
   <div class="wrapper">
     <div class="u-inner-xxlarge">
 
-      <h1 class="heading1 hero-video__heading">On-demand consulting plattform for companies</h1>
+      <h1 class="heading1 hero-video__heading">{{ heading }}</h1>
 
     </div>
   </div>

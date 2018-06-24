@@ -1,39 +1,120 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign heading = 'Data stores' %}
+    {% assign text_1 = '...' %}
+    {% assign text_2 = '...' %}
+    {% assign text_3 = '...' %}
+    {% assign text_4 = '...' %}
+    {% assign text_5 = '...' %}
+    {% assign text_6 = '...' %}
+
+    {% assign cta_link_1 = '#' %}
+    {% assign cta_text_1 = 'Big data technology' %}
+    {% assign cta_link_2 = '#' %}
+    {% assign cta_text_2 = 'Bi & datawarehouse' %}
+
+    {% assign heading_types = 'Tipos' %}
+    {% assign text_types_1 = '...' %}
+    {% assign text_types_2 = '...' %}
+    {% assign text_types_3 = '...' %}
+    {% assign text_types_4 = '...' %}
+    {% assign text_types_5 = '...' %}
+    {% assign text_types_6 = '...' %}
+    {% assign text_types_7 = '...' %}
+    {% assign text_types_8 = '...' %}
+    {% assign text_types_9 = '...' %}
+    {% assign text_types_10 = '...' %}
+    {% assign text_types_11 = '...' %}
+  {% when 'en' %}
+    {% assign heading = 'Data stores' %}
+    {% assign text_1 = '...' %}
+    {% assign text_2 = '...' %}
+    {% assign text_3 = '...' %}
+    {% assign text_4 = '...' %}
+    {% assign text_5 = '...' %}
+    {% assign text_6 = '...' %}
+
+    {% assign cta_link_1 = '#' %}
+    {% assign cta_text_1 = 'Big data technology' %}
+    {% assign cta_link_2 = '#' %}
+    {% assign cta_text_2 = 'Bi & datawarehouse' %}
+
+    {% assign heading_types = 'Tipos' %}
+    {% assign text_types_1 = '...' %}
+    {% assign text_types_2 = '...' %}
+    {% assign text_types_3 = '...' %}
+    {% assign text_types_4 = '...' %}
+    {% assign text_types_5 = '...' %}
+    {% assign text_types_6 = '...' %}
+    {% assign text_types_7 = '...' %}
+    {% assign text_types_8 = '...' %}
+    {% assign text_types_9 = '...' %}
+    {% assign text_types_10 = '...' %}
+    {% assign text_types_11 = '...' %}
+  {% else %}
+    {% assign heading = 'Data stores' %}
+    {% assign text_1 = 'Identificar y dominar las fuentes necesarias para la creación de valor partir de los datos es el primer paso del data analytics journey.' %}
+    {% assign text_2 = 'Por eso, tener la capacidad de acceder de manera ágil y consistente a las fuentes de datos utilizando distintas técnicas  para extraer, transformar y cargar los datos es clave.' %}
+    {% assign text_3 = 'De misma manera no debemos olvidar el establecimiento de procesos relacionados con la calidad de datos.' %}
+    {% assign text_4 = 'Desarrollos de ETL, APIs, Scraping.' %}
+    {% assign text_5 = 'Algoritmos de Calidad de datos Limpieza / Normalización / Deduplicación / Consolidación de datos.' %}
+    {% assign text_6 = 'Herramientas habituales Pentaho-Kettel, Jsoup… etc.' %}
+
+    {% assign cta_link_1 = '#' %}
+    {% assign cta_text_1 = 'Big data technology' %}
+    {% assign cta_link_2 = '#' %}
+    {% assign cta_text_2 = 'Bi & datawarehouse' %}
+
+    {% assign heading_types = 'Tipos' %}
+    {% assign text_types_1 = 'Transaccionales (ERP, SAP)' %}
+    {% assign text_types_2 = 'Marketing (CMS, CRM, MAP, DSP, DAM, SAC, SOCIAL…)' %}
+    {% assign text_types_3 = 'Ventas' %}
+    {% assign text_types_4 = 'E-Commerce' %}
+    {% assign text_types_5 = 'Puntos de Venta' %}
+    {% assign text_types_6 = 'IOT' %}
+    {% assign text_types_7 = 'Opendata (Clima, Carretera…)' %}
+    {% assign text_types_8 = 'Data Brokers' %}
+    {% assign text_types_9 = 'Web' %}
+    {% assign text_types_10 = 'Estudios' %}
+    {% assign text_types_11 = 'Encuestas' %}
+{% endcase %}
+
 <div class="service">
   <div class="wrapper">
 
     <div class="service__col-l panel panel--light">
       <div class="u-inner-small">
-        <h2 class="heading2 service__heading">Data stores</h2>
+        <h2 class="heading2 service__heading">{{ heading }}</h2>
         <div class="service__content">
-          <p class="text text--fiord">Identificar y dominar las fuentes necesarias para la creación de valor partir de los datos es el primer paso del data analytics journey.</p>
-          <p class="text text--fiord">Por eso, tener la capacidad de acceder de manera ágil y consistente a las fuentes de datos utilizando distintas técnicas  para extraer, transformar y cargar los datos es clave.</p>
-          <p class="text text--fiord">De misma manera no debemos olvidar el establecimiento de procesos relacionados con la calidad de datos.</p>
-          <p class="text text--fiord">Desarrollos de ETL, APIs, Scraping.</p>
-          <p class="text text--fiord">Algoritmos de Calidad de datos Limpieza / Normalización / Deduplicación / Consolidación de datos.</p>
-          <p class="text text--fiord">Herramientas habituales Pentaho-Kettel, Jsoup… etc.</p>
+          <p class="text text--fiord">{{ text_1 }}</p>
+          <p class="text text--fiord">{{ text_2 }}</p>
+          <p class="text text--fiord">{{ text_3 }}</p>
+          <p class="text text--fiord">{{ text_4 }}</p>
+          <p class="text text--fiord">{{ text_5 }}</p>
+          <p class="text text--fiord">{{ text_6 }}</p>
         </div>
         <div class="button-set">
-          <a href="#" class="button button--tertiary button--xxsmall">Big data technology</a>
-          <a href="#" class="button button--tertiary button--xxsmall">Bi & datawarehouse</a>
+          <a class="button button--tertiary button--xxsmall" href="{{ site.baseurl }}/{{ cta_link_1 }}">{{ cta_text_1 }}</a>
+          <a class="button button--tertiary button--xxsmall" href="{{ site.baseurl }}/{{ cta_link_2 }}">{{ cta_text_2 }}</a>
         </div>
       </div>
     </div>
 
     <div class="service__col-r panel panel--pelorous">
       <div class="u-inner-small">
-        <h3 class="heading3 heading3--light heading3--hr">Tipos</h3>
+        <h3 class="heading3 heading3--light heading3--hr">{{ heading_types }}</h3>
         <ul class="list list--unstyled list--light">
-          <li>Transaccionales (ERP, SAP)</li>
-          <li>Marketing (CMS, CRM, MAP, DSP, DAM, SAC, SOCIAL…)</li>
-          <li>Ventas</li>
-          <li>E-Commerce</li>
-          <li>Puntos de Venta</li>
-          <li>IOT</li>
-          <li>Opendata (Clima, Carretera…)</li>
-          <li>Data Brokers</li>
-          <li>Web</li>
-          <li>Estudios</li>
-          <li>Encuestas</li>
+          <li>{{ text_types_1 }}</li>
+          <li>{{ text_types_2 }}</li>
+          <li>{{ text_types_3 }}</li>
+          <li>{{ text_types_4 }}</li>
+          <li>{{ text_types_5 }}</li>
+          <li>{{ text_types_6 }}</li>
+          <li>{{ text_types_7 }}</li>
+          <li>{{ text_types_8 }}</li>
+          <li>{{ text_types_9 }}</li>
+          <li>{{ text_types_10 }}</li>
+          <li>{{ text_types_11 }}</li>
         </ul>
       </div>
     </div>

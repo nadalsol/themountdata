@@ -1,9 +1,21 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign heading = 'Cookies' %}
+    {% assign text = '...' %}
+  {% when 'en' %}
+    {% assign heading = 'Cookies' %}
+    {% assign text = '...' %}
+  {% else %}
+    {% assign heading = 'Cookies' %}
+    {% assign text = 'Sus datos formarán parte de un fichero titularidad de The Mount Data S.L. y serán tratados para poderle informar periódicamente de novedades, productos y servicios. Puede ejercitar sus derechos de acceso, rectificación, cancelación y oposición, así como revocar su consentimiento para el envío de comunicaciones comerciales electrónicas, enviando un e-mail a info@themountdata.com. Mediante la inclusión de su correo electrónico y/o teléfono móvil Ud. nos autoriza a enviarle información comercial a través de su cuenta de correo electrónico así como otros medios electrónicos equivalentes.' %}
+{% endcase %}
+
 <div class="legal">
   <div class="wrapper">
     <div class="u-inner-small">
 
-      <h1 class="heading1">Cookies</h1>
-      <p class="text">Sus datos formarán parte de un fichero titularidad de The Mount Data S.L. y serán tratados para poderle informar periódicamente de novedades, productos y servicios. Puede ejercitar sus derechos de acceso, rectificación, cancelación y oposición, así como revocar su consentimiento para el envío de comunicaciones comerciales electrónicas, enviando un e-mail a info@themountdata.com. Mediante la inclusión de su correo electrónico y/o teléfono móvil Ud. nos autoriza a enviarle información comercial a través de su cuenta de correo electrónico así como otros medios electrónicos equivalentes.</p>
+      <h1 class="heading1">{{ heading }}</h1>
+      <p class="text">{{ text }}</p>
 
     </div>
   </div>

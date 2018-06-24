@@ -1,28 +1,73 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign heading = 'Consultoria' %}
+    {% assign text_1 = '...' %}
+    {% assign text_2 = '...' %}
+    {% assign text_3 = '...' %}
+
+    {% assign heading_types = 'Tipus' %}
+    {% assign text_types_1 = '...' %}
+    {% assign text_types_2 = '...' %}
+    {% assign text_types_3 = '...' %}
+    {% assign text_types_4 = '...' %}
+    {% assign text_types_5 = '...' %}
+    {% assign text_types_6 = '...' %}
+    {% assign text_types_7 = '...' %}
+  {% when 'en' %}
+    {% assign heading = 'Consultancy' %}
+    {% assign text_1 = '...' %}
+    {% assign text_2 = '...' %}
+    {% assign text_3 = '...' %}
+
+    {% assign heading_types = 'Types' %}
+    {% assign text_types_1 = '...' %}
+    {% assign text_types_2 = '...' %}
+    {% assign text_types_3 = '...' %}
+    {% assign text_types_4 = '...' %}
+    {% assign text_types_5 = '...' %}
+    {% assign text_types_6 = '...' %}
+    {% assign text_types_7 = '...' %}
+  {% else %}
+    {% assign heading = 'Consultoría' %}
+    {% assign text_1 = 'Es frecuente que muchas compañías crean en el poder de los datos para ser competitivos pero que tengan dificultades para saber por dónde empezar.' %}
+    {% assign text_2 = 'Los proyectos de Consultoría de las áreas de Negocio, Tecnología y Equipos/Procesos identificamos el punto de partida y establecemos una hoja de ruta de iniciativas priorizadas teniendo en cuenta las capacidades y recursos necesarios para desarrollar con éxito el proyecto y en el mínimo tiempo.' %}
+    {% assign text_3 = 'La consultoría colabora con los equipos de negocio, tecnología y los proveedores actuales (agencias, consultoras tecnológicas…) a lo largo del Data Journey (Data > Analytics > Action).' %}
+
+    {% assign heading_types = 'Tipos' %}
+    {% assign text_types_1 = 'Consultoría CRM/CX' %}
+    {% assign text_types_2 = 'Consultoría Campañas' %}
+    {% assign text_types_3 = 'Consultoría Análisis' %}
+    {% assign text_types_4 = 'Consultoría Datos' %}
+    {% assign text_types_5 = 'Consultoría Martech' %}
+    {% assign text_types_6 = 'Consultoría Big Data & BI' %}
+    {% assign text_types_7 = 'Consultoría Equipo/Metodología/Procesos' %}
+{% endcase %}
+
 <div class="service">
   <div class="wrapper">
 
     <div class="service__col-l panel panel--light">
       <div class="u-inner-small">
-        <h2 class="heading2 service__heading">Consultoría</h2>
+        <h2 class="heading2 service__heading">{{ heading }}</h2>
         <div class="service__content">
-          <p class="text text--fiord">Es frecuente que muchas compañías crean en el poder de los datos para ser competitivos pero que tengan dificultades para saber por dónde empezar.</p>
-          <p class="text text--fiord">Los proyectos de Consultoría de las áreas de Negocio, Tecnología y Equipos/Procesos identificamos el punto de partida y establecemos una hoja de ruta de iniciativas priorizadas teniendo en cuenta las capacidades y recursos necesarios para desarrollar con éxito el proyecto y en el mínimo tiempo.</p>
-          <p class="text text--fiord">La consultoría colabora con los equipos de negocio, tecnología y los proveedores actuales (agencias, consultoras tecnológicas…) a lo largo del Data Journey (Data > Analytics > Action).</p>
+          <p class="text text--fiord">{{ text_1 }}</p>
+          <p class="text text--fiord">{{ text_2 }}</p>
+          <p class="text text--fiord">{{ text_3 }}</p>
         </div>
       </div>
     </div>
 
     <div class="service__col-r panel panel--pelorous">
       <div class="u-inner-small">
-        <h3 class="heading3 heading3--light heading3--hr">Tipos</h3>
+        <h3 class="heading3 heading3--light heading3--hr">{{ heading_types }}</h3>
         <ul class="list list--unstyled list--light">
-          <li>Consultoría CRM/CX</li>
-          <li>Consultoría Campañas</li>
-          <li>Consultoría Análisis</li>
-          <li>Consultoría Datos</li>
-          <li>Consultoría Martech</li>
-          <li>Consultoría Big Data & BI</li>
-          <li>Consultoría Equipo/Metodología/Procesos</li>
+          <li>{{ text_types_1 }}</li>
+          <li>{{ text_types_2 }}</li>
+          <li>{{ text_types_3 }}</li>
+          <li>{{ text_types_4 }}</li>
+          <li>{{ text_types_5 }}</li>
+          <li>{{ text_types_6 }}</li>
+          <li>{{ text_types_7 }}</li>
         </ul>
       </div>
     </div>

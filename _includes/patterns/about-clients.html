@@ -1,14 +1,32 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign heading = 'Clients' %}
+    {% assign text = '...' %}
+    {% assign cta_link = 'ca/#' %}
+    {% assign cta_text = 'Cas d&#39;estudi' %}
+  {% when 'en' %}
+    {% assign heading = 'Customers' %}
+    {% assign text = '...' %}
+    {% assign cta_link = 'en/#' %}
+    {% assign cta_text = 'Case study' %}
+  {% else %}
+    {% assign heading = 'Clientes' %}
+    {% assign text = 'Hemos trabajado en muchos sectores y clientes a lo largo de nuestra trayectoria, pero tenemos experiencia relevante en los sectores de Automoción, Turismo y Retail. Nos gusta ganarnos la confianza de nuestros Clientes a partir de la aportación de valor y un gran servicio.' %}
+    {% assign cta_link = '#' %}
+    {% assign cta_text = 'Caso de estudio' %}
+{% endcase %}
+
 <div class="about-clients">
   <div class="wrapper">
     <div class="u-inner-large">
 
-      <h2 class="heading2">Clientes</h2>
+      <h2 class="heading2">{{ heading }}</h2>
 
       <div class="about-clients__content">
-        <p class="text">Hemos trabajado en muchos sectores y clientes a lo largo de nuestra trayectoria, pero tenemos experiencia relevante en los sectores de Automoción, Turismo y Retail. Nos gusta ganarnos la confianza de nuestros Clientes a partir de la aportación de valor y un gran servicio.</p>
+        <p class="text">{{ text }}</p>
       </div>
 
-      <a class="button button--tertiary button--xxsmall" href="#">› Case study</a>
+      <a class="button button--tertiary button--xxsmall" href="{{ site.baseurl }}/{{ cta_link }}">› {{ cta_text }}</a>
 
     </div>
   </div>

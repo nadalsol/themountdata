@@ -1,15 +1,45 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign nav_secondary_services_link_1 = 'ca/serveis/dades' %}
+    {% assign nav_secondary_services_text_1 = 'Dades' %}
+    {% assign nav_secondary_services_link_2 = 'ca/serveis/analisi' %}
+    {% assign nav_secondary_services_text_2 = 'Anàlisi' %}
+    {% assign nav_secondary_services_link_3 = 'ca/serveis/visualitzacio' %}
+    {% assign nav_secondary_services_text_3 = 'Visualització' %}
+    {% assign nav_secondary_services_link_4 = 'ca/serveis/accio' %}
+    {% assign nav_secondary_services_text_4 = 'Acció' %}
+  {% when 'en' %}
+    {% assign nav_secondary_services_link_1 = 'en/services/data' %}
+    {% assign nav_secondary_services_text_1 = 'Data' %}
+    {% assign nav_secondary_services_link_2 = 'en/services/analysis' %}
+    {% assign nav_secondary_services_text_2 = 'Analysis' %}
+    {% assign nav_secondary_services_link_3 = 'en/services/visualization' %}
+    {% assign nav_secondary_services_text_3 = 'Visualization' %}
+    {% assign nav_secondary_services_link_4 = 'en/services/action' %}
+    {% assign nav_secondary_services_text_4 = 'Action' %}
+  {% else %}
+    {% assign nav_secondary_services_link_1 = 'servicios/datos' %}
+    {% assign nav_secondary_services_text_1 = 'Datos' %}
+    {% assign nav_secondary_services_link_2 = 'servicios/analisis' %}
+    {% assign nav_secondary_services_text_2 = 'Análisis' %}
+    {% assign nav_secondary_services_link_3 = 'servicios/visualizacion' %}
+    {% assign nav_secondary_services_text_3 = 'Visualización' %}
+    {% assign nav_secondary_services_link_4 = 'servicios/accion' %}
+    {% assign nav_secondary_services_text_4 = 'Acción' %}
+{% endcase %}
+
 <ul id="nav-secondary-services" class="nav-secondary u-text-left is-medium-hidden">
   <li>
-    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/servicios/data">Data</a>
+    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/{{ nav_secondary_services_link_1 }}">{{ nav_secondary_services_text_1 }}</a>
     {% include patterns/nav-tertiary.html %}
   </li>
   <li>
-    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/servicios/analisis">Análisis</a>
+    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/{{ nav_secondary_services_link_2 }}">{{ nav_secondary_services_text_2 }}</a>
   </li>
   <li>
-    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/servicios/visualizacion">Visualización</a>
+    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/{{ nav_secondary_services_link_3 }}">{{ nav_secondary_services_text_3 }}</a>
   </li>
   <li>
-    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/servicios/accion">Acción</a>
+    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/{{ nav_secondary_services_link_4 }}">{{ nav_secondary_services_text_4 }}</a>
   </li>
 </ul>

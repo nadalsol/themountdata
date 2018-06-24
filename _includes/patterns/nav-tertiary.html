@@ -1,11 +1,35 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign nav_tertiary_link_1 = 'ca/#' %}
+    {% assign nav_tertiary_text_1 = 'Data sources' %}
+    {% assign nav_tertiary_link_2 = 'ca/#' %}
+    {% assign nav_tertiary_text_2 = 'Data stores' %}
+    {% assign nav_tertiary_link_3 = 'ca/#' %}
+    {% assign nav_tertiary_text_3 = 'Data governance' %}
+  {% when 'en' %}
+    {% assign nav_tertiary_link_1 = 'en/#' %}
+    {% assign nav_tertiary_text_1 = 'Data sources' %}
+    {% assign nav_tertiary_link_2 = 'en/#' %}
+    {% assign nav_tertiary_text_2 = 'Data stores' %}
+    {% assign nav_tertiary_link_3 = 'en/#' %}
+    {% assign nav_tertiary_text_3 = 'Data governance' %}
+  {% else %}
+    {% assign nav_tertiary_link_1 = '#' %}
+    {% assign nav_tertiary_text_1 = 'Data sources' %}
+    {% assign nav_tertiary_link_2 = '#' %}
+    {% assign nav_tertiary_text_2 = 'Data stores' %}
+    {% assign nav_tertiary_link_3 = '#' %}
+    {% assign nav_tertiary_text_3 = 'Data governance' %}
+{% endcase %}
+
 <ul class="nav-tertiary">
   <li>
-    <a class="nav-tertiary__link" href="#">Data sources</a>
+    <a class="nav-tertiary__link" href="{{ site.baseurl }}/{{ nav_tertiary_link_1 }}">{{ nav_tertiary_text_1 }}</a>
   </li>
   <li>
-    <a class="nav-tertiary__link" href="#">Data stores</a>
+    <a class="nav-tertiary__link" href="{{ site.baseurl }}/{{ nav_tertiary_link_2 }}">{{ nav_tertiary_text_2 }}</a>
   </li>
   <li>
-    <a class="nav-tertiary__link" href="#">Data governance</a>
+    <a class="nav-tertiary__link" href="{{ site.baseurl }}/{{ nav_tertiary_link_3 }}">{{ nav_tertiary_text_3 }}</a>
   </li>
 </ul>

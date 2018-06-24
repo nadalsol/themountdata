@@ -1,36 +1,84 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign heading = 'Sherpa campaign' %}
+    {% assign text = '...' %}
+    {% assign img_alt = 'Sherpa campaign' %}
+    {% assign heading_features = 'Funcionalitats' %}
+    {% assign text_features_1 = '...' %}
+    {% assign text_features_2 = '...' %}
+    {% assign heading_integrations = 'Integracions' %}
+    {% assign text_integrations_1 = 'Mailjet, Mailchimp, SMS' %}
+    {% assign text_integrations_2 = 'Qlikview, Qliksense, Power BI,  Domo, Cruchbase' %}
+    {% assign text_integrations_3 = 'Facebook, Twitter, Instagram,  Linkedin, Sentiment' %}
+    {% assign text_integrations_4 = 'Magento, Prestashop, Freshdesk,  Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…' %}
+    {% assign text_integrations_5 = 'Sizmek, Doubleclick' %}
+    {% assign text_integrations_6 = 'Zapier, IFTTT' %}
+    {% assign text_integrations_7 = 'Amazon, Hadoop…' %}
+  {% when 'en' %}
+    {% assign heading = 'Sherpa campaign' %}
+    {% assign text = '...' %}
+    {% assign img_alt = 'Sherpa campaign' %}
+    {% assign heading_features = 'Features' %}
+    {% assign text_features_1 = '...' %}
+    {% assign text_features_2 = '...' %}
+    {% assign heading_integrations = 'Integrations' %}
+    {% assign text_integrations_1 = 'Mailjet, Mailchimp, SMS' %}
+    {% assign text_integrations_2 = 'Qlikview, Qliksense, Power BI,  Domo, Cruchbase' %}
+    {% assign text_integrations_3 = 'Facebook, Twitter, Instagram,  Linkedin, Sentiment' %}
+    {% assign text_integrations_4 = 'Magento, Prestashop, Freshdesk,  Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…' %}
+    {% assign text_integrations_5 = 'Sizmek, Doubleclick' %}
+    {% assign text_integrations_6 = 'Zapier, IFTTT' %}
+    {% assign text_integrations_7 = 'Amazon, Hadoop…' %}
+  {% else %}
+    {% assign heading = 'Sherpa campaign' %}
+    {% assign text = 'Solución para la automatización de las tareas de marketing (MAP), tales como envíos de emails, social media y otras accions sobre la web website actions bajo un mismo concepto de Campaña independientemente del canal utilizado.' %}
+    {% assign img_alt = 'Sherpa campaign' %}
+    {% assign heading_features = 'Funcionalidades' %}
+    {% assign text_features_1 = 'Envíos: Email, SMS, Telemk, Media, Formularios, Landings… Reports' %}
+    {% assign text_features_2 = 'Campañas, Contenidos,  Segmentación, Personas' %}
+    {% assign heading_integrations = 'Integraciones' %}
+    {% assign text_integrations_1 = 'Mailjet, Mailchimp, SMS' %}
+    {% assign text_integrations_2 = 'Qlikview, Qliksense, Power BI,  Domo, Cruchbase' %}
+    {% assign text_integrations_3 = 'Facebook, Twitter, Instagram,  Linkedin, Sentiment' %}
+    {% assign text_integrations_4 = 'Magento, Prestashop, Freshdesk,  Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…' %}
+    {% assign text_integrations_5 = 'Sizmek, Doubleclick' %}
+    {% assign text_integrations_6 = 'Zapier, IFTTT' %}
+    {% assign text_integrations_7 = 'Amazon, Hadoop…' %}
+{% endcase %}
+
 <div class="solution">
   <div class="wrapper">
     <div class="u-inner-large">
 
-      <h1 class="heading2">Sherpa campaign</h1>
+      <h1 class="heading2">{{ heading }}</h1>
       <div class="solution__content">
-        <p class="text">Solución para la automatización de las tareas de marketing (MAP), tales como envíos de emails, social media y otras accions sobre la web website actions bajo un mismo concepto de Campaña independientemente del canal utilizado.</p>
+        <p class="text">{{ text }}</p>
       </div>
-      <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/sherpa-campaign.png" alt="Sherpa campaign">
+      <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/sherpa-campaign.png" alt="{{ img_alt }}">
 
       {% include patterns/sectors.html %}
 
       <div class="panel panel--pelorous panel--cols">
         <div class="panel__col-l">
           <div class="u-inner-xsmall">
-            <h2 class="heading3 heading3--light heading3--hr">Funcionalidades</h2>
+            <h2 class="heading3 heading3--light heading3--hr">{{ heading_features }}</h2>
             <ul class="list list--unstyled list--light">
-              <li>Envíos: Email, SMS, Telemk, Media, Formularios, Landings… Reports</li>
-              <li>Campañas, Contenidos,  Segmentación, Personas.</li>
+              <li>{{ text_features_1 }}</li>
+              <li>{{ text_features_2 }}</li>
             </ul>
           </div>
         </div>
         <div class="panel__col-r">
           <div class="u-inner-xsmall">
-            <h2 class="heading3 heading3--light heading3--hr">Integraciones</h2>
+            <h2 class="heading3 heading3--light heading3--hr">{{ heading_integrations }}</h2>
             <ul class="list list--unstyled list--light">
-              <li>Mailjet, Mailchimp, SMS</li>
-              <li>Qlikview, Qliksense, Power BI,  Domo, Cruchbase,</li>
-              <li>Facebook, Twitter, Instagram,  Linkedin, Sentiment</li>
-              <li>Magento, Prestashop, Freshdesk,  Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…</li>
-              <li>Sizmek, Doubleclick</li>
-              <li>Zapier, IFTTT</li>
-              <li>Amazon, Hadoop…</li>
+              <li>{{ text_integrations_1 }}</li>
+              <li>{{ text_integrations_2 }}</li>
+              <li>{{ text_integrations_3 }}</li>
+              <li>{{ text_integrations_4 }}</li>
+              <li>{{ text_integrations_5 }}</li>
+              <li>{{ text_integrations_6 }}</li>
+              <li>{{ text_integrations_7 }}</li>
             </ul>
           </div>
         </div>

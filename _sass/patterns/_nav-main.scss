@@ -12,6 +12,7 @@
 
   @media ($medium-up) {
     @include list-inline-last($sp-xsmall, $sp-xsmall);
+    float: left;
   }
 
   > li {
@@ -40,6 +41,10 @@
       @media ($medium-up) {
         background-color: $nav-main-link-bgc-hover-medium-up;
       }
+    }
+
+    &.is-subitem:after {
+      @include subitem-arrow($sp-xsmall, -$sp-xsmall);
     }
 
     &.is-active,

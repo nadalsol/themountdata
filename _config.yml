@@ -43,10 +43,6 @@ sass:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Jekyll SEO Tags plugin
-# https://github.com/jekyll/jekyll-seo-tag
-# lang: es # default lang (if not specified, default is `en_US`)
-
 # Multilingual references
 # https://www.sylvaindurand.org/making-jekyll-multilingual/
 # Indicate, for each post and page, its language (lang) and an unique identifier

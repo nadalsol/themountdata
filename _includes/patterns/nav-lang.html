@@ -1,0 +1,15 @@
+<ul class="nav-lang u-text-uppercase">
+{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+{% for page in pages %}
+  <li class="{{ page.lang }}">
+    <a id="nav-main-lang-{{ page.lang }}" class="nav-lang__link is-subitem" href="{{ site.baseurl }}{{ page.url }}">{{ page.lang }}</a>
+    <ul id="nav-secondary-lang-{{ page.lang }}" class="nav-secondary u-text-left is-medium-hidden">
+      {% for page in pages %}
+      <li class="{{ page.lang }}">
+        <a class="nav-secondary__link" href="{{ site.baseurl }}{{ page.url }}">{% if page.lang == 'ca' %}Català{% elsif page.lang == 'en' %}English{% else %}Español{% endif %}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+{% endfor %}
+</ul>

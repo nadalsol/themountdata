@@ -37,10 +37,8 @@
       background-color: $nav-secondary-link-bgc-hover;
     }
 
-    &.is-subitem {
-      background-image: url($assets-img-path + "/icon-arrow-d.png");
-      background-repeat: no-repeat;
-      background-position: right $sp-medium;
+    &.is-subitem:after {
+      @include subitem-arrow($sp-medium, $sp-small);
     }
 
     &.is-active,

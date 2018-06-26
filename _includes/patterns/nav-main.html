@@ -22,22 +22,13 @@
     {% assign nav_main_text_3 = 'Nosotros' %}
 {% endcase %}
 
-<ul style="list-style: none; margin: 0; padding: 0;">
-{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-{% for page in pages %}
-  <li style="display: inline-block; margin: 0; padding: 10px;">
-    <a href="{{ site.baseurl }}{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
-  </li>
-{% endfor %}
-</ul>
-
 <ul class="nav-main u-text-uppercase">
   <li>
-    <a id="nav-main-services" class="nav-main__link" href="{{ site.baseurl }}/{{ nav_main_link_1 }}">{{ nav_main_text_1 }}</a>
+    <a id="nav-main-services" class="nav-main__link is-subitem" href="{{ site.baseurl }}/{{ nav_main_link_1 }}">{{ nav_main_text_1 }}</a>
     {% include patterns/nav-secondary-services.html %}
   </li>
   <li>
-    <a id="nav-main-solutions" class="nav-main__link" href="{{ site.baseurl }}/{{ nav_main_link_2 }}">{{ nav_main_text_2 }}</a>
+    <a id="nav-main-solutions" class="nav-main__link is-subitem" href="{{ site.baseurl }}/{{ nav_main_link_2 }}">{{ nav_main_text_2 }}</a>
     {% include patterns/nav-secondary-solutions.html %}
   </li>
   <li>

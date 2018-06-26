@@ -1,0 +1,79 @@
+// Language selector
+// -----------------------------------------------------------------------------
+//
+// 1. In order to emphatize the actual version, you need to declare the lang
+// attribute on the html (i.e. `<html lang="en">`)
+// 2. Touch device friendly
+//
+
+.nav-lang {
+  @include list-reset;
+  font-family: $ff-sans-serif-m;
+  font-size: $fz-xxsmall;
+  line-height: $lh-base;
+
+  @media ($medium-up) {
+    @include list-inline($sp-xsmall, $sp-xsmall);
+    position: relative;
+    float: right;
+    margin-left: $sp-xxlarge;
+
+    &:before {
+      @include size(1px, $sp-large);
+      content: '';
+      position: absolute;
+      top: $sp-base;
+      left: -13px;
+      background-color: $c-java;
+    }
+  }
+
+  > li {
+    display: none;
+    position: relative;
+
+    // 1
+    &.es:lang(es),
+    &.ca:lang(ca),
+    &.en:lang(en) {
+      display: block;
+    }
+  }
+
+  &__link {
+    @include link($nav-lang-link-c, $nav-lang-link-c-hover);
+    display: block; // 2
+    padding: $sp-small;
+    background-color: $nav-lang-link-bgc;
+    transition: $transition-bg;
+
+    @media ($medium-up) {
+      @include link($nav-lang-link-c-medium-up, $nav-lang-link-c-hover-medium-up);
+      font-size: $fz-xxsmall;
+      font-weight: $fw-extra-light;
+      padding: $sp-xxsmall 0;
+      background-color: $nav-lang-link-bgc-medium-up;
+    }
+
+    &:hover {
+      background-color: $nav-lang-link-bgc-hover;
+
+      @media ($medium-up) {
+        background-color: $nav-lang-link-bgc-hover-medium-up;
+      }
+    }
+
+    &.is-subitem:after {
+      @include subitem-arrow($sp-xsmall, 0);
+    }
+  }
+
+  .nav-secondary > li {
+    // 1
+    &.es:lang(es) > .nav-secondary__link,
+    &.ca:lang(ca) > .nav-secondary__link,
+    &.en:lang(en) > .nav-secondary__link {
+      color: $nav-lang-link-c-active;
+    }
+  }
+}

@@ -13,7 +13,13 @@ $(document).ready(function() {
       navMainServices = $('#nav-main-services'),
       navSecondaryServices = $('#nav-secondary-services'),
       navMainSolutions = $('#nav-main-solutions'),
-      navSecondarySolutions = $('#nav-secondary-solutions');
+      navSecondarySolutions = $('#nav-secondary-solutions'),
+      navMainLangCa = $('#nav-main-lang-ca'),
+      navMainLangEn = $('#nav-main-lang-en'),
+      navMainLangEs = $('#nav-main-lang-es'),
+      navSecondaryLangCa = $('#nav-secondary-lang-ca'),
+      navSecondaryLangEn = $('#nav-secondary-lang-en'),
+      navSecondaryLangEs = $('#nav-secondary-lang-es');
 
   /**
    * Manage `is-sticky` state for `header`
@@ -40,10 +46,14 @@ $(document).ready(function() {
     event.preventDefault();
 
     navMainServices.addClass('is-active');
-    navSecondaryServices.removeClass('is-medium-hidden');
+    navSecondaryServices.toggleClass('is-medium-hidden');
 
     navMainSolutions.removeClass('is-active');
     navSecondarySolutions.addClass('is-medium-hidden');
+
+    navSecondaryLangCa.addClass('is-medium-hidden');
+    navSecondaryLangEn.addClass('is-medium-hidden');
+    navSecondaryLangEs.addClass('is-medium-hidden');
   });
 
   /**
@@ -52,11 +62,57 @@ $(document).ready(function() {
   navMainSolutions.click(function(event) {
     event.preventDefault();
 
-    navMainSolutions.addClass('is-active');
-    navSecondarySolutions.removeClass('is-medium-hidden');
-
     navMainServices.removeClass('is-active');
     navSecondaryServices.addClass('is-medium-hidden');
+
+    navMainSolutions.addClass('is-active');
+    navSecondarySolutions.toggleClass('is-medium-hidden');
+
+    navSecondaryLangCa.addClass('is-medium-hidden');
+    navSecondaryLangEn.addClass('is-medium-hidden');
+    navSecondaryLangEs.addClass('is-medium-hidden');
+  });
+
+  /**
+   * Toggle `nav-secondary-lang-ca` visibility, via nav-lang menu
+   */
+  navMainLangCa.click(function(event) {
+    event.preventDefault();
+
+    navSecondaryLangCa.toggleClass('is-medium-hidden');
+    navSecondaryLangEn.addClass('is-medium-hidden');
+    navSecondaryLangEs.addClass('is-medium-hidden');
+
+    navSecondaryServices.addClass('is-medium-hidden');
+    navSecondarySolutions.addClass('is-medium-hidden');
+  });
+
+  /**
+   * Toggle `nav-secondary-lang-en` visibility, via nav-lang menu
+   */
+  navMainLangEn.click(function(event) {
+    event.preventDefault();
+
+    navSecondaryLangCa.addClass('is-medium-hidden');
+    navSecondaryLangEn.toggleClass('is-medium-hidden');
+    navSecondaryLangEs.addClass('is-medium-hidden');
+
+    navSecondaryServices.addClass('is-medium-hidden');
+    navSecondarySolutions.addClass('is-medium-hidden');
+  });
+
+  /**
+   * Toggle `nav-secondary-lang-es` visibility, via nav-lang menu
+   */
+  navMainLangEs.click(function(event) {
+    event.preventDefault();
+
+    navSecondaryLangCa.addClass('is-medium-hidden');
+    navSecondaryLangEn.addClass('is-medium-hidden');
+    navSecondaryLangEs.toggleClass('is-medium-hidden');
+
+    navSecondaryServices.addClass('is-medium-hidden');
+    navSecondarySolutions.addClass('is-medium-hidden');
   });
 
   /**

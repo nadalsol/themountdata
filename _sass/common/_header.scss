@@ -38,8 +38,8 @@
 
     @media ($medium-up) {
       @include positioner($header-nav-po-medium-up, $header-nav-wd-medium-up, $header-nav-ht-medium-up, top, auto, left, auto, auto);
+      @include clearfix;
       float: right;
-      text-align: right;
     }
   }
 

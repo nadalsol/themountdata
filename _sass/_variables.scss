@@ -380,9 +380,22 @@ $map-wd:                            100% !default;
 $map-ht:                            530px !default;
 $map-bgc:                           $c-downriver !default;
 
+// Navigation lang
+$nav-lang-link-c:                         $c-light !default;
+$nav-lang-link-bgc:                       $c-eastbay !default;
+$nav-lang-link-c-medium-up:               $c-lynch !default;
+$nav-lang-link-bgc-medium-up:             transparent !default;
+
+$nav-lang-link-c-hover:                   $c-light !default; // TODO : replace hover color
+$nav-lang-link-bgc-hover:                 $c-manatee !default;
+$nav-lang-link-c-hover-medium-up:         $c-manatee !default; // TODO : replace hover color
+$nav-lang-link-bgc-hover-medium-up:       transparent !default;
+
+$nav-lang-link-c-active:                  $c-chetwode !default;
+
 // Navigation legal
-$nav-legal-c:                       $c-dark !default;
-$nav-legal-c-hover:                 $c-lynch !default; // TODO : replace hover color
+$nav-legal-c:                             $c-dark !default;
+$nav-legal-c-hover:                       $c-lynch !default; // TODO : replace hover color
 
 // Navigation main
 $nav-main-link-c:                         $c-light !default;
@@ -403,7 +416,7 @@ $nav-main-link-bgc-active-medium-up:      transparent !default;
 // Navigation secondary
 $nav-secondary-wd:                        100% !default;
 $nav-secondary-wd-medium-up:              300px !default;
-$nav-secondary-top-medium-up:             72px !default;
+$nav-secondary-top-medium-up:             73px !default;
 
 $nav-secondary-link-bgc:                  $c-eastbay !default;
 $nav-secondary-link-c:                    $c-light !default;

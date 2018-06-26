@@ -17,8 +17,8 @@ title: The Mount Data
 email: info@themountdata.com
 description: >- # this means to ignore newlines until "baseurl:"
   Creemos en los datos, la tecnología y el análisis para marketing y ventas
-# baseurl: "/themountdata" # the subpath of your site, e.g. /blog
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/themountdata" # the subpath of your site, e.g. /blog
+# baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://themountdata.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: themountdata
 # github_username:  jekyll

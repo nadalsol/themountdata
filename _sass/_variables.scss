@@ -301,6 +301,8 @@ $carousel-controls-wd:            100% !default;
 $carousel-controls-ht:            floor($carousel-control-button-wd + ($carousel-control-button-m * 2)) !default;
 
 // Forms
+$form-group-mb:                   $sp-big !default;
+
 $form-label-mb:                   $sp-base !default;
 $form-label-ff:                   $ff-sans-serif-b !default;
 $form-label-fz:                   $fz-xxsmall !default;
@@ -308,7 +310,6 @@ $form-label-fw:                   $fw-semi-bold !default;
 $form-label-c:                    $text-c !default;
 
 $form-field-ht:                   $sp-xlarge !default;
-$form-field-mb:                   $sp-big !default;
 $form-field-pd:                   $sp-base $sp-xxsmall !default;
 $form-field-ff:                   $ff-sans-serif-b !default;
 $form-field-fz:                   $fz-base !default;

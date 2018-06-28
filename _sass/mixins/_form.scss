@@ -4,7 +4,6 @@
 @mixin field-and-textarea($ht) {
   width: 100%;
   height: $ht;
-  margin-bottom: $form-field-mb;
   padding: $form-field-pd;
   font-family: $form-field-ff;
   font-size: $form-field-fz;

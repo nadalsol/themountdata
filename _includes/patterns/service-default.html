@@ -1,22 +1,22 @@
 {% case page.lang %}
   {% when 'ca' %}
     {% assign heading = 'Serveis' %}
-    {% assign service_data = 'Dades' %}
-    {% assign service_analysis = 'Anàlisi' %}
-    {% assign service_visualization = 'Visualització' %}
-    {% assign service_action = 'Acció' %}
+    {% assign subheading_1 = 'Dades' %}
+    {% assign subheading_2 = 'Anàlisi' %}
+    {% assign subheading_3 = 'Visualització' %}
+    {% assign subheading_4 = 'Acció' %}
   {% when 'en' %}
     {% assign heading = 'Services' %}
-    {% assign service_data = 'Data' %}
-    {% assign service_analysis = 'Analysis' %}
-    {% assign service_visualization = 'Visualization' %}
-    {% assign service_action = 'Action' %}
+    {% assign subheading_1 = 'Data' %}
+    {% assign subheading_2 = 'Analysis' %}
+    {% assign subheading_3 = 'Visualization' %}
+    {% assign subheading_4 = 'Action' %}
   {% else %}
     {% assign heading = 'Servicios' %}
-    {% assign service_data = 'Datos' %}
-    {% assign service_analysis = 'Análisis' %}
-    {% assign service_visualization = 'Visualización' %}
-    {% assign service_action = 'Acción' %}
+    {% assign subheading_1 = 'Datos' %}
+    {% assign subheading_2 = 'Análisis' %}
+    {% assign subheading_3 = 'Visualización' %}
+    {% assign subheading_4 = 'Acción' %}
 {% endcase %}
 
 <div class="service-default">
@@ -26,37 +26,42 @@
       <h1 class="heading2 service-default__heading u-text-center">{{ heading }}</h1>
 
       <div class="service-default__img is-medium-hidden">
-        {% include icons/service-default.svg css-class="icon u-img-responsive-full" %}
+        {% comment %}{% include icons/services.svg css-class="icon u-img-responsive-full" %}{% endcomment %}
+        <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/services.png" alt="{{ heading }}">
       </div>
 
       <div class="service-default__content">
 
         <div class="service-default__col25">
           <div class="service-default__img is-small-hidden">
-            {% include icons/medium-up/service-default.svg css-class="icon u-img-responsive-full" %}
+            {% comment %}{% include icons/medium-up/services-data.svg css-class="icon u-img-responsive-full" %}{% endcomment %}
+            <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/services-data.png" alt="{{ subheading_1 }}">
           </div>
-          <h3 class="heading3 service-default__subheading">{{ service_data }}</h3>
+          <h3 class="heading3 service-default__subheading">{{ subheading_1 }}</h3>
         </div>
 
         <div class="service-default__col25">
           <div class="service-default__img is-small-hidden">
-            {% include icons/medium-up/service-default.svg css-class="icon u-img-responsive-full" %}
+            {% comment %}{% include icons/medium-up/services-analysis.svg css-class="icon u-img-responsive-full" %}{% endcomment %}
+            <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/services-analysis.png" alt="{{ subheading_2 }}">
           </div>
-          <h3 class="heading3 service-default__subheading">{{ service_analysis }}</h3>
+          <h3 class="heading3 service-default__subheading">{{ subheading_2 }}</h3>
         </div>
 
         <div class="service-default__col25">
           <div class="service-default__img is-small-hidden">
-            {% include icons/medium-up/service-default.svg css-class="icon u-img-responsive-full" %}
+            {% comment %}{% include icons/medium-up/services-visualization.svg css-class="icon u-img-responsive-full" %}{% endcomment %}
+            <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/services-visualization.png" alt="{{ subheading_3 }}">
           </div>
-          <h3 class="heading3 service-default__subheading">{{ service_visualization }}</h3>
+          <h3 class="heading3 service-default__subheading">{{ subheading_3 }}</h3>
         </div>
 
         <div class="service-default__col25">
           <div class="service-default__img is-small-hidden">
-            {% include icons/medium-up/service-default.svg css-class="icon u-img-responsive-full" %}
+            {% comment %}{% include icons/medium-up/services-action.svg css-class="icon u-img-responsive-full" %}{% endcomment %}
+            <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/services-action.png" alt="{{ subheading_4 }}">
           </div>
-          <h3 class="heading3 service-default__subheading">{{ service_action }}</h3>
+          <h3 class="heading3 service-default__subheading">{{ subheading_4 }}</h3>
         </div>
 
       </div>

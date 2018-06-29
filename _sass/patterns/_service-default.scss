@@ -24,7 +24,7 @@
 
   &__col25 {
     @media ($medium-up) {
-      @include col(25%, center);
+      @include col(25%, left);
       margin-left: $sp-xxsmall;
       margin-right: $sp-xxsmall;
     }

@@ -8,9 +8,9 @@
     {% assign phone = 'Telèfon' %}
     {% assign company = 'Empresa' %}
     {% assign position = 'Càrrec' %}
+    {% assign subject = 'Assumpte' %}
     {% assign message = 'Consulta' %}
     {% assign privacy = 'He llegit i acepto la <a href="#">política de privacitat</a>' %}
-    {% assign subject = 'Consulta des de themountdata.com (CA)' %}
     {% assign submit = 'Enviar' %}
   {% when 'en' %}
     {% assign heading = 'Request a free consultation' %}
@@ -21,9 +21,9 @@
     {% assign phone = 'Phone' %}
     {% assign company = 'Company' %}
     {% assign position = 'Position' %}
+    {% assign subject = 'Subject' %}
     {% assign message = 'Description' %}
     {% assign privacy = 'I agree with the <a href="#">privacy policy</a>' %}
-    {% assign subject = 'Request from themountdata.com (EN)' %}
     {% assign submit = 'Submit' %}
   {% else %}
     {% assign heading = 'Request a free consultation' %}
@@ -34,9 +34,9 @@
     {% assign phone = 'Teléfono' %}
     {% assign company = 'Empresa' %}
     {% assign position = 'Cargo' %}
+    {% assign subject = 'Asunto' %}
     {% assign message = 'Consulta' %}
     {% assign privacy = 'He leído y acepto la <a href="#">política de privacidad</a>' %}
-    {% assign subject = 'Consulta desde themountdata.com (ES)' %}
     {% assign submit = 'Enviar' %}
 {% endcase %}
 
@@ -49,7 +49,7 @@
         <h3 class="heading4 u-text-center">{{ subheading }}</h3>
       </div>
 
-      <form class="contact__content form" action="mailto:nadalsoler@gmail.com?subject=subject&message=message" method="post">
+      <form class="contact__content form" action="https://formspree.io/nadalsoler@gmail.com" method="POST">
 
         <fieldset class="form__fieldset contact__col25">
 
@@ -60,7 +60,7 @@
 
           <div class="form__group">
             <label class="form__label is-required" for="email">{{ email }}</label>
-            <input class="form__field" type="email" id="email" name="email" tabindex="3" required>
+            <input class="form__field" type="email" id="email" name="_replyto" tabindex="3" required>
           </div>
 
           <div class="form__group">
@@ -92,16 +92,21 @@
         <fieldset class="form__fieldset contact__col50">
 
           <div class="form__group">
+            <label class="form__label" for="subject">{{ subject }}</label>
+            <input class="form__field" type="text" id="subject" name="_subject" tabindex="7">
+          </div>
+
+          <div class="form__group">
             <label class="form__label" for="message">{{ message }}</label>
-            <textarea class="form__textarea" id="message" name="message" rows="8" cols="80" tabindex="7"></textarea>
+            <textarea class="form__textarea" id="message" name="message" rows="8" cols="80" tabindex="8"></textarea>
           </div>
 
           <div class="form__group form__group--inline">
-            <input class="form__checkbox" type="checkbox" id="privacy" name="privacy" value="agree" tabindex="8" required>
+            <input class="form__checkbox" type="checkbox" id="privacy" name="privacy" value="ok" tabindex="9" required>
             <label class="form__label is-required" for="privacy">{{ privacy }}</label>
           </div>
 
-          <input type="hidden" id="subject" name="subject" value="{{ subject }}">
+          <input type="hidden" id="language" name="_language" value="{{ page.lang | upcase }}">
 
           <div class="button-set button-set--r">
             <button type="submit" class="button button--primary button--small">{{ submit }}</button>

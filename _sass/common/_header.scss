@@ -53,3 +53,8 @@
     vertical-align: top;
   }
 }
+
+// When `is-cookie-message` on the `body`, `header` gets repositioned
+.is-cookie-message > .header {
+  top: $header-is-cookie-top;
+}

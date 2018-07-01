@@ -24,7 +24,6 @@ input[type="submit"] {
 
 [role="button"] {
   color: inherit;
-  cursor: pointer;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -38,6 +37,7 @@ input[type="reset"],
 input[type="submit"],
 [role="button"] {
   line-height: $lh-base;
+  cursor: pointer;
 }
 
 

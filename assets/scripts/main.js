@@ -123,6 +123,87 @@ $(document).ready(function() {
     headerNav.toggleClass('is-small-hidden');
   });
 
+  /**
+   * Cookie message
+   * Based on the code of [Studio 24](https://github.com/studio24/cookie-message)
+   */
+  (function() {
+    //
+    // Set cookie
+    //
+    // @param string name
+    // @param string value
+    // @param int days
+    // @param string path
+    // @see http://www.quirksmode.org/js/cookies.html
+    //
+    function createCookie(name,value,days,path) {
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+      }
+      else var expires = "";
+      document.cookie = name+"="+value+expires+"; path="+path;
+    }
+
+    //
+    // Read cookie
+    //
+    // @param string name
+    // @returns {*}
+    // @see http://www.quirksmode.org/js/cookies.html
+    //
+    function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+    }
+
+    var cookieMessage = document.getElementById('cookie-message');
+    if (cookieMessage == null) {
+      return;
+    }
+    var cookie = readCookie('seen-cookie-message');
+    var body = document.getElementsByTagName('body')[0];
+    if (cookie != null && cookie == 'yes') {
+      cookieMessage.style.display = 'none';
+    } else {
+      cookieMessage.style.display = 'block';
+      body.classList.add('is-cookie-message');
+    }
+
+    // Set/update cookie
+    var cookieExpiry = cookieMessage.getAttribute('data-cookie-expiry');
+    if (cookieExpiry == null) {
+      cookieExpiry = 30;
+    }
+    var cookiePath = cookieMessage.getAttribute('data-cookie-path');
+    if (cookiePath == null) {
+      cookiePath = "/";
+    }
+    createCookie('seen-cookie-message','yes',cookieExpiry,cookiePath);
+  })();
+
+  /**
+   * Close cookie message
+   */
+  var body = $('body'),
+      cookieMessage = $('#cookie-message'),
+      cookieMessageClose = $('#cookie-message-close');
+
+  cookieMessageClose.click(function() {
+    // Remove body class
+    body.removeClass('is-cookie-message');
+    // Remove message from DOM
+    cookieMessage.remove();
+  });
+
 });
 
 

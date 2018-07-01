@@ -151,6 +151,20 @@ $u-inner-xxlarge-pd-large-up:     460px $sp-big 0 !default;
 // Common
 // -----------------------------------------------------------------------------
 
+// Cookie message
+$cookie-msg-wd:                   100% !default;
+$cookie-msg-ht:                   100px !default;
+$cookie-msg-bg:                   $c-dark !default;
+
+$cookie-msg-close-wd:             $sp-xsmall !default;
+$cookie-msg-close-ht:             $sp-xsmall !default;
+$cookie-msg-close-wd-medium-up:   $sp-large !default;
+$cookie-msg-close-ht-medium-up:   $sp-large !default;
+$cookie-msg-close-t:              0 !default;
+$cookie-msg-close-r:              $sp-base !default;
+$cookie-msg-close-t-medium-up:    $sp-xlarge !default;
+$cookie-msg-close-r-medium-up:    $sp-big !default;
+
 // Footer
 $footer-wd:                       100% !default;
 $footer-ht:                       auto !default;
@@ -183,9 +197,18 @@ $header-ht-medium-up:             floor($header-brand-ht-medium-up + ($u-inner-x
 $header-bg:                       transparent !default;
 $header-bg-sticky:                $c-light !default;
 
+$header-is-cookie-top:            $cookie-msg-ht !default;
+
 $header-hamburger-wd:             $header-ht !default;
 $header-hamburger-ht:             $header-ht !default;
 $header-hamburger-bg:             $c-eastbay !default;
+
+// Body (should go after Header)
+$body-mt:                         $header-ht !default;
+$body-mt-medium-up:               $header-ht-medium-up !default;
+
+$body-is-cookie-mt:               floor($header-ht + $cookie-msg-ht) !default;
+$body-is-cookie-mt-medium-up:     floor($header-ht-medium-up + $cookie-msg-ht) !default;
 
 
 // Patterns

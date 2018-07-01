@@ -44,8 +44,21 @@
   @include size(100%, auto);
 }
 
+.icon--close {
+  @include size($cookie-msg-close-wd, $cookie-msg-close-ht);
+
+  @media ($medium-up) {
+    @include size($cookie-msg-close-wd-medium-up, $cookie-msg-close-ht-medium-up);
+  }
+}
+
 .icon--hamburger {
   @include size(20px, 16px);
+  vertical-align: middle;
+}
+
+.icon--small {
+  @include size(30px, 30px);
   vertical-align: middle;
 }
 
@@ -55,11 +68,6 @@
 
 .icon--values-medium-up {
   @include size(444px, 416px);
-}
-
-.icon--small {
-  @include size(30px, 30px);
-  vertical-align: middle;
 }
 
 

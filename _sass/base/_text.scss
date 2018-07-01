@@ -19,6 +19,18 @@
     font-size: $fz-small;
   }
 
+  &--cookie {
+    font-size: $fz-xsmall;
+    color: $c-light;
+
+    > a {
+      @include link($c-light, $c-mischka);
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-weight: $fw-base;
+    }
+  }
+
   &--fiord {
     color: $c-fiord;
   }

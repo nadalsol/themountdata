@@ -12,7 +12,7 @@
 }
 
 .cookie-message {
-  @include positioner(fixed, $cookie-msg-wd, $cookie-msg-ht, top, 0, left, 0, 10);
+  @include positioner(fixed, $cookie-msg-wd, $cookie-msg-ht, top, 0, left, 0, $zi-100);
   background-color: $cookie-msg-bg;
   overflow: hidden;
   border-bottom: $br-small solid $c-mischka;
@@ -22,7 +22,7 @@
   }
 
   &__close {
-    @include positioner(absolute, $cookie-msg-close-wd, $cookie-msg-close-ht, top, $cookie-msg-close-t, right, $cookie-msg-close-r, 11);
+    @include positioner(absolute, $cookie-msg-close-wd, $cookie-msg-close-ht, top, $cookie-msg-close-t, right, $cookie-msg-close-r, $zi-100);
 
     @media ($medium-up) {
       @include size($cookie-msg-close-wd-medium-up, $cookie-msg-close-ht-medium-up);

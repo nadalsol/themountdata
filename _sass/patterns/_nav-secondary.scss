@@ -13,7 +13,7 @@
   border-bottom: $br-small solid $c-light;
 
   @media ($medium-up) {
-    @include positioner-center-h($nav-secondary-wd-medium-up, auto, $nav-secondary-top-medium-up, 10);
+    @include positioner-center-h($nav-secondary-wd-medium-up, auto, $nav-secondary-top-medium-up, $zi-100);
     border-bottom: 0;
 
     &:before {

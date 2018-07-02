@@ -2,13 +2,13 @@
 // -----------------------------------------------------------------------------
 
 // Positioner
-@mixin positioner($po, $po-wd, $po-ht, $po-v-property, $po-v-value, $po-h-property, $po-h-value, $po-zi: auto) {
+@mixin positioner($po, $wd, $ht, $v-property, $v-value, $h-property, $h-value, $zi: auto) {
   position: $po;
-  width: $po-wd;
-  height: $po-ht;
-  #{$po-v-property}: $po-v-value;
-  #{$po-h-property}: $po-h-value;
-  z-index: $po-zi;
+  width: $wd;
+  height: $ht;
+  #{$v-property}: $v-value;
+  #{$h-property}: $h-value;
+  z-index: $zi;
 }
 
 // Positioner for horizontal centering

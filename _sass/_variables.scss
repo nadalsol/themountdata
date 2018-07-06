@@ -45,7 +45,7 @@ $c-cosmic:               #683361 !default;
 
 // Scaffolding
 // $assets-path:            "/themountdata/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
-$assets-path:            "/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
+$assets-path:            "/assets" !default;
 $assets-img-path:        $assets-path + "/img" !default;
 
 $body-bg:                $c-light !default;
@@ -53,7 +53,7 @@ $body-bg:                $c-light !default;
 $text-c:                 $c-dark !default;
 
 $link-c:                 $c-java !default;
-$link-c-hover:           $c-surfie !default; // TODO : replace hover color
+$link-c-hover:           $c-surfie !default;
 
 // Spacing units
 $sp-base:                5px !default;
@@ -428,16 +428,16 @@ $nav-lang-link-bgc:                       $c-eastbay !default;
 $nav-lang-link-c-medium-up:               $c-lynch !default;
 $nav-lang-link-bgc-medium-up:             transparent !default;
 
-$nav-lang-link-c-hover:                   $c-light !default; // TODO : replace hover color
+$nav-lang-link-c-hover:                   $c-light !default;
 $nav-lang-link-bgc-hover:                 $c-manatee !default;
-$nav-lang-link-c-hover-medium-up:         $c-manatee !default; // TODO : replace hover color
+$nav-lang-link-c-hover-medium-up:         $c-manatee !default;
 $nav-lang-link-bgc-hover-medium-up:       transparent !default;
 
 $nav-lang-link-c-active:                  $c-chetwode !default;
 
 // Navigation legal
 $nav-legal-c:                             $c-dark !default;
-$nav-legal-c-hover:                       $c-lynch !default; // TODO : replace hover color
+$nav-legal-c-hover:                       $c-lynch !default;
 
 // Navigation main
 $nav-main-link-c:                         $c-light !default;
@@ -445,9 +445,9 @@ $nav-main-link-bgc:                       $c-eastbay !default;
 $nav-main-link-c-medium-up:               $c-lynch !default;
 $nav-main-link-bgc-medium-up:             transparent !default;
 
-$nav-main-link-c-hover:                   $c-light !default; // TODO : replace hover color
+$nav-main-link-c-hover:                   $c-light !default;
 $nav-main-link-bgc-hover:                 $c-manatee !default;
-$nav-main-link-c-hover-medium-up:         $c-manatee !default; // TODO : replace hover color
+$nav-main-link-c-hover-medium-up:         $c-manatee !default;
 $nav-main-link-bgc-hover-medium-up:       transparent !default;
 
 $nav-main-link-c-active:                  $c-light !default;
@@ -462,7 +462,7 @@ $nav-secondary-top-medium-up:             73px !default;
 
 $nav-secondary-link-bgc:                  $c-eastbay !default;
 $nav-secondary-link-c:                    $c-light !default;
-$nav-secondary-link-c-hover:              $c-light !default; // TODO : replace hover color
+$nav-secondary-link-c-hover:              $c-light !default;
 $nav-secondary-link-bgc-hover:            $c-manatee !default;
 $nav-secondary-link-c-active:             $c-light !default;
 $nav-secondary-link-bgc-active:           $c-lynch !default;
@@ -470,7 +470,7 @@ $nav-secondary-link-bgc-active:           $c-lynch !default;
 // Navigation tertiary
 $nav-tertiary-link-bgc:                   $c-lynch !default;
 $nav-tertiary-link-c:                     $c-light !default;
-$nav-tertiary-link-c-hover:               $c-light !default; // TODO : replace hover color
+$nav-tertiary-link-c-hover:               $c-light !default;
 $nav-tertiary-link-bgc-hover:             $c-manatee !default;
 $nav-tertiary-link-c-active:              $c-light !default;
 $nav-tertiary-link-bgc-active:            $c-lynch !default;

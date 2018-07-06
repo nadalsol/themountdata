@@ -44,7 +44,7 @@
     }
 
     &.is-subitem:after {
-      @include subitem-arrow($sp-xsmall, -$sp-xsmall);
+      @include pseudo-chevron($sp-xsmall, -$sp-xsmall);
     }
 
     &.is-active,
@@ -56,10 +56,12 @@
         color: $nav-main-link-c-active-medium-up;
         background-color: $nav-main-link-bgc-active-medium-up;
       }
+
+      &:before {
+        @media ($medium-up) {
+          @include pseudo-rectangle($sp-xsmall, 4px, $c-dark);
+        }
+      }
     }
   }
 }
-
-// .header.is-sticky .nav-main__link {
-//   //
-// }

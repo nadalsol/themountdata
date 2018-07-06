@@ -38,17 +38,13 @@
     }
 
     &.is-subitem:after {
-      @include subitem-arrow($sp-medium, $sp-small);
+      @include pseudo-chevron($sp-medium, $sp-small);
     }
 
     &.is-active,
     &:active {
       color: $nav-secondary-link-c-active;
       background-color: $nav-secondary-link-bgc-active;
-
-      &.is-subitem {
-        background-image: url($assets-img-path + "/icon-arrow-u.png");
-      }
     }
   }
 }

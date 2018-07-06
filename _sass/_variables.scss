@@ -47,6 +47,7 @@ $c-cosmic:               #683361 !default;
 // $assets-path:            "/themountdata/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
 $assets-path:            "/assets" !default;
 $assets-img-path:        $assets-path + "/img" !default;
+$icons-path:             "/_includes/icons" !default;
 
 $body-bg:                $c-light !default;
 

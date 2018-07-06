@@ -35,6 +35,14 @@
     color: $c-fiord;
   }
 
+  &--mischka {
+    color: $c-mischka;
+
+    > a {
+      font-weight: $fw-base;
+    }
+  }
+
   &--light {
     color: $c-light;
   }

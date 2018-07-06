@@ -10,7 +10,7 @@
     {% assign position = 'Càrrec' %}
     {% assign subject = 'Assumpte' %}
     {% assign message = 'Consulta' %}
-    {% assign privacy = 'He llegit i acepto la <a href="#">política de privacitat</a>' %}
+    {% assign privacy = 'Accepto la <a href="#">política de privacitat</a>' %}
     {% assign submit = 'Enviar' %}
   {% when 'en' %}
     {% assign heading = 'Request a free consultation' %}
@@ -36,7 +36,7 @@
     {% assign position = 'Cargo' %}
     {% assign subject = 'Asunto' %}
     {% assign message = 'Consulta' %}
-    {% assign privacy = 'He leído y acepto la <a href="#">política de privacidad</a>' %}
+    {% assign privacy = 'Acepto la <a href="#">política de privacidad</a>' %}
     {% assign submit = 'Enviar' %}
 {% endcase %}
 
@@ -54,17 +54,17 @@
         <fieldset class="form__fieldset contact__col25">
 
           <div class="form__group">
-            <label class="form__label is-required" for="name">{{ name }}</label>
+            <label class="form__label u-text-uppercase is-required" for="name">{{ name }}</label>
             <input class="form__field" type="text" id="name" name="name" tabindex="1" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label is-required" for="email">{{ email }}</label>
+            <label class="form__label u-text-uppercase is-required" for="email">{{ email }}</label>
             <input class="form__field" type="email" id="email" name="_replyto" tabindex="3" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label" for="company">{{ company }}</label>
+            <label class="form__label u-text-uppercase" for="company">{{ company }}</label>
             <input class="form__field" type="text" id="company" name="company" tabindex="5">
           </div>
 
@@ -73,17 +73,17 @@
         <fieldset class="form__fieldset contact__col25">
 
           <div class="form__group">
-            <label class="form__label is-required" for="surname">{{ surname }}</label>
+            <label class="form__label u-text-uppercase is-required" for="surname">{{ surname }}</label>
             <input class="form__field" type="text" id="surname" name="surname" tabindex="2" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label is-required" for="phone">{{ phone }}</label>
+            <label class="form__label u-text-uppercase is-required" for="phone">{{ phone }}</label>
             <input class="form__field" type="tel" id="phone" name="phone" tabindex="4" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label" for="position">{{ position }}</label>
+            <label class="form__label u-text-uppercase" for="position">{{ position }}</label>
             <input class="form__field" type="text" id="position" name="position" tabindex="6">
           </div>
 
@@ -92,12 +92,12 @@
         <fieldset class="form__fieldset contact__col50">
 
           <div class="form__group">
-            <label class="form__label" for="subject">{{ subject }}</label>
+            <label class="form__label u-text-uppercase" for="subject">{{ subject }}</label>
             <input class="form__field" type="text" id="subject" name="_subject" tabindex="7">
           </div>
 
           <div class="form__group">
-            <label class="form__label" for="message">{{ message }}</label>
+            <label class="form__label u-text-uppercase" for="message">{{ message }}</label>
             <textarea class="form__textarea" id="message" name="message" rows="8" cols="80" tabindex="8"></textarea>
           </div>
 

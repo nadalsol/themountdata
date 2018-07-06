@@ -86,12 +86,10 @@ $fz-large:               28px !default;
 $fz-xlarge:              40px !default;
 $fz-xxlarge:             70px !default;
 
-$fw-base:                400 !default; // Barlow
-$fw-extra-light:         200 !default; // Montserrat
-$fw-light:               300 !default; // Barlow
+$fw-base:                300 !default; // Barlow
 $fw-semi-bold:           600 !default; // Barlow
+$fw-extra-light:         200 !default; // Montserrat
 $fw-bold:                700 !default; // Montserrat
-$fw-extra-bold:          800 !default; // Montserrat
 
 $lh-base:                1.5 !default;
 $lh-xsmall:              1 !default;
@@ -355,7 +353,7 @@ $form-field-ht:                   $sp-xlarge !default;
 $form-field-pd:                   $sp-base $sp-xxsmall !default;
 $form-field-ff:                   $ff-sans-serif-b !default;
 $form-field-fz:                   $fz-base !default;
-$form-field-fw:                   $fw-light !default;
+$form-field-fw:                   $fw-base !default;
 $form-field-c:                    $c-light !default;
 $form-field-trn:                  $transition-bc;
 

@@ -26,24 +26,6 @@ $(document).ready(function() {
         navSecondaryLangEs = $('#nav-secondary-lang-es');
 
     //
-    // Manage `is-sticky` state for `header`
-    //
-    // var toggleIsSticky = function() {
-    //   var scrollTop = $(window).scrollTop();
-    //   if (scrollTop > 0) {
-    //     header.addClass('is-sticky');
-    //   } else {
-    //     header.removeClass('is-sticky');
-    //   }
-    // };
-    //
-    // toggleIsSticky();
-    //
-    // $(window).scroll(function() {
-    //   toggleIsSticky();
-    // });
-
-    //
     // Toggle `nav-secondary-services` visibility, via nav-main menu
     //
     navMainServices.click(function(event) {

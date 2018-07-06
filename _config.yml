@@ -60,9 +60,9 @@ r_index:
   en: en/index.html
 # Nosotros
 r_nosotros:
-  es: nosotros.html
-  ca: ca/nosaltres.html
-  en: en/about.html
+  es: nosotros/index.html
+  ca: ca/nosaltres/index.html
+  en: en/about/index.html
 # Servicios
 r_servicios:
   es: servicios/index.html

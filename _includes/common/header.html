@@ -1,10 +1,10 @@
 {% case page.lang %}
   {% when 'ca' %}
-    {% assign link_home = '/ca/' %}
+    {% assign link_home = 'ca/' %}
   {% when 'en' %}
-    {% assign link_home = '/en/' %}
+    {% assign link_home = 'en/' %}
   {% else %}
-    {% assign link_home = '/' %}
+    {% assign link_home = '' %}
 {% endcase %}
 
 <header id="header" class="header is-sticky" role="banner">
@@ -12,7 +12,7 @@
     <div class="u-inner-xsmall">
 
       <div class="header__brand">
-        <a rel="author" href="{{ site.baseurl }}{{ link_home }}">
+        <a rel="author" href="{{ site.baseurl }}/{{ link_home }}">
           {% include icons/brand.svg css-class="icon icon--brand" %}
         </a>
       </div>

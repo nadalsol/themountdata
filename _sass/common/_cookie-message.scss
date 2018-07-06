@@ -21,11 +21,13 @@
     position: relative;
   }
 
-  &__close {
-    @include positioner(absolute, $cookie-msg-close-wd, $cookie-msg-close-ht, top, $cookie-msg-close-t, right, $cookie-msg-close-r, $zi-100);
+  .button--icon {
+    position: absolute;
+    top: $cookie-msg-close-t;
+    right: $cookie-msg-close-r;
+    z-index: $zi-100;
 
     @media ($medium-up) {
-      @include size($cookie-msg-close-wd-medium-up, $cookie-msg-close-ht-medium-up);
       top: $cookie-msg-close-t-medium-up;
       right: $cookie-msg-close-r-medium-up;
     }

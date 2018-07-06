@@ -75,3 +75,11 @@ input[type="submit"],
 .button--small {
   @include button-small;
 }
+
+
+//
+// Button icon
+//
+.button--icon {
+  @include button-icon;
+}

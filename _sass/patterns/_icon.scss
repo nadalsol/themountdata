@@ -45,10 +45,10 @@
 }
 
 .icon--close {
-  @include size($cookie-msg-close-wd, $cookie-msg-close-ht);
+  @include size($button-icon-wd, $button-icon-ht);
 
   @media ($medium-up) {
-    @include size($cookie-msg-close-wd-medium-up, $cookie-msg-close-ht-medium-up);
+    @include size($button-icon-wd-medium-up, $button-icon-ht-medium-up);
   }
 }
 

@@ -1,0 +1,76 @@
+// Modal
+// -----------------------------------------------------------------------------
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, .5); // TODO : review with Miriam
+  overflow: hidden;
+  outline: 0;
+  z-index: $zi-900;
+
+  &__dialog {
+    position: relative;
+    width: auto;
+    margin: $sp-xxsmall;
+    pointer-events: none;
+
+    @media ($medium-up) {
+      max-width: $screen-md-min;
+      // margin: $sp-xxlarge auto;
+    }
+    //
+    // @media ($large-up) {
+    //   max-width: $screen-lg-min;
+    // }
+    //
+    // @media ($xlarge-up) {
+    //   max-width: $screen-xl-min;
+    // }
+    //
+    // @media ($xxlarge-up) {
+    //   max-width: $screen-xxl-min;
+    // }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: $c-dark;
+    background-clip: padding-box;
+    outline: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: $sp-small $sp-small 0;
+
+    @media ($medium-up) {
+      padding: $sp-xxlarge $sp-xxlarge 0;
+    }
+  }
+
+  &__body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 $sp-small $sp-small;
+
+    @media ($medium-up) {
+      padding: 0 $sp-xxlarge $sp-xxlarge;
+    }
+  }
+}
+
+// Enable modal scrolling
+body.is-modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}

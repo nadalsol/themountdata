@@ -22,13 +22,19 @@ body {
     margin-top: $body-mt-medium-up;
   }
 
-  // When `is-cookie-message` on the `body`, `body` gets repositioned
+  // When `is-cookie-message` class, `body` is repositioned
   &.is-cookie-message {
     margin-top: $body-is-cookie-mt;
 
     @media ($medium-up) {
       margin-top: $body-is-cookie-mt-medium-up;
     }
+  }
+
+  // When `is-modal-open` class, `body` scroll is removed so that modal
+  // content scrolls instead
+  &.is-modal-open {
+    overflow: hidden;
   }
 }
 

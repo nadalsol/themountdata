@@ -23,9 +23,10 @@
 }
 
 // Positioner for horizontal and vertical centering
-@mixin positioner-center-all() {
+@mixin positioner-center-all($zi: auto) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: $zi;
 }

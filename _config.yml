@@ -58,19 +58,6 @@ r_index:
   es:
   ca: ca/index.html
   en: en/index.html
-# Legal
-r_aviso_legal:
-  es: aviso-legal.html
-  ca: ca/avis-legal.html
-  en: en/terms.html
-r_cookies:
-  es: cookies.html
-  ca: ca/cookies.html
-  en: en/cookies.html
-r_privacidad:
-  es: privacidad.html
-  ca: ca/privacitat.html
-  en: en/privacy.html
 # Nosotros
 r_nosotros:
   es: nosotros.html

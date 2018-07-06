@@ -160,12 +160,8 @@ $cookie-msg-wd:                   100% !default;
 $cookie-msg-ht:                   100px !default;
 $cookie-msg-bg:                   $c-dark !default;
 
-$cookie-msg-close-wd:             $sp-xsmall !default;
-$cookie-msg-close-ht:             $sp-xsmall !default;
-$cookie-msg-close-wd-medium-up:   $sp-large !default;
-$cookie-msg-close-ht-medium-up:   $sp-large !default;
-$cookie-msg-close-t:              0 !default;
-$cookie-msg-close-r:              $sp-base !default;
+$cookie-msg-close-t:              $sp-xxsmall !default;
+$cookie-msg-close-r:              $sp-xxsmall !default;
 $cookie-msg-close-t-medium-up:    $sp-xlarge !default;
 $cookie-msg-close-r-medium-up:    $sp-big !default;
 
@@ -296,6 +292,12 @@ $button-xxsmall-fz:               $fz-xxsmall !default;
 
 $button-small-pd:                 $sp-small 100px !default;
 $button-small-fz:                 $fz-small !default;
+
+// Button icon
+$button-icon-wd:                  $sp-xsmall !default;
+$button-icon-ht:                  $sp-xsmall !default;
+$button-icon-wd-medium-up:        $sp-large !default;
+$button-icon-ht-medium-up:        $sp-large !default;
 
 // Button state
 $button-disabled-o:               .5 !default;

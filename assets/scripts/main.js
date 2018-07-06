@@ -204,6 +204,90 @@ $(document).ready(function() {
     cookieMessage.remove();
   });
 
+  /**
+   * Modal
+   */
+  var body = $('body'),
+
+      modalTriggerCookieMessage = $('#modal-trigger-cookie-message'),
+      modalCookieMessage = $('#modal-cookie'),
+      modalCloseCookieMessage = modalCookieMessage.find('.js-modal-close'),
+
+      modalTriggerPrivacy = $('#modal-trigger-privacy'),
+      modalPrivacy = $('#modal-privacy'),
+      modalClosePrivacy = modalPrivacy.find('.js-modal-close'),
+
+      modalTriggerCookie = $('#modal-trigger-cookie'),
+      modalCookie = $('#modal-cookie'),
+      modalCloseCookie = modalCookie.find('.js-modal-close'),
+
+      modalTriggerTerms = $('#modal-trigger-terms'),
+      modalTerms = $('#modal-terms'),
+      modalCloseTerms = modalTerms.find('.js-modal-close');
+
+  //
+  // Modal open
+  //
+  // 1. Body scroll is removed.
+  // 2. Modal is visible.
+  //
+  modalTriggerCookieMessage.click(function(event) {
+    event.preventDefault();
+    body.addClass('is-modal-open'); // 1
+    modalCookieMessage.removeClass('is-hidden'); // 2
+  });
+
+  modalTriggerPrivacy.click(function(event) {
+    event.preventDefault();
+    body.addClass('is-modal-open'); // 1
+    modalPrivacy.removeClass('is-hidden'); // 2
+  });
+
+  modalTriggerCookie.click(function(event) {
+    event.preventDefault();
+    body.addClass('is-modal-open'); // 1
+    modalCookie.removeClass('is-hidden'); // 2
+  });
+
+  modalTriggerTerms.click(function(event) {
+    event.preventDefault();
+    body.addClass('is-modal-open'); // 1
+    modalTerms.removeClass('is-hidden'); // 2
+  });
+
+  //
+  // Modal close
+  //
+  // 1. Body scroll is back.
+  // 2. Modal is hidden.
+  //
+  modalCloseCookieMessage.click(function() {
+    body.removeClass('is-modal-open'); // 1
+    modalCookieMessage.addClass('is-hidden'); // 2
+  });
+
+  modalClosePrivacy.click(function() {
+    body.removeClass('is-modal-open'); // 1
+    modalPrivacy.addClass('is-hidden'); // 2
+  });
+
+  modalCloseCookie.click(function() {
+    body.removeClass('is-modal-open'); // 1
+    modalCookie.addClass('is-hidden'); // 2
+  });
+
+  modalCloseTerms.click(function() {
+    body.removeClass('is-modal-open'); // 1
+    modalTerms.addClass('is-hidden'); // 2
+  });
+
+  //
+  // Modal close (ESC key)
+  //
+  // 1. Body scroll is back, modal is hidden.
+  //
+  // pending...
+
 });
 
 

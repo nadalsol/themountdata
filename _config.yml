@@ -56,60 +56,47 @@ r_404:
 # Home
 r_index:
   es:
-  ca: ca/index.html
-  en: en/index.html
-# Legal
-r_aviso_legal:
-  es: aviso-legal.html
-  ca: ca/avis-legal.html
-  en: en/terms.html
-r_cookies:
-  es: cookies.html
-  ca: ca/cookies.html
-  en: en/cookies.html
-r_privacidad:
-  es: privacidad.html
-  ca: ca/privacitat.html
-  en: en/privacy.html
+  ca: ca/
+  en: en/
 # Nosotros
 r_nosotros:
-  es: nosotros.html
-  ca: ca/nosaltres.html
-  en: en/about.html
+  es: nosotros/
+  ca: ca/nosaltres/
+  en: en/about/
 # Servicios
 r_servicios:
-  es: servicios/index.html
-  ca: ca/serveis/index.html
-  en: en/services/index.html
+  es: servicios/
+  ca: ca/serveis/
+  en: en/services/
 r_servicios_accion:
-  es: servicios/accion/index.html
-  ca: ca/serveis/accio/index.html
-  en: en/services/action/index.html
+  es: servicios/accion/
+  ca: ca/serveis/accio/
+  en: en/services/action/
 r_servicios_analisis:
-  es: servicios/analisis/index.html
-  ca: ca/serveis/analisi/index.html
-  en: en/services/analysis/index.html
+  es: servicios/analisis/
+  ca: ca/serveis/analisi/
+  en: en/services/analysis/
 r_servicios_datos:
-  es: servicios/datos/index.html
-  ca: ca/serveis/dades/index.html
-  en: en/services/data/index.html
+  es: servicios/datos/
+  ca: ca/serveis/dades/
+  en: en/services/data/
 r_servicios_visualizacion:
-  es: servicios/visualizacion/index.html
-  ca: ca/serveis/visualitzacio/index.html
-  en: en/services/visualization/index.html
+  es: servicios/visualizacion/
+  ca: ca/serveis/visualitzacio/
+  en: en/services/visualization/
 # Soluciones
 r_soluciones:
-  es: soluciones/index.html
-  ca: ca/solucions/index.html
-  en: en/solutions/index.html
+  es: soluciones/
+  ca: ca/solucions/
+  en: en/solutions/
 r_soluciones_sherpa_campaign:
-  es: soluciones/sherpa-campaign/index.html
-  ca: ca/solucions/sherpa-campaign/index.html
-  en: en/solutions/sherpa-campaign/index.html
+  es: soluciones/sherpa-campaign/
+  ca: ca/solucions/sherpa-campaign/
+  en: en/solutions/sherpa-campaign/
 r_soluciones_sherpa_dashboard:
-  es: soluciones/sherpa-dashboard/index.html
-  ca: ca/solucions/sherpa-dashboard/index.html
-  en: en/solutions/sherpa-dashboard/index.html
+  es: soluciones/sherpa-dashboard/
+  ca: ca/solucions/sherpa-dashboard/
+  en: en/solutions/sherpa-dashboard/
 
 # Translation
 # Common elements

@@ -64,7 +64,7 @@
     }
 
     &.is-subitem:after {
-      @include subitem-arrow($sp-xsmall, 0);
+      @include pseudo-chevron($sp-xsmall, 0);
     }
   }
 

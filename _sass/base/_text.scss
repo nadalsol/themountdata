@@ -19,8 +19,28 @@
     font-size: $fz-small;
   }
 
+  &--cookie-message {
+    font-size: $fz-xsmall;
+    color: $c-light;
+
+    > a {
+      @include link($c-light, $c-mischka);
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-weight: $fw-base;
+    }
+  }
+
   &--fiord {
     color: $c-fiord;
+  }
+
+  &--mischka {
+    color: $c-mischka;
+
+    > a {
+      font-weight: $fw-base;
+    }
   }
 
   &--light {

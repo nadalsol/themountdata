@@ -1,0 +1,28 @@
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign text = '...' %}
+    {% assign text_link = '...' %}
+  {% when 'en' %}
+    {% assign text = 'The Mount Data uses cookies to ensure we give you the best experience on our website. Please see our' %}
+    {% assign text_link = 'cookie policy' %}
+  {% else %}
+    {% assign text = '...' %}
+    {% assign text_link = '...' %}
+{% endcase %}
+
+<div id="cookie-message" class="cookie-message">
+  <div class="wrapper">
+    <div class="u-inner-xsmall">
+
+      <p class="text text--cookie-message">
+        {{ text }}
+        <a href="#" id="modal-trigger-cookie-message">{{ text_link }}</a>
+      </p>
+
+      <button id="cookie-message-close" class="button button--icon">
+        {% include icons/close.svg css-class="icon icon--close" %}
+      </button>
+
+    </div>
+  </div>
+</div>

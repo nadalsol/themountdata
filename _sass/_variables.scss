@@ -44,16 +44,22 @@ $c-watercourse:          #047154 !default;
 $c-cosmic:               #683361 !default;
 
 // Scaffolding
+<<<<<<< HEAD
 $assets-path:            "/themountdata/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
 // $assets-path:            "/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
+=======
+// $assets-path:            "/themountdata/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
+$assets-path:            "/assets" !default;
+>>>>>>> develop
 $assets-img-path:        $assets-path + "/img" !default;
+$icons-path:             "/_includes/icons" !default;
 
 $body-bg:                $c-light !default;
 
 $text-c:                 $c-dark !default;
 
 $link-c:                 $c-java !default;
-$link-c-hover:           $c-surfie !default; // TODO : replace hover color
+$link-c-hover:           $c-surfie !default;
 
 // Spacing units
 $sp-base:                5px !default;
@@ -85,12 +91,10 @@ $fz-large:               28px !default;
 $fz-xlarge:              40px !default;
 $fz-xxlarge:             70px !default;
 
-$fw-base:                400 !default; // Barlow
-$fw-extra-light:         200 !default; // Montserrat
-$fw-light:               300 !default; // Barlow
+$fw-base:                300 !default; // Barlow
 $fw-semi-bold:           600 !default; // Barlow
+$fw-extra-light:         200 !default; // Montserrat
 $fw-bold:                700 !default; // Montserrat
-$fw-extra-bold:          800 !default; // Montserrat
 
 $lh-base:                1.5 !default;
 $lh-xsmall:              1 !default;
@@ -118,6 +122,10 @@ $transition-bg:          background-color 250ms !default;
 $transition-bc:          border-color 250ms !default;
 $transition-c:           color 250ms !default;
 $transition-m:           margin 250ms !default;
+
+// Z-index table
+$zi-100:                 100 !default;
+$zi-900:                 900 !default;
 
 
 // Helpers
@@ -151,6 +159,16 @@ $u-inner-xxlarge-pd-large-up:     460px $sp-big 0 !default;
 // Common
 // -----------------------------------------------------------------------------
 
+// Cookie message
+$cookie-msg-wd:                   100% !default;
+$cookie-msg-ht:                   100px !default;
+$cookie-msg-bg:                   $c-dark !default;
+
+$cookie-msg-close-t:              $sp-xxsmall !default;
+$cookie-msg-close-r:              $sp-xxsmall !default;
+$cookie-msg-close-t-medium-up:    $sp-xlarge !default;
+$cookie-msg-close-r-medium-up:    $sp-big !default;
+
 // Footer
 $footer-wd:                       100% !default;
 $footer-ht:                       auto !default;
@@ -183,9 +201,30 @@ $header-ht-medium-up:             floor($header-brand-ht-medium-up + ($u-inner-x
 $header-bg:                       transparent !default;
 $header-bg-sticky:                $c-light !default;
 
+$header-is-cookie-top:            $cookie-msg-ht !default;
+
 $header-hamburger-wd:             $header-ht !default;
 $header-hamburger-ht:             $header-ht !default;
 $header-hamburger-bg:             $c-eastbay !default;
+
+// Body (should go after Header)
+$body-mt:                         $header-ht !default;
+$body-mt-medium-up:               $header-ht-medium-up !default;
+
+$body-is-cookie-mt:               floor($header-ht + $cookie-msg-ht) !default;
+$body-is-cookie-mt-medium-up:     floor($header-ht-medium-up + $cookie-msg-ht) !default;
+
+// Modal
+$modal-bg:                        rgba(255, 255, 255, .85) !default;
+$modal-zi:                        $zi-900 !default;
+
+$modal-dialog-m:                  $sp-xxsmall !default;
+$modal-dialog-maxw-medium-up:     $screen-md-min !default;
+
+$modal-content-bg:                $c-dark !default;
+
+$modal-pd:                        $sp-small !default;
+$modal-pd-medium-up:              $sp-xxlarge !default;
 
 
 // Patterns
@@ -270,6 +309,12 @@ $button-xxsmall-fz:               $fz-xxsmall !default;
 $button-small-pd:                 $sp-small 100px !default;
 $button-small-fz:                 $fz-small !default;
 
+// Button icon
+$button-icon-wd:                  $sp-xsmall !default;
+$button-icon-ht:                  $sp-xsmall !default;
+$button-icon-wd-medium-up:        $sp-large !default;
+$button-icon-ht-medium-up:        $sp-large !default;
+
 // Button state
 $button-disabled-o:               .5 !default;
 
@@ -301,6 +346,8 @@ $carousel-controls-wd:            100% !default;
 $carousel-controls-ht:            floor($carousel-control-button-wd + ($carousel-control-button-m * 2)) !default;
 
 // Forms
+$form-group-mb:                   $sp-big !default;
+
 $form-label-mb:                   $sp-base !default;
 $form-label-ff:                   $ff-sans-serif-b !default;
 $form-label-fz:                   $fz-xxsmall !default;
@@ -308,11 +355,10 @@ $form-label-fw:                   $fw-semi-bold !default;
 $form-label-c:                    $text-c !default;
 
 $form-field-ht:                   $sp-xlarge !default;
-$form-field-mb:                   $sp-big !default;
 $form-field-pd:                   $sp-base $sp-xxsmall !default;
 $form-field-ff:                   $ff-sans-serif-b !default;
 $form-field-fz:                   $fz-base !default;
-$form-field-fw:                   $fw-light !default;
+$form-field-fw:                   $fw-base !default;
 $form-field-c:                    $c-light !default;
 $form-field-trn:                  $transition-bc;
 
@@ -386,16 +432,16 @@ $nav-lang-link-bgc:                       $c-eastbay !default;
 $nav-lang-link-c-medium-up:               $c-lynch !default;
 $nav-lang-link-bgc-medium-up:             transparent !default;
 
-$nav-lang-link-c-hover:                   $c-light !default; // TODO : replace hover color
+$nav-lang-link-c-hover:                   $c-light !default;
 $nav-lang-link-bgc-hover:                 $c-manatee !default;
-$nav-lang-link-c-hover-medium-up:         $c-manatee !default; // TODO : replace hover color
+$nav-lang-link-c-hover-medium-up:         $c-manatee !default;
 $nav-lang-link-bgc-hover-medium-up:       transparent !default;
 
 $nav-lang-link-c-active:                  $c-chetwode !default;
 
 // Navigation legal
 $nav-legal-c:                             $c-dark !default;
-$nav-legal-c-hover:                       $c-lynch !default; // TODO : replace hover color
+$nav-legal-c-hover:                       $c-lynch !default;
 
 // Navigation main
 $nav-main-link-c:                         $c-light !default;
@@ -403,9 +449,9 @@ $nav-main-link-bgc:                       $c-eastbay !default;
 $nav-main-link-c-medium-up:               $c-lynch !default;
 $nav-main-link-bgc-medium-up:             transparent !default;
 
-$nav-main-link-c-hover:                   $c-light !default; // TODO : replace hover color
+$nav-main-link-c-hover:                   $c-light !default;
 $nav-main-link-bgc-hover:                 $c-manatee !default;
-$nav-main-link-c-hover-medium-up:         $c-manatee !default; // TODO : replace hover color
+$nav-main-link-c-hover-medium-up:         $c-manatee !default;
 $nav-main-link-bgc-hover-medium-up:       transparent !default;
 
 $nav-main-link-c-active:                  $c-light !default;
@@ -420,7 +466,7 @@ $nav-secondary-top-medium-up:             73px !default;
 
 $nav-secondary-link-bgc:                  $c-eastbay !default;
 $nav-secondary-link-c:                    $c-light !default;
-$nav-secondary-link-c-hover:              $c-light !default; // TODO : replace hover color
+$nav-secondary-link-c-hover:              $c-light !default;
 $nav-secondary-link-bgc-hover:            $c-manatee !default;
 $nav-secondary-link-c-active:             $c-light !default;
 $nav-secondary-link-bgc-active:           $c-lynch !default;
@@ -428,7 +474,7 @@ $nav-secondary-link-bgc-active:           $c-lynch !default;
 // Navigation tertiary
 $nav-tertiary-link-bgc:                   $c-lynch !default;
 $nav-tertiary-link-c:                     $c-light !default;
-$nav-tertiary-link-c-hover:               $c-light !default; // TODO : replace hover color
+$nav-tertiary-link-c-hover:               $c-light !default;
 $nav-tertiary-link-bgc-hover:             $c-manatee !default;
 $nav-tertiary-link-c-active:              $c-light !default;
 $nav-tertiary-link-bgc-active:            $c-lynch !default;

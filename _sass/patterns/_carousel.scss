@@ -200,7 +200,7 @@
     }
   }
 
-  // Secondary controls (arrows)
+  // Secondary controls (chevrons)
   .carousel__control-secondary-l,
   .carousel__control-secondary-r {
     display: none;
@@ -221,7 +221,7 @@
   .carousel__control-secondary-l {
     left: 0;
 
-    &:hover > .icon--arrow {
+    &:hover > .icon--chevron {
       margin-right: $sp-xxsmall;
     }
   }
@@ -229,12 +229,12 @@
   .carousel__control-secondary-r {
     right: 0;
 
-    &:hover > .icon--arrow {
+    &:hover > .icon--chevron {
       margin-left: $sp-xxsmall;
     }
   }
 
-  .icon--arrow {
+  .icon--chevron {
     vertical-align: middle;
     transition: $transition-m;
   }

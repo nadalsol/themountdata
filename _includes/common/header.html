@@ -1,18 +1,9 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign link_home = 'ca/' %}
-  {% when 'en' %}
-    {% assign link_home = 'en/' %}
-  {% else %}
-    {% assign link_home = '' %}
-{% endcase %}
-
 <header id="header" class="header is-sticky" role="banner">
   <div class="wrapper">
     <div class="u-inner-xsmall">
 
       <div class="header__brand">
-        <a rel="author" href="{{ site.baseurl }}/{{ link_home }}">
+        <a rel="author" href="{{ site.baseurl }}/{{ site.t_header[page.lang].home_link }}">
           {% include icons/brand.svg css-class="icon icon--brand" %}
         </a>
       </div>

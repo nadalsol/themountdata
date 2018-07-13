@@ -1,86 +1,18 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign heading = 'Anàlisi de producte' %}
-    {% assign text_1 = '...' %}
-    {% assign text_2 = '...' %}
-
-    {% assign heading_types = 'Tipus d&#39;anàlisi' %}
-    {% assign text_types_1 = '...' %}
-    {% assign text_types_2 = '...' %}
-    {% assign text_types_3 = '...' %}
-
-    {% assign heading_uses = 'Usos' %}
-    {% assign text_uses_1 = '...' %}
-    {% assign text_uses_2 = '...' %}
-    {% assign text_uses_3 = '...' %}
-    {% assign text_uses_4 = '...' %}
-
-    {% assign heading_techniques = 'Tècniques' %}
-    {% assign text_techniques_1 = '...' %}
-    {% assign text_techniques_2 = '...' %}
-    {% assign text_techniques_3 = '...' %}
-    {% assign text_techniques_4 = '...' %}
-  {% when 'en' %}
-    {% assign heading = 'Product analysis' %}
-    {% assign text_1 = '...' %}
-    {% assign text_2 = '...' %}
-
-    {% assign heading_types = 'Analysis types' %}
-    {% assign text_types_1 = '...' %}
-    {% assign text_types_2 = '...' %}
-    {% assign text_types_3 = '...' %}
-
-    {% assign heading_uses = 'Uses' %}
-    {% assign text_uses_1 = '...' %}
-    {% assign text_uses_2 = '...' %}
-    {% assign text_uses_3 = '...' %}
-    {% assign text_uses_4 = '...' %}
-
-    {% assign heading_techniques = 'Techniques' %}
-    {% assign text_techniques_1 = '...' %}
-    {% assign text_techniques_2 = '...' %}
-    {% assign text_techniques_3 = '...' %}
-    {% assign text_techniques_4 = '...' %}
-  {% else %}
-    {% assign heading = 'Análisis de producto' %}
-    {% assign text_1 = '¿Cuál es la frecuencia de compra de un producto?, ¿Cómo se correlacionan los productos? ¿Cuáles se adquieren en la misma compra?, ¿Cuál es la senda de compra o abandono?, ¿Qué productos debería ofrecer a un Cliente?, ¿Cuánto aporta a mi negocio cada Producto?, ¿Debo invertir en promocionar un producto?, ¿Qué productos consumen cada segmento de clientes?' %}
-    {% assign text_2 = 'Desarrollados en R, Kmine, SPSS, MSExcel.' %}
-
-    {% assign heading_types = 'Tipos de análisis' %}
-    {% assign text_types_1 = 'Venta cruzada' %}
-    {% assign text_types_2 = 'Cesta de la compra' %}
-    {% assign text_types_3 = 'Recomendador de productos' %}
-
-    {% assign heading_uses = 'Usos' %}
-    {% assign text_uses_1 = 'Definición Plan de Contactos/Contenidos' %}
-    {% assign text_uses_2 = 'Definir Plan de Up/Cross selling para cada Cliente' %}
-    {% assign text_uses_3 = 'Qué productos recomendar a un Cliente' %}
-    {% assign text_uses_4 = 'Cómo colocar los productos en el linear' %}
-
-    {% assign heading_techniques = 'Técnicas' %}
-    {% assign text_techniques_1 = 'Clustering' %}
-    {% assign text_techniques_2 = 'Tree-decision' %}
-    {% assign text_techniques_3 = 'RFMP' %}
-    {% assign text_techniques_4 = 'LTV' %}
-{% endcase %}
-
 <div class="service">
   <div class="wrapper">
 
     <div class="service__col-l panel panel--light">
       <div class="u-inner-small">
-        <h2 class="heading2 service__heading">{{ heading }}</h2>
+        <h2 class="heading2 service__heading">{{ site.t_service_analysis[page.lang].heading }}</h2>
         <div class="service__content">
-          <p class="text text--fiord">{{ text_1 }}</p>
-          <p class="text text--fiord">{{ text_2 }}</p>
+          <p class="text text--fiord">{{ site.t_service_analysis[page.lang].text_1 }}</p>
+          <p class="text text--fiord">{{ site.t_service_analysis[page.lang].text_2 }}</p>
         </div>
         <div class="panel panel--athens u-text-center">
           <div class="u-inner-xsmall">
-            <h3 class="heading3 heading3--hr">{{ heading_types }}</h3>
+            <h3 class="heading3 heading3--hr">{{ site.t_service_analysis[page.lang].heading_types }}</h3>
             <ul class="list list--unstyled list--bold">
-              <li>{{ text_types_1 }}</li>
-              <li>{{ text_types_2 }}</li>
-              <li>{{ text_types_3 }}</li>
+              {{ site.t_service_analysis[page.lang].text_types }}
             </ul>
           </div>
         </div>
@@ -89,21 +21,15 @@
 
     <div class="service__col-r panel panel--pelorous">
       <div class="u-inner-small">
-        <h3 class="heading3 heading3--light heading3--hr">{{ heading_uses }}</h3>
+        <h3 class="heading3 heading3--light heading3--hr">{{ site.t_service_analysis[page.lang].heading_uses }}</h3>
         <ul class="list list--unstyled list--light">
-          <li>{{ text_uses_1 }}</li>
-          <li>{{ text_uses_2 }}</li>
-          <li>{{ text_uses_3 }}</li>
-          <li>{{ text_uses_4 }}</li>
+          {{ site.t_service_analysis[page.lang].text_uses }}
         </ul>
       </div>
       <div class="u-inner-small">
-        <h3 class="heading3 heading3--light heading3--hr">{{ heading_techniques }}</h3>
+        <h3 class="heading3 heading3--light heading3--hr">{{ site.t_service_analysis[page.lang].heading_techniques }}</h3>
         <ul class="list list--unstyled list--light">
-          <li>{{ text_techniques_1 }}</li>
-          <li>{{ text_techniques_2 }}</li>
-          <li>{{ text_techniques_3 }}</li>
-          <li>{{ text_techniques_4 }}</li>
+          {{ site.t_service_analysis[page.lang].text_techniques }}
         </ul>
       </div>
     </div>

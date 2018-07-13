@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://themountdata.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: themountdata
-# github_username:  jekyll
+github_username: nadalsol
 
 # Build settings
 markdown: kramdown
@@ -50,76 +50,652 @@ sass:
 #
 # 404 (no encontrada)
 r_404:
-  es: 404.html
-  ca: ca/404.html
-  en: en/404.html
+  es: "404.html"
+  ca: "ca/404.html"
+  en: "en/404.html"
 # Home
 r_index:
-  es:
-  ca: ca/
-  en: en/
+  es: ""
+  ca: "ca/"
+  en: "en/"
 # Nosotros
 r_nosotros:
-  es: nosotros/
-  ca: ca/nosaltres/
-  en: en/about/
+  es: "nosotros/"
+  ca: "ca/nosaltres/"
+  en: "en/about/"
 # Servicios
 r_servicios:
-  es: servicios/
-  ca: ca/serveis/
-  en: en/services/
+  es: "servicios/"
+  ca: "ca/serveis/"
+  en: "en/services/"
 r_servicios_accion:
-  es: servicios/accion/
-  ca: ca/serveis/accio/
-  en: en/services/action/
+  es: "servicios/accion/"
+  ca: "ca/serveis/accio/"
+  en: "en/services/action/"
 r_servicios_analisis:
-  es: servicios/analisis/
-  ca: ca/serveis/analisi/
-  en: en/services/analysis/
+  es: "servicios/analisis/"
+  ca: "ca/serveis/analisi/"
+  en: "en/services/analysis/"
 r_servicios_datos:
-  es: servicios/datos/
-  ca: ca/serveis/dades/
-  en: en/services/data/
+  es: "servicios/datos/"
+  ca: "ca/serveis/dades/"
+  en: "en/services/data/"
 r_servicios_visualizacion:
-  es: servicios/visualizacion/
-  ca: ca/serveis/visualitzacio/
-  en: en/services/visualization/
+  es: "servicios/visualizacion/"
+  ca: "ca/serveis/visualitzacio/"
+  en: "en/services/visualization/"
 # Soluciones
 r_soluciones:
-  es: soluciones/
-  ca: ca/solucions/
-  en: en/solutions/
+  es: "soluciones/"
+  ca: "ca/solucions/"
+  en: "en/solutions/"
 r_soluciones_sherpa_campaign:
-  es: soluciones/sherpa-campaign/
-  ca: ca/solucions/sherpa-campaign/
-  en: en/solutions/sherpa-campaign/
+  es: "soluciones/sherpa-campaign/"
+  ca: "ca/solucions/sherpa-campaign/"
+  en: "en/solutions/sherpa-campaign/"
 r_soluciones_sherpa_dashboard:
-  es: soluciones/sherpa-dashboard/
-  ca: ca/solucions/sherpa-dashboard/
-  en: en/solutions/sherpa-dashboard/
+  es: "soluciones/sherpa-dashboard/"
+  ca: "ca/solucions/sherpa-dashboard/"
+  en: "en/solutions/sherpa-dashboard/"
 
 # Translation
-# Common elements
+# Common
+t_cookie_message:
+  es:
+    text: "..."
+    text_link: "..."
+  ca:
+    text: "..."
+    text_link: "..."
+  en:
+    text: "The Mount Data uses cookies to ensure we give you the best experience on our website. Please see our"
+    text_link: "cookie policy"
 t_footer_legal:
   es:
-    privacy: Privacidad
-    cookies: Cookies
-    terms: Aviso legal
+    privacy: "Privacidad"
+    cookies: "Cookies"
+    terms: "Aviso legal"
   ca:
-    privacy: Privacitat
-    cookies: Cookies
-    terms: Avís legal
+    privacy: "Privacitat"
+    cookies: "Cookies"
+    terms: "Avís legal"
   en:
-    privacy: Privacy
-    cookies: Cookies
-    terms: Terms
+    privacy: "Privacy"
+    cookies: "Cookies"
+    terms: "Terms"
 t_footer:
   es:
-    location: Ubicación
-    contact: Contactar
+    location: "Ubicación"
+    contact: "Contactar"
   ca:
-    location: Ubicació
-    contact: Contactar
+    location: "Ubicació"
+    contact: "Contactar"
   en:
-    location: Location
-    contact: Contact
+    location: "Location"
+    contact: "Contact"
+t_header:
+  es:
+    home_link: ""
+  ca:
+    home_link: "ca/"
+  es:
+    home_link: "en/"
+t_modal_cookie:
+  es:
+    heading: "Cookies"
+    text: "Sus datos formarán parte de un fichero titularidad de The Mount Data S.L. y serán tratados para poderle informar periódicamente de novedades, productos y servicios. Puede ejercitar sus derechos de acceso, rectificación, cancelación y oposición, así como revocar su consentimiento para el envío de comunicaciones comerciales electrónicas, enviando un e-mail a info@themountdata.com. Mediante la inclusión de su correo electrónico y/o teléfono móvil Ud. nos autoriza a enviarle información comercial a través de su cuenta de correo electrónico así como otros medios electrónicos equivalentes."
+  ca:
+    heading: "Cookies"
+    text: "..."
+  en:
+    heading: "Cookies"
+    text: "..."
+t_modal_privacy:
+  es:
+    heading: "Privacidad"
+    text: "..."
+  ca:
+    heading: "Privacitat"
+    text: "..."
+  en:
+    heading: "Privacy"
+    text: "..."
+t_modal_terms:
+  es:
+    heading: "Aviso legal"
+    text: "..."
+  ca:
+    heading: "Avís legal"
+    text: "..."
+  en:
+    heading: "Terms and conditions"
+    text: "..."
+# Patterns
+t_404:
+  es:
+    text_1: "Página no encontrada :("
+    text_2: "No hemos encontrado la página solicitada."
+  ca:
+    text_1: "Pàgina no trobada :("
+    text_2: "No hem trobat la pàgina sol.licitada."
+  en:
+    text_1: "Page not found :("
+    text_2: "The requested page could not be found."
+t_about_clients:
+  es:
+    heading: "Clientes"
+    text: "Hemos trabajado en muchos sectores y clientes a lo largo de nuestra trayectoria, pero tenemos experiencia relevante en los sectores de Automoción, Turismo y Retail. Nos gusta ganarnos la confianza de nuestros Clientes a partir de la aportación de valor y un gran servicio."
+    cta_link: "#"
+    cta_text: "Caso de estudio"
+  ca:
+    heading: "Clients"
+    text: "..."
+    cta_link: "ca/#"
+    cta_text: "Cas d'estudi"
+  en:
+    heading: "Customers"
+    text: "..."
+    cta_link: "en/#"
+    cta_text: "Case study"
+t_about_team:
+  es:
+    heading: "Equipo"
+    text_1: "Nos organizamos en cuatro áreas que trabajan orientadas a resolver los problemas del Cliente: Consultoría, Tecnología, Análisis y Operaciones."
+    text_2: "La confianza y una visión compartida con nuestros partners nos ayudan a dar servicio en  áreas complementarias a nuestra actividad y, por supuesto, nos hacen mejores."
+    img_alt: "Equipo"
+  ca:
+    heading: "Equip"
+    text_1: "..."
+    text_2: "..."
+    img_alt: "Equip"
+  en:
+    heading: "Team"
+    text_1: "..."
+    text_2: "..."
+    img_alt: "Team"
+t_about_values:
+  es:
+    heading: "Valores"
+    text_1: "..."
+    text_2: "..."
+    text_3: "..."
+  ca:
+    heading: "Valors"
+    text_1: "..."
+    text_2: "..."
+    text_3: "..."
+  en:
+    heading: "Values"
+    text_1: "..."
+    text_2: "..."
+    text_3: "..."
+t_business:
+  es:
+    heading: "Negocio y tecnología"
+    text: "..."
+    subheading: "Hablamos los lenguajes para cubrir el \"gap\"<br>entre tecnología y marketing"
+    img_alt: "Negocio"
+  ca:
+    heading: "Negoci i tecnologia"
+    text: "..."
+    subheading: "..."
+    img_alt: "Negoci"
+  en:
+    heading: "Business and technology"
+    text: "..."
+    subheading: "..."
+    img_alt: "Business"
+t_carousel:
+  es:
+    id_1: "nosotros"
+    heading_1: "Desde la estrategia<br>a la ejecución"
+    text_1: "Nuestra actividad se centra en las Tecnologías centradas en gestión  y análisis de la información que ayudan a mejorar la toma de decisiones  y procesos de las distintas áreas de Negocio. Acompañamos a nuestros Clientes desde las fases iniciales del diseño de la Estrategia hasta  la Puesta en marcha del proyecto (envío de las comunicaciones o implementación de modelos…)."
+    cta_link_1: "nosotros"
+    cta_text_1: "Nosotros"
+    id_2: "equipo"
+    heading_2: "Equipo, timing<br>y entregables"
+    text_2: "Nos gustan los retos y los objetivos realizados. Nos comprometemos en buscar soluciones para entregar los proyectos a tiempo y en las condiciones acordadas. Por eso, trabajamos con una orientación “agile” donde las personas están por encima de los procesos y estamos abiertos a los cambios y a la colaboración con los clientes y sus partners…"
+    cta_link_2: "#"
+    cta_text_2: "Equipo"
+    id_3: "soluciones"
+    heading_3: "Martech TMD"
+    text_3: "Lo importante no es la herramienta sino lo que consigues con ella. Sabemos qué tecnologías de marketing/ventas necesitan la mayoría  de los clientes y tenemos experiencia con algunas herramientas con las que nos sentimos a gusto. Estamos abiertos a integrar  otras herramientas para que funcionen como una gran orquesta."
+    cta_link_3: "soluciones"
+    cta_text_3: "Soluciones"
+  ca:
+    id_1: "nosaltres"
+    heading_1: "..."
+    text_1: "..."
+    cta_link_1: "ca/nosaltres"
+    cta_text_1: "Nosaltres"
+    id_2: "equip"
+    heading_2: "..."
+    text_2: "..."
+    cta_link_2: "ca/#"
+    cta_text_2: "Equip"
+    id_3: "solucions"
+    heading_3: "..."
+    text_3: "..."
+    cta_link_3: "ca/solucions"
+    cta_text_3: "Solucions"
+  en:
+    id_1: "about"
+    heading_1: "..."
+    text_1: "..."
+    cta_link_1: "en/about"
+    cta_text_1: "About"
+    id_2: "team"
+    heading_2: "..."
+    text_2: "..."
+    cta_link_2: "en/#"
+    cta_text_2: "Team"
+    id_3: "solutions"
+    heading_3: "..."
+    text_3: "..."
+    cta_link_3: "en/solutions"
+    cta_text_3: "Solutions"
+t_contact:
+  es:
+    heading: "Pida una consulta gratis"
+    subheading: "..."
+    name: "Nombre"
+    surname: "Apellidos"
+    email: "E-mail"
+    phone: "Teléfono"
+    company: "Empresa"
+    position: "Cargo"
+    subject: "Asunto"
+    message: "Consulta"
+    privacy: "Acepto la <a href=\"#\">política de privacidad</a>"
+    submit: "Enviar"
+  ca:
+    heading: "Demani una consulta gratuita"
+    subheading: "..."
+    name: "Nom"
+    surname: "Cognoms"
+    email: "E-mail"
+    phone: "Telèfon"
+    company: "Empresa"
+    position: "Càrrec"
+    subject: "Assumpte"
+    message: "Consulta"
+    privacy: "Accepto la <a href=\"#\">política de privacitat</a>"
+    submit: "Enviar"
+  en:
+    heading: "Request a free consultation"
+    subheading: "Tell us about your business problem and we help you define it further."
+    name: "Name"
+    surname: "Surname"
+    email: "E-mail"
+    phone: "Phone"
+    company: "Company"
+    position: "Position"
+    subject: "Subject"
+    message: "Description"
+    privacy: "I agree with the <a href=\"#\">privacy policy</a>"
+    submit: "Submit"
+t_data_journey:
+  es:
+    heading: "Data journey"
+    cta_link: "servicios"
+    cta_text: "Servicios"
+    subheading_1: "Datos"
+    text_1: "..."
+    subheading_2: "Análisis"
+    text_2: "..."
+    subheading_3: "Visualización"
+    text_3: "..."
+    subheading_4: "Acción"
+    text_4: "..."
+  ca:
+    heading: "Data journey"
+    cta_link: "ca/serveis"
+    cta_text: "Serveis"
+    subheading_1: "Dades"
+    text_1: "..."
+    subheading_2: "Anàlisi"
+    text_2: "..."
+    subheading_3: "Visualització"
+    text_3: "..."
+    subheading_4: "Acció"
+    text_4: "..."
+  en:
+    heading: "Data journey"
+    cta_link: "en/services"
+    cta_text: "Services"
+    subheading_1: "Data"
+    text_1: "..."
+    subheading_2: "Analysis"
+    text_2: "..."
+    subheading_3: "Visualization"
+    text_3: "..."
+    subheading_4: "Action"
+    text_4: "..."
+t_hero_about_clients:
+  es:
+    heading: "Creemos en la gente que tiene ilusión por el trabajo bien hecho<br>los que saben trabajar en equipo y los que no se conforman"
+  ca:
+    heading: "..."
+  en:
+    heading: "..."
+t_hero_about_team:
+  es:
+    heading: "La base de nuestros proyectos son las personas,<br>sin ellas este proyecto no sería posible ;)"
+  ca:
+    heading: "..."
+  en:
+    heading: "..."
+t_hero_about_values:
+  es:
+    img_alt: "Valores"
+  ca:
+    img_alt: "Valors"
+  en:
+    img_alt: "Values"
+t_nav_main:
+  es:
+    link_1: "servicios"
+    text_1: "Servicios"
+    link_2: "soluciones"
+    text_2: "Soluciones"
+    link_3: "nosotros"
+    text_3: "Nosotros"
+  ca:
+    link_1: "ca/serveis"
+    text_1: "Serveis"
+    link_2: "ca/solucions"
+    text_2: "Solucions"
+    link_3: "ca/nosaltres"
+    text_3: "Nosaltres"
+  en:
+    link_1: "en/services"
+    text_1: "Services"
+    link_2: "en/solutions"
+    text_2: "Solutions"
+    link_3: "en/about"
+    text_3: "About"
+t_nav_secondary_services:
+  es:
+    link_1: "servicios/datos"
+    text_1: "Datos"
+    link_2: "servicios/analisis"
+    text_2: "Análisis"
+    link_3: "servicios/visualizacion"
+    text_3: "Visualización"
+    link_4: "servicios/accion"
+    text_4: "Acción"
+  ca:
+    link_1: "ca/serveis/dades"
+    text_1: "Dades"
+    link_2: "ca/serveis/analisi"
+    text_2: "Anàlisi"
+    link_3: "ca/serveis/visualitzacio"
+    text_3: "Visualització"
+    link_4: "ca/serveis/accio"
+    text_4: "Acció"
+  en:
+    link_1: "en/services/data"
+    text_1: "Data"
+    link_2: "en/services/analysis"
+    text_2: "Analysis"
+    link_3: "en/services/visualization"
+    text_3: "Visualization"
+    link_4: "en/services/action"
+    text_4: "Action"
+t_nav_secondary_solutions:
+  es:
+    link_1: "soluciones/sherpa-campaign"
+    text_1: "Sherpa campaign"
+    link_2: "soluciones/sherpa-dashboard"
+    text_2: "Sherpa dashboard"
+  ca:
+    link_1: "ca/solucions/sherpa-campaign"
+    text_1: "Sherpa campaign"
+    link_2: "ca/solucions/sherpa-dashboard"
+    text_2: "Sherpa dashboard"
+  en:
+    link_1: "en/solutions/sherpa-campaign"
+    text_1: "Sherpa campaign"
+    link_2: "en/solutions/sherpa-dashboard"
+    text_2: "Sherpa dashboard"
+t_nav_tertiary:
+  es:
+    link_1: "#"
+    text_1: "Data sources"
+    link_2: "#"
+    text_2: "Data stores"
+    link_3: "#"
+    text_3: "Data governance"
+  ca:
+    link_1: "ca/#"
+    text_1: "Data sources"
+    link_2: "ca/#"
+    text_2: "Data stores"
+    link_3: "ca/#"
+    text_3: "Data governance"
+  en:
+    link_1: "en/#"
+    text_1: "Data sources"
+    link_2: "en/#"
+    text_2: "Data stores"
+    link_3: "en/#"
+    text_3: "Data governance"
+t_sectors:
+  es:
+    heading: "Sectores"
+    subheading_1: "Turismo"
+    subheading_2: "Auto"
+    subheading_3: "Supermercados"
+    subheading_4: "Retail"
+    subheading_5: "Horeca"
+  ca:
+    heading: "Sectors"
+    subheading_1: "Turisme"
+    subheading_2: "Auto"
+    subheading_3: "Supermercats"
+    subheading_4: "Retail"
+    subheading_5: "Horeca"
+  en:
+    heading: "Sectors"
+    subheading_1: "Tourism"
+    subheading_2: "Auto"
+    subheading_3: "Supermarkets"
+    subheading_4: "Retail"
+    subheading_5: "Horeca"
+t_service_action:
+  es:
+    heading: "Consultoría"
+    text_1: "Es frecuente que muchas compañías crean en el poder de los datos para ser competitivos pero que tengan dificultades para saber por dónde empezar."
+    text_2: "Los proyectos de Consultoría de las áreas de Negocio, Tecnología y Equipos/Procesos identificamos el punto de partida y establecemos una hoja de ruta de iniciativas priorizadas teniendo en cuenta las capacidades y recursos necesarios para desarrollar con éxito el proyecto y en el mínimo tiempo."
+    text_3: "La consultoría colabora con los equipos de negocio, tecnología y los proveedores actuales (agencias, consultoras tecnológicas…) a lo largo del Data Journey (Data > Analytics > Action)."
+    heading_types: "Tipos"
+    text_types: "<li>Consultoría CRM/CX</li><li>Consultoría Campañas</li><li>Consultoría Análisis</li><li>Consultoría Datos</li><li>Consultoría Martech</li><li>Consultoría Big Data & BI</li><li>Consultoría Equipo/Metodología/Procesos</li>"
+  ca:
+    heading: "Consultoria"
+    text_1: "..."
+    text_2: "..."
+    text_3: "..."
+    heading_types: "Tipus"
+    text_types: "<li>...</li>"
+  en:
+    heading: "Consultancy"
+    text_1: "..."
+    text_2: "..."
+    text_3: "..."
+    heading_types: "Types"
+    text_types: "<li>...</li>"
+t_service_analysis:
+  es:
+    heading: "Análisis de producto"
+    text_1: "¿Cuál es la frecuencia de compra de un producto?, ¿Cómo se correlacionan los productos? ¿Cuáles se adquieren en la misma compra?, ¿Cuál es la senda de compra o abandono?, ¿Qué productos debería ofrecer a un Cliente?, ¿Cuánto aporta a mi negocio cada Producto?, ¿Debo invertir en promocionar un producto?, ¿Qué productos consumen cada segmento de clientes?"
+    text_2: "Desarrollados en R, Kmine, SPSS, MSExcel."
+    heading_types: "Tipos de análisis"
+    text_types: "<li>Venta cruzada</li><li>Cesta de la compra</li><li>Recomendador de productos</li>"
+    heading_uses: "Usos"
+    text_uses: "<li>Definición Plan de Contactos/Contenidos</li><li>Definir Plan de Up/Cross selling para cada Cliente</li><li>Qué productos recomendar a un Cliente</li><li>Cómo colocar los productos en el linear</li>"
+    heading_techniques: "Técnicas"
+    text_techniques: "<li>Clustering</li><li>Tree-decision</li><li>RFMP</li><li>LTV</li>"
+  ca:
+    heading: "Anàlisi de producte"
+    text_1: "..."
+    text_2: "..."
+    heading_types: "Tipus d&#39;anàlisi"
+    text_types: "<li>...</li>"
+    heading_uses: "Usos"
+    text_uses: "<li>...</li>"
+    heading_techniques: "Tècniques"
+    text_techniques: "<li>...</li>"
+  en:
+    heading: "Product analysis"
+    text_1: "..."
+    text_2: "..."
+    heading_types: "Analysis types"
+    text_types: "<li>...</li>"
+    heading_uses: "Uses"
+    text_uses: "<li>...</li>"
+    heading_techniques: "Techniques"
+    text_techniques: "<li>...</li>"
+t_service_data:
+  es:
+    heading: "Data stores"
+    text_1: "Identificar y dominar las fuentes necesarias para la creación de valor partir de los datos es el primer paso del data analytics journey."
+    text_2: "Por eso, tener la capacidad de acceder de manera ágil y consistente a las fuentes de datos utilizando distintas técnicas  para extraer, transformar y cargar los datos es clave."
+    text_3: "De misma manera no debemos olvidar el establecimiento de procesos relacionados con la calidad de datos."
+    text_4: "Desarrollos de ETL, APIs, Scraping."
+    text_5: "Algoritmos de Calidad de datos Limpieza / Normalización / Deduplicación / Consolidación de datos."
+    text_6: "Herramientas habituales Pentaho-Kettel, Jsoup… etc."
+    cta_link_1: "#"
+    cta_text_1: "Big data technology"
+    cta_link_2: "#"
+    cta_text_2: "Bi & datawarehouse"
+    heading_types: "Tipos"
+    text_types: "<li>Transaccionales (ERP, SAP)</li><li>Marketing (CMS, CRM, MAP, DSP, DAM, SAC, SOCIAL…)</li><li>Ventas</li><li>E-Commerce</li><li>Puntos de Venta</li><li>IOT</li><li>Opendata (Clima, Carretera…)</li><li>Data Brokers</li><li>Web</li><li>Estudios</li><li>Encuestas</li>"
+  ca:
+    heading: "Data stores"
+    text_1: "..."
+    text_2: "..."
+    text_3: "..."
+    text_4: "..."
+    text_5: "..."
+    text_6: "..."
+    cta_link_1: "#"
+    cta_text_1: "Big data technology"
+    cta_link_2: "#"
+    cta_text_2: "Bi & datawarehouse"
+    heading_types: "Tipos"
+    text_types: "<li>...</li>"
+  en:
+    heading: "Data stores"
+    text_1: "..."
+    text_2: "..."
+    text_3: "..."
+    text_4: "..."
+    text_5: "..."
+    text_6: "..."
+    cta_link_1: "#"
+    cta_text_1: "Big data technology"
+    cta_link_2: "#"
+    cta_text_2: "Bi & datawarehouse"
+    heading_types: "Tipos"
+    text_types: "<li>...</li>"
+t_service_default:
+  es:
+    heading: "Servicios"
+    subheading_1: "Datos"
+    subheading_2: "Análisis"
+    subheading_3: "Visualización"
+    subheading_4: "Acción"
+  ca:
+    heading: "Serveis"
+    subheading_1: "Dades"
+    subheading_2: "Anàlisi"
+    subheading_3: "Visualització"
+    subheading_4: "Acció"
+  en:
+    heading: "Services"
+    subheading_1: "Data"
+    subheading_2: "Analysis"
+    subheading_3: "Visualization"
+    subheading_4: "Action"
+t_service_visualization:
+  es:
+    heading: "Dashboard"
+    text_1: "Herramienta BI para la visualizar grandes volúmenes datos de distintas fuentes relacionadas (transaccionales, comunicaciones, clientes, social …). Enfocado al descubrimiento de insights,  a la toma de decisiones y a la mejora de la productividad."
+    text_2: "A partir de las necesidades concretas de los distintos usuarios definimos los objetivos,  kpis, las dimensiones de la información, los elementos a visualizar (gráficas, tablas, listas, mapas…) y los elementos de contexto."
+    text_3: "Funcionalidades habituales de los dashboards son la aplicación de Filtros/Exclusiones, creación de Tablas pivotantes, Alertas, integración con Machine Learning, exportación a MSExcel, Mapas, Marcadores, anotación Comentarios, Predicciones y Prescripciones…"
+    text_4: "<strong>Desarrollados en QlikView, QlikSense, Domo.</strong>"
+    heading_types: "Tipos"
+    text_types: "<li>Dashboard Contadores</li><li>Dashboard Segmentación Campañas</li><li>Dashboard Resultados de Campañas</li><li>Dashboard integral de Marketing</li><li>Dashboard de Productos y Pricing</li><li>Dashboard Calidad de datos</li><li>Dashboard Funnel de Ventas</li><li>Dashboard de Competencia</li><li>Dashboard de Mercado & Investigación</li>"
+  ca:
+    heading: "Dashboard"
+    text_1: "..."
+    text_2: "..."
+    text_3: "..."
+    text_4: "<strong>...</strong>"
+    heading_types: "Tipus"
+    text_types: "<li>...</li>"
+  en:
+    heading: "Dashboard"
+    text_1: "..."
+    text_2: "..."
+    text_3: "..."
+    text_4: "<strong>...</strong>"
+    heading_types: "Types"
+    text_types: "<li>...</li>"
+t_solution_default:
+  es:
+    heading: "Soluciones"
+  ca:
+    heading: "Solucions"
+  en:
+    heading: "Solutions"
+t_solution_sherpa_campaign:
+  es:
+    heading: "Sherpa campaign"
+    text: "Solución para la automatización de las tareas de marketing (MAP), tales como envíos de emails, social media y otras accions sobre la web website actions bajo un mismo concepto de Campaña independientemente del canal utilizado."
+    img_alt: "Sherpa campaign"
+    heading_features: "Funcionalidades"
+    text_features: "<li>Envíos: Email, SMS, Telemk, Media, Formularios, Landings… Reports</li><li>Campañas, Contenidos,  Segmentación, Personas</li>"
+    heading_integrations: "Integraciones"
+    text_integrations: "<li>Mailjet, Mailchimp, SMS</li><li>Qlikview, Qliksense, Power BI,  Domo, Cruchbase</li><li>Facebook, Twitter, Instagram,  Linkedin, Sentiment</li><li>Magento, Prestashop, Freshdesk,  Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…</li><li>Sizmek, Doubleclick</li><li>Zapier, IFTTT</li><li>Amazon, Hadoop…</li>"
+  ca:
+    heading: "Sherpa campaign"
+    text: "..."
+    img_alt: "Sherpa campaign"
+    heading_features: "Funcionalitats"
+    text_features: "<li>...</li>"
+    heading_integrations: "Integracions"
+    text_integrations: "<li>Mailjet, Mailchimp, SMS</li><li>Qlikview, Qliksense, Power BI,  Domo, Cruchbase</li><li>Facebook, Twitter, Instagram,  Linkedin, Sentiment</li><li>Magento, Prestashop, Freshdesk,  Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…</li><li>Sizmek, Doubleclick</li><li>Zapier, IFTTT</li><li>Amazon, Hadoop…</li>"
+  en:
+    heading: "Sherpa campaign"
+    text: "..."
+    img_alt: "Sherpa campaign"
+    heading_features: "Features"
+    text_features: "<li>...</li>"
+    heading_integrations: "Integrations"
+    text_integrations: "<li>Mailjet, Mailchimp, SMS</li><li>Qlikview, Qliksense, Power BI,  Domo, Cruchbase</li><li>Facebook, Twitter, Instagram,  Linkedin, Sentiment</li><li>Magento, Prestashop, Freshdesk,  Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…</li><li>Sizmek, Doubleclick</li><li>Zapier, IFTTT</li><li>Amazon, Hadoop…</li>"
+t_solution_sherpa_dashboard:
+  es:
+    heading: "Sherpa dashboard"
+    text: "Solución para la visualización de los principales KPIs de marketing, tales como envíos de emails, social media,  web y media bajo un mismo concepto de Campaña. Posibilidad de incorporar datos transaccionales o de cualquier otro ámbito. Desarrollados principalmente en QlikView y QlikSense."
+    img_alt: "Sherpa dashboard"
+    heading_types: "Tipos de dashboards"
+    text_types: "<li>Marketing integral  (GA, Social, CRM, Emailing…)</li><li>Contadores</li><li>Segmentación</li><li>Conversiones…</li>"
+    heading_integrations: "Integraciones"
+    text_integrations: "<li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Sherpa Data</li>"
+  ca:
+    heading: "Sherpa dashboard"
+    text: "..."
+    img_alt: "Sherpa dashboard"
+    heading_types: "Tipus de dashboards"
+    text_types: "<li>Marketing integral  (GA, Social, CRM, Emailing…)</li><li>Comptadors</li><li>Segmentació<li><li>Conversions…<li>"
+    heading_integrations: "Integracions"
+    text_integrations: "<li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Sherpa Data</li>"
+  en:
+    heading: "Sherpa dashboard"
+    text: "..."
+    img_alt: "Sherpa dashboard"
+    heading_types: "Dashboard types"
+    text_types: "..."
+    heading_integrations: "Integrations"
+    text_integrations: "<li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Sherpa Data</li>"

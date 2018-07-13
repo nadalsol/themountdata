@@ -1,37 +1,13 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign nav_main_link_1 = 'ca/serveis' %}
-    {% assign nav_main_text_1 = 'Serveis' %}
-    {% assign nav_main_link_2 = 'ca/solucions' %}
-    {% assign nav_main_text_2 = 'Solucions' %}
-    {% assign nav_main_link_3 = 'ca/nosaltres' %}
-    {% assign nav_main_text_3 = 'Nosaltres' %}
-  {% when 'en' %}
-    {% assign nav_main_link_1 = 'en/services' %}
-    {% assign nav_main_text_1 = 'Services' %}
-    {% assign nav_main_link_2 = 'en/solutions' %}
-    {% assign nav_main_text_2 = 'Solutions' %}
-    {% assign nav_main_link_3 = 'en/about' %}
-    {% assign nav_main_text_3 = 'About' %}
-  {% else %}
-    {% assign nav_main_link_1 = 'servicios' %}
-    {% assign nav_main_text_1 = 'Servicios' %}
-    {% assign nav_main_link_2 = 'soluciones' %}
-    {% assign nav_main_text_2 = 'Soluciones' %}
-    {% assign nav_main_link_3 = 'nosotros' %}
-    {% assign nav_main_text_3 = 'Nosotros' %}
-{% endcase %}
-
 <ul class="nav-main u-text-uppercase">
   <li>
-    <a id="nav-main-services" class="nav-main__link is-subitem" href="{{ site.baseurl }}/{{ nav_main_link_1 }}">{{ nav_main_text_1 }}</a>
+    <a id="nav-main-services" class="nav-main__link is-subitem" href="{{ site.baseurl }}/{{ site.t_nav_main[page.lang].link_1 }}">{{ site.t_nav_main[page.lang].text_1 }}</a>
     {% include patterns/nav-secondary-services.html %}
   </li>
   <li>
-    <a id="nav-main-solutions" class="nav-main__link is-subitem" href="{{ site.baseurl }}/{{ nav_main_link_2 }}">{{ nav_main_text_2 }}</a>
+    <a id="nav-main-solutions" class="nav-main__link is-subitem" href="{{ site.baseurl }}/{{ site.t_nav_main[page.lang].link_2 }}">{{ site.t_nav_main[page.lang].text_2 }}</a>
     {% include patterns/nav-secondary-solutions.html %}
   </li>
   <li>
-    <a class="nav-main__link" href="{{ site.baseurl }}/{{ nav_main_link_3 }}">{{ nav_main_text_3 }}</a>
+    <a class="nav-main__link" href="{{ site.baseurl }}/{{ site.t_nav_main[page.lang].link_3 }}">{{ site.t_nav_main[page.lang].text_3 }}</a>
   </li>
 </ul>

@@ -1,18 +1,9 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign heading = '...' %}
-  {% when 'en' %}
-    {% assign heading = '...' %}
-  {% else %}
-    {% assign heading = 'Creemos en la gente que tiene ilusión por el trabajo bien hecho<br>los que saben trabajar en equipo y los que no se conforman' %}
-{% endcase %}
-
 <div class="hero-about hero-about--clients">
   <div class="wrapper">
     <div class="u-inner-medium">
 
       <p class="hero-about__heading">
-        {{ heading }}
+        {{ site.t_hero_about_clients[page.lang].heading }}
       </p>
 
     </div>

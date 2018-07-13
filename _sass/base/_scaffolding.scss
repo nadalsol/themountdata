@@ -38,6 +38,12 @@ body {
   }
 }
 
+// Font weight
+b,
+strong {
+  font-weight: $fw-bold;
+}
+
 // Images
 img {
   vertical-align: middle;

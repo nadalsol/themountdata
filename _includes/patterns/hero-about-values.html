@@ -1,22 +1,13 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign img_alt = 'Valors' %}
-  {% when 'en' %}
-    {% assign img_alt = 'Values' %}
-  {% else %}
-    {% assign img_alt = 'Valores' %}
-{% endcase %}
-
 <div class="hero-about hero-about--values">
   <div class="wrapper">
     <div class="u-inner-medium">
 
       <div class="hero-about__img is-medium-hidden">
-        <img class="u-img-responsive" src="{{ site.baseurl }}/assets/img/about-values.png" alt="{{ img_alt }}">
+        <img class="u-img-responsive" src="{{ site.baseurl }}/assets/img/about-values.png" alt="{{ site.t_hero_about_values[page.lang].img_alt }}">
       </div>
 
       <div class="hero-about__img is-small-hidden">
-        <img class="u-img-responsive" src="{{ site.baseurl }}/assets/img/medium-up/about-values.png" alt="{{ img_alt }}">
+        <img class="u-img-responsive" src="{{ site.baseurl }}/assets/img/medium-up/about-values.png" alt="{{ site.t_hero_about_values[page.lang].img_alt }}">
       </div>
 
     </div>

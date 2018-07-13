@@ -1,26 +1,8 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign nav_secondary_solutions_link_1 = 'ca/solucions/sherpa-campaign' %}
-    {% assign nav_secondary_solutions_text_1 = 'Sherpa campaign' %}
-    {% assign nav_secondary_solutions_link_2 = 'ca/solucions/sherpa-dashboard' %}
-    {% assign nav_secondary_solutions_text_2 = 'Sherpa dashboard' %}
-  {% when 'en' %}
-    {% assign nav_secondary_solutions_link_1 = 'en/solutions/sherpa-campaign' %}
-    {% assign nav_secondary_solutions_text_1 = 'Sherpa campaign' %}
-    {% assign nav_secondary_solutions_link_2 = 'en/solutions/sherpa-dashboard' %}
-    {% assign nav_secondary_solutions_text_2 = 'Sherpa dashboard' %}
-  {% else %}
-    {% assign nav_secondary_solutions_link_1 = 'soluciones/sherpa-campaign' %}
-    {% assign nav_secondary_solutions_text_1 = 'Sherpa campaign' %}
-    {% assign nav_secondary_solutions_link_2 = 'soluciones/sherpa-dashboard' %}
-    {% assign nav_secondary_solutions_text_2 = 'Sherpa dashboard' %}
-{% endcase %}
-
 <ul id="nav-secondary-solutions" class="nav-secondary u-text-left is-medium-hidden">
   <li>
-    <a class="nav-secondary__link" href="{{ site.baseurl }}/{{ nav_secondary_solutions_link_1 }}">{{ nav_secondary_solutions_text_1 }}</a>
+    <a class="nav-secondary__link" href="{{ site.baseurl }}/{{ site.t_nav_secondary_solutions[page.lang].link_1 }}">{{ site.t_nav_secondary_solutions[page.lang].text_1 }}</a>
   </li>
   <li>
-    <a class="nav-secondary__link" href="{{ site.baseurl }}/{{ nav_secondary_solutions_link_2 }}">{{ nav_secondary_solutions_text_2 }}</a>
+    <a class="nav-secondary__link" href="{{ site.baseurl }}/{{ site.t_nav_secondary_solutions[page.lang].link_2 }}">{{ site.t_nav_secondary_solutions[page.lang].text_2 }}</a>
   </li>
 </ul>

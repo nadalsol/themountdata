@@ -1,85 +1,23 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign heading = 'Dashboard' %}
-    {% assign text_1 = '...' %}
-    {% assign text_2 = '...' %}
-    {% assign text_3 = '...' %}
-    {% assign text_4 = '<strong>...</strong>' %}
-
-    {% assign heading_types = 'Tipus' %}
-    {% assign text_types_1 = '...' %}
-    {% assign text_types_2 = '...' %}
-    {% assign text_types_3 = '...' %}
-    {% assign text_types_4 = '...' %}
-    {% assign text_types_5 = '...' %}
-    {% assign text_types_6 = '...' %}
-    {% assign text_types_7 = '...' %}
-    {% assign text_types_8 = '...' %}
-    {% assign text_types_9 = '...' %}
-  {% when 'en' %}
-    {% assign heading = 'Dashboard' %}
-    {% assign text_1 = '...' %}
-    {% assign text_2 = '...' %}
-    {% assign text_3 = '...' %}
-    {% assign text_4 = '<strong>...</strong>' %}
-
-    {% assign heading_types = 'Types' %}
-    {% assign text_types_1 = '...' %}
-    {% assign text_types_2 = '...' %}
-    {% assign text_types_3 = '...' %}
-    {% assign text_types_4 = '...' %}
-    {% assign text_types_5 = '...' %}
-    {% assign text_types_6 = '...' %}
-    {% assign text_types_7 = '...' %}
-    {% assign text_types_8 = '...' %}
-    {% assign text_types_9 = '...' %}
-  {% else %}
-    {% assign heading = 'Dashboard' %}
-    {% assign text_1 = 'Herramienta BI para la visualizar grandes volúmenes datos de distintas fuentes relacionadas (transaccionales, comunicaciones, clientes, social …). Enfocado al descubrimiento de insights,  a la toma de decisiones y a la mejora de la productividad.' %}
-    {% assign text_2 = 'A partir de las necesidades concretas de los distintos usuarios definimos los objetivos,  kpis, las dimensiones de la información, los elementos a visualizar (gráficas, tablas, listas, mapas…) y los elementos de contexto.' %}
-    {% assign text_3 = 'Funcionalidades habituales de los dashboards son la aplicación de Filtros/Exclusiones, creación de Tablas pivotantes, Alertas, integración con Machine Learning, exportación a MSExcel, Mapas, Marcadores, anotación Comentarios, Predicciones y Prescripciones…' %}
-    {% assign text_4 = '<strong>Desarrollados en QlikView, QlikSense, Domo.</strong>' %}
-
-    {% assign heading_types = 'Tipos' %}
-    {% assign text_types_1 = 'Dashboard Contadores' %}
-    {% assign text_types_2 = 'Dashboard Segmentación Campañas' %}
-    {% assign text_types_3 = 'Dashboard Resultados de Campañas' %}
-    {% assign text_types_4 = 'Dashboard integral de Marketing' %}
-    {% assign text_types_5 = 'Dashboard de Productos y Pricing' %}
-    {% assign text_types_6 = 'Dashboard Calidad de datos' %}
-    {% assign text_types_7 = 'Dashboard Funnel de Ventas' %}
-    {% assign text_types_8 = 'Dashboard de Competencia' %}
-    {% assign text_types_9 = 'Dashboard de Mercado & Investigación' %}
-{% endcase %}
-
 <div class="service">
   <div class="wrapper">
 
     <div class="service__col-l panel panel--light">
       <div class="u-inner-small">
-        <h2 class="heading2 service__heading">{{ heading }}</h2>
+        <h2 class="heading2 service__heading">{{ site.t_service_visualization[page.lang].heading }}</h2>
         <div class="service__content">
-          <p class="text text--fiord">{{ text_1 }}</p>
-          <p class="text text--fiord">{{ text_2 }}</p>
-          <p class="text text--fiord">{{ text_3 }}</p>
-          <p class="text text--fiord">{{ text_4 }}</p>
+          <p class="text text--fiord">{{ site.t_service_visualization[page.lang].text_1 }}</p>
+          <p class="text text--fiord">{{ site.t_service_visualization[page.lang].text_2 }}</p>
+          <p class="text text--fiord">{{ site.t_service_visualization[page.lang].text_3 }}</p>
+          <p class="text text--fiord">{{ site.t_service_visualization[page.lang].text_4 }}</p>
         </div>
       </div>
     </div>
 
     <div class="service__col-r panel panel--pelorous">
       <div class="u-inner-small">
-        <h3 class="heading3 heading3--light heading3--hr">{{ heading_types }}</h3>
+        <h3 class="heading3 heading3--light heading3--hr">{{ site.t_service_visualization[page.lang].heading_types }}</h3>
         <ul class="list list--unstyled list--light">
-          <li>{{ text_types_1 }}</li>
-          <li>{{ text_types_2 }}</li>
-          <li>{{ text_types_3 }}</li>
-          <li>{{ text_types_4 }}</li>
-          <li>{{ text_types_5 }}</li>
-          <li>{{ text_types_6 }}</li>
-          <li>{{ text_types_7 }}</li>
-          <li>{{ text_types_8 }}</li>
-          <li>{{ text_types_9 }}</li>
+          {{ site.t_service_visualization[page.lang].text_types }}
         </ul>
       </div>
     </div>

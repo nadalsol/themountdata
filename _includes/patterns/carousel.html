@@ -1,82 +1,25 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign id_1 = 'nosaltres' %}
-    {% assign heading_1 = '...' %}
-    {% assign text_1 = '...' %}
-    {% assign cta_link_1 = 'ca/nosaltres' %}
-    {% assign cta_text_1 = 'Nosaltres' %}
-
-    {% assign id_2 = 'equip' %}
-    {% assign heading_2 = '...' %}
-    {% assign text_2 = '...' %}
-    {% assign cta_link_2 = 'ca/#' %}
-    {% assign cta_text_2 = 'Equip' %}
-
-    {% assign id_3 = 'solucions' %}
-    {% assign heading_3 = '...' %}
-    {% assign text_3 = '...' %}
-    {% assign cta_link_3 = 'ca/solucions' %}
-    {% assign cta_text_3 = 'Solucions' %}
-  {% when 'en' %}
-    {% assign id_1 = 'about' %}
-    {% assign heading_1 = '...' %}
-    {% assign text_1 = '...' %}
-    {% assign cta_link_1 = 'en/about' %}
-    {% assign cta_text_1 = 'About' %}
-
-    {% assign id_2 = 'team' %}
-    {% assign heading_2 = '...' %}
-    {% assign text_2 = '...' %}
-    {% assign cta_link_2 = 'en/#' %}
-    {% assign cta_text_2 = 'Team' %}
-
-    {% assign id_3 = 'solutions' %}
-    {% assign heading_3 = '...' %}
-    {% assign text_3 = '...' %}
-    {% assign cta_link_3 = 'en/solutions' %}
-    {% assign cta_text_3 = 'Solutions' %}
-  {% else %}
-    {% assign id_1 = 'nosotros' %}
-    {% assign heading_1 = 'Desde la estrategia<br>a la ejecución' %}
-    {% assign text_1 = 'Nuestra actividad se centra en las Tecnologías centradas en gestión  y análisis de la información que ayudan a mejorar la toma de decisiones  y procesos de las distintas áreas de Negocio.  Acompañamos a nuestros Clientes desde las fases iniciales del diseño de la Estrategia hasta  la Puesta en marcha del proyecto (envío de las comunicaciones o implementación de modelos…).' %}
-    {% assign cta_link_1 = 'nosotros' %}
-    {% assign cta_text_1 = 'Nosotros' %}
-
-    {% assign id_2 = 'equipo' %}
-    {% assign heading_2 = 'Equipo, timing<br>y entregables' %}
-    {% assign text_2 = 'Nos gustan los retos y los objetivos realizados. Nos comprometemos en buscar soluciones para entregar los proyectos a tiempo y en las condiciones acordadas. Por eso, trabajamos con una orientación “agile” donde las personas están por encima de los procesos y estamos abiertos a los cambios y a la colaboración con los clientes y sus partners…' %}
-    {% assign cta_link_2 = '#' %}
-    {% assign cta_text_2 = 'Equipo' %}
-
-    {% assign id_3 = 'soluciones' %}
-    {% assign heading_3 = 'Martech TMD' %}
-    {% assign text_3 = 'Lo importante no es la herramienta sino lo que consigues con ella. Sabemos qué tecnologías de marketing/ventas necesitan la mayoría  de los clientes y tenemos experiencia con algunas herramientas con las que nos sentimos a gusto. Estamos abiertos a integrar  otras herramientas para que funcionen como una gran orquesta.' %}
-    {% assign cta_link_3 = 'soluciones' %}
-    {% assign cta_text_3 = 'Soluciones' %}
-{% endcase %}
-
 <div class="carousel is-items-3">
 
-  <div id="{{ id_1 }}" class="carousel__control-operator"></div>
-  <div id="{{ id_2 }}" class="carousel__control-operator"></div>
-  <div id="{{ id_3 }}" class="carousel__control-operator"></div>
+  <div id="{{ site.t_carousel[page.lang].id_1 }}" class="carousel__control-operator"></div>
+  <div id="{{ site.t_carousel[page.lang].id_2 }}" class="carousel__control-operator"></div>
+  <div id="{{ site.t_carousel[page.lang].id_3 }}" class="carousel__control-operator"></div>
 
   <figure class="carousel__item">
     <div class="wrapper">
       <div class="u-inner-medium">
         <div class="carousel__item__col-l">
           <h2 class="heading2 heading2--light">
-            {{ heading_1 }}
+            {{ site.t_carousel[page.lang].heading_1 }}
           </h2>
           <p class="text text--light">{{ text_1 }}</p>
-          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ cta_link_1 }}">› {{ cta_text_1 }}</a>
+          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ site.t_carousel[page.lang].cta_link_1 }}">› {{ site.t_carousel[page.lang].cta_text_1 }}</a>
         </div>
         <div class="carousel__item__col-r">
           {% include icons/carousel-us.svg css-class="icon u-img-responsive" %}
         </div>
       </div>
     </div>
-    <a href="#{{ id_2 }}" class="carousel__control-secondary-r">
+    <a href="#{{ site.t_carousel[page.lang].id_2 }}" class="carousel__control-secondary-r">
       {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
     </a>
   </figure>
@@ -86,20 +29,20 @@
       <div class="u-inner-medium">
         <div class="carousel__item__col-l">
           <h2 class="heading2 heading2--light">
-            {{ heading_2 }}
+            {{ site.t_carousel[page.lang].heading_2 }}
           </h2>
-          <p class="text text--light">{{ text_2 }}</p>
-          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ cta_link_2 }}">› {{ cta_text_2 }}</a>
+          <p class="text text--light">{{ site.t_carousel[page.lang].text_2 }}</p>
+          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ site.t_carousel[page.lang].cta_link_2 }}">› {{ site.t_carousel[page.lang].cta_text_2 }}</a>
         </div>
         <div class="carousel__item__col-r">
           {% include icons/carousel-team.svg css-class="icon u-img-responsive" %}
         </div>
       </div>
     </div>
-    <a href="#{{ id_1 }}" class="carousel__control-secondary-l">
+    <a href="#{{ site.t_carousel[page.lang].id_1 }}" class="carousel__control-secondary-l">
       {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
     </a>
-    <a href="#{{ id_3 }}" class="carousel__control-secondary-r">
+    <a href="#{{ site.t_carousel[page.lang].id_3 }}" class="carousel__control-secondary-r">
       {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
     </a>
   </figure>
@@ -109,25 +52,25 @@
       <div class="u-inner-medium">
         <div class="carousel__item__col-l">
           <h2 class="heading2 heading2--light">
-            {{ heading_3 }}
+            {{ site.t_carousel[page.lang].heading_3 }}
           </h2>
-          <p class="text text--light">{{ text_3 }}</p>
-          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ cta_link_3 }}">› {{ cta_text_3 }}</a>
+          <p class="text text--light">{{ site.t_carousel[page.lang].text_3 }}</p>
+          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ site.t_carousel[page.lang].cta_link_3 }}">› {{ site.t_carousel[page.lang].cta_text_3 }}</a>
         </div>
         <div class="carousel__item__col-r">
           {% include icons/carousel-solutions.svg css-class="icon u-img-responsive" %}
         </div>
       </div>
     </div>
-    <a href="#{{ id_2 }}" class="carousel__control-secondary-l">
+    <a href="#{{ site.t_carousel[page.lang].id_2 }}" class="carousel__control-secondary-l">
       {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
     </a>
   </figure>
 
   <div class="carousel__controls">
-    <a href="#{{ id_1 }}" class="carousel__controls__control-button"></a>
-    <a href="#{{ id_2 }}" class="carousel__controls__control-button"></a>
-    <a href="#{{ id_3 }}" class="carousel__controls__control-button"></a>
+    <a href="#{{ site.t_carousel[page.lang].id_1 }}" class="carousel__controls__control-button"></a>
+    <a href="#{{ site.t_carousel[page.lang].id_2 }}" class="carousel__controls__control-button"></a>
+    <a href="#{{ site.t_carousel[page.lang].id_3 }}" class="carousel__controls__control-button"></a>
   </div>
 
 </div>

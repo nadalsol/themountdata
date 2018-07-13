@@ -1,6 +1,5 @@
 <svg class="{{ include.css-class }}" width="644" height="327" viewBox="0 0 644 327" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 5</title>
-    <desc>Created with Sketch.</desc>
+    <title>Negocio</title>
     <defs>
         <linearGradient x1="-0.927643785%" y1="49.9939703%" x2="100.886735%" y2="49.9939703%" id="linearGradient-1">
             <stop stop-color="#19B5DB" offset="0%"></stop>

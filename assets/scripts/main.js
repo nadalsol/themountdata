@@ -8,7 +8,90 @@
 $(document).ready(function() {
 
   /**
-   * Navigation menus
+   * Cookie message
+   * Based on the code of [Studio 24](https://github.com/studio24/cookie-message)
+   */
+  (function() {
+    //
+    // Set cookie
+    //
+    // @param string name
+    // @param string value
+    // @param int days
+    // @param string path
+    // @see http://www.quirksmode.org/js/cookies.html
+    //
+    function createCookie(name,value,days,path) {
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+      }
+      else var expires = "";
+      document.cookie = name+"="+value+expires+"; path="+path;
+    }
+
+    //
+    // Read cookie
+    //
+    // @param string name
+    // @returns {*}
+    // @see http://www.quirksmode.org/js/cookies.html
+    //
+    function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+    }
+
+    var cookieMessage = document.getElementById('cookie-message');
+    if (cookieMessage == null) {
+      return;
+    }
+    var cookie = readCookie('seen-cookie-message');
+    var body = document.getElementsByTagName('body')[0];
+    if (cookie != null && cookie == 'yes') {
+      cookieMessage.style.display = 'none';
+    } else {
+      cookieMessage.style.display = 'block';
+      body.classList.add('is-cookie-message');
+    }
+
+    // Set/update cookie
+    var cookieExpiry = cookieMessage.getAttribute('data-cookie-expiry');
+    if (cookieExpiry == null) {
+      cookieExpiry = 30;
+    }
+    var cookiePath = cookieMessage.getAttribute('data-cookie-path');
+    if (cookiePath == null) {
+      cookiePath = "/";
+    }
+    createCookie('seen-cookie-message','yes',cookieExpiry,cookiePath);
+
+    //
+    // Message visibility
+    //
+    // 1. Remove body class.
+    // 2. Remove message from DOM.
+    //
+    var body = $('body'),
+        cookieMessage = $('#cookie-message'),
+        cookieMessageClose = $('#cookie-message-close');
+
+    cookieMessageClose.click(function() {
+      body.removeClass('is-cookie-message'); // 1
+      cookieMessage.remove(); // 2
+    });
+  })();
+
+
+  /**
+   * Header navigation menus
    */
   (function() {
     var header = $('#header'),
@@ -112,89 +195,6 @@ $(document).ready(function() {
 
 
   /**
-   * Cookie message
-   * Based on the code of [Studio 24](https://github.com/studio24/cookie-message)
-   */
-  (function() {
-    //
-    // Set cookie
-    //
-    // @param string name
-    // @param string value
-    // @param int days
-    // @param string path
-    // @see http://www.quirksmode.org/js/cookies.html
-    //
-    function createCookie(name,value,days,path) {
-      if (days) {
-        var date = new Date();
-        date.setTime(date.getTime()+(days*24*60*60*1000));
-        var expires = "; expires="+date.toGMTString();
-      }
-      else var expires = "";
-      document.cookie = name+"="+value+expires+"; path="+path;
-    }
-
-    //
-    // Read cookie
-    //
-    // @param string name
-    // @returns {*}
-    // @see http://www.quirksmode.org/js/cookies.html
-    //
-    function readCookie(name) {
-      var nameEQ = name + "=";
-      var ca = document.cookie.split(';');
-      for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-      }
-      return null;
-    }
-
-    var cookieMessage = document.getElementById('cookie-message');
-    if (cookieMessage == null) {
-      return;
-    }
-    var cookie = readCookie('seen-cookie-message');
-    var body = document.getElementsByTagName('body')[0];
-    if (cookie != null && cookie == 'yes') {
-      cookieMessage.style.display = 'none';
-    } else {
-      cookieMessage.style.display = 'block';
-      body.classList.add('is-cookie-message');
-    }
-
-    // Set/update cookie
-    var cookieExpiry = cookieMessage.getAttribute('data-cookie-expiry');
-    if (cookieExpiry == null) {
-      cookieExpiry = 30;
-    }
-    var cookiePath = cookieMessage.getAttribute('data-cookie-path');
-    if (cookiePath == null) {
-      cookiePath = "/";
-    }
-    createCookie('seen-cookie-message','yes',cookieExpiry,cookiePath);
-
-    //
-    // Message visibility
-    //
-    // 1. Remove body class.
-    // 2. Remove message from DOM.
-    //
-    var body = $('body'),
-        cookieMessage = $('#cookie-message'),
-        cookieMessageClose = $('#cookie-message-close');
-
-    cookieMessageClose.click(function() {
-      body.removeClass('is-cookie-message'); // 1
-      cookieMessage.remove(); // 2
-    });
-  })();
-
-
-  /**
    * Modal
    */
   (function() {
@@ -210,13 +210,19 @@ $(document).ready(function() {
         modalCloseCookie = modalCookie.find('.js-modal-close'),
         modalTriggerTerms = $('#modal-trigger-terms'),
         modalTerms = $('#modal-terms'),
-        modalCloseTerms = modalTerms.find('.js-modal-close');
+        modalCloseTerms = modalTerms.find('.js-modal-close'),
+        modalTriggerVideo = $('#modal-trigger-video'),
+        modalVideo = $('#modal-video'),
+        modalCloseVideo = modalVideo.find('.js-modal-close'),
+        modalBodyVideo = modalVideo.find('.js-modal-body');
 
     //
     // Modal open
     //
     // 1. Body scroll is removed.
     // 2. Modal is visible.
+    // 3. Append `<video>` to the DOM, only when the play trigger gets
+    // fired, to prevent unnecessary video requests on page load.
     //
     modalTriggerCookieMessage.click(function(event) {
       event.preventDefault();
@@ -242,11 +248,19 @@ $(document).ready(function() {
       modalTerms.removeClass('is-hidden'); // 2
     });
 
+    modalTriggerVideo.click(function() {
+      body.addClass('is-modal-open'); // 1
+      modalVideo.removeClass('is-hidden'); // 2
+      // TODO : use "/themountdata/assets/" temporary path for GitHub pages (replace for "/assets" in Production)
+      modalBodyVideo.append('<video controls autoplay muted preload><source src="/themountdata/assets/video/the-mount-data.webm" type="video/webm"><source src="/themountdata/assets/video/the-mount-data.mp4" type="video/mp4">Sorry, your browser does not support embedded videos.</video>'); // 3
+    });
+
     //
     // Modal close
     //
     // 1. Body scroll is back.
     // 2. Modal is hidden.
+    // 3. Remove `<video>` from the DOM, to stop playing in background.
     //
     modalCloseCookieMessage.click(function() {
       body.removeClass('is-modal-open'); // 1
@@ -268,11 +282,18 @@ $(document).ready(function() {
       modalTerms.addClass('is-hidden'); // 2
     });
 
+    modalCloseVideo.click(function() {
+      body.removeClass('is-modal-open'); // 1
+      modalVideo.addClass('is-hidden'); // 2
+      modalBodyVideo.find('video').remove(); // 3
+    });
+
     //
     // Modal close (ESC key)
     //
     // 1. Body scroll is back.
     // 2. Modal is hidden.
+    // 3. Remove `<video>` from the DOM, to stop playing in background.
     //
     $(document).keydown(function(event) {
       if (event.keyCode == 27 && body.hasClass('is-modal-open')) {
@@ -281,6 +302,8 @@ $(document).ready(function() {
         modalPrivacy.addClass('is-hidden'); // 2
         modalCookie.addClass('is-hidden'); // 2
         modalTerms.addClass('is-hidden'); // 2
+        modalVideo.addClass('is-hidden'); // 2
+        modalBodyVideo.find('video').remove(); // 3
       }
     });
   })();

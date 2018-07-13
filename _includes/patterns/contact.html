@@ -1,52 +1,10 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign heading = 'Request a free consultation' %}
-    {% assign subheading = 'Tell us about your business problem and we help you define it further.' %}
-    {% assign name = 'Nom' %}
-    {% assign surname = 'Cognoms' %}
-    {% assign email = 'E-mail' %}
-    {% assign phone = 'Telèfon' %}
-    {% assign company = 'Empresa' %}
-    {% assign position = 'Càrrec' %}
-    {% assign subject = 'Assumpte' %}
-    {% assign message = 'Consulta' %}
-    {% assign privacy = 'Accepto la <a href="#">política de privacitat</a>' %}
-    {% assign submit = 'Enviar' %}
-  {% when 'en' %}
-    {% assign heading = 'Request a free consultation' %}
-    {% assign subheading = 'Tell us about your business problem and we help you define it further.' %}
-    {% assign name = 'Name' %}
-    {% assign surname = 'Surname' %}
-    {% assign email = 'E-mail' %}
-    {% assign phone = 'Phone' %}
-    {% assign company = 'Company' %}
-    {% assign position = 'Position' %}
-    {% assign subject = 'Subject' %}
-    {% assign message = 'Description' %}
-    {% assign privacy = 'I agree with the <a href="#">privacy policy</a>' %}
-    {% assign submit = 'Submit' %}
-  {% else %}
-    {% assign heading = 'Request a free consultation' %}
-    {% assign subheading = 'Tell us about your business problem and we help you define it further.' %}
-    {% assign name = 'Nombre' %}
-    {% assign surname = 'Apellidos' %}
-    {% assign email = 'E-mail' %}
-    {% assign phone = 'Teléfono' %}
-    {% assign company = 'Empresa' %}
-    {% assign position = 'Cargo' %}
-    {% assign subject = 'Asunto' %}
-    {% assign message = 'Consulta' %}
-    {% assign privacy = 'Acepto la <a href="#">política de privacidad</a>' %}
-    {% assign submit = 'Enviar' %}
-{% endcase %}
-
 <div class="contact">
   <div class="wrapper">
     <div class="u-inner-small">
 
       <div class="contact__header">
-        <h2 class="heading2 contact__heading u-text-center">{{ heading }}</h2>
-        <h3 class="heading4 u-text-center">{{ subheading }}</h3>
+        <h2 class="heading2 contact__heading u-text-center">{{ site.t_contact[page.lang].heading }}</h2>
+        <h3 class="heading4 u-text-center">{{ site.t_contact[page.lang].subheading }}</h3>
       </div>
 
       <form class="contact__content form" action="https://formspree.io/nadalsoler@gmail.com" method="POST">
@@ -54,17 +12,17 @@
         <fieldset class="form__fieldset contact__col25">
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase is-required" for="name">{{ name }}</label>
+            <label class="form__label u-text-uppercase is-required" for="name">{{ site.t_contact[page.lang].name }}</label>
             <input class="form__field" type="text" id="name" name="name" tabindex="1" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase is-required" for="email">{{ email }}</label>
+            <label class="form__label u-text-uppercase is-required" for="email">{{ site.t_contact[page.lang].email }}</label>
             <input class="form__field" type="email" id="email" name="_replyto" tabindex="3" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase" for="company">{{ company }}</label>
+            <label class="form__label u-text-uppercase" for="company">{{ site.t_contact[page.lang].company }}</label>
             <input class="form__field" type="text" id="company" name="company" tabindex="5">
           </div>
 
@@ -73,17 +31,17 @@
         <fieldset class="form__fieldset contact__col25">
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase is-required" for="surname">{{ surname }}</label>
+            <label class="form__label u-text-uppercase is-required" for="surname">{{ site.t_contact[page.lang].surname }}</label>
             <input class="form__field" type="text" id="surname" name="surname" tabindex="2" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase is-required" for="phone">{{ phone }}</label>
+            <label class="form__label u-text-uppercase is-required" for="phone">{{ site.t_contact[page.lang].phone }}</label>
             <input class="form__field" type="tel" id="phone" name="phone" tabindex="4" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase" for="position">{{ position }}</label>
+            <label class="form__label u-text-uppercase" for="position">{{ site.t_contact[page.lang].position }}</label>
             <input class="form__field" type="text" id="position" name="position" tabindex="6">
           </div>
 
@@ -92,24 +50,24 @@
         <fieldset class="form__fieldset contact__col50">
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase" for="subject">{{ subject }}</label>
+            <label class="form__label u-text-uppercase" for="subject">{{ site.t_contact[page.lang].subject }}</label>
             <input class="form__field" type="text" id="subject" name="_subject" tabindex="7">
           </div>
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase" for="message">{{ message }}</label>
+            <label class="form__label u-text-uppercase" for="message">{{ site.t_contact[page.lang].message }}</label>
             <textarea class="form__textarea" id="message" name="message" rows="8" cols="80" tabindex="8"></textarea>
           </div>
 
           <div class="form__group form__group--inline">
             <input class="form__checkbox" type="checkbox" id="privacy" name="privacy" value="on" tabindex="9" required>
-            <label class="form__label is-required" for="privacy">{{ privacy }}</label>
+            <label class="form__label is-required" for="privacy">{{ site.t_contact[page.lang].privacy }}</label>
           </div>
 
           <input type="hidden" id="language" name="_language" value="{{ page.lang | upcase }}">
 
           <div class="button-set button-set--r">
-            <button type="submit" class="button button--primary button--small">{{ submit }}</button>
+            <button type="submit" class="button button--primary button--small">{{ site.t_contact[page.lang].submit }}</button>
           </div>
 
         </fieldset>

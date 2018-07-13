@@ -1,68 +1,44 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign heading = 'Sectors' %}
-    {% assign subheading_1 = 'Turisme' %}
-    {% assign subheading_2 = 'Auto' %}
-    {% assign subheading_3 = 'Supermercats' %}
-    {% assign subheading_4 = 'Retail' %}
-    {% assign subheading_5 = 'Horeca' %}
-  {% when 'en' %}
-    {% assign heading = 'Sectors' %}
-    {% assign subheading_1 = 'Tourism' %}
-    {% assign subheading_2 = 'Auto' %}
-    {% assign subheading_3 = 'Supermarkets' %}
-    {% assign subheading_4 = 'Retail' %}
-    {% assign subheading_5 = 'Horeca' %}
-  {% else %}
-    {% assign heading = 'Sectores' %}
-    {% assign subheading_1 = 'Turismo' %}
-    {% assign subheading_2 = 'Auto' %}
-    {% assign subheading_3 = 'Supermercados' %}
-    {% assign subheading_4 = 'Retail' %}
-    {% assign subheading_5 = 'Horeca' %}
-{% endcase %}
-
 <div class="sectors u-text-center">
   <div class="wrapper">
     <div class="u-inner-small">
 
-      <h2 class="sectors__heading heading3 heading3--light heading3--hr">{{ heading }}</h2>
+      <h2 class="sectors__heading heading3 heading3--light heading3--hr">{{ site.t_sectors[page.lang].heading }}</h2>
 
       <div class="sectors__content">
 
         <div class="sectors__col20">
           <div class="sectors__img">
-            <img src="{{ site.baseurl }}/assets/img/sectors-tourism.png" alt="{{ subheading_1 }}">
+            <img src="{{ site.baseurl }}/assets/img/sectors-tourism.png" alt="{{ site.t_sectors[page.lang].subheading_1 }}">
           </div>
-          <span class="sectors__subheading">{{ subheading_1 }}</span>
+          <span class="sectors__subheading">{{ site.t_sectors[page.lang].subheading_1 }}</span>
         </div>
 
         <div class="sectors__col20">
           <div class="sectors__img">
-            <img src="{{ site.baseurl }}/assets/img/sectors-auto.png" alt="{{ subheading_2 }}">
+            <img src="{{ site.baseurl }}/assets/img/sectors-auto.png" alt="{{ site.t_sectors[page.lang].subheading_2 }}">
           </div>
-          <span class="sectors__subheading">{{ subheading_2 }}</span>
+          <span class="sectors__subheading">{{ site.t_sectors[page.lang].subheading_2 }}</span>
         </div>
 
         <div class="sectors__col20">
           <div class="sectors__img">
-            <img src="{{ site.baseurl }}/assets/img/sectors-supermarkets.png" alt="{{ subheading_3 }}">
+            <img src="{{ site.baseurl }}/assets/img/sectors-supermarkets.png" alt="{{ site.t_sectors[page.lang].subheading_3 }}">
           </div>
-          <span class="sectors__subheading">{{ subheading_3 }}</span>
+          <span class="sectors__subheading">{{ site.t_sectors[page.lang].subheading_3 }}</span>
         </div>
 
         <div class="sectors__col20">
           <div class="sectors__img">
-            <img src="{{ site.baseurl }}/assets/img/sectors-retail.png" alt="{{ subheading_4 }}">
+            <img src="{{ site.baseurl }}/assets/img/sectors-retail.png" alt="{{ site.t_sectors[page.lang].subheading_4 }}">
           </div>
-          <span class="sectors__subheading">{{ subheading_4 }}</span>
+          <span class="sectors__subheading">{{ site.t_sectors[page.lang].subheading_4 }}</span>
         </div>
 
         <div class="sectors__col20">
           <div class="sectors__img">
-            <img src="{{ site.baseurl }}/assets/img/sectors-horeca.png" alt="{{ subheading_5 }}">
+            <img src="{{ site.baseurl }}/assets/img/sectors-horeca.png" alt="{{ site.t_sectors[page.lang].subheading_5 }}">
           </div>
-          <span class="sectors__subheading">{{ subheading_5 }}</span>
+          <span class="sectors__subheading">{{ site.t_sectors[page.lang].subheading_5 }}</span>
         </div>
 
       </div>

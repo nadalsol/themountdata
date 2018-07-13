@@ -1,0 +1,23 @@
+// Hero intro
+// -----------------------------------------------------------------------------
+//
+// 1. Button covering the entire hero, for easy video playing
+//
+
+.hero-intro {
+  @include size($hero-intro-wd, $hero-intro-ht);
+  @include item-background($hero-intro-bgc, $hero-intro-bgi, $hero-intro-bgi-medium-up);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+
+  @media ($medium-up) {
+    @include size($hero-intro-wd-medium-up, $hero-intro-ht-medium-up);
+  }
+
+  &__play {
+    @include positioner-center-all;
+    @include size(100%, 100%); // 1
+  }
+}

@@ -44,13 +44,8 @@ $c-watercourse:          #047154 !default;
 $c-cosmic:               #683361 !default;
 
 // Scaffolding
-<<<<<<< HEAD
-$assets-path:            "/themountdata/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
-// $assets-path:            "/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
-=======
-// $assets-path:            "/themountdata/assets" !default; // TODO : temporary path for GitHub pages (replace for "/assets" in Production)
-$assets-path:            "/assets" !default;
->>>>>>> develop
+// TODO : use "/themountdata/assets/" temporary path for GitHub pages (replace for "/assets" in Production)
+$assets-path:            "/themountdata/assets" !default;
 $assets-img-path:        $assets-path + "/img" !default;
 $icons-path:             "/_includes/icons" !default;
 
@@ -150,10 +145,6 @@ $u-inner-large-pd-large-up:       80px 250px !default;
 
 $u-inner-xlarge-pd:               $sp-small !default;
 $u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
-
-$u-inner-xxlarge-pd:              $sp-colossal $sp-small $sp-big !default;
-$u-inner-xxlarge-pd-medium-up:    360px $sp-big 0 !default;
-$u-inner-xxlarge-pd-large-up:     460px $sp-big 0 !default;
 
 
 // Common
@@ -412,14 +403,14 @@ $hero-about-bgc-clients:                    $c-dark !default;
 $hero-about-bgi-clients:                    $assets-img-path + "/bg-hero-about-clients.jpg" !default;
 $hero-about-bgi-clients-medium-up:          $assets-img-path + "/medium-up/bg-hero-about-clients.jpg" !default;
 
-// Hero video
-$hero-video-wd:                     100% !default;
-$hero-video-ht:                     auto !default;
-$hero-video-wd-medium-up:           100% !default;
-$hero-video-ht-medium-up:           810px !default;
-$hero-video-bgc:                    $c-eastbay !default;
-$hero-video-bgi:                    $assets-img-path + "/bg-hero-video.jpg" !default;
-$hero-video-bgi-medium-up:          $assets-img-path + "/medium-up/bg-hero-video.jpg" !default;
+// Hero intro
+$hero-intro-wd:                     100% !default;
+$hero-intro-ht:                     400px !default;
+$hero-intro-wd-medium-up:           100% !default;
+$hero-intro-ht-medium-up:           810px !default;
+$hero-intro-bgc:                    $c-eastbay !default;
+$hero-intro-bgi:                    $assets-img-path + "/bg-hero-intro.jpg" !default;
+$hero-intro-bgi-medium-up:          $assets-img-path + "/medium-up/bg-hero-intro.jpg" !default;
 
 // Map
 $map-wd:                            100% !default;

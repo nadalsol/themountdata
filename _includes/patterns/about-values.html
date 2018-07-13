@@ -1,36 +1,18 @@
-{% case page.lang %}
-  {% when 'ca' %}
-    {% assign heading = 'Valors' %}
-    {% assign text_1 = '...' %}
-    {% assign text_2 = '...' %}
-    {% assign text_3 = '...' %}
-  {% when 'en' %}
-    {% assign heading = 'Values' %}
-    {% assign text_1 = '...' %}
-    {% assign text_2 = '...' %}
-    {% assign text_3 = '...' %}
-  {% else %}
-    {% assign heading = 'Valores' %}
-    {% assign text_1 = '...' %}
-    {% assign text_2 = '...' %}
-    {% assign text_3 = '...' %}
-{% endcase %}
-
 <div class="about-values">
   <div class="wrapper">
     <div class="u-inner-small">
 
-      <h2 class="heading2">{{ heading }}</h2>
+      <h2 class="heading2">{{ site.t_about_values[page.lang].heading }}</h2>
 
       <div class="about-values__content">
 
         <div class="about-values__col-l">
-          <p class="text text--fiord">{{ text_1 }}</p>
-          <p class="text text--fiord">{{ text_2 }}</p>
+          <p class="text text--fiord">{{ site.t_about_values[page.lang].text_1 }}</p>
+          <p class="text text--fiord">{{ site.t_about_values[page.lang].text_2 }}</p>
         </div>
 
         <div class="about-values__col-r">
-          <p class="text text--fiord">{{ text_3 }}</p>
+          <p class="text text--fiord">{{ site.t_about_values[page.lang].text_3 }}</p>
         </div>
 
       </div>

@@ -6,6 +6,7 @@
   <body>
 
     {% include common/header.html %}
+
     {% include common/content.html %}
     {% include common/footer.html %}
     {% include common/footer-legal.html %}
@@ -13,6 +14,7 @@
     {% include common/modal-cookie.html %}
     {% include common/modal-privacy.html %}
     {% include common/modal-terms.html %}
+    {% if page.ref == 'r_index' %}{% include patterns/modal-video.html %}{% endif %}
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>

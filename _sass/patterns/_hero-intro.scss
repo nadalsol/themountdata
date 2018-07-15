@@ -11,6 +11,7 @@
   background-position: center top;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 
   @media ($medium-up) {
     @include size($hero-intro-wd-medium-up, $hero-intro-ht-medium-up);
@@ -19,5 +20,13 @@
   &__play {
     @include positioner-center-all;
     @include size(100%, 100%); // 1
+  }
+
+  .heading1 {
+    margin-bottom: 0;
+
+    @media ($xlarge-up) {
+      width: 65%;
+    }
   }
 }

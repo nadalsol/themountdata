@@ -57,6 +57,18 @@
   vertical-align: middle;
 }
 
+.icon--play {
+  @include size(55px, 55px);
+
+  @media ($medium-up) {
+    @include size(85px, 85px);
+  }
+
+  @media ($large-up) {
+    @include size(115px, 115px);
+  }
+}
+
 .icon--small {
   @include size(30px, 30px);
   vertical-align: middle;

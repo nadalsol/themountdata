@@ -73,6 +73,18 @@
   }
 }
 
+.u-inner-xxlarge {
+  padding: $u-inner-xxlarge-pd;
+
+  @media ($medium-up) {
+    padding: $u-inner-xxlarge-pd-medium-up;
+  }
+
+  @media ($large-up) {
+    padding: $u-inner-xxlarge-pd-large-up;
+  }
+}
+
 // Responsive images
 .u-img-responsive {
   @include img-responsive;

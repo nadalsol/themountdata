@@ -7,15 +7,19 @@ h1,
   @include heading(
     $ff-sans-serif-m,
     $fz-xlarge,
-    $fw-bold,
-    $lh-small,
+    $fw-extra-light,
+    $lh-xsmall,
     $c-dark,
-    none,
+    uppercase,
     normal
   );
 
   @media ($medium-up) {
     font-size: $fz-xxlarge;
+  }
+
+  @media ($large-up) {
+    font-size: $fz-xxxlarge;
   }
 }
 

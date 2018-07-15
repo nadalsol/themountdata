@@ -84,7 +84,8 @@ $fz-small:               16px !default;
 $fz-medium:              22px !default;
 $fz-large:               28px !default;
 $fz-xlarge:              40px !default;
-$fz-xxlarge:             70px !default;
+$fz-xxlarge:             65px !default;
+$fz-xxxlarge:            90px !default;
 
 $fw-base:                300 !default; // Barlow
 $fw-semi-bold:           600 !default; // Barlow
@@ -145,6 +146,10 @@ $u-inner-large-pd-large-up:       80px 250px !default;
 
 $u-inner-xlarge-pd:               $sp-small !default;
 $u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
+
+$u-inner-xxlarge-pd:              260px $sp-small $sp-big !default;
+$u-inner-xxlarge-pd-medium-up:    560px $sp-big 0 !default;
+$u-inner-xxlarge-pd-large-up:     490px $sp-big 0 !default;
 
 
 // Common
@@ -404,9 +409,9 @@ $hero-about-bgi-clients-medium-up:          $assets-img-path + "/medium-up/bg-he
 
 // Hero intro
 $hero-intro-wd:                     100% !default;
-$hero-intro-ht:                     400px !default;
+$hero-intro-ht:                     410px !default;
 $hero-intro-wd-medium-up:           100% !default;
-$hero-intro-ht-medium-up:           810px !default;
+$hero-intro-ht-medium-up:           820px !default;
 $hero-intro-bgc:                    $c-eastbay !default;
 $hero-intro-bgi:                    $assets-img-path + "/bg-hero-intro.jpg" !default;
 $hero-intro-bgi-medium-up:          $assets-img-path + "/medium-up/bg-hero-intro.jpg" !default;

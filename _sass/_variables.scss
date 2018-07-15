@@ -189,8 +189,7 @@ $header-wd:                       100% !default;
 $header-ht:                       floor($header-brand-ht + ($u-inner-xsmall-pdv * 2)) !default;
 $header-wd-medium-up:             $header-wd !default;
 $header-ht-medium-up:             floor($header-brand-ht-medium-up + ($u-inner-xsmall-pdv-medium-up * 2)) !default;
-$header-bg:                       transparent !default;
-$header-bg-sticky:                $c-light !default;
+$header-bg:                       $c-light !default;
 
 $header-is-cookie-top:            $cookie-msg-ht !default;
 

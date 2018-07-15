@@ -88,18 +88,10 @@
   fill: $c-java;
 }
 
-.fill-light {
-  fill: $c-light;
-
-  .header.is-sticky & {
-    fill: $c-balticsea;
-  }
+.fill-balticsea {
+  fill: $c-balticsea;
 }
 
-.stroke-light {
-  stroke: $c-light;
-
-  .header.is-sticky & {
-    stroke: $c-balticsea;
-  }
+.stroke-balticsea {
+  stroke: $c-balticsea;
 }

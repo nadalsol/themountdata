@@ -2,25 +2,31 @@
 // -----------------------------------------------------------------------------
 
 .button-set {
-  @media ($medium-up) {
+  @media ($large-up) {
     display: flex;
   }
 
   .button + .button {
     margin-top: $sp-small;
 
-    @media ($medium-up) {
+    @media ($large-up) {
       margin-top: 0;
       margin-left: $sp-xxlarge;
     }
   }
 
-  &--r {
-    display: flex;
-    justify-content: center;
+  &--form {
+    @media ($large-up) {
+      justify-content: space-between;
+      align-items: flex-start;
+    }
 
-    @media ($medium-up) {
-      justify-content: flex-end;
+    .form__group {
+      margin-bottom: $sp-small;
+
+      @media ($large-up) {
+        margin-bottom: 0;
+      }
     }
   }
 }

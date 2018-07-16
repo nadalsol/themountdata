@@ -306,7 +306,8 @@ t_contact:
     position: "Cargo"
     subject: "Asunto"
     message: "Consulta"
-    privacy: "Acepto la <a href=\"#\">política de privacidad</a>"
+    privacy_text_1: "Acepto la"
+    privacy_text_2: "política de privacidad"
     submit: "Enviar"
   ca:
     heading: "Demani una consulta gratuita"
@@ -319,7 +320,8 @@ t_contact:
     position: "Càrrec"
     subject: "Assumpte"
     message: "Consulta"
-    privacy: "Accepto la <a href=\"#\">política de privacitat</a>"
+    privacy_text_1: "Accepto la"
+    privacy_text_2: "política de privacitat"
     submit: "Enviar"
   en:
     heading: "Request a free consultation"
@@ -332,7 +334,8 @@ t_contact:
     position: "Position"
     subject: "Subject"
     message: "Description"
-    privacy: "I agree with the <a href=\"#\">privacy policy</a>"
+    privacy_text_1: "I agree with the"
+    privacy_text_2: "privacy policy"
     submit: "Submit"
 t_data_journey:
   es:

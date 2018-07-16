@@ -59,14 +59,16 @@
             <textarea class="form__textarea" id="message" name="message" rows="8" cols="80" tabindex="8"></textarea>
           </div>
 
-          <div class="form__group form__group--inline">
-            <input class="form__checkbox" type="checkbox" id="privacy" name="privacy" value="on" tabindex="9" required>
-            <label class="form__label is-required" for="privacy">{{ site.t_contact[page.lang].privacy }}</label>
-          </div>
-
           <input type="hidden" id="language" name="_language" value="{{ page.lang | upcase }}">
 
-          <div class="button-set button-set--r">
+          <div class="button-set button-set--form">
+            <div class="form__group form__group--inline">
+              <input class="form__checkbox" type="checkbox" id="privacy" name="privacy" value="on" tabindex="9" required>
+              <label class="form__label is-required" for="privacy">
+                {{ site.t_contact[page.lang].privacy_text_1 }}
+                <a href="#" id="modal-trigger-privacy-form">{{ site.t_contact[page.lang].privacy_text_2 }}</a>
+              </label>
+            </div>
             <button type="submit" class="button button--primary button--small">{{ site.t_contact[page.lang].submit }}</button>
           </div>
 

@@ -45,7 +45,7 @@ $c-cosmic:               #683361 !default;
 
 // Scaffolding
 // TODO : use "/themountdata/assets/" temporary path for GitHub pages (replace for "/assets" in Production)
-$assets-path:            "/themountdata/assets" !default;
+$assets-path:            "/themountdata/assets/" !default;
 $assets-img-path:        $assets-path + "/img" !default;
 $icons-path:             "/_includes/icons" !default;
 
@@ -84,7 +84,8 @@ $fz-small:               16px !default;
 $fz-medium:              22px !default;
 $fz-large:               28px !default;
 $fz-xlarge:              40px !default;
-$fz-xxlarge:             70px !default;
+$fz-xxlarge:             65px !default;
+$fz-xxxlarge:            90px !default;
 
 $fw-base:                300 !default; // Barlow
 $fw-semi-bold:           600 !default; // Barlow
@@ -146,6 +147,10 @@ $u-inner-large-pd-large-up:       80px 250px !default;
 $u-inner-xlarge-pd:               $sp-small !default;
 $u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
 
+$u-inner-xxlarge-pd:              260px $sp-small $sp-big !default;
+$u-inner-xxlarge-pd-medium-up:    560px $sp-big 0 !default;
+$u-inner-xxlarge-pd-large-up:     490px $sp-big 0 !default;
+
 
 // Common
 // -----------------------------------------------------------------------------
@@ -189,8 +194,7 @@ $header-wd:                       100% !default;
 $header-ht:                       floor($header-brand-ht + ($u-inner-xsmall-pdv * 2)) !default;
 $header-wd-medium-up:             $header-wd !default;
 $header-ht-medium-up:             floor($header-brand-ht-medium-up + ($u-inner-xsmall-pdv-medium-up * 2)) !default;
-$header-bg:                       transparent !default;
-$header-bg-sticky:                $c-light !default;
+$header-bg:                       $c-light !default;
 
 $header-is-cookie-top:            $cookie-msg-ht !default;
 
@@ -262,7 +266,7 @@ $button-secondary-visited-br:     $button-secondary-br !default;
 $button-secondary-visited-c:      $button-secondary-c !default;
 $button-secondary-visited-td:     $button-secondary-td !default;
 
-$button-secondary-hover-bg:       $c-chetwode !default;
+$button-secondary-hover-bg:       rgba(0, 0, 0, .2) !default;
 $button-secondary-hover-br:       $br-base solid $c-light !default;
 $button-secondary-hover-c:        $c-light !default;
 $button-secondary-hover-td:       none !default;
@@ -405,9 +409,9 @@ $hero-about-bgi-clients-medium-up:          $assets-img-path + "/medium-up/bg-he
 
 // Hero intro
 $hero-intro-wd:                     100% !default;
-$hero-intro-ht:                     400px !default;
+$hero-intro-ht:                     410px !default;
 $hero-intro-wd-medium-up:           100% !default;
-$hero-intro-ht-medium-up:           810px !default;
+$hero-intro-ht-medium-up:           820px !default;
 $hero-intro-bgc:                    $c-eastbay !default;
 $hero-intro-bgi:                    $assets-img-path + "/bg-hero-intro.jpg" !default;
 $hero-intro-bgi-medium-up:          $assets-img-path + "/medium-up/bg-hero-intro.jpg" !default;

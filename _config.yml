@@ -49,51 +49,51 @@ sass:
 # to link the different translations
 #
 # 404 (no encontrada)
-r_404:
+404:
   es: "404.html"
   ca: "ca/404.html"
   en: "en/404.html"
-# Home
-r_index:
+# index (home)
+index:
   es: ""
   ca: "ca/"
   en: "en/"
-# Nosotros
-r_nosotros:
+# nosotros
+nosotros:
   es: "nosotros/"
   ca: "ca/nosaltres/"
   en: "en/about/"
-# Servicios
-r_servicios:
+# servicios
+servicios:
   es: "servicios/"
   ca: "ca/serveis/"
   en: "en/services/"
-r_servicios_accion:
+servicios_accion:
   es: "servicios/accion/"
   ca: "ca/serveis/accio/"
   en: "en/services/action/"
-r_servicios_analisis:
+servicios_analisis:
   es: "servicios/analisis/"
   ca: "ca/serveis/analisi/"
   en: "en/services/analysis/"
-r_servicios_datos:
+servicios_datos:
   es: "servicios/datos/"
   ca: "ca/serveis/dades/"
   en: "en/services/data/"
-r_servicios_visualizacion:
+servicios_visualizacion:
   es: "servicios/visualizacion/"
   ca: "ca/serveis/visualitzacio/"
   en: "en/services/visualization/"
-# Soluciones
-r_soluciones:
+# soluciones
+soluciones:
   es: "soluciones/"
   ca: "ca/solucions/"
   en: "en/solutions/"
-r_soluciones_sherpa_campaign:
+soluciones_sherpa_campaign:
   es: "soluciones/sherpa-campaign/"
   ca: "ca/solucions/sherpa-campaign/"
   en: "en/solutions/sherpa-campaign/"
-r_soluciones_sherpa_dashboard:
+soluciones_sherpa_dashboard:
   es: "soluciones/sherpa-dashboard/"
   ca: "ca/solucions/sherpa-dashboard/"
   en: "en/solutions/sherpa-dashboard/"
@@ -456,7 +456,7 @@ t:
       cta_text_1: "Big data technology"
       cta_link_2: "#"
       cta_text_2: "Bi & datawarehouse"
-      heading_types: "Tipos"
+      heading_types: "Tipus"
       text_types: "<li>...</li>"
     service_default:
       heading: "Serveis"
@@ -651,7 +651,7 @@ t:
       cta_text_1: "Big data technology"
       cta_link_2: "#"
       cta_text_2: "Bi & datawarehouse"
-      heading_types: "Tipos"
+      heading_types: "Types"
       text_types: "<li>...</li>"
     service_default:
       heading: "Services"

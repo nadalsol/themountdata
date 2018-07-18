@@ -114,10 +114,7 @@ $(document).ready(function() {
     navMainServices.click(function(event) {
       event.preventDefault();
 
-      navMainServices.addClass('is-active');
       navSecondaryServices.toggleClass('is-medium-hidden');
-
-      navMainSolutions.removeClass('is-active');
       navSecondarySolutions.addClass('is-medium-hidden');
 
       navSecondaryLangCa.addClass('is-medium-hidden');
@@ -131,10 +128,7 @@ $(document).ready(function() {
     navMainSolutions.click(function(event) {
       event.preventDefault();
 
-      navMainServices.removeClass('is-active');
       navSecondaryServices.addClass('is-medium-hidden');
-
-      navMainSolutions.addClass('is-active');
       navSecondarySolutions.toggleClass('is-medium-hidden');
 
       navSecondaryLangCa.addClass('is-medium-hidden');

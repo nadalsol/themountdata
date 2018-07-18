@@ -47,8 +47,7 @@
       @include pseudo-chevron($sp-xsmall, -$sp-xsmall);
     }
 
-    &.is-active,
-    &:active {
+    &.is-active {
       color: $nav-main-link-c-active;
       background-color: $nav-main-link-bgc-active;
 

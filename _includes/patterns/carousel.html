@@ -1,25 +1,25 @@
 <div class="carousel is-items-3">
 
-  <div id="{{ site.t_carousel[page.lang].id_1 }}" class="carousel__control-operator"></div>
-  <div id="{{ site.t_carousel[page.lang].id_2 }}" class="carousel__control-operator"></div>
-  <div id="{{ site.t_carousel[page.lang].id_3 }}" class="carousel__control-operator"></div>
+  <div id="{{ site.t[page.lang]carousel.id_1 }}" class="carousel__control-operator"></div>
+  <div id="{{ site.t[page.lang]carousel.id_2 }}" class="carousel__control-operator"></div>
+  <div id="{{ site.t[page.lang]carousel.id_3 }}" class="carousel__control-operator"></div>
 
   <figure class="carousel__item">
     <div class="wrapper">
       <div class="u-inner-medium">
         <div class="carousel__item__col-l">
           <h2 class="heading2 heading2--light">
-            {{ site.t_carousel[page.lang].heading_1 }}
+            {{ site.t[page.lang]carousel.heading_1 }}
           </h2>
           <p class="text text--light">{{ text_1 }}</p>
-          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ site.t_carousel[page.lang].cta_link_1 }}">› {{ site.t_carousel[page.lang].cta_text_1 }}</a>
+          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ site.t[page.lang]carousel.cta_link_1 }}">› {{ site.t[page.lang]carousel.cta_text_1 }}</a>
         </div>
         <div class="carousel__item__col-r">
           {% include icons/carousel-us.svg css-class="icon u-img-responsive" %}
         </div>
       </div>
     </div>
-    <a href="#{{ site.t_carousel[page.lang].id_2 }}" class="carousel__control-secondary-r">
+    <a href="#{{ site.t[page.lang]carousel.id_2 }}" class="carousel__control-secondary-r">
       {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
     </a>
   </figure>
@@ -29,20 +29,20 @@
       <div class="u-inner-medium">
         <div class="carousel__item__col-l">
           <h2 class="heading2 heading2--light">
-            {{ site.t_carousel[page.lang].heading_2 }}
+            {{ site.t[page.lang]carousel.heading_2 }}
           </h2>
-          <p class="text text--light">{{ site.t_carousel[page.lang].text_2 }}</p>
-          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ site.t_carousel[page.lang].cta_link_2 }}">› {{ site.t_carousel[page.lang].cta_text_2 }}</a>
+          <p class="text text--light">{{ site.t[page.lang]carousel.text_2 }}</p>
+          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ site.t[page.lang]carousel.cta_link_2 }}">› {{ site.t[page.lang]carousel.cta_text_2 }}</a>
         </div>
         <div class="carousel__item__col-r">
           {% include icons/carousel-team.svg css-class="icon u-img-responsive" %}
         </div>
       </div>
     </div>
-    <a href="#{{ site.t_carousel[page.lang].id_1 }}" class="carousel__control-secondary-l">
+    <a href="#{{ site.t[page.lang]carousel.id_1 }}" class="carousel__control-secondary-l">
       {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
     </a>
-    <a href="#{{ site.t_carousel[page.lang].id_3 }}" class="carousel__control-secondary-r">
+    <a href="#{{ site.t[page.lang]carousel.id_3 }}" class="carousel__control-secondary-r">
       {% include icons/chevron-r.svg css-class="icon icon--chevron" %}
     </a>
   </figure>
@@ -52,25 +52,25 @@
       <div class="u-inner-medium">
         <div class="carousel__item__col-l">
           <h2 class="heading2 heading2--light">
-            {{ site.t_carousel[page.lang].heading_3 }}
+            {{ site.t[page.lang]carousel.heading_3 }}
           </h2>
-          <p class="text text--light">{{ site.t_carousel[page.lang].text_3 }}</p>
-          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ site.t_carousel[page.lang].cta_link_3 }}">› {{ site.t_carousel[page.lang].cta_text_3 }}</a>
+          <p class="text text--light">{{ site.t[page.lang]carousel.text_3 }}</p>
+          <a class="button button--secondary button--xxsmall" href="{{ site.baseurl }}/{{ site.t[page.lang]carousel.cta_link_3 }}">› {{ site.t[page.lang]carousel.cta_text_3 }}</a>
         </div>
         <div class="carousel__item__col-r">
           {% include icons/carousel-solutions.svg css-class="icon u-img-responsive" %}
         </div>
       </div>
     </div>
-    <a href="#{{ site.t_carousel[page.lang].id_2 }}" class="carousel__control-secondary-l">
+    <a href="#{{ site.t[page.lang]carousel.id_2 }}" class="carousel__control-secondary-l">
       {% include icons/chevron-l.svg css-class="icon icon--chevron" %}
     </a>
   </figure>
 
   <div class="carousel__controls">
-    <a href="#{{ site.t_carousel[page.lang].id_1 }}" class="carousel__controls__control-button"></a>
-    <a href="#{{ site.t_carousel[page.lang].id_2 }}" class="carousel__controls__control-button"></a>
-    <a href="#{{ site.t_carousel[page.lang].id_3 }}" class="carousel__controls__control-button"></a>
+    <a href="#{{ site.t[page.lang]carousel.id_1 }}" class="carousel__controls__control-button"></a>
+    <a href="#{{ site.t[page.lang]carousel.id_2 }}" class="carousel__controls__control-button"></a>
+    <a href="#{{ site.t[page.lang]carousel.id_3 }}" class="carousel__controls__control-button"></a>
   </div>
 
 </div>

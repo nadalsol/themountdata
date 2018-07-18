@@ -3,8 +3,8 @@
     <div class="u-inner-small">
 
       <div class="contact__header">
-        <h2 class="heading2 contact__heading u-text-center">{{ site.t_contact[page.lang].heading }}</h2>
-        <h3 class="heading4 u-text-center">{{ site.t_contact[page.lang].subheading }}</h3>
+        <h2 class="heading2 contact__heading u-text-center">{{ site.t[page.lang]contact.heading }}</h2>
+        <h3 class="heading4 u-text-center">{{ site.t[page.lang]contact.subheading }}</h3>
       </div>
 
       <form class="contact__content form" action="https://formspree.io/nadalsoler@gmail.com" method="POST">
@@ -12,17 +12,17 @@
         <fieldset class="form__fieldset contact__col25">
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase is-required" for="name">{{ site.t_contact[page.lang].name }}</label>
+            <label class="form__label u-text-uppercase is-required" for="name">{{ site.t[page.lang]contact.name }}</label>
             <input class="form__field" type="text" id="name" name="name" tabindex="1" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase is-required" for="email">{{ site.t_contact[page.lang].email }}</label>
+            <label class="form__label u-text-uppercase is-required" for="email">{{ site.t[page.lang]contact.email }}</label>
             <input class="form__field" type="email" id="email" name="_replyto" tabindex="3" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase" for="company">{{ site.t_contact[page.lang].company }}</label>
+            <label class="form__label u-text-uppercase" for="company">{{ site.t[page.lang]contact.company }}</label>
             <input class="form__field" type="text" id="company" name="company" tabindex="5">
           </div>
 
@@ -31,17 +31,17 @@
         <fieldset class="form__fieldset contact__col25">
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase is-required" for="surname">{{ site.t_contact[page.lang].surname }}</label>
+            <label class="form__label u-text-uppercase is-required" for="surname">{{ site.t[page.lang]contact.surname }}</label>
             <input class="form__field" type="text" id="surname" name="surname" tabindex="2" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase is-required" for="phone">{{ site.t_contact[page.lang].phone }}</label>
+            <label class="form__label u-text-uppercase is-required" for="phone">{{ site.t[page.lang]contact.phone }}</label>
             <input class="form__field" type="tel" id="phone" name="phone" tabindex="4" required>
           </div>
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase" for="position">{{ site.t_contact[page.lang].position }}</label>
+            <label class="form__label u-text-uppercase" for="position">{{ site.t[page.lang]contact.position }}</label>
             <input class="form__field" type="text" id="position" name="position" tabindex="6">
           </div>
 
@@ -50,12 +50,12 @@
         <fieldset class="form__fieldset contact__col50">
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase" for="subject">{{ site.t_contact[page.lang].subject }}</label>
+            <label class="form__label u-text-uppercase" for="subject">{{ site.t[page.lang]contact.subject }}</label>
             <input class="form__field" type="text" id="subject" name="_subject" tabindex="7">
           </div>
 
           <div class="form__group">
-            <label class="form__label u-text-uppercase" for="message">{{ site.t_contact[page.lang].message }}</label>
+            <label class="form__label u-text-uppercase" for="message">{{ site.t[page.lang]contact.message }}</label>
             <textarea class="form__textarea" id="message" name="message" rows="8" cols="80" tabindex="8"></textarea>
           </div>
 
@@ -65,11 +65,11 @@
             <div class="form__group form__group--inline">
               <input class="form__checkbox" type="checkbox" id="privacy" name="privacy" value="on" tabindex="9" required>
               <label class="form__label is-required" for="privacy">
-                {{ site.t_contact[page.lang].privacy_text_1 }}
-                <a href="#" id="modal-trigger-privacy-form">{{ site.t_contact[page.lang].privacy_text_2 }}</a>
+                {{ site.t[page.lang]contact.privacy_text_1 }}
+                <a href="#" id="modal-trigger-privacy-form">{{ site.t[page.lang]contact.privacy_text_2 }}</a>
               </label>
             </div>
-            <button type="submit" class="button button--primary button--small">{{ site.t_contact[page.lang].submit }}</button>
+            <button type="submit" class="button button--primary button--small">{{ site.t[page.lang]contact.submit }}</button>
           </div>
 
         </fieldset>

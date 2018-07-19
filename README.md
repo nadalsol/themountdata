@@ -4,8 +4,8 @@
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [Configuration](#configuration)
-  * [Multilingual references](#multilingual-references)
-  * [Translations](#translations)
+    * [Multilingual references](#multilingual-references)
+    * [Translations](#translations)
 5. [Publish](#publish)
 6. [Authors](#authors)
 
@@ -51,7 +51,7 @@ $ bundle exec jekyll server
 
 Now browse to http://localhost:4000
 
-♻️&nbsp;&nbsp;**Don't forget to reload your browser to apply new changes.**
+♻️&nbsp;**Don't forget to reload your browser to apply new changes.**
 
 ## Configuration
 
@@ -137,7 +137,7 @@ strings for the proper language:
 </p>
 ```
 
-⚠️&nbsp;&nbsp;For technical reasons, the `_config.yml` file is *NOT* reloaded automatically
+⚠️&nbsp;For technical reasons, the `_config.yml` file is *NOT* reloaded automatically
 when you use `$ bundle exec jekyll serve`. **If you change this file, please
 restart the server process.**
 
@@ -166,7 +166,7 @@ More info:
 
 ## Authors
 
-This project has been designed and developed by 🎩&nbsp;&nbsp;🐧&nbsp;&nbsp;[Mr. Puffin Studio](http://mrpuffin.studio/), a communication studio based in Vilassar de Mar, Barcelona.
+This project has been designed and developed by&nbsp;🎩&nbsp;🐧&nbsp;[Mr. Puffin Studio](http://mrpuffin.studio/), a communication studio based in Vilassar de Mar, Barcelona.
 
 <table>
   <tbody>

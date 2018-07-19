@@ -1,13 +1,31 @@
+{% comment %}
+  Automatically highlight current tab in menu bar
+  https://stackoverflow.com/a/19273580
+{% endcomment %}
+{% assign current_url = page.url | downcase | split: '/' %}
+{% assign current_text_1 = site.t[page.lang]nav_main.text_1 | downcase %}
+{% assign current_text_2 = site.t[page.lang]nav_main.text_2 | downcase %}
+{% assign current_text_3 = site.t[page.lang]nav_main.text_3 | downcase %}
+
+{% case page.lang %}
+  {% when 'ca' %}
+    {% assign current_section = current_url[2] %}
+  {% when 'en' %}
+    {% assign current_section = current_url[2] %}
+  {% else %}
+    {% assign current_section = current_url[1] %}
+{% endcase %}
+
 <ul class="nav-main u-text-uppercase">
   <li>
-    <a id="nav-main-services" class="nav-main__link is-subitem {% if page.group == 'servicios' %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_main.link_1 }}">{{ site.t[page.lang]nav_main.text_1 }}</a>
+    <a id="nav-main-services" class="nav-main__link is-subitem {% if current_section == current_text_1 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_main.link_1 }}">{{ site.t[page.lang]nav_main.text_1 }}</a>
     {% include patterns/nav-secondary-services.html %}
   </li>
   <li>
-    <a id="nav-main-solutions" class="nav-main__link is-subitem {% if page.group == 'soluciones' %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_main.link_2 }}">{{ site.t[page.lang]nav_main.text_2 }}</a>
+    <a id="nav-main-solutions" class="nav-main__link is-subitem {% if current_section == current_text_2 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_main.link_2 }}">{{ site.t[page.lang]nav_main.text_2 }}</a>
     {% include patterns/nav-secondary-solutions.html %}
   </li>
   <li>
-    <a class="nav-main__link {% if page.group == 'nosotros' %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_main.link_3 }}">{{ site.t[page.lang]nav_main.text_3 }}</a>
+    <a class="nav-main__link {% if current_section == current_text_3 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_main.link_3 }}">{{ site.t[page.lang]nav_main.text_3 }}</a>
   </li>
 </ul>

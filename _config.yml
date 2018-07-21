@@ -143,7 +143,7 @@ t:
       text: "Sus datos formarán parte de un fichero titularidad de The Mount Data S.L. y serán tratados para poderle informar periódicamente de novedades, productos y servicios. Puede ejercitar sus derechos de acceso, rectificación, cancelación y oposición, así como revocar su consentimiento para el envío de comunicaciones comerciales electrónicas, enviando un e-mail a info@themountdata.com. Mediante la inclusión de su correo electrónico y/o teléfono móvil Ud. nos autoriza a enviarle información comercial a través de su cuenta de correo electrónico así como otros medios electrónicos equivalentes."
     modal_privacy:
       heading: "Privacidad"
-      text: "..."
+      text: "De conformidad con lo dispuesto en el Reglamento General de Protección de Datos, UE 2016/679, le informamos que sus datos personales son tratados y almacenados por The Mount Data S.L., como responsable del tratamiento, con domicilio social en C/Còrsega 329, 7-B 08037 Barcelona, con la finalidad del mantenimiento de la relación necesaria con usted y de gestionar comunicaciones promocionales e informativas por correo electrónico acerca de The Mount Data, así como sus actividades y eventos que puedan resultar de su interés. Sus datos serán conservados para futuras comunicaciones y almacenaremos sus datos el tiempo necesario para realizar dicha gestión, hasta que solicite su supresión. Usted podrá ejercitar sus derechos de acceso, rectificación, oposición, supresión, limitación y portabilidad, así como su derecho a revocar el consentimiento otorgado por la presente en cualquier momento, mediante comunicación escrita, acompañada de copia de DNI, dirigida a la dirección citada anteriormente o a través del envío de un correo electrónico con firma digital reconocida a la siguiente dirección <a href=\"mailto:info@themountdata.com\">info@themountdata.com</a>. Dicha comunicación deberá incluir nombre y apellidos, petición en que se concreta la solicitud, dirección a efectos de notificaciones, fecha, firma y fotocopia del DNI u otro documento válido que lo identifique. Usted tiene derecho, además, a presentar una reclamación ante la autoridad de control competente."
     modal_terms:
       heading: "Aviso legal"
       text: "..."
@@ -153,7 +153,7 @@ t:
       text_2: "No hemos encontrado la página solicitada."
     about_clients:
       heading: "Clientes"
-      text: "Hemos trabajado en muchos sectores y clientes a lo largo de nuestra trayectoria, pero tenemos experiencia relevante en los sectores de Automoción, Turismo y Retail. Nos gusta ganarnos la confianza de nuestros Clientes a partir de la aportación de valor y un gran servicio."
+      text: "Hemos trabajado en muchos sectores y clientes a lo largo de nuestra trayectoria, pero tenemos experiencia relevante en los sectores de Automoción, Turismo y Retail."
       cta_link: "#"
       cta_text: "Caso de estudio"
     about_team:
@@ -188,7 +188,7 @@ t:
       cta_link_3: "soluciones"
       cta_text_3: "Soluciones"
     contact:
-      heading: "Pida una consulta gratis"
+      heading: "Solicite una consulta"
       subheading: "..."
       name: "Nombre"
       surname: "Apellidos"
@@ -220,11 +220,11 @@ t:
       cta_link_4: "servicios/accion/consultoria"
       cta_text_4: "Saber más"
     hero_about_clients:
-      heading: "Creemos en la gente que tiene ilusión por el trabajo bien hecho<br>los que saben trabajar en equipo y los que no se conforman"
+      heading: "Nos gusta ganarnos la confianza de nuestros clientes a partir<br>de la aportación de valor y un gran servicio"
     hero_about_team:
       heading: "La base de nuestros proyectos son las personas,<br>sin ellas este proyecto no sería posible ;)"
     hero_about_values:
-      img_alt: "Valores"
+      heading: "Creemos en la gente que tiene ilusión por el trabajo bien hecho,<br>los que saben trabajar en equipo y los que no se conforman"
     hero_intro:
       heading: "..."
     nav_main:
@@ -457,7 +457,7 @@ t:
       cta_link_3: "ca/solucions"
       cta_text_3: "Solucions"
     contact:
-      heading: "Demani una consulta gratuita"
+      heading: "Sol&middot;liciti una consulta"
       subheading: "..."
       name: "Nom"
       surname: "Cognoms"
@@ -493,7 +493,7 @@ t:
     hero_about_team:
       heading: "..."
     hero_about_values:
-      img_alt: "Valors"
+      heading: "..."
     hero_intro:
       heading: "..."
     nav_main:
@@ -766,7 +766,7 @@ t:
     hero_about_team:
       heading: "..."
     hero_about_values:
-      img_alt: "Values"
+      heading: "..."
     hero_intro:
       heading: "Transform your business from data"
     nav_main:

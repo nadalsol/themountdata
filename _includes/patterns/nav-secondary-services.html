@@ -1,15 +1,18 @@
 <ul id="nav-secondary-services" class="nav-secondary u-text-left is-medium-hidden">
   <li>
     <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_secondary_services.link_1 }}">{{ site.t[page.lang]nav_secondary_services.text_1 }}</a>
-    {% include patterns/nav-tertiary.html %}
+    {% include patterns/nav-tertiary-services-data.html %}
   </li>
   <li>
-    <a class="nav-secondary__link" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_secondary_services.link_2 }}">{{ site.t[page.lang]nav_secondary_services.text_2 }}</a>
+    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_secondary_services.link_2 }}">{{ site.t[page.lang]nav_secondary_services.text_2 }}</a>
+    {% include patterns/nav-tertiary-services-analysis.html %}
   </li>
   <li>
-    <a class="nav-secondary__link" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_secondary_services.link_3 }}">{{ site.t[page.lang]nav_secondary_services.text_3 }}</a>
+    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_secondary_services.link_3 }}">{{ site.t[page.lang]nav_secondary_services.text_3 }}</a>
+    {% include patterns/nav-tertiary-services-visualization.html %}
   </li>
   <li>
-    <a class="nav-secondary__link" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_secondary_services.link_4 }}">{{ site.t[page.lang]nav_secondary_services.text_4 }}</a>
+    <a class="nav-secondary__link is-subitem" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_secondary_services.link_4 }}">{{ site.t[page.lang]nav_secondary_services.text_4 }}</a>
+    {% include patterns/nav-tertiary-services-action.html %}
   </li>
 </ul>

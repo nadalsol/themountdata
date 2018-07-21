@@ -174,7 +174,7 @@ t:
     carousel:
       id_1: "nosotros"
       heading_1: "Desde la estrategia<br>a la ejecución"
-      text_1: "Nuestra actividad se centra en las Tecnologías centradas en gestión  y análisis de la información que ayudan a mejorar la toma de decisiones  y procesos de las distintas áreas de Negocio. Acompañamos a nuestros Clientes desde las fases iniciales del diseño de la Estrategia hasta  la Puesta en marcha del proyecto (envío de las comunicaciones o implementación de modelos…)."
+      text_1: "Para que un proyecto tenga éxito la Estrategia y la Ejecución deben estar alineados. Por eso, acompañamos a nuestros Clientes desde el Diseño, la Puesta en marcha y Mantenimiento de los proyectos."
       cta_link_1: "nosotros"
       cta_text_1: "Nosotros"
       id_2: "equipo"
@@ -184,7 +184,7 @@ t:
       cta_text_2: "Equipo"
       id_3: "soluciones"
       heading_3: "Martech TMD"
-      text_3: "Lo importante no es la herramienta sino lo que consigues con ella. Sabemos qué tecnologías de marketing/ventas necesitan la mayoría  de los clientes y tenemos experiencia con algunas herramientas con las que nos sentimos a gusto. Estamos abiertos a integrar  otras herramientas para que funcionen como una gran orquesta."
+      text_3: "Tenemos experiencia en algunas herramientas y estamos abiertos a conocer otras que nos ayuden en nuestros proyectos. Lo importante no es la herramienta sino lo que consigues con ella."
       cta_link_3: "soluciones"
       cta_text_3: "Soluciones"
     contact:
@@ -294,7 +294,7 @@ t:
       heading_types: "Tipos"
       text_types: "<li>...</li>"
     service_analysis_communication:
-      heading: "Comunicación"
+      heading: "Análisis de comunicación"
       text_1: "..."
       text_2: "..."
       heading_types: "Tipos de análisis"
@@ -304,7 +304,7 @@ t:
       heading_techniques: "Técnicas"
       text_techniques: "<li>...</li>"
     service_analysis_customer:
-      heading: "Cliente"
+      heading: "Análisis de cliente"
       text_1: "..."
       text_2: "..."
       heading_types: "Tipos de análisis"
@@ -314,7 +314,7 @@ t:
       heading_techniques: "Técnicas"
       text_techniques: "<li>...</li>"
     service_analysis_product:
-      heading: "Producto"
+      heading: "Análisis de producto"
       text_1: "¿Cuál es la frecuencia de compra de un producto?, ¿Cómo se correlacionan los productos? ¿Cuáles se adquieren en la misma compra?, ¿Cuál es la senda de compra o abandono?, ¿Qué productos debería ofrecer a un Cliente?, ¿Cuánto aporta a mi negocio cada Producto?, ¿Debo invertir en promocionar un producto?, ¿Qué productos consumen cada segmento de clientes?"
       text_2: "Desarrollados en R, Kmine, SPSS, MSExcel."
       heading_types: "Tipos de análisis"
@@ -324,7 +324,7 @@ t:
       heading_techniques: "Técnicas"
       text_techniques: "<li>Clustering</li><li>Tree-decision</li><li>RFMP</li><li>LTV</li>"
     service_data_sources:
-      heading: "Fuentes"
+      heading: "Fuentes datos"
       text_1: "Identificar y dominar las fuentes necesarias para la creación de valor partir de los datos es el primer paso del data analytics journey."
       text_2: "Por eso, tener la capacidad de acceder de manera ágil y consistente a las fuentes de datos utilizando distintas técnicas  para extraer, transformar y cargar los datos es clave."
       text_3: "De misma manera no debemos olvidar el establecimiento de procesos relacionados con la calidad de datos."
@@ -338,7 +338,7 @@ t:
       heading_types: "Tipos"
       text_types: "<li>Transaccionales (ERP, SAP)</li><li>Marketing (CMS, CRM, MAP, DSP, DAM, SAC, SOCIAL…)</li><li>Ventas</li><li>E-Commerce</li><li>Puntos de Venta</li><li>IOT</li><li>Opendata (Clima, Carretera…)</li><li>Data Brokers</li><li>Web</li><li>Estudios</li><li>Encuestas</li>"
     service_data_storage:
-      heading: "Almacenaje"
+      heading: "Almacenaje datos"
       text_1: "..."
       text_2: "..."
       text_3: "..."
@@ -379,15 +379,15 @@ t:
       heading: "Soluciones"
     solution_sherpa_campaign:
       heading: "Sherpa campaign"
-      text: "Solución para la automatización de las tareas de marketing (MAP), tales como envíos de emails, social media y otras accions sobre la web website actions bajo un mismo concepto de Campaña independientemente del canal utilizado."
+      text: "Solución para la automatización de las tareas de marketing (MAP), tales como envíos de mailings, telemarketing, sms, emails, social media."
       img_alt: "Sherpa campaign"
       heading_features: "Funcionalidades"
       text_features: "<li>Envíos: Email, SMS, Telemk, Media, Formularios, Landings… Reports</li><li>Campañas, Contenidos,  Segmentación, Personas</li>"
       heading_integrations: "Integraciones"
-      text_integrations: "<li>Mailjet, Mailchimp, SMS</li><li>Qlikview, Qliksense, Power BI,  Domo, Cruchbase</li><li>Facebook, Twitter, Instagram,  Linkedin, Sentiment</li><li>Magento, Prestashop, Freshdesk,  Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…</li><li>Sizmek, Doubleclick</li><li>Zapier, IFTTT</li><li>Amazon, Hadoop…</li>"
+      text_integrations: "<li>Mailjet, Mailchimp, SMS</li><li>Qlikview, Qliksense, Power BI,  Domo, Cruchbase</li><li>Facebook, Twitter, Instagram, Linkedin, Sentiment</li><li>Magento, Prestashop, Freshdesk, Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…</li><li>Sizmek, Doubleclick</li><li>Zapier, IFTTT</li><li>Amazon, Hadoop…</li>"
     solution_sherpa_dashboard:
       heading: "Sherpa dashboard"
-      text: "Solución para la visualización de los principales KPIs de marketing, tales como envíos de emails, social media,  web y media bajo un mismo concepto de Campaña. Posibilidad de incorporar datos transaccionales o de cualquier otro ámbito. Desarrollados principalmente en QlikView y QlikSense."
+      text: "Solución para la visualización de los principales KPIs de marketing bajo un mismo concepto de Campaña. Posibilidad de incorporar datos transaccionales o de cualquier otro ámbito."
       img_alt: "Sherpa dashboard"
       heading_types: "Tipos de dashboards"
       text_types: "<li>Marketing integral  (GA, Social, CRM, Emailing…)</li><li>Contadores</li><li>Segmentación</li><li>Conversiones…</li>"
@@ -563,7 +563,7 @@ t:
       heading_types: "Tipus"
       text_types: "<li>...</li>"
     service_analysis_communication:
-      heading: "Comunicació"
+      heading: "Anàlisi de comunicació"
       text_1: "..."
       text_2: "..."
       heading_types: "Tipus d\'anàlisi"
@@ -573,7 +573,7 @@ t:
       heading_techniques: "Tècniques"
       text_techniques: "<li>...</li>"
     service_analysis_customer:
-      heading: "Client"
+      heading: "Anàlisi de client"
       text_1: "..."
       text_2: "..."
       heading_types: "Tipus d\'anàlisi"
@@ -583,7 +583,7 @@ t:
       heading_techniques: "Tècniques"
       text_techniques: "<li>...</li>"
     service_analysis_product:
-      heading: "Producte"
+      heading: "Anàlisi de producte"
       text_1: "..."
       text_2: "..."
       heading_types: "Tipus d\'anàlisi"
@@ -593,7 +593,7 @@ t:
       heading_techniques: "Tècniques"
       text_techniques: "<li>...</li>"
     service_data_sources:
-      heading: "Fonts"
+      heading: "Fonts dades"
       text_1: "..."
       text_2: "..."
       text_3: "..."
@@ -607,7 +607,7 @@ t:
       heading_types: "Tipus"
       text_types: "<li>...</li>"
     service_data_storage:
-      heading: "Emmagatzematge"
+      heading: "Emmagatzematge dades"
       text_1: "..."
       text_2: "..."
       text_3: "..."
@@ -836,7 +836,7 @@ t:
       heading_types: "Types"
       text_types: "<li>...</li>"
     service_analysis_communication:
-      heading: "Communication"
+      heading: "Communication's analysis"
       text_1: "..."
       text_2: "..."
       heading_types: "Analysis types"
@@ -846,7 +846,7 @@ t:
       heading_techniques: "Techniques"
       text_techniques: "<li>...</li>"
     service_analysis_customer:
-      heading: "Customer"
+      heading: "Customer's analysis"
       text_1: "..."
       text_2: "..."
       heading_types: "Analysis types"
@@ -856,7 +856,7 @@ t:
       heading_techniques: "Techniques"
       text_techniques: "<li>...</li>"
     service_analysis_product:
-      heading: "Product"
+      heading: "Product's analysis"
       text_1: "..."
       text_2: "..."
       heading_types: "Analysis types"
@@ -866,7 +866,7 @@ t:
       heading_techniques: "Techniques"
       text_techniques: "<li>...</li>"
     service_data_sources:
-      heading: "Sources"
+      heading: "Data sources"
       text_1: "..."
       text_2: "..."
       text_3: "..."
@@ -880,7 +880,7 @@ t:
       heading_types: "Types"
       text_types: "<li>...</li>"
     service_data_storage:
-      heading: "Storage"
+      heading: "Data storage"
       text_1: "..."
       text_2: "..."
       text_3: "..."

@@ -10,14 +10,6 @@
     }
   }
 
-  &__cta {
-    margin-bottom: $sp-xxlarge;
-
-    @media ($medium-up) {
-      margin-bottom: $sp-big;
-    }
-  }
-
   &__content {
     @media ($medium-up) {
       display: flex;
@@ -46,5 +38,9 @@
     @media ($medium-up) {
       margin-bottom: $sp-small;
     }
+  }
+
+  &__cta {
+    margin-bottom: 0;
   }
 }

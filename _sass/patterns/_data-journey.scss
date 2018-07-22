@@ -17,10 +17,13 @@
   }
 
   &__col25 {
+    margin-bottom: $sp-xxlarge;
+
     @media ($medium-up) {
       @include col(25%, left);
       margin-left: $sp-xxsmall;
       margin-right: $sp-xxsmall;
+      margin-bottom: 0;
     }
   }
 

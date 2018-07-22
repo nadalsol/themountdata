@@ -12,9 +12,12 @@
   }
 
   &__col-l {
+    margin-bottom: $sp-xxlarge;
+
     @media ($medium-up) {
       @include col(50%, left);
       margin-right: $sp-xxlarge;
+      margin-bottom: 0;
     }
 
     @media ($large-up) {
@@ -23,9 +26,12 @@
   }
 
   &__col-r {
+    margin-bottom: $sp-xxlarge;
+
     @media ($medium-up) {
       @include col(50%, center);
       margin-left: $sp-xxlarge;
+      margin-bottom: 0;
     }
 
     @media ($large-up) {

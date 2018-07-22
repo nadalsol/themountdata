@@ -70,6 +70,7 @@ input[type="submit"],
 //
 .button--xxsmall {
   @include button-xxsmall;
+  letter-spacing: 1px;
 }
 
 .button--small {

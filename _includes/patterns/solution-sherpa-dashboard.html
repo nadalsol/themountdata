@@ -10,12 +10,12 @@
 
       {% include patterns/sectors.html %}
 
-      <div class="panel panel--pelorous panel--cols">
+      <div class="panel panel--pelorous panel--cols panel--sp">
         <div class="panel__col-l">
           <div class="u-inner-xsmall">
-            <h2 class="heading3 heading3--light heading3--hr">{{ site.t[page.lang]solution_sherpa_dashboard.heading_types }}</h2>
+            <h2 class="heading3 heading3--light heading3--hr">{{ site.t[page.lang]solution_sherpa_dashboard.heading_features }}</h2>
             <ul class="list list--unstyled list--light">
-              {{ site.t[page.lang]solution_sherpa_dashboard.text_types }}
+              {{ site.t[page.lang]solution_sherpa_dashboard.text_features }}
             </ul>
           </div>
         </div>
@@ -26,6 +26,15 @@
               {{ site.t[page.lang]solution_sherpa_dashboard.text_integrations }}
             </ul>
           </div>
+        </div>
+      </div>
+
+      <div class="panel panel--light">
+        <div class="is-medium-hidden">
+          <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/brand-technologies.png" alt="{{ site.t[page.lang]solution_sherpa_dashboard.img_alt }}">
+        </div>
+        <div class="is-small-hidden">
+          <img class="u-img-responsive-full" src="{{ site.baseurl }}/assets/img/medium-up/brand-technologies.png" alt="{{ site.t[page.lang]solution_sherpa_dashboard.img_alt }}">
         </div>
       </div>
 

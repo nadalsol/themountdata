@@ -45,7 +45,7 @@ $c-cosmic:               #683361 !default;
 
 // Scaffolding
 // TODO : use "/themountdata/assets/" temporary path for GitHub pages (replace for "/assets" in Production)
-$assets-path:            "/themountdata/assets" !default;
+$assets-path:            "/themountdata/assets/" !default;
 $assets-img-path:        $assets-path + "/img" !default;
 $icons-path:             "/_includes/icons" !default;
 
@@ -55,6 +55,12 @@ $text-c:                 $c-dark !default;
 
 $link-c:                 $c-java !default;
 $link-c-hover:           $c-surfie !default;
+
+$link-secondary-c:       $c-light !default;
+$link-secondary-hover-c: $c-manatee !default;
+
+$link-tertiary-c:        $c-lynch !default;
+$link-tertiary-hover-c:  $c-manatee !default;
 
 // Spacing units
 $sp-base:                5px !default;
@@ -85,7 +91,7 @@ $fz-medium:              22px !default;
 $fz-large:               28px !default;
 $fz-xlarge:              40px !default;
 $fz-xxlarge:             65px !default;
-$fz-xxxlarge:            90px !default;
+$fz-xxxlarge:            80px !default;
 
 $fw-base:                300 !default; // Barlow
 $fw-semi-bold:           600 !default; // Barlow
@@ -118,6 +124,7 @@ $transition-bg:          background-color 250ms !default;
 $transition-bc:          border-color 250ms !default;
 $transition-c:           color 250ms !default;
 $transition-m:           margin 250ms !default;
+$transition-trf:         transform 250ms !default;
 
 // Z-index table
 $zi-100:                 100 !default;
@@ -148,8 +155,7 @@ $u-inner-xlarge-pd:               $sp-small !default;
 $u-inner-xlarge-pd-medium-up:     $sp-colossal $sp-big $sp-xxlarge !default;
 
 $u-inner-xxlarge-pd:              260px $sp-small $sp-big !default;
-$u-inner-xxlarge-pd-medium-up:    560px $sp-big 0 !default;
-$u-inner-xxlarge-pd-large-up:     490px $sp-big 0 !default;
+$u-inner-xxlarge-pd-medium-up:    580px $sp-big 0 !default;
 
 
 // Common
@@ -185,7 +191,7 @@ $header-brand-ht-medium-up:       32px !default;
 
 $header-nav-po:                   absolute !default;
 $header-nav-wd:                   100% !default;
-$header-nav-ht:                   auto !default;
+$header-nav-ht:                   100vh !default;
 $header-nav-po-medium-up:         static !default;
 $header-nav-wd-medium-up:         auto !default;
 $header-nav-ht-medium-up:         auto !default;
@@ -456,7 +462,9 @@ $nav-main-link-bgc-active-medium-up:      transparent !default;
 
 // Navigation secondary
 $nav-secondary-wd:                        100% !default;
+$nav-secondary-ht:                        100vh !default;
 $nav-secondary-wd-medium-up:              300px !default;
+$nav-secondary-ht-medium-up:              auto !default;
 $nav-secondary-top-medium-up:             73px !default;
 
 $nav-secondary-link-bgc:                  $c-eastbay !default;

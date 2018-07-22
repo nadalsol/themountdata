@@ -9,7 +9,6 @@
 
   &__heading {
     margin-bottom: $sp-xxlarge;
-    color: $c-light;
 
     @media ($medium-up) {
       margin-bottom: $sp-big;
@@ -39,7 +38,14 @@
   }
 
   &__subheading {
+    margin-bottom: $sp-xxsmall;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-small;
+    }
+  }
+
+  &__cta {
     margin-bottom: 0;
-    color: $c-light;
   }
 }

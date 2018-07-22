@@ -10,14 +10,18 @@
   font-family: $ff-sans-serif-m;
   font-size: $fz-base;
   line-height: $lh-small;
-  border-bottom: $br-small solid $c-light;
 
   @media ($medium-up) {
     @include positioner-center-h($nav-secondary-wd-medium-up, auto, $nav-secondary-top-medium-up, $zi-100);
-    border-bottom: 0;
 
     &:before {
       @include pseudo-arrow(36px, 10px, $nav-secondary-link-bgc);
+    }
+  }
+
+  > li {
+    @media ($medium-up) {
+      margin-bottom: 2px;
     }
   }
 
@@ -39,12 +43,17 @@
 
     &.is-subitem:after {
       @include pseudo-chevron($sp-medium, $sp-small);
+      transition: $transition-trf;
     }
 
     &.is-active,
     &:active {
       color: $nav-secondary-link-c-active;
       background-color: $nav-secondary-link-bgc-active;
+
+      &.is-subitem:after {
+        transform: rotate(180deg);
+      }
     }
   }
 }

@@ -280,38 +280,36 @@ t:
       subheading_5: "Horeca"
     service_action_consultancy:
       heading: "Consultoría"
-      text_1: "Es frecuente que muchas compañías crean en el poder de los datos para ser competitivos pero que tengan dificultades para saber por dónde empezar."
-      text_2: "Los proyectos de Consultoría de las áreas de Negocio, Tecnología y Equipos/Procesos identificamos el punto de partida y establecemos una hoja de ruta de iniciativas priorizadas teniendo en cuenta las capacidades y recursos necesarios para desarrollar con éxito el proyecto y en el mínimo tiempo."
-      text_3: "La consultoría colabora con los equipos de negocio, tecnología y los proveedores actuales (agencias, consultoras tecnológicas…) a lo largo del Data Journey (Data > Analytics > Action)."
+      text_1: "Es frecuente que muchas compañías crean en el poder de los datos o de las estrategias CRM pero tengan dificultades para saber por dónde empezar."
+      text_2: "Mediante frameworks, auditorías técnicas y de negocio establecemos una hoja de ruta con los proyectos necesarios para alcanzar el objetivo."
+      text_3: "Colaboramos con los equipos de negocio, tecnología y los proveedores actuales (agencias, consultoras tecnológicas…)."
       heading_types: "Tipos"
       text_types: "<li>Consultoría CRM/CX</li><li>Consultoría Campañas</li><li>Consultoría Análisis</li><li>Consultoría Datos</li><li>Consultoría Martech</li><li>Consultoría Big Data & BI</li><li>Consultoría Equipo/Metodología/Procesos</li>"
     service_action_management:
       heading: "Gestión"
-      text_1: "..."
-      text_2: "..."
-      text_3: "..."
+      text_1: "Para aprender no hay mejor manera que practicar. Por eso, es habitual que los clientes soliciten un acompañamiento en la gestión durante un periodo hasta que son autónomos."
+      text_2: "Otras veces los clientes prefieren externalizar la gestión diaria de los procesos, en un equipo orientado al servicio y a los resultados, como si fueran parte de su equipo."
       heading_types: "Tipos"
-      text_types: "<li>...</li>"
+      text_types: "<li>Gestión Acción</li><li>Gestión Análisis</li><li>Gestión Data</li>"
     service_analysis_communication:
       heading: "Análisis de comunicación"
-      text_1: "..."
-      text_2: "..."
+      text_1: "¿Resultados de una Campaña? ¿Qué variables son las más importantes en los resultados alcanzados? ¿Qué versión de comunicación va a conseguir el mejor resultado? ¿Cuál es el Plan de contactos/contenido más efectivo? ¿Qué beneficios ha generado una campaña? ¿Qué comunicación debería lanzarle a continuación?, ¿Debería personalizar más mis comunicaciones? ¿Qué le ofrezco, con o sin incentivo? ¿A qué comunicación/es le asigno la venta?"
       heading_types: "Tipos de análisis"
-      text_types: "<li>...</li>"
+      text_types: "<li>Resultados de Campaña</li><li>Marketing mix y Rentabilidad</li><li>Modelos de Atribución</li><li>Recomendador de Contactos</li><li>Test A/B</li>"
       heading_uses: "Usos"
-      text_uses: "<li>...</li>"
+      text_uses: "<li>Definición Plan de Contactos/Contenidos a lo largo del embudo de ventas</li><li>Definición de Propuesta de Valor por segmento de Clientes</li><li>Definición de Lógica de Comunicación</li><li>Definición de Presupuesto de Marketing</li>"
       heading_techniques: "Técnicas"
-      text_techniques: "<li>...</li>"
+      text_techniques: "<li>Clustering</li><li>Tree-decision</li><li>RFMP</li><li>LTV</li>"
     service_analysis_customer:
       heading: "Análisis de cliente"
-      text_1: "..."
-      text_2: "..."
+      text_1: "¿Cuántos grupos de Clientes tenemos?, ¿Cuál es el perfil de estos grupos?, ¿Cuál es el patrón de comportamiento de cada segmento?, ¿Cuáles son los Clientes con más posibilidades de Renovar?,¿Me han abandonado, aún son Clientes?, ¿Cuánto aportan a mi negocio?, ¿Debo invertir en nuestra relación?"
+      text_2: "Desarrollados en R, Kmine, SPSS, MSExcel"
       heading_types: "Tipos de análisis"
-      text_types: "<li>...</li>"
+      text_types: "<li>Segmentación & Perfil</li><li>Valor de Vida de un Cliente (VVC)</li><li>Deserción</li><li>Sentimiento/Voz del Cliente</li>"
       heading_uses: "Usos"
-      text_uses: "<li>...</li>"
+      text_uses: "<li>Definición Estrategias de Captación y Fidelización según Lealtad y Valor</li><li>Definir Lógica de inversión en cada grupo según beneficio esperado</li><li>Identificar en qué punto del Customer Journey está cada Cliente</li>"
       heading_techniques: "Técnicas"
-      text_techniques: "<li>...</li>"
+      text_techniques: "<li>Clustering</li><li>Tree-decision</li><li>RFMP</li><li>LTV</li>"
     service_analysis_product:
       heading: "Análisis de producto"
       text_1: "¿Cuál es la frecuencia de compra de un producto?, ¿Cómo se correlacionan los productos? ¿Cuáles se adquieren en la misma compra?, ¿Cuál es la senda de compra o abandono?, ¿Qué productos debería ofrecer a un Cliente?, ¿Cuánto aporta a mi negocio cada Producto?, ¿Debo invertir en promocionar un producto?, ¿Qué productos consumen cada segmento de clientes?"
@@ -346,28 +344,26 @@ t:
       text_types: "<li>Entornos Big Data</li><li>Entornos BI & Datawarehouse</li>"
     service_visualization_dashboard:
       heading: "Dashboard"
-      text_1: "Herramienta BI para la visualizar grandes volúmenes datos de distintas fuentes relacionadas (transaccionales, comunicaciones, clientes, social …). Enfocado al descubrimiento de insights,  a la toma de decisiones y a la mejora de la productividad."
+      text_1: "Herramienta BI para la visualizar grandes volúmenes datos de distintas fuentes relacionadas (transaccionales, comunicaciones, clientes, social …). Enfocado al descubrimiento de insights, a la toma de decisiones y a la mejora de la productividad."
       text_2: "A partir de las necesidades concretas de los distintos usuarios definimos los objetivos,  kpis, las dimensiones de la información, los elementos a visualizar (gráficas, tablas, listas, mapas…) y los elementos de contexto."
       text_3: "Funcionalidades habituales de los dashboards son la aplicación de Filtros/Exclusiones, creación de Tablas pivotantes, Alertas, integración con Machine Learning, exportación a MSExcel, Mapas, Marcadores, anotación Comentarios, Predicciones y Prescripciones…"
-      text_4: "<strong>Desarrollados en QlikView, QlikSense, Domo.</strong>"
+      text_4: "<strong>Desarrollados en QlikView, QlikSense, Power BI.</strong>"
       heading_types: "Tipos"
       text_types: "<li>Dashboard Contadores</li><li>Dashboard Segmentación Campañas</li><li>Dashboard Resultados de Campañas</li><li>Dashboard integral de Marketing</li><li>Dashboard de Productos y Pricing</li><li>Dashboard Calidad de datos</li><li>Dashboard Funnel de Ventas</li><li>Dashboard de Competencia</li><li>Dashboard de Mercado & Investigación</li>"
     service_visualization_maps:
       heading: "Mapas"
-      text_1: "..."
-      text_2: "..."
-      text_3: "..."
-      text_4: "<strong>...</strong>"
+      text_1: "Elaboración de Mapas a partir de la información geográfica capturada a través del móvil, sensores, open data y formularios o transacciones. La información geográfica puede visualizarse a nivel de geo-coordenadas, código postal, secciones censales, ciudades, provincias, países…"
+      text_2: "Funcionalidades habituales de los mapas son la aplicación de Filtros/Exclusiones, cálculo de distancias, cálculo de tiempos, Integración en dashboards…"
+      text_3: "<strong>Desarrollados sobre Openstreetmap, Cartodb.</strong>"
       heading_types: "Tipos"
-      text_types: "<li>...</li>"
+      text_types: "<li>Mapas Área de influencia de un Punto de Venta</li><li>Mapas de la Competencia</li><li>Mapas de Rutas</li>"
     service_visualization_reports:
       heading: "Informes"
-      text_1: "..."
-      text_2: "..."
-      text_3: "..."
-      text_4: "<strong>...</strong>"
+      text_1: "Crear una historia visual a partir de un gran número de datos es la mejor manera de captar la atención y sintetizar ideas y conclusiones. Una infografía consta de gráficos, textos e imágenes que, combinados entre sí, comunican conocimiento."
+      text_2: "Los reports tradicionales no desaparecerán pero podemos hacer que sean más visuales y ajustados a las necesidades de cada usuario."
+      text_3: "<strong>Desarrollados en Jasper Reports.</strong>"
       heading_types: "Tipos"
-      text_types: "<li>...</li>"
+      text_types: "<li>Reports Evolutivos de cualquier KPI</li><li>Report de Ventas</li><li>Report Campañas</li><li>Report Auditoria calidad de datos</li><li>Presentación visual de conjuntos de datos y métricas</li><li>Procesos</li><li>Líneas temporales</li><li>Encuestas</li><li>Comparativas</li><li>"
     solution_default:
       heading: "Soluciones"
     solution_sherpa_campaign:
@@ -375,17 +371,17 @@ t:
       text: "Solución para la automatización de las tareas de marketing (MAP), tales como envíos de mailings, telemarketing, sms, emails, social media."
       img_alt: "Sherpa campaign"
       heading_features: "Funcionalidades"
-      text_features: "<li>Envíos: Email, SMS, Telemk, Media, Formularios, Landings… Reports</li><li>Campañas, Contenidos,  Segmentación, Personas</li>"
+      text_features: "<li>Envíos: Email, SMS, Telemk, Media, Formularios, Landings… Reports</li><li>Campañas, Contenidos, Segmentación, Personas</li>"
       heading_integrations: "Integraciones"
-      text_integrations: "<li>Mailjet, Mailchimp, SMS</li><li>Qlikview, Qliksense, Power BI,  Domo, Cruchbase</li><li>Facebook, Twitter, Instagram, Linkedin, Sentiment</li><li>Magento, Prestashop, Freshdesk, Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…</li><li>Sizmek, Doubleclick</li><li>Zapier, IFTTT</li><li>Amazon, Hadoop…</li>"
+      text_integrations: "<li>Mailjet, Mailchimp, SMS</li><li>Qlikview, Qliksense, Power BI, Domo, Cruchbase</li><li>Facebook, Twitter, Instagram, Linkedin, Sentiment</li><li>Magento, Prestashop, Freshdesk, Zendesk, Hubspot, Pipedrive. Salesforce, Surveymonkey…</li><li>Sizmek, Doubleclick</li><li>Zapier, IFTTT</li><li>Amazon, Hadoop…</li>"
     solution_sherpa_dashboard:
       heading: "Sherpa dashboard"
       text: "Solución para la visualización de los principales KPIs de marketing bajo un mismo concepto de Campaña. Posibilidad de incorporar datos transaccionales o de cualquier otro ámbito."
       img_alt: "Sherpa dashboard"
-      heading_types: "Tipos de dashboards"
-      text_types: "<li>Marketing integral  (GA, Social, CRM, Emailing…)</li><li>Contadores</li><li>Segmentación</li><li>Conversiones…</li>"
+      heading_features: "Funcionalidades"
+      text_features: "<li>KPIs Alcance, Interacción y Suscripción</li><li>Filtros y Exclusiones</li><li>Tablas y Gráficos</li><li>Exportar a MSExcel</li><li>Comparador</li>"
       heading_integrations: "Integraciones"
-      text_integrations: "<li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Sherpa Data</li>"
+      text_integrations: "<li>R</li><li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Opendata</li>"
   ca:
     # common
     cookie_message:
@@ -551,13 +547,11 @@ t:
       heading: "Gestió"
       text_1: "..."
       text_2: "..."
-      text_3: "..."
       heading_types: "Tipus"
       text_types: "<li>...</li>"
     service_analysis_communication:
       heading: "Anàlisi de comunicació"
       text_1: "..."
-      text_2: "..."
       heading_types: "Tipus d\'anàlisi"
       text_types: "<li>...</li>"
       heading_uses: "Usos"
@@ -624,16 +618,14 @@ t:
       heading: "Mapes"
       text_1: "..."
       text_2: "..."
-      text_3: "..."
-      text_4: "<strong>...</strong>"
+      text_3: "<strong>...</strong>"
       heading_types: "Tipus"
       text_types: "<li>...</li>"
     service_visualization_reports:
       heading: "Informes"
       text_1: "..."
       text_2: "..."
-      text_3: "..."
-      text_4: "<strong>...</strong>"
+      text_3: "<strong>...</strong>"
     solution_default:
       heading: "Solucions"
     solution_sherpa_campaign:
@@ -643,15 +635,15 @@ t:
       heading_features: "Funcionalitats"
       text_features: "<li>...</li>"
       heading_integrations: "Integracions"
-      text_integrations: "<li>Mailjet, Mailchimp, SMS</li><li>Qlikview, Qliksense, Power BI,  Domo, Cruchbase</li><li>Facebook, Twitter, Instagram,  Linkedin, Sentiment</li><li>Magento, Prestashop, Freshdesk,  Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…</li><li>Sizmek, Doubleclick</li><li>Zapier, IFTTT</li><li>Amazon, Hadoop…</li>"
+      text_integrations: "<li>...</li>"
     solution_sherpa_dashboard:
       heading: "Sherpa dashboard"
       text: "..."
       img_alt: "Sherpa dashboard"
-      heading_types: "Tipus de dashboards"
-      text_types: "<li>Marketing integral  (GA, Social, CRM, Emailing…)</li><li>Comptadors</li><li>Segmentació<li><li>Conversions…<li>"
+      heading_features: "Funcionalitats"
+      text_features: "<li>...<li>"
       heading_integrations: "Integracions"
-      text_integrations: "<li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Sherpa Data</li>"
+      text_integrations: "<li>R</li><li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Opendata</li>"
   en:
     # common
     cookie_message:
@@ -817,13 +809,11 @@ t:
       heading: "Management"
       text_1: "..."
       text_2: "..."
-      text_3: "..."
       heading_types: "Types"
       text_types: "<li>...</li>"
     service_analysis_communication:
       heading: "Communication's analysis"
       text_1: "..."
-      text_2: "..."
       heading_types: "Analysis types"
       text_types: "<li>...</li>"
       heading_uses: "Uses"
@@ -890,16 +880,14 @@ t:
       heading: "Maps"
       text_1: "..."
       text_2: "..."
-      text_3: "..."
-      text_4: "<strong>...</strong>"
+      text_3: "<strong>...</strong>"
       heading_types: "Types"
       text_types: "<li>...</li>"
     service_visualization_reports:
       heading: "Reports"
       text_1: "..."
       text_2: "..."
-      text_3: "..."
-      text_4: "<strong>...</strong>"
+      text_3: "<strong>...</strong>"
     solution_default:
       heading: "Solutions"
     solution_sherpa_campaign:
@@ -909,12 +897,12 @@ t:
       heading_features: "Features"
       text_features: "<li>...</li>"
       heading_integrations: "Integrations"
-      text_integrations: "<li>Mailjet, Mailchimp, SMS</li><li>Qlikview, Qliksense, Power BI,  Domo, Cruchbase</li><li>Facebook, Twitter, Instagram,  Linkedin, Sentiment</li><li>Magento, Prestashop, Freshdesk,  Zendesk, Hubspot, Pipedrive.  Salesforce, Surveymonkey…</li><li>Sizmek, Doubleclick</li><li>Zapier, IFTTT</li><li>Amazon, Hadoop…</li>"
+      text_integrations: "<li>...</li>"
     solution_sherpa_dashboard:
       heading: "Sherpa dashboard"
       text: "..."
       img_alt: "Sherpa dashboard"
-      heading_types: "Dashboard types"
-      text_types: "..."
+      heading_featu: "Features"
+      text_features: "..."
       heading_integrations: "Integrations"
-      text_integrations: "<li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Sherpa Data</li>"
+      text_integrations: "<li>R</li><li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Opendata</li>"

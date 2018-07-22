@@ -17,6 +17,11 @@
 
   > li {
     position: relative;
+    border-bottom: $br-small solid $c-light;
+
+    @media ($medium-up) {
+      border-bottom: 0;
+    }
   }
 
   &__link {
@@ -45,6 +50,7 @@
 
     &.is-subitem:after {
       @include pseudo-chevron($sp-xsmall, -$sp-xsmall);
+      transition: $transition-trf;
     }
 
     &.is-active {

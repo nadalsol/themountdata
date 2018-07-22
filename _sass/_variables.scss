@@ -124,6 +124,7 @@ $transition-bg:          background-color 250ms !default;
 $transition-bc:          border-color 250ms !default;
 $transition-c:           color 250ms !default;
 $transition-m:           margin 250ms !default;
+$transition-trf:         transform 250ms !default;
 
 // Z-index table
 $zi-100:                 100 !default;
@@ -191,7 +192,7 @@ $header-brand-ht-medium-up:       32px !default;
 
 $header-nav-po:                   absolute !default;
 $header-nav-wd:                   100% !default;
-$header-nav-ht:                   auto !default;
+$header-nav-ht:                   100vh !default;
 $header-nav-po-medium-up:         static !default;
 $header-nav-wd-medium-up:         auto !default;
 $header-nav-ht-medium-up:         auto !default;
@@ -462,7 +463,9 @@ $nav-main-link-bgc-active-medium-up:      transparent !default;
 
 // Navigation secondary
 $nav-secondary-wd:                        100% !default;
+$nav-secondary-ht:                        100vh !default;
 $nav-secondary-wd-medium-up:              300px !default;
+$nav-secondary-ht-medium-up:              auto !default;
 $nav-secondary-top-medium-up:             73px !default;
 
 $nav-secondary-link-bgc:                  $c-eastbay !default;

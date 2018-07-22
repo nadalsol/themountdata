@@ -106,7 +106,8 @@ $(document).ready(function() {
         navMainLangEs = $('#nav-main-lang-es'),
         navSecondaryLangCa = $('#nav-secondary-lang-ca'),
         navSecondaryLangEn = $('#nav-secondary-lang-en'),
-        navSecondaryLangEs = $('#nav-secondary-lang-es');
+        navSecondaryLangEs = $('#nav-secondary-lang-es'),
+        navSecondaryServicesLink = navSecondaryServices.find('.js-nav-secondary-link');
 
     //
     // Toggle `nav-secondary-services` visibility, via nav-main menu
@@ -120,6 +121,26 @@ $(document).ready(function() {
       navSecondaryLangCa.addClass('is-medium-hidden');
       navSecondaryLangEn.addClass('is-medium-hidden');
       navSecondaryLangEs.addClass('is-medium-hidden');
+    });
+
+    //
+    // Toggle `nav-tertiary` visibility, via nav-main menu
+    //
+    // 1. Remove all `is-active` classes from `nav-secondary-link` items.
+    // 2. Add `is-active` class to current `nav-secondary-link` item.
+    // 3. Hide all `nav-tertiary` items.
+    // 4. Show current `nav-tertiary` item.
+    //
+    navSecondaryServicesLink.click(function(event) {
+      event.preventDefault();
+
+      var $this = $(this);
+
+      navSecondaryServicesLink.removeClass('is-active'); // 1
+      $this.addClass('is-active'); // 2
+
+      navSecondaryServicesLink.next('.js-nav-tertiary').addClass('is-hidden'); // 3
+      $this.next('.js-nav-tertiary').removeClass('is-hidden'); // 4
     });
 
     //

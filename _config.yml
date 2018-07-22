@@ -168,7 +168,6 @@ t:
       text_3: "..."
     business:
       heading: "Negocio y tecnología"
-      text: "..."
       subheading: "Hablamos los lenguajes para cubrir el \"gap\"<br>entre tecnología y marketing"
       img_alt: "Negocio"
     carousel:
@@ -179,7 +178,7 @@ t:
       cta_text_1: "Nosotros"
       id_2: "equipo"
       heading_2: "Equipo, timing<br>y entregables"
-      text_2: "Nos gustan los retos y los objetivos realizados. Nos comprometemos en buscar soluciones para entregar los proyectos a tiempo y en las condiciones acordadas. Por eso, trabajamos con una orientación “agile” donde las personas están por encima de los procesos y estamos abiertos a los cambios y a la colaboración con los clientes y sus partners…"
+      text_2: "Nos gustan los retos y los objetivos realizados. Nos comprometemos en buscar soluciones para entregar los proyectos a tiempo y en las condiciones acordadas. Por eso, trabajamos con una orientación \"agile\" donde las personas están por encima de los procesos y estamos abiertos a los cambios y a la colaboración con los clientes y sus partners…"
       cta_link_2: "#"
       cta_text_2: "Equipo"
       id_3: "soluciones"
@@ -188,8 +187,8 @@ t:
       cta_link_3: "soluciones"
       cta_text_3: "Soluciones"
     contact:
-      heading: "Solicite una consulta"
-      subheading: "..."
+      heading: "Solicita una consulta"
+      subheading: "Cuéntanos tus problemas de negocio y te ayudamos a mejorar"
       name: "Nombre"
       surname: "Apellidos"
       email: "E-mail"
@@ -226,7 +225,7 @@ t:
     hero_about_values:
       heading: "Creemos en la gente que tiene ilusión por el trabajo bien hecho,<br>los que saben trabajar en equipo y los que no se conforman"
     hero_intro:
-      heading: "..."
+      heading: "Transforma tu negocio con datos"
     nav_main:
       link_1: "servicios"
       text_1: "Servicios"
@@ -437,7 +436,6 @@ t:
       text_3: "..."
     business:
       heading: "Negoci i tecnologia"
-      text: "..."
       subheading: "..."
       img_alt: "Negoci"
     carousel:
@@ -495,7 +493,7 @@ t:
     hero_about_values:
       heading: "..."
     hero_intro:
-      heading: "..."
+      heading: "Transforma el teu negoci amb dades"
     nav_main:
       link_1: "ca/serveis"
       text_1: "Serveis"
@@ -710,7 +708,6 @@ t:
       text_3: "..."
     business:
       heading: "Business and technology"
-      text: "..."
       subheading: "..."
       img_alt: "Business"
     carousel:

@@ -8,4 +8,13 @@
   &__heading {
     margin-bottom: 0;
   }
+
+  &__subheading {
+    margin-top: -$sp-small;
+    margin-bottom: 0;
+
+    @media ($medium-up) {
+      margin-top: -$sp-xxlarge;
+    }
+  }
 }

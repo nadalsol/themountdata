@@ -13,6 +13,7 @@ h1,
     uppercase,
     normal
   );
+  letter-spacing: 1px;
 
   @media ($medium-up) {
     font-size: $fz-xxlarge;

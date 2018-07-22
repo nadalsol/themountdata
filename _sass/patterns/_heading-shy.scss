@@ -10,9 +10,12 @@
 .heading-shy {
   @include size($heading-shy-wd, $heading-shy-ht);
   margin-bottom: 0;
-  text-indent: 100%; // 1
-  white-space: nowrap; // 1
-  overflow: hidden; // 1
+
+  // text-indent: 100%; // 1
+  // white-space: nowrap; // 1
+  // overflow: hidden; // 1
+  color: white;
+
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;

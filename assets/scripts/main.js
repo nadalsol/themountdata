@@ -268,7 +268,7 @@ $(document).ready(function() {
       body.addClass('is-modal-open'); // 1
       modalVideo.removeClass('is-hidden'); // 2
       // TODO : use "/themountdata/assets/" temporary path for GitHub pages (replace for "/assets" in Production)
-      modalBodyVideo.append('<video poster="/themountdata/assets/img/medium-up/bg-hero-intro.jpg" controls autoplay preload><source src="/themountdata/assets/video/the-mount-data.webm" type="video/webm"><source src="/themountdata/assets/video/the-mount-data.mp4" type="video/mp4">Sorry, your browser does not support embedded videos.</video>'); // 3
+      modalBodyVideo.append('<video poster="/assets/img/medium-up/bg-hero-intro.jpg" controls autoplay preload><source src="/assets/video/the-mount-data.webm" type="video/webm"><source src="/assets/video/the-mount-data.mp4" type="video/mp4">Sorry, your browser does not support embedded videos.</video>'); // 3
     });
 
     modalTriggerPrivacyForm.click(function(event) {

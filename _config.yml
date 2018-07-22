@@ -204,7 +204,7 @@ t:
     data_journey:
       heading: "Data journey"
       subheading_1: "Datos"
-      text_1: "Obtener, validar, harmonizar y almacenar fuentes de datos de diferentes origenes (transaccionales, social, web, opendata, IOT…)"
+      text_1: "Obtener, validar, harmonizar y almacenar fuentes de datos de diferentes orígenes (transaccionales, social, web, opendata, IOT…)"
       cta_link_1: "servicios/datos/fuentes"
       cta_text_1: "Saber más"
       subheading_2: "Análisis"

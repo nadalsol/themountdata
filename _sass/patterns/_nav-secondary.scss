@@ -19,6 +19,10 @@
     }
   }
 
+  > li {
+    margin-bottom: 2px;
+  }
+
   &__link {
     @include link($nav-secondary-link-c, $nav-secondary-link-c-hover);
     position: relative;

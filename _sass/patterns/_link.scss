@@ -6,6 +6,7 @@
   font-size: $fz-xxsmall;
   font-weight: $fw-bold;
   text-transform: uppercase;
+  letter-spacing: 1px;
 
   &--secondary {
     @include link($link-secondary-c, $link-secondary-hover-c);

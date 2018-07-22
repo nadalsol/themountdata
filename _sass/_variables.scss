@@ -45,7 +45,7 @@ $c-cosmic:               #683361 !default;
 
 // Scaffolding
 // TODO : use "/themountdata/assets/" temporary path for GitHub pages (replace for "/assets" in Production)
-$assets-path:            "/assets" !default;
+$assets-path:            "/themountdata/assets/" !default;
 $assets-img-path:        $assets-path + "/img" !default;
 $icons-path:             "/_includes/icons" !default;
 

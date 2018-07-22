@@ -22,6 +22,14 @@
     }
   }
 
+  &--sp {
+    margin-bottom: $sp-small;
+
+    @media ($medium-up) {
+      margin-bottom: $sp-big;
+    }
+  }
+
   .u-inner-small + .u-inner-small {
     @media ($medium-up) {
       padding-top: 0;

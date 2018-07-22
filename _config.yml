@@ -163,9 +163,9 @@ t:
       img_alt: "Equipo"
     about_values:
       heading: "Valores"
-      text_1: "..."
-      text_2: "..."
-      text_3: "..."
+      text_1: "Orientación a Resultados: Trabajamos con la idea que los resultados de los proyectos excedan las expectativas de nuestros clientes."
+      text_2: "Flexibilidad y agilidad: Ser ágil es una actitud. Tiene que ver con la mejora continua, la entrega de resultados en menos tiempo y con disfrutar del trabajo bien hecho. Creemos en los principios ágiles."
+      text_3: "Confianza, cooperación y transparencia: Son los pilares con lo que construimos la relación con nuestros clientes y partners."
     business:
       heading: "Negocio y tecnología"
       subheading: "Hablamos los lenguajes para cubrir el \"gap\"<br>entre tecnología y marketing"
@@ -374,6 +374,7 @@ t:
       text_features: "<li>Envíos: Email, SMS, Telemk, Media, Formularios, Landings… Reports</li><li>Campañas, Contenidos, Segmentación, Personas</li>"
       heading_integrations: "Integraciones"
       text_integrations: "<li>Mailjet, Mailchimp, SMS</li><li>Qlikview, Qliksense, Power BI, Domo, Cruchbase</li><li>Facebook, Twitter, Instagram, Linkedin, Sentiment</li><li>Magento, Prestashop, Freshdesk, Zendesk, Hubspot, Pipedrive. Salesforce, Surveymonkey…</li><li>Sizmek, Doubleclick</li><li>Zapier, IFTTT</li><li>Amazon, Hadoop…</li>"
+      img_alt: "Tecnologías"
     solution_sherpa_dashboard:
       heading: "Sherpa dashboard"
       text: "Solución para la visualización de los principales KPIs de marketing bajo un mismo concepto de Campaña. Posibilidad de incorporar datos transaccionales o de cualquier otro ámbito."
@@ -382,6 +383,7 @@ t:
       text_features: "<li>KPIs Alcance, Interacción y Suscripción</li><li>Filtros y Exclusiones</li><li>Tablas y Gráficos</li><li>Exportar a MSExcel</li><li>Comparador</li>"
       heading_integrations: "Integraciones"
       text_integrations: "<li>R</li><li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Opendata</li>"
+      img_alt: "Tecnologías"
   ca:
     # common
     cookie_message:
@@ -636,6 +638,7 @@ t:
       text_features: "<li>...</li>"
       heading_integrations: "Integracions"
       text_integrations: "<li>...</li>"
+      img_alt: "Tecnologies"
     solution_sherpa_dashboard:
       heading: "Sherpa dashboard"
       text: "..."
@@ -644,6 +647,7 @@ t:
       text_features: "<li>...<li>"
       heading_integrations: "Integracions"
       text_integrations: "<li>R</li><li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Opendata</li>"
+      img_alt: "Tecnologies"
   en:
     # common
     cookie_message:
@@ -898,6 +902,7 @@ t:
       text_features: "<li>...</li>"
       heading_integrations: "Integrations"
       text_integrations: "<li>...</li>"
+      img_alt: "Technolgies"
     solution_sherpa_dashboard:
       heading: "Sherpa dashboard"
       text: "..."
@@ -906,3 +911,4 @@ t:
       text_features: "..."
       heading_integrations: "Integrations"
       text_integrations: "<li>R</li><li>Qlik Marketplace</li><li>Domo</li><li>OpenStreetmaps</li><li>Sherpa Campaign</li><li>Opendata</li>"
+      img_alt: "Technolgies"

@@ -20,7 +20,9 @@
   }
 
   > li {
-    margin-bottom: 2px;
+    @media ($medium-up) {
+      margin-bottom: 2px;
+    }
   }
 
   &__link {

@@ -189,8 +189,8 @@ t:
       cta_link_3: "soluciones/sherpa-campaign"
       cta_text_3: "Soluciones"
     contact:
-      heading: "Solicita una consulta"
-      subheading: "Cuéntanos tus problemas de negocio y te ayudamos a mejorar"
+      heading: "¿Quieres trabajar con nosotros?"
+      subheading: "Cuéntanos sobre tu experiencia y tus sueños"
       name: "Nombre"
       surname: "Apellidos"
       email: "E-mail"

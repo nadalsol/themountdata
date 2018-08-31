@@ -185,7 +185,7 @@ t:
       id_3: "soluciones"
       heading_3: "Martech TMD"
       text_3: "Tenemos experiencia en algunas herramientas y estamos abiertos a conocer otras que nos ayuden en nuestros proyectos. Lo importante no es la herramienta sino lo que consigues con ella."
-      text_4: "<li>ETL: Pentaho</li><li>Base de Datos: MySQL, Oracle, SQL Server, Hadoop</li><li>Análisis: R, SPSS, Knime</li><li>BI: Qlik View, Qlik Sense, Power BI, Jasper Reports</li>¡"
+      text_4: "<li>ETL: Pentaho</li><li>Base de Datos: MySQL, Oracle, SQL Server, Hadoop</li><li>Análisis: R, SPSS, Knime</li><li>BI: Qlik View, Qlik Sense, Power BI, Jasper Reports</li>"
       cta_link_3: "soluciones/sherpa-campaign"
       cta_text_3: "Soluciones"
     contact:

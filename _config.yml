@@ -189,8 +189,8 @@ t:
       cta_link_3: "soluciones/sherpa-campaign"
       cta_text_3: "Soluciones"
     contact:
-      heading: "¿Quieres trabajar con nosotros?"
-      subheading: "Cuéntanos sobre tu experiencia y tus sueños"
+      heading: "Solicita una consulta"
+      subheading: "Cuéntanos tu problema de negocio y te ayudaremos"
       name: "Nombre"
       surname: "Apellidos"
       email: "E-mail"
@@ -404,10 +404,10 @@ t:
     modal_cookie:
       heading: "Cookies"
       
-      text: "Les seves dades formaran part d'un fitxer titularitat de The Mount Data S.L. i seran tractades per poder-li informar periòdicament de novetats, productes i serveis. Pot exercitar els seus drets d'accés, rectificació, cancel·lació i oposició, així com revocar el seu consentiment per a l'enviament de comunicacions comercials electròniques, enviant un correu electrònic a info@themountdata.com. Mitjançant la inclusió del seu correu electrònic i / o telèfon mòbil Un. Ens autoritza a enviar-li informació comercial a través del seu compte de correu electrònic així com altres mitjans electrònics equivalents."
+      text: "Les seves dades formaran part d'un fitxer titularitat de The Mount Data S.L. i seran tractades per poder-li informar periòdicament de novetats, productes i serveis. Pot exercitar els seus drets d'accés, rectificació, cance&middot;ació i oposició, així com revocar el seu consentiment per a l'enviament de comunicacions comercials electròniques, enviant un correu electrònic a info@themountdata.com. Mitjançant la inclusió del seu correu electrònic i / o telèfon mòbil Un. Ens autoritza a enviar-li informació comercial a través del seu compte de correu electrònic així com altres mitjans electrònics equivalents."
     modal_privacy:
       heading: "Privacitat"    
-      text: "De conformitat amb el que disposa el Reglament General de Protecció de Dades, UE 2016/679, l'informem que les seves dades personals són tractades i emmagatzemades per The Mount Data SL, com a responsable del tractament, amb domicili social al C / Còrsega 329, 7 -B 08037 Barcelona, ​​amb la finalitat del manteniment de la relació necessària amb vostè i de gestionar comunicacions promocionals i informatives per correu electrònic sobre The Mount Data, així com les seves activitats i esdeveniments que puguin resultar del seu interès. Les seves dades seran conservades per a futures comunicacions i emmagatzemarem les seves dades el temps necessari per realitzar aquesta gestió, fins que sol·liciti la seva supressió. Vostè podrà exercir els drets d'accés, rectificació, oposició, supressió, limitació i portabilitat, així com el seu dret a revocar el consentiment atorgat per la present en qualsevol moment, mitjançant comunicació escrita, acompanyada de còpia de DNI, adreçada a l'adreça esmentada anteriorment o mitjançant l'enviament d'un correu electrònic amb signatura digital reconeguda a l'adreça <a href=\"mailto:info@themountdata.com\"> info@themountdata.com </a>. Aquesta comunicació ha d'incloure nom i cognoms, petició en què es concreta la sol·licitud, adreça a efectes de notificacions, data, signatura i fotocòpia del DNI o un altre document vàlid que l'identifiqui. Vostè té dret, a més, a presentar una reclamació davant l'autoritat de control competent."
+      text: "De conformitat amb el que disposa el Reglament General de Protecció de Dades, UE 2016/679, l'informem que les seves dades personals són tractades i emmagatzemades per The Mount Data SL, com a responsable del tractament, amb domicili social al C / Còrsega 329, 7 -B 08037 Barcelona, ​​amb la finalitat del manteniment de la relació necessària amb vostè i de gestionar comunicacions promocionals i informatives per correu electrònic sobre The Mount Data, així com les seves activitats i esdeveniments que puguin resultar del seu interès. Les seves dades seran conservades per a futures comunicacions i emmagatzemarem les seves dades el temps necessari per realitzar aquesta gestió, fins que so&middot;iciti la seva supressió. Vostè podrà exercir els drets d'accés, rectificació, oposició, supressió, limitació i portabilitat, així com el seu dret a revocar el consentiment atorgat per la present en qualsevol moment, mitjançant comunicació escrita, acompanyada de còpia de DNI, adreçada a l'adreça esmentada anteriorment o mitjançant l'enviament d'un correu electrònic amb signatura digital reconeguda a l'adreça <a href=\"mailto:info@themountdata.com\"> info@themountdata.com </a>. Aquesta comunicació ha d'incloure nom i cognoms, petició en què es concreta la so&middot;icitud, adreça a efectes de notificacions, data, signatura i fotocòpia del DNI o un altre document vàlid que l'identifiqui. Vostè té dret, a més, a presentar una reclamació davant l'autoritat de control competent."
     modal_terms:
       heading: "Avís legal"
       text: "..."
@@ -443,7 +443,7 @@ t:
       cta_text_1: "Nosaltres"
       id_2: "equip"
       heading_2: "Equip, timing<br>i entregables"
-      text_2: "Ens agraden els reptes i els objectius realitzats. Ens comprometem a buscar solucions per lliurar els projectes a temps i en les condicions acordades. Per això, treballem amb una orientació \"agile \" on les persones estan per sobre dels processos i estem oberts als canvis i a la col·laboració amb els clients i els seus partners ..."
+      text_2: "Ens agraden els reptes i els objectius realitzats. Ens comprometem a buscar solucions per lliurar els projectes a temps i en les condicions acordades. Per això, treballem amb una orientació \"agile \" on les persones estan per sobre dels processos i estem oberts als canvis i a la co&middot;aboració amb els clients i els seus partners ..."
       cta_link_2: "ca/nosaltres"
       cta_text_2: "Equip"
       id_3: "solucions"
@@ -455,7 +455,7 @@ t:
       cta_text_3: "Solucions"
     contact:
       heading: "Sol&middot;liciti una consulta"
-      subheading: "..."
+      subheading: "Explique'ns el teu problema de negoci i t'ajudem"
       name: "Nom"
       surname: "Cognoms"
       email: "E-mail"
@@ -490,7 +490,7 @@ t:
     hero_about_team:
       heading: "La base dels nostres projectes són les persones,<br> sense elles aquest projecte no seria possible;)"
     hero_about_values:
-      heading: "Creiem en la gent que té il·lusió per la feina ben feta, dels que saben treballar en equip i els que no es conformen"
+      heading: "Creiem en la gent que té i&middot;usió per la feina ben feta, dels que saben treballar en equip i els que no es conformen"
     hero_intro:
       heading: "Transforma el teu negoci des de les dades"
     nav_main:
@@ -549,12 +549,12 @@ t:
       heading: "Consultoria"
       text_1: "És freqüent que moltes companyies creguin en el poder de les dades o de les estratègies CRM però tinguin dificultats per saber per on començar."
       text_2: "Mitjançant frameworks, auditories tècniques i de negoci establim un full de ruta amb els projectes necessaris per assolir l'objectiu."
-      text_3: "Col·laborem amb els equips de negoci, tecnologia i els proveïdors actuals (agències, consultores tecnològiques ...)."
+      text_3: "Co&middot;aborem amb els equips de negoci, tecnologia i els proveïdors actuals (agències, consultores tecnològiques ...)."
       heading_types: "Tipus"
       text_types: "<li>Consultoria CRM/CX</li><li>Consultoria Campanyes</li><li>Consultoria Anàlisis</li><li>Consultoria Dades</li><li>Consultoria Martech</li><li>Consultoria Big Data & BI</li><li>Consultoria Equip/Metodologia/Processos</li>"
     service_action_management:
       heading: "Gestió"
-      text_1: "Per aprendre no hi ha millor manera que practicar. Per això, és habitual que els clients sol·licitin un acompanyament en la gestió durant un període fins que són autònoms."
+      text_1: "Per aprendre no hi ha millor manera que practicar. Per això, és habitual que els clients so&middot;icitin un acompanyament en la gestió durant un període fins que són autònoms."
       text_2: "Altres vegades els clients prefereixen externalitzar la gestió diària dels processos, en un equip orientat al servei i als resultats, com si fossin part del seu equip."
       heading_types: "Tipus"
       text_types: "<li>Gestió Acció</li><li>Gestió Anàlisis</li><li>Gestió Data</li>"
@@ -570,7 +570,7 @@ t:
     service_analysis_customer:
       heading: "Anàlisi de client"
       text_1: "Quants grups de Clients tenim?, Quin és el perfil d'aquests grups?, Quin és el patró de comportament de cada segment?, Quins són els clients amb més possibilitats de Renovar?, ¿M'han abandonat o encara són Clients?, Quant aporten al meu negoci?, He d'invertir en la nostra relació?"
-      text_2: "..."
+      text_2: ""
       heading_types: "Tipus d\'anàlisi"
       text_types: "<li>Predicció de la Demanda</li><li>Segmentació & Perfil</li><li>Valor de Vida d'un Client (VVC)</li><li>Deserció</li><li>Sentimient/Veu del Client</li><li>Desenvolupament en R, Knime, SPSS, MSExcel</li>"
       heading_uses: "Usos"
@@ -580,11 +580,11 @@ t:
     service_analysis_product:
       heading: "Anàlisi de producte"
       text_1: "Quina és la freqüència de compra d'un producte?, Cóm es correlacionen els productes? Quins s'adquireixen en la mateixa compra?, Quina és la recorregut de compra o abandonament?, Quins productes hauria d'oferir a un Client?, Quant aporta al meu negoci cada Producte?, He d'invertir en promocionar un producte?, Quins productes consumeix cada segment de clients?"
-      text_2: "..."
+      text_2: ""
       heading_types: "Tipus d\'anàlisi"
       text_types: "<li>Venda creuada</li><li>Cistella de la compra</li><li>Recomendador de productes</li>"
       heading_uses: "Usos"
-      text_uses: "<li>Definición Plan de Contactos/Contenidos</li><li>Definir Plan de Up/Cross selling para cada Cliente</li><li>Qué productos recomendar a un Cliente</li><li>Cómo colocar los productos en el linear</li>"
+      text_uses: "<li>Definició Pla de Contactes/Continguts</li><li>Definir Pla de Up/Cross selling per a cada Client</li><li>Quins productes recomenar a un Client</li><li>Cóm co&middot;ocar els productes al lineal</li>"
       heading_techniques: "Tècniques"
       text_techniques: "<li>Item Based Collaborative Filtering (IBCF)</li><li>User Based Collaborative Filtering (UBCF)</li><li>Association Rule Learning</li><li>C</li>"
     service_data_sources:
@@ -622,7 +622,7 @@ t:
       text_3: "Funcionalitats habituals dels dashboards són l'aplicació de Filtres / Exclusions, creació de Taules pivotants, Alertes, integració amb Machine Learning, exportació a MSExcel, Mapes, Marcadors, anotació Comentaris, Prediccions i Prescripcions ..."
       text_4: "<strong>Desenvolupats en QlikView, QlikSense, Power BI.</strong>"
       heading_types: "Tipus"
-      text_types: "<li>...</li>"
+      text_types: "<li>Dashboard Comptadors</li><li>Dashboard Segmentació Campanyes</li><li>Dashboard Resultats de Campanyes</li><li>Dashboard integral de Marketing</li><li>Dashboard de Productes i Pricing</li><li>Dashboard Calitat de dades</li><li>Dashboard Funnel de Vendes</li><li>Dashboard de Competència</li><li>Dashboard de Mercat & Investigació</li>"
     service_visualization_maps:
       heading: "Mapes"
       text_1: "Elaboració de Mapes a partir de la informació geogràfica capturada a través del mòbil, sensors, open data i formularis o transaccions. La informació geogràfica pot visualitzar-se a nivell de geo-coordenades, codi postal, seccions censals, ciutats, províncies, països ..."
@@ -635,6 +635,8 @@ t:
       text_1: "Crear una història visual a partir d'un gran nombre de dades és la millor manera de captar l'atenció i sintetitzar idees i conclusions. Una infografia consta de gràfics, textos i imatges que, combinats entre si, comuniquen coneixement."
       text_2: "Els informes tradicionals no desapareixeran però podem fer que siguin més visuals i ajustats a les necessitats de cada usuari."
       text_3: "<strong>Desarrollados en Jasper Reports.</strong>"
+      heading_types: "Tipus"
+      text_types: "<li>Report Evolutius de qualsevol KPI</li><li>Report de Vendes</li><li>Report Campanyes</li><li>Report Auditoria calitat de dades</li><li>Presentació visual de conjunts de dades i mètriques</li><li>Processos</li><li>Línies temporals</li><li>Enquestes</li><li>Comparatives</li><li>"
     solution_default:
       heading: "Solucions"
     solution_sherpa_campaign:
@@ -672,7 +674,7 @@ t:
     modal_cookie:
       heading: "Cookies"
       text: "Your data will be part of a file owned by The Mount Data S.L. and will be treated to be able to periodically inform you of news, products and services. You can exercise your rights of access, rectification, cancellation and opposition, as well as revoke your consent for the sending of electronic commercial communications, by sending an e-mail to info@themountdata.com. By including your email and/or mobile phone you authorize us to send you commercial information through your email account as well as other equivalent electronic means."
-      modal_privacy:
+    modal_privacy:
       heading: "Privacy"
       text: "In accordance with the provisions of the General Regulation of Data Protection, UE 2016/679, we inform you that your personal data is processed and stored by The Mount Data SL, as responsible for the treatment, with registered office at C / Còrsega 329, 7 -B 08037 Barcelona, ​​for the purpose of maintaining the necessary relationship with you and managing promotional and informative communications by email about The Mount Data, as well as its activities and events that may be of interest to you. Your data will be kept for future communications and we will store your data for the time necessary to carry out such management, until you request its deletion. You may exercise your rights of access, rectification, opposition, deletion, limitation and portability, as well as your right to revoke the consent granted by this at any time, by written communication, accompanied by a copy of ID, addressed to the address above. or by sending an email with a recognized digital signature to the following address <a href=\"mailto:info@themountdata.com\"> info@themountdata.com </a>. Said communication must include name and surname, request in which the request is specified, address for the purposes of notifications, date, signature and photocopy of the DNI or other valid document that identifies it. You are also entitled to submit a claim to the competent supervisory authority."
     modal_terms:
@@ -696,8 +698,8 @@ t:
       heading: "Values"
       text_1: "<strong>Orientation to Results: </strong> We work with the idea that the results of the projects exceed the expectations of our clients."
       text_2: "<strong>Flexibility and agility: </strong> Being agile is an attitude. It has to do with continuous improvement, delivering results in less time and enjoying a well done job. We believe in agile principles."
-      text_3: "<strong>Confidence, cooperation and transparency: </ strong> They are the pillars with which we build the relationship with our customers and partners."
-      text_4: "<strong>Service Vocation: </ strong> We like to understand the challenges and problems of our clients to offer them the best possible service."
+      text_3: "<strong>Confidence, cooperation and transparency:</strong> They are the pillars with which we build the relationship with our customers and partners."
+      text_4: "<strong>Service Vocation:</strong> We like to understand the challenges and problems of our clients to offer them the best possible service."
     business:
       heading: "Business and technology"
       subheading: "We speak languages ​​to cover the \"gap\"<br>between technology and marketing"
@@ -844,7 +846,7 @@ t:
       heading_techniques: "Techniques"
       text_techniques: "<li>Clustering</li><li>RFMP</li><li>LTV</li><li>Random Forest</li><li>Tree-decision</li><li>Principal components</li><li>Logistic Regression</li><li>Regression trees</li><li>Naive Bayes Classification</li><li>Neural Networks</li>"
     service_analysis_product:
-      heading: "Product's analysis"
+      heading: "Product analysis"
       text_1: "¿What is the product purchase frequency? Is there any product correlation? Which products are acquiered in the same purchase? Purchase or abandon path? What products should be offered to a Customer? Product business contribution? Should I invest in promoting a product? Products consumed by customer segment?"
       text_2: ""
       heading_types: "Analysis types"
@@ -882,6 +884,7 @@ t:
       subheading_3: "Visualization"
       subheading_4: "Action"
     service_visualization_dashboard:
+      heading: "Dashboard"
       text_1: "BI tool for displaying large volumes of data from different related sources (transactional, communications, customers, social ...). Focused on discovering insights, making decisions and improving productivity."
       text_2: "From the specific needs of the different users we define the objectives, kpis, the dimensions of the information, the elements to be visualized (graphs, tables, lists, maps ...) and the elements of context."
       text_3: "Dashboard common features are the Filters / Exclusions application, the creation of Pivoting Tables, Alerts, Machine Learning integration, export to MSExcel, Maps, Bookmarks, Comments, Predictions and Prescriptions ..."

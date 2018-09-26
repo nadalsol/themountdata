@@ -3,7 +3,7 @@
     <div class="u-inner-xxlarge">
 
       <h1 class="heading1 heading1--light">{{ site.t[page.lang]hero_intro.heading }}</h1>
-      <button id="modal-trigger-video" class="hero-intro__play">
+      <button id="modal-trigger-video" class="hero-intro__play" onclick="ga('send', 'event', 'Videos', 'Reproducir', 'Presentacion');">
         {% include icons/play.svg css-class="icon icon--play" %}
       </button>
 

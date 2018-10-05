@@ -25,6 +25,7 @@ github_username: nadalsol
 
 # Build settings
 markdown: kramdown
+highlighter: rouge   # -- Afegit per MGP 01/10/2018 ¿?
 theme: minima
 plugins:
   - jekyll-feed

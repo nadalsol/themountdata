@@ -1,4 +1,21 @@
 ////////////////////////////////////////////////////////////////////////////////
+// Util funtions for General purpose
+////////////////////////////////////////////////////////////////////////////////
+
+  //
+  // Read Language Site
+  // @param no param
+  // @return language es=Spanish, ca=Catalan, en=English
+  //
+  function readLang() {
+    var pathName = document.location.pathname;
+    var lang = pathName.replace(/\//g,"");
+    if (lang === "")
+      lang = "es";
+    return lang;
+  }
+
+////////////////////////////////////////////////////////////////////////////////
 //                                                                            //
 // The document ready event executes already when the HTML-Document is loaded //
 // and the DOM is ready, even if all the graphics haven't loaded yet.         //
@@ -268,7 +285,8 @@ $(document).ready(function() {
       body.addClass('is-modal-open'); // 1
       modalVideo.removeClass('is-hidden'); // 2
       // TODO : use "/themountdata/assets/" temporary path for GitHub pages (replace for "/assets" in Production)
-      modalBodyVideo.append('<video poster="/assets/img/medium-up/bg-hero-intro.jpg" controls autoplay preload><source src="/assets/video/the-mount-data.webm" type="video/webm"><source src="/assets/video/the-mount-data.mp4" type="video/mp4">Sorry, your browser does not support embedded videos.</video>'); // 3
+      var videoName = "/assets/video/video_tmd_"+readLang();
+      modalBodyVideo.append('<video poster="/assets/img/medium-up/bg-hero-intro.jpg" controls autoplay preload><source src="'+videoName+'.webm" type="video/webm"><source src="'+videoName+'.mp4" type="video/mp4">Sorry, your browser does not support embedded videos.</video>'); // 3
     });
 
     modalTriggerPrivacyForm.click(function(event) {

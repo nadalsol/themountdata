@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ page.lang | default: site.lang | default: 'es' }}">
+
+  {% include common/head-post.html %}
+
+  <body>
+
+    {% include common/header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="content-topbar"></div>
+      <div class="post-list wrapper grid w3-row">
+          {% for post in site.posts limit:18 %}
+            {% assign blocs = post.title | split: "|" %}
+            {% for bloc in blocs offset:0 limit:1 %}
+              {% assign titolArticle = bloc %}
+            {% endfor %}
+
+            {% for bloc in blocs offset:1 limit:1 %}
+              {% assign autorArticle = bloc %}
+            {% endfor %}
+
+            {% for bloc in blocs offset:2 limit:1 %}
+              {% assign imgArticle = bloc %}
+            {% endfor %}
+            <div class="post-list_col33 w3-third">
+              <div>
+                <img class="w3-image" src="{{ imgArticle }}" alt="">
+                <div class="categories-list">
+                  {% for category in post.categories %}
+                    {% if category != "article" %}
+                      {% assign tags = category | split: "/" %}
+                      {% for tag in tags %}
+                        <div> 
+                          <span>
+                            {{ tag }}
+                          </span> 
+                        </div>
+                      {% endfor %}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+              <h1 class="title"> <a href="{{ post.url }}"> {{ titolArticle }}</a> </h1>
+              <h4 class="autor">por {{ autorArticle }} </h4>
+              <div class="data w3-display-container">
+                <div></div>
+                <div class="w3-right">
+                  <h5> {{ post.date | date: "%d %b %Y" }} </h5>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+      </div>
+    </main>
+
+
+    {% include common/footer.html %}
+    {% include common/footer-legal.html %}
+    {% include common/cookie-message.html %}
+    {% include common/modal-cookie.html %}
+    {% include common/modal-privacy.html %}
+    {% include common/modal-terms.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      // If jQuery is not initialized (CDN is down), load from local source
+      if (typeof jQuery === 'undefined') {
+        document.write(unescape('%3Cscript src="{{ site.baseurl }}/assets/scripts/jquery-3.3.1.min.js"%3E%3C/script%3E'));
+      }
+    </script>
+    <script src="{{ site.baseurl }}/assets/scripts/main.js"></script>
+
+  </body>
+
+</html>

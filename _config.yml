@@ -32,6 +32,14 @@ plugins:
 sass:
   style: compressed
 
+# Default Attributes
+## amb aquests default attributes, definim que el layout post tingui com a idioma per defecte el 'es'
+defaults:
+  -
+    values:
+      layout: "post"
+      lang: es
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

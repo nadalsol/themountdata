@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Marco de referencia de un proyecto CRM
+title: Marco de referencia de un proyecto CRM | Roger Lucea | https://www.datocms-assets.com/7606/1538646803-customers.png
 date: 2018-10-01 11:00:00 UTC
-categories: CRM, framework
+categories: article Consultoría crm/framework
 ---
 
 # ![](https://www.datocms-assets.com/7606/1538646803-customers.png)
@@ -24,7 +24,7 @@ Te proponemos abordar el proyecto CRM en tres áreas de trabajo:
 * Procesos de Marketing, Ventas y Servicio Atención al Cliente
 * Equipo
 
-## ![](https://www.datocms-assets.com/7606/1538646833-triangulo-crm.png)
+### ![](https://www.datocms-assets.com/7606/1538646833-triangulo-crm.png)
 
 ## Negocio
 **Objetivos**: Defínelos desde el principio y concrétalos en kpis. Reflexiona en qué y cómo esperas que el proyecto CRM ayude a cumplir tus metas a nivel de imagen, ventas, lealtad, satisfacción, calidad datos, conversiones etc… Y no te olvides de establecer objetivos cualitativos.

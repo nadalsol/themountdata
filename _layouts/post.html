@@ -1,28 +1,122 @@
-<!DOCTYPE html>
-<html class="no-js" lang="{{ page.lang | default: site.lang | default: "es" }}">
+{% for post in site.posts %}
+    {% if post.url == page.url %}
+    
+        {% for category in post.categories offset:1 limit:1 %}
+            {% assign post_category = category %}
+        {% endfor %}
 
-  {% include common/head.html %}
+        {% for tags in post.categories offset:2 limit:1 %}
+            {% assign post_tags = tags | split: "/" %}
+        {% endfor %}
+
+    {% endif %}
+{% endfor %}
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="{{ page.lang | default: site.lang | default: 'es' }}">
+
+  {% include common/head-post.html %}
 
   <body>
 
     {% include common/header.html %}
 
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    <main class="page-content" aria-label="Content">
+        <div class="content-topbar"></div>
+        <div class="wrapper">
+            <div class="w3-row">
+                    <div id="post-detail" class="w3-threequarter post-content">
+                            <div class="breadcrumbs"></div>
+                            <div id="post-content">
+                                {{ content }}
+                            </div>
+                            <div class="categories-list categories-post-list">
+            
+                                {% for tag in post_tags %}    
+                                    <div>
+                                        <span>
+                                            {{ tag }}
+                                        </span>
+                                    </div>
+                                {% endfor %}
+            
+                            </div>
+                            <div id="finish-post"></div>
+                            <div class="sharethis-inline-share-buttons" style="margin-top:60px;"></div>
+                            <!--
+                                <div id="custom-social-buttons-container">
+                                    <div class="button share-button facebook-share-button" data-network="facebook"><img src="{{ site.baseurl }}/assets/img/Ico_facebook.png" alt="facebook"></div> 
+                                    <div class="button share-button twitter-share-button" data-network="twitter"><img src="{{ site.baseurl }}/assets/img/Ico_twitter.png" alt="twitter"></div>
+                                    <div class="button share-button googleplus-share-button" data-network="googleplus"><img src="{{ site.baseurl }}/assets/img/Ico_googleplus.png" alt="googleplus"></div>
+                                    <div class="button share-button pinterest-share-button" data-network="pinterest"><img src="{{ site.baseurl }}/assets/img/Ico_pinterest.png" alt="twitter"></div>
+                                    <div class="button share-button whatsapp-share-button" data-network="whatsapp"><img src="{{ site.baseurl }}/assets/img/Ico_whatsapp.png" alt="whatsapp"></div>
+                                    <div class="button share-button email-share-button" data-network="email"><img src="{{ site.baseurl }}/assets/img/Ico_email.png" alt="email"></div>
+                                </div>
+                            -->
 
-    <div class="post">
+                        </div>
+                        <div id="posts" class="w3-quarter">
+            
+                            <h2>también te puede interesar</h2>
+            
+                            {% for post in site.posts limit:5 %}
+                                {% assign blocs = post.title | split: "|" %}
+                                {% for bloc in blocs offset:0 limit:1 %}
+                                    {% assign titolArticle = bloc %}
+                                {% endfor %}
+                    
+                                {% for bloc in blocs offset:1 limit:1 %}
+                                    {% assign autorArticle = bloc %}
+                                {% endfor %}
+                    
+                                {% for bloc in blocs offset:2 limit:1 %}
+                                    {% assign imgArticle = bloc %}
+                                {% endfor %}
+                                <div class="container-post">
+            
+                                        {% for categorie in post.categories offset:1 limit:1 %}
+                                            {% assign category = categorie %}
+                                        {% endfor %}
+            
+                                        {% assign blocs = post.title | split: "|" %}
+                                        {% for bloc in blocs offset:0 limit:1 %}
+                                            {% assign titolArticle = bloc %}
+                                        {% endfor %}
+            
+                                        {% for bloc in blocs offset:1 limit:1 %}
+                                            {% assign autorArticle = bloc %}
+                                        {% endfor %}
+            
+                                        {% for bloc in blocs offset:2 limit:1 %}
+                                            {% assign imgArticle = bloc %}
+                                        {% endfor %}
+            
+                                        {% if post.url != page.url %}
+                                            <img class="w3-image" src="{{ imgArticle }}" alt="">
+                                            <div class="categories-list">
+                                            {% for tags in post.categories offset:2 limit:1 %}
+                                                {% assign post_same_tags = tags | split: "/" %}
+                                                    {% for tag in post_same_tags %}
+                                                        <div> 
+                                                            <span>
+                                                                {{ tag }}
+                                                            </span> 
+                                                        </div>
+                                                    {% endfor %}
+                                            {% endfor %}
+                                            </div>
+                                            <a href="{{ post.url }}"> {{ titolArticle }} </a>
+                                            <h4> por {{ autorArticle }} </h4>
+                                        {% endif %}
+            
+                                </div>
+                            {% endfor%}
+                        </div>
+            </div>
+        </div>
+    </main>
 
-      <header class="post-header"></header>
-    
-      <article class="post-content">
-         {{ content }}
-      </article>
-    </div>
 
     {% include common/footer.html %}
     {% include common/footer-legal.html %}
@@ -30,6 +124,15 @@
     {% include common/modal-cookie.html %}
     {% include common/modal-privacy.html %}
     {% include common/modal-terms.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      // If jQuery is not initialized (CDN is down), load from local source
+      if (typeof jQuery === 'undefined') {
+        document.write(unescape('%3Cscript src="{{ site.baseurl }}/assets/scripts/jquery-3.3.1.min.js"%3E%3C/script%3E'));
+      }
+    </script>
+    <script src="{{ site.baseurl }}/assets/scripts/main.js"></script>
 
   </body>
 

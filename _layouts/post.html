@@ -58,7 +58,7 @@
                         </div>
                         <div id="posts" class="w3-quarter">
             
-                            <h2>también te puede interesar</h2>
+                            <h2>you might also like</h2>
             
                             {% for post in site.posts limit:5 %}
                                 {% assign blocs = post.title | split: "|" %}
@@ -133,6 +133,12 @@
       }
     </script>
     <script src="{{ site.baseurl }}/assets/scripts/main.js"></script>
+
+    <script>
+        setTimeout(function(){
+            loadVideo();
+        }, 500);
+    </script>
 
   </body>
 

@@ -5,12 +5,13 @@ date: 2018-10-13 23:00:00 UTC
 categories: article CRM personalización/automatización
 ---
 
-# ![](https://www.datocms-assets.com/7606/1538733109-personaliza.png)
+# ![](https://www.datocms-assets.com/7606/1540393206-image001opt.png)
+
+
+# Personaliza para ser relevante
 
 #### por Aina Bernal
 ##### 14 OCT 2018
-
-# Personaliza para ser relevante
 
 Todos estaremos de acuerdo que para que las comunicaciones tengan un impacto deben ser **relevantes**. Las comunicaciones deben captar la atención y ser suficientemente interesantes para que el cliente dedique su tiempo a ver, leer o interactuar (comentario, compartiendo el contenido etc…).
 

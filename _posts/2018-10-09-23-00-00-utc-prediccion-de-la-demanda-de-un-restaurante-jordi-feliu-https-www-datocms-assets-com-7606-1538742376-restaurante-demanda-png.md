@@ -5,7 +5,8 @@ date: 2018-10-09 23:00:00 UTC
 categories: article Análisis Horeca/predicción/demanda
 ---
 
-# ![](https://www.datocms-assets.com/7606/1538742376-restaurante-demanda.png)
+# ![](https://www.datocms-assets.com/7606/1540393209-restaurante-demandaopt.png)
+
 
 # Predicción de la demanda de un restaurante
 

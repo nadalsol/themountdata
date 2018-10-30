@@ -27,17 +27,12 @@
             img {
                 width: 100%;
                 height: auto;
-                margin: 0 auto;
+                margin: 40px auto;
             }
         }
 
-        h1:last-of-type {
-            position: relative;
-            width: 75%;
-        }
-
         h2 {
-            width: 85%;
+            width: 100%;
             font-family: $ff-sans-serif-b;
             font-size: 24px;
             font-weight: 600;
@@ -51,12 +46,12 @@
                 display: block;
                 max-width: 100%;
                 height: auto;
-                margin: 0 auto;
+                margin: 40px auto;
             }
         }
     
         h4 {
-            width: 85%;
+            width: 100%;
             font-family: $ff-sans-serif-m;
             font-size: 12px;
             font-weight: 600;
@@ -74,12 +69,14 @@
                 display: block;
                 max-width: 50%;
                 height: auto;
-                margin-left: 15%;  
+                margin-left: 15%;
+                margin-top: 40px;
+                margin-bottom: 40px;  
             }
         }
     
         h5 {
-            width: 85%;
+            width: 100%;
             font-size: 12px;
             font-weight: 400;
             font-style: normal;
@@ -92,7 +89,7 @@
         }
     
         p {
-            width: 85%;
+            width: 100%;
             font-family: $ff-sans-serif-b;
             font-size: 18px;
             font-weight: normal;
@@ -104,7 +101,7 @@
         }
 
         ul {
-            width: 85%;
+            width: 100%;
             list-style-image: url('../../assets/img/guion.png');
         }
     }
@@ -213,4 +210,10 @@
         display: inline-block;
         padding: 10px;
     }
+}
+
+iframe {
+    width: 100%;
+    min-height: 450px;
+    margin: 40px 0;
 }

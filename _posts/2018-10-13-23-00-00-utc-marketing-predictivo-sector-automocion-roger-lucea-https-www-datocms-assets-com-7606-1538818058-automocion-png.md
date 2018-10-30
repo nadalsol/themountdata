@@ -5,7 +5,7 @@ date: 2018-10-13 23:00:00 UTC
 categories: article Análisis automoción/crm/predictive
 ---
 
-# ![](https://www.datocms-assets.com/7606/1538818058-automocion.png)
+# ![](https://www.datocms-assets.com/7606/1540393200-automocionopt.png)
 
 # Marketing Predictivo en el sector automoción
 #### por Roger Lucea
@@ -16,7 +16,6 @@ El reto de una de las marcas líderes del sector de la automoción tenía enviar
 La marca necesita que una plataforma capaz de entregar los planes de contacto a la plataforma de comunicación (Adobe Campaign), que es la encargada de ejecutar los envíos. 
 
 ## Problema
-
 ### Automatizar un plan de contactos a lo largo del ciclo de vida de los Clientes
 
 El punto de partida es una base de datos operacional que integra los datos de clientes y las principales transacciones, pero que tiene problemas de calidad de datos. Tampoco está pensada para que dé cobertura a tareas analíticas o de segmentación para las campañas de CRM.
@@ -36,7 +35,7 @@ Beneficios:
 * Ahorro en costes de envío
 * Medición
 
-#### Datos
+**DATOS**
 Identificamos, capturamos, limpiamos y transformamos los datos internos y externos que vamos a necesitar para poder responder a las preguntas de negocio relacionados con, Quien comunicar, Qué comunicar, Cuándo comunicar y Cómo comunicar.
 Al mismo tiempo definimos procesos para identificar la calidad de los datos y enriquecerlos con datos de mercado.
 
@@ -56,14 +55,14 @@ Desarrollo de modelos analíticos a partir de los datos que respondan a las preg
 
 ## ![](https://www.datocms-assets.com/7606/1538821290-esquema-analisis.png)
 
-## ![](https://www.datocms-assets.com/7606/1538820656-tablamodelosanalisis.png)
+## ![](https://www.datocms-assets.com/7606/1540461115-tablamodelosanalisis.png)
 
 ### Visualización
 Desarrollo de cuadros de mando en Qlik para la visualización de los datos a partir de kpis, dimensiones, gráficos, tablas y mapas. Acceso a través de web-browser.
 
 Funcionalidades principales: Aplicación filtros y exclusiones, comparador de grupos, exportación a Excel, marcadores de filtros.
 
-## ![](https://www.datocms-assets.com/7606/1538821416-dashboardauto.png)
+## ![](https://www.datocms-assets.com/7606/1540459930-dashboardauto.png)
 
 ## ![](https://www.datocms-assets.com/7606/1538820651-tabladashboards.png)
 

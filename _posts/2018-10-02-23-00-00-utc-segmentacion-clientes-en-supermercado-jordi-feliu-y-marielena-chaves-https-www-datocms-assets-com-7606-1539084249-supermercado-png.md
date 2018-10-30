@@ -6,6 +6,7 @@ categories: article Análisis supermercados/segmentación/clientes
 ---
 
 # ![](https://www.datocms-assets.com/7606/1539084249-supermercado.png)
+
 # Segmentación de clientes en supermercados
 #### por Jordi Feliu y Marielena Chavez
 ##### 03 OCT 2018
@@ -15,7 +16,7 @@ categories: article Análisis supermercados/segmentación/clientes
 No hay dos clientes iguales. Cada uno tiene su perfil, preferencias, hábitos de compra, cesta de productos. ¿Cómo podríamos agrupar a los clientes de comportamiento parecido? 
 El gran número de variables y volumen de datos del histórico de transacciones de un supermercado hace que segmentación no sea un reto fácil.
 
-## ![](https://www.datocms-assets.com/7606/1539000375-segmentacioncompra.png)
+### ![](https://www.datocms-assets.com/7606/1539000375-segmentacioncompra.png)
 
 ## Problema
 

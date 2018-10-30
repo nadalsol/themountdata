@@ -6,6 +6,7 @@
 {% assign current_text_1 = site.t[page.lang]nav_main.text_1 | downcase %}
 {% assign current_text_2 = site.t[page.lang]nav_main.text_2 | downcase %}
 {% assign current_text_3 = site.t[page.lang]nav_main.text_3 | downcase %}
+{% assign current_text_4 = 'blog' | downcase %}
 
 {% case page.lang %}
   {% when 'ca' %}
@@ -29,6 +30,6 @@
     <a class="nav-main__link {% if current_section == current_text_3 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ site.t[page.lang]nav_main.link_3 }}">{{ site.t[page.lang]nav_main.text_3 }}</a>
   </li>
   <li>
-    <a class="nav-main__link {% if current_section == current_text_3 %}is-active{% endif %}" href="{{ site.baseurl }}/blog">Blog</a>
+    <a class="nav-main__link {% if current_section == current_text_4 %}is-active{% endif %}" href="{{ site.baseurl }}/{{ current_text_4 }}">{{ current_text_4 }}</a>
   </li>
 </ul>

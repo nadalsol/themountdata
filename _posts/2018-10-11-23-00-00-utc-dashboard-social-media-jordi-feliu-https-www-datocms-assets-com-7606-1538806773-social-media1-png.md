@@ -5,7 +5,8 @@ date: 2018-10-11 23:00:00 UTC
 categories: article Visualización dashboard/social-media
 ---
 
-# ![](https://www.datocms-assets.com/7606/1538806773-social-media1.png)
+# ![](https://www.datocms-assets.com/7606/1540393216-social-media1opt.png)
+
 
 # Dashboard Social Media
 

@@ -244,6 +244,8 @@ t:
       text_2: "Soluciones"
       link_3: "nosotros"
       text_3: "Nosotros"
+      link_4: "blog"
+      text_4: "Blog"
     nav_secondary_services:
       link_1: "servicios/datos"
       text_1: "Datos"
@@ -509,6 +511,8 @@ t:
       text_2: "Solucions"
       link_3: "ca/nosaltres"
       text_3: "Nosaltres"
+      link_4: "ca/blog"
+      text_4: "Blog"
     nav_secondary_services:
       link_1: "ca/serveis/dades"
       text_1: "Dades"
@@ -777,6 +781,8 @@ t:
       text_2: "Solutions"
       link_3: "en/about"
       text_3: "About"
+      link_4: "en/blog"
+      text_4: "Blog"
     nav_secondary_services:
       link_1: "en/services/data"
       text_1: "Data"

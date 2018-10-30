@@ -5,7 +5,8 @@ date: 2018-10-06 23:00:00 UTC
 categories: article Data automoción/scraping
 ---
 
-# ![](https://www.datocms-assets.com/7606/1538744557-scrap.png)
+# ![](https://www.datocms-assets.com/7606/1540393212-scrapopt.png)
+
 
 # Enriquecimiento de datos sector automoción
 #### por Manel Guillén

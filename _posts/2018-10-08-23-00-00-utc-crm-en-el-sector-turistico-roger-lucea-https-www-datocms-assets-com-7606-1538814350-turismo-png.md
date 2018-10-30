@@ -5,7 +5,8 @@ date: 2018-10-08 23:00:00 UTC
 categories: article CRM turismo/estrategia/tecnología
 ---
 
-# ![](https://www.datocms-assets.com/7606/1538814350-turismo.png)
+# ![](https://www.datocms-assets.com/7606/1540393222-turismoopt.png)
+
 
 # CRM en el sector turístico
 #### por Roger Lucea

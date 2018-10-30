@@ -5,7 +5,8 @@ date: 2018-10-19 23:00:00 UTC
 categories: article Consultoría datos/análisis/visualización/acción
 ---
 
-# ![](https://www.datocms-assets.com/7606/1538729544-data-project.png)
+# ![](https://www.datocms-assets.com/7606/1540393203-data-projectopt.png)
+
 
 # Pasos de un proyecto de Análisis de Datos
 
@@ -13,16 +14,17 @@ categories: article Consultoría datos/análisis/visualización/acción
 ##### 20 OCT 2018
 
 Los proyectos de Análisis de Datos se estructuran en 5 etapas:
-**Estrategia**: Entender el negocio y establecer las preguntas de negocio y datos disponibles para responderlas.
-**Datos**: Captar y armonizar fuentes de datos de diferentes sistemas (transaccionales, social, web, opendata…).
-**Análisis**: Encontrar patrones y modelos en la información (abandono, segmentación, correlaciones…).
-**Visualización**: Mostrar los datos de manera que sean más interpretables (dashboards, reports, infografías, mapas…).
-**Acción**: Utilizar los datos para tomar mejores decisiones, mejorar procesos o mejorar/crear productos y servicios basados en datos.
+
+* **Estrategia**: Entender el negocio y establecer las preguntas de negocio y datos disponibles para responderlas.
+* **Datos**: Captar y armonizar fuentes de datos de diferentes sistemas (transaccionales, social, web, opendata…).
+* **Análisis**: Encontrar patrones y modelos en la información (abandono, segmentación, correlaciones…).
+* **Visualización**: Mostrar los datos de manera que sean más interpretables (dashboards, reports, infografías, mapas…).
+* **Acción**: Utilizar los datos para tomar mejores decisiones, mejorar procesos o mejorar/crear productos y servicios basados en datos.
 
 ## ![](https://www.datocms-assets.com/7606/1538729694-data-project-steps.png)
 
 ## Estrategia
-El punto de partida de un proyecto de datos es tener buena comprensión del modelo de negocio actual y visionar cómo nos gustaría que fuera. Podemos utilizar cualquier framework de desarrollo de modelos de negocio que nos ayude a reflexionar sobre nuestro negocio. Por ejemplo, podemos utilizar un modelo popular como “Lienzo de Generación de modelos de negocio” (Osterwalder, Yves Pigneur, Alan Smith [Canvas](https://strategyzer.com/canvas)
+El punto de partida de un proyecto de datos es tener buena comprensión del modelo de negocio actual y visionar cómo nos gustaría que fuera. Podemos utilizar cualquier framework de desarrollo de modelos de negocio que nos ayude a reflexionar sobre nuestro negocio. Por ejemplo, podemos utilizar un modelo popular como “Lienzo de Generación de modelos de negocio” (Osterwalder, Yves Pigneur, Alan Smith) [Canvas](https://strategyzer.com/canvas)
 
 ### ![](https://www.datocms-assets.com/7606/1538731833-canvas-negocio.png)
 
@@ -96,7 +98,7 @@ Ahora tenemos que seleccionar los **datos internos y externos** que pensamos nos
 
 **Selección de datos** 
 * Internos: clientes, producto, precio, comunicaciones, transacciones, personal… 
-* -	Externos: mercado, competencia, clima, festividades/eventos… 
+* Externos: mercado, competencia, clima, festividades/eventos… 
 
 **Obtención de datos**
 * Procesos ETL (Extraction/Transformation/Loading)
@@ -129,7 +131,7 @@ A continuación desarrollaremos los **modelos analíticos** que nos den respuest
 * Estadísticas de resumen de las variables por tipo de datos			
 * Distribuciones de variables por tipo de datos			
 * Correlaciones y asociaciones importantes entre las variables.			
-* Identificación de las variables relevantes para la estimación de la demanda
+* Identificación de las variables relevantes.
 
 **Preparación** 
 * Eliminación de outliers			

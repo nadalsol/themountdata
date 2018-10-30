@@ -17,6 +17,19 @@
   -->
 
   <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5bc5e9840c55ed0011c021d0&product=social-ab' async='async'></script>
+
+  <script>
+      function loadVideo() {
+        var videos = document.getElementsByTagName('h6');
+        if(videos.length > 0) {
+            for(i=0;i<videos.length;i++){
+                var ide = videos[i].innerHTML;
+                var content = '<iframe src="https://www.youtube.com/embed/'+ ide +'" frameborder="0" allowfullscreen></iframe>';
+                videos[i].innerHTML = content;
+            }
+        }
+      } 
+  </script>
   
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});

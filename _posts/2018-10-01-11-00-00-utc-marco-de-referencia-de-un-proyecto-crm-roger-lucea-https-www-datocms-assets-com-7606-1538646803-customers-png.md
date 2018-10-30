@@ -5,7 +5,9 @@ date: 2018-10-01 11:00:00 UTC
 categories: article Consultoría crm/framework
 ---
 
-# ![](https://www.datocms-assets.com/7606/1538646803-customers.png)
+# ![](https://www.datocms-assets.com/7606/1540389410-customers.png)
+
+
 # Marco de referencia de un proyecto CRM
 #### por Roger Lucea
 ##### 01 OCT 2018

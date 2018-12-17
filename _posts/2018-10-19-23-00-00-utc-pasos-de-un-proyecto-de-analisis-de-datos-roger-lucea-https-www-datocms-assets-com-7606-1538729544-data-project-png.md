@@ -32,7 +32,7 @@ Con las necesidades de los segmentos de clientes y la propuesta de valor en ment
 
 **Preguntas de Clientes**
 * ¿Qué clientes son leales y cuales han desertado?
-* ¿Factores de Leealtad?
+* ¿Factores de Lealtad?
 * ¿Valor de Vida de cada uno de los Clientes?
 * ¿A qué Segmento pertenece cada Cliente?
 * ¿Perfil de mis clientes?
@@ -158,7 +158,7 @@ Para facilitar la comprensión de los datos y los modelos analíticos tenemos qu
 * Usuarios y necesidades
 * Dimensiones de la información y KPIs
 * Funcionalidades (comparador, mapas, alertas, integración modelos, exportaciones…)
-* Estilo, parte gráifca
+* Estilo, parte gráfica
 * Modelo de datos
 
 **Inyección**

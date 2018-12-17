@@ -15,11 +15,11 @@ categories: article Consultoría crm/automoción
 
 ## Contexto
 
-Los stocks de vehículos en los Concesionarios están a rebosar. El incremento de las auto-matriculaciones de los últimos meses, debido a la entrada en vigor de la nueva normativa WLTP, están “enrareciendo” el mercado y mermando la rentabilidad de los concesionarios. En el mes de agosto 2018 se registraron un tercio de las auto-matriculaciones del primer semestre. 
+En el mes de agosto 2018 se registraron un tercio de las automatriculaciones del primer semestre.**Los stocks de vehículos en los Concesionarios están a rebosar**. El incremento de las automatriculaciones de los últimos meses, debido a la entrada en vigor de la nueva normativa WLTP, están “enrareciendo” el mercado y mermando la rentabilidad de los concesionarios. 
 
-La rentabilidad se resiente. Aumentan los costes (stock, costes de venta asociados…) y se reducen los márgenes (más ofertas de la competencia y promociones de coches nuevos).
+**La rentabilidad se resiente**. Aumentan los costes (stock, costes de venta asociados…) y se reducen los márgenes (más ofertas de la competencia y promociones de coches nuevos).
 
-En algunos casos la visión de negocio del concesionario no se ha adaptado al nuevo escenario. El concesionario debe redefinir el Equipo/Organización, los Procesos y la Tecnología relacionados con la venta VO para adaptarse a la nueva realidad de un mercado con gran volumen de VO Km0.
+En algunos casos la visión de negocio del concesionario **no se ha adaptado al nuevo escenario**. El concesionario debe redefinir el Equipo/Organización, los Procesos y la Tecnología relacionados con la venta VO para adaptarse a la nueva realidad de un mercado con gran volumen de VO Km0.
 
 
 ## Problema
@@ -72,7 +72,7 @@ El Concesionario se enfrenta a la difícil tarea de fijar el precio de venta del
 * Costes variables equipo de VO
 
 
-## ![](https://www.datocms-assets.com/7606/1540891313-votable.png)
+## ![](https://www.datocms-assets.com/7606/1541362704-votable.png)
 
 
 ## Solución
@@ -82,7 +82,8 @@ Hemos desarrollado la **Plataforma VO** para ayudar a la Concesionarios a liquid
 * Disminuyendo los tiempos de gestión
 * Recomendando el precio de venta a publicar 
 
-## ![](https://www.datocms-assets.com/7606/1540895246-plataforma-vo.png)
+## ![](https://www.datocms-assets.com/7606/1542624477-esquema-plataforma-vokm0.png)
+
 
 ### Automatización comunicaciones de marketing omni-canal
 
